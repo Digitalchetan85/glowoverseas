@@ -1,10 +1,6 @@
 import React from "react";
-import { Image } from "react-bootstrap";
-import ArmeniaMap from '../../Images/mbbs-in-armenia/mbbs-in-armenia.png'
-import Yerevan from "../../Images/mbbs-in-armenia/medical-universities/yerevan-haybusak-university-faculty-of-medicine.png"
-import Yerevan1 from "../../Images/mbbs-in-armenia/medical-universities/yerevan-state-medical-university.png"
 
-const MbbsInArmenia = () => {
+const MbbsInBangladesh = () => {
   return (
     <>
       <div id="abt1">
@@ -12,14 +8,14 @@ const MbbsInArmenia = () => {
           <div className="row">
             <div className="col-md-12">
               <div className="pt-5 pb-5">
-                <h2>MBBS in Armenia</h2>
+                <h2>MBBS in bangladesh</h2>
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
                       <a href="/">Home</a>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
-                      MBBS in Armenia
+                      MBBS in bangladesh
                     </li>
                   </ol>
                 </nav>
@@ -48,32 +44,19 @@ const MbbsInArmenia = () => {
                           style={{height: '100px', width: '100px'}}
                         /> */}
                         <p className="text-justify">
-                          Armenia is a nation, and former Soviet republic, in
-                          the mountainous Caucasus region between Asia and
-                          Europe. Among the earliest Christian civilizations,
-                          it’s defined by religious sites including the
-                          Greco-Roman Temple of Garni and 4th-century
-                          Etchmiadzin Cathedral, headquarters of the Armenian
-                          Church. Khor Virap Monastery is a pilgrimage site near
-                          Mount Ararat, a dormant volcano just across the border
-                          in Turkey. MBBS in Armenia is best for any student who
-                          want to get the global recognition from their course
-                          with good skills and practice as Armenia provides you
-                          with top quality education. let us know something
-                          about Armenia and Why you need to do MBBS in Armenia
-                          Along with advantages and Dis-Advantages of studying
-                          in Armenia. Armenia is a country which is located in
-                          the western Asia and close to the Turkey and it was
-                          founded on 28th may 1918 and the best thing about the
-                          country is that in Armenia every school has one
-                          mandatory thing which is chess, a compulsory subject
-                          that every student has to learn. 97% of people living
-                          in Armenia are Armenian citizens only and only 3% are
-                          other countries people. The first church in the world
-                          was built in Armenia.
+                          Bangladesh is one of the safest countries in the
+                          world. bangladesh is the topmost country to study MBBS
+                          in Abroad for Indian students compared to other
+                          countries like bangladesh, bangladesh, USA, Russia,
+                          Philippines, Kazakhstan. Many of Indian students
+                          already studying in the Top Medical Universities in
+                          bangladesh. bangladesh Medical Universities are
+                          approved by MCI / WHO.
                         </p>
-                        <h2 className="text-center pb-2 pt-2">
-                          Advantages for Studying MBBS in Armenia
+                        <p className="text-justify">Nowadays Indian students preferring to study MBBS in Abroad countries like MBBS in USA, MBBS in Russia, MBBS in Kazakhstan, MBBS in Georgia and MBBS in Kyrgyzstan because the cost of MBBS course in Indian Private Medical Colleges are High.</p>
+                        <p className="text-justify">In bangladesh, we have many Medical Universities are there to achieve MBBS in bangladesh. We are providing all the Medical Universities are approved by MCI / WHO and also Govt. Medical Universities. Feel free to contact for more details like Fees Structure, Hostel, Food, Visa. We are available through phone contact 24/7.</p>
+                        {/* <h2 className="text-center pb-2 pt-2">
+                          Advantages for Studying MBBS in Bangladesh
                         </h2>
                         <ul className="pt-2 pb-2">
                           <li>Affordable course fee</li>
@@ -87,7 +70,7 @@ const MbbsInArmenia = () => {
                             Indian Chef.
                           </li>
                           <li>Separate Compartments for Boys and Girls.</li>
-                        </ul>
+                        </ul> */}
                         <div className="text-center">
                           {/* <?php include 'templates/free-councelling.php' ?> */}
                         </div>
@@ -95,12 +78,12 @@ const MbbsInArmenia = () => {
                     </div>
                   </div>
                 </div>
-                <div className="b-armenia-image">
+                <div className="b-bangladesh-image">
                   <div className="m-2">
                     <div className="row">
                       <div className="col-md-12">
                         <h2 className="text-center">
-                          <u>About Armenia</u>
+                          <u>About Bangladesh</u>
                         </h2>
                       </div>
                     </div>
@@ -111,21 +94,21 @@ const MbbsInArmenia = () => {
                         <div className="">
                           <h5 className="text-white">Geographical Position</h5>
                           <p className="text-white">
-                            Yerevan - Capital of Armenia
+                            Dhaka - Capital of Armenia
                           </p>
                           <p className="text-white">
-                            Language spoken - Armenian, English
+                            Language spoken - Bengali, English
                           </p>
                           <p className="text-white">
-                            National currency is Armenian Dram (UHR).1 USD =
-                            .0020, Armenian Dram(01/01/2010)
+                            National currency is Bangladeshi Taka (BDT) USD =
+                            .0020.
                           </p>
                         </div>
                         <div className="armenia-map">
                           <p className="text-white text-center">
-                            Population – 29,6 Lakhs
+                            Population – 16.47 crores
                             <br />
-                            Territory – 29,743 sq. km
+                            Territory – 130,170 sq Km
                           </p>
                         </div>
                       </div>
@@ -134,25 +117,24 @@ const MbbsInArmenia = () => {
                           <div className="d-flex flex-inline">
                             <span className="high">
                               The highest average July temperature is +10 …
-                              -22°C
+                              - 32.6°C
                             </span>
                             <span className="low">
                               The lowest temperature of January and February is
-                              +2… -14°C
+                              +2… - 26.8°C
                             </span>
                           </div>
                         </div>
                       </div>
                       <div className="col-md-4">
                         <div className="pt-1 pb-1">
-                          <h5 className="text-white">Religion in Armenia</h5>
+                          <h5 className="text-white">Religion in Bangladesh</h5>
                           <p className="text-white">
                             Armenia in religious geography lies on the
-                            boundaries separating Roman Catholic, Eastern
-                            Orthodox and Islamic spheres of influence.
+                            Sunni Muslims constitute 89 percent of the population and Hindus 10 percent. The remainder of the population is predominantly Christian (mostly Roman Catholic) and Theravada-Hinayana Buddhist.
                           </p>
                         </div>
-                        <div className="pt-1 pb-1">
+                        {/* <div className="pt-1 pb-1">
                           <h5 className="text-white">Education system</h5>
                           <p className="text-white">
                             Unlike many other European countries higher
@@ -160,18 +142,18 @@ const MbbsInArmenia = () => {
                             effective.It is indeed, recommended for anyone
                             seeking for quality and affordable education abroad.
                           </p>
-                        </div>
+                        </div> */}
                         <div className="pt-1 pb-1">
                           <h5 className="text-white">Major cities</h5>
                           <p className="text-white">
-                            Yerevan, Gyumri, Vanadzor, Vagharshapat
+                            Dhaka, Chattogram, Khulna, Sylhet
                           </p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div className="top-medical-university pt-5 pb-5">
+                {/* <div className="top-medical-university pt-5 pb-5">
                   <div className="row">
                     <div className="col-md-12">
                       <h3 className="text-center">
@@ -201,12 +183,11 @@ const MbbsInArmenia = () => {
                         <h5 className="pt-2 pb-2 text-center">
                           Yerevan Haybusak Medical University
                         </h5>
-                        {/* <img
+                        <img
                           src="images/mbbs-in-armenia/medical-universities/yerevan-haybusak-university-faculty-of-medicine.png"
                           alt=""
                           className="img-fluid"
-                        /> */}
-                        <Image src={Yerevan} alt="" className="img-fluid"></Image>
+                        />
                         <p className="pt-2 pb-2 text-justify">
                           Yerevan Haybusak Medical University is one of the top
                           Medical University in Armenia. Get more details on
@@ -214,7 +195,7 @@ const MbbsInArmenia = () => {
                           uncleared information.
                         </p>
                         <div className="">
-                          {/* <?php include 'templates/university-book-now.php'  ?> */}
+                          <?php include 'templates/university-book-now.php'  ?>
                           <a
                             href="mbbs-ins-armenia/yerevan-haybusak-medical-university.php"
                             className="pt-2 pb-2 btn btn-warning m-2 float-right"
@@ -229,12 +210,11 @@ const MbbsInArmenia = () => {
                         <h5 className="pt-2 pb-2 text-center">
                           Yerevan State Medical University
                         </h5>
-                        {/* <img
+                        <img
                           src="images/mbbs-in-Armenia/medical-universities/yerevan-state-medical-university.png"
                           alt=""
                           className="img-fluid"
-                        /> */}
-                        <Image src={Yerevan1} alt="" className="img-fluid"></Image>
+                        />
                         <p className="pt-2 pb-2 text-justify">
                           Yerevan State Medical University is one of the top
                           Medical University in Armenia. Get more details on
@@ -242,7 +222,7 @@ const MbbsInArmenia = () => {
                           uncleared information.
                         </p>
                         <div className="">
-                          {/* <?php include 'templates/university-book-now.php'  ?> */}
+                          <?php include 'templates/university-book-now.php'  ?>
                           <a
                             href="mbbs-in-armenia/yerevan-state-medical-university.php"
                             className="pt-2 pb-2 btn btn-warning m-2 float-right"
@@ -253,7 +233,7 @@ const MbbsInArmenia = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
             {/* <div className="col-md-4">
@@ -379,4 +359,4 @@ const MbbsInArmenia = () => {
   );
 };
 
-export default MbbsInArmenia;
+export default MbbsInBangladesh;
