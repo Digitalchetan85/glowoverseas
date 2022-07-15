@@ -1,0 +1,616 @@
+/* make the customizations */
+$theme-colors: (
+  "primary": #d3fde6,
+  "secondary": #9adcff,
+  "dark": #343a40,
+  "success": #28a745,
+  "info": #2681db,
+  "warning": #ffc107,
+  "danger": #dc3545,
+  "light": #f8f9fa,
+);
+
+/* import bootstrap to set changes */
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+$primary-color: #d3fde6;
+$secondary-color: #9adcff;
+$white-color: white;
+$black-color: #000;
+$tertiary-color: #0e0532;
+$dark-color: #001524;
+$info-color: #2681db;
+
+// fonts
+
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Exo 2", sans-serif;
+}
+
+p {
+  text-align: justify !important;
+}
+
+#SRLLightbox {
+  .SRLDownloadButton {
+    display: none !important;
+  }
+}
+
+#navbar {
+  .nav-link {
+    color: $dark-color;
+    padding: 15px 25px !important;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+  .dropdown-menu {
+    background-color: $primary-color;
+  }
+  .dropdown-item {
+    color: $white-color;
+    &:hover {
+      color: $white-color;
+      background-color: $secondary-color;
+    }
+  }
+}
+
+#top-header {
+  a {
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  .custom-btn {
+    margin: 2px;
+    border: solid 1px $primary-color;
+    border-radius: 30px;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+      border: solid 1px $secondary-color;
+      border-radius: 30px;
+    }
+  }
+}
+
+#admission {
+  background-image: url(../src/Images/global.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+#six {
+  .outer-box {
+    padding: 10px;
+    transform: scale(0.95);
+    transition: all 0.5s ease;
+    border-radius: 20px;
+    &:hover {
+      transform: scale(1);
+      // box-shadow: opx #ceced4;
+      box-shadow: 2px 3px 8px #ceced4;
+    }
+  }
+  .cir {
+    transition-duration: 500ms;
+    flex: 0 0 60px;
+    max-width: 60px;
+    width: 60px;
+    height: 60px;
+    // border-radius: 50%;
+    // background-color: ;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 30px;
+    color: #003679;
+    font-size: 30px;
+  }
+}
+
+#testimonials {
+  .body-wrap {
+    color: $primary-color;
+    font-weight: 500;
+    height: 320px;
+  }
+  .owl-carousel {
+    .owl-item {
+      img {
+        width: auto !important;
+        margin: auto;
+      }
+    }
+  }
+}
+
+#social {
+  .icons {
+    font-size: 50px;
+    color: $primary-color;
+    margin: 10px;
+    &:hover {
+      font-size: 50px;
+      color: $secondary-color;
+    }
+  }
+}
+
+#abt1 {
+  background: rgba(0, 0, 0, 0.5) url(../src/Images/abt-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+  background-blend-mode: multiply;
+
+  .breadcrumb {
+    padding: 0px 0px !important;
+    background: transparent !important;
+    a {
+      color: $white-color;
+      text-decoration: none;
+      &:hover {
+        color: $white-color;
+        text-decoration: none;
+      }
+    }
+    .breadcrumb-item {
+      color: $white-color;
+      font-weight: 600;
+      &:hover {
+        color: $white-color;
+        text-decoration: none;
+      }
+      &::before {
+        color: $white-color;
+      }
+      &.active {
+        color: $white-color !important;
+      }
+    }
+  }
+  h2,
+  h1 {
+    color: $white-color;
+    font-size: 2rem;
+  }
+}
+
+#abt-1 {
+  h2 {
+    color: $primary-color;
+  }
+  .deco {
+    border: 2px solid $primary-color;
+    border-radius: 20px;
+  }
+  h4 {
+    color: $secondary-color;
+  }
+}
+
+#m-v {
+  .fa-bullseye {
+    font-size: 100px;
+    color: $info-color;
+  }
+  .fa-eye {
+    font-size: 100px;
+    color: $info-color;
+  }
+  .mission {
+    border: 1px solid $secondary-color;
+    border-radius: 20px;
+  }
+  .vision {
+    border: 1px solid $secondary-color;
+    border-radius: 20px;
+  }
+}
+
+#services {
+  h5 {
+    color: $white-color;
+    background-color: $info-color;
+  }
+  .deco {
+    color: $primary-color;
+    border-radius: 5px;
+    height: 200px;
+  }
+  .deco1 {
+    color: $primary-color;
+    border-radius: 5px;
+    height: 300px;
+  }
+  p {
+    color: #000;
+    text-align: center !important;
+  }
+}
+#videos {
+  iframe {
+    width: 250px;
+    height: 200px;
+  }
+}
+
+#country {
+  .inner-bg {
+    background-image: url(./Images/mbbs-in-ukraine/tem.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 300px;
+    .low {
+      color: #fff;
+      font-size: 0.75rem;
+      padding: 25px 25px 0px 0px;
+      text-align: center;
+    }
+    .high {
+      color: #fff;
+      font-size: 0.75rem;
+      padding: 200px 0px 0px 30px;
+      text-align: center;
+    }
+  }
+  .bord-ukraine-1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6)),
+      url(./Images/about/about-us.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid $primary-color;
+    border-radius: 5px;
+  }
+  h2 {
+    color: $secondary-color;
+  }
+  .bord-1 {
+    border: 2px solid $primary-color;
+    border-radius: 5px;
+
+    h4 {
+      color: #fff;
+      background-color: $primary-color;
+    }
+  }
+  p {
+    padding: 0px;
+    margin: 0rem;
+  }
+  #four {
+    h3 {
+      background-color: $primary-color;
+      color: #fff;
+    }
+  }
+  .study-ukraine {
+    h4 {
+      background-color: $primary-color;
+      color: white !important;
+    }
+    p {
+      font-size: 16px;
+    }
+  }
+  .b-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6)),
+      url(./Images/about/about-us.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid $primary-color;
+    border-radius: 5px;
+  }
+  .b-armenia-image {
+    background-image: url(./Images/mbbs-in-armenia/mbbs-in-armenia.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid $primary-color;
+    border-radius: 5px;
+  }
+  .map {
+    background-image: url(./Images/mbbs-in-ukraine/ukraine-map.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    p {
+      position: relative;
+      top: 60px;
+    }
+  }
+  .armenia-map {
+    background-image: url(./Images/mbbs-in-armenia/armenia-map.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    p {
+      position: relative;
+      top: 60px;
+    }
+  }
+  .about {
+    p {
+      margin: 0px;
+      font-size: 12px;
+    }
+    h5 {
+      color: $secondary-color !important;
+    }
+  }
+  .card {
+    border-radius: 5px;
+    border: 1px solid $primary-color;
+  }
+  .card-header {
+    background-color: $primary-color !important;
+    border-radius: 5px;
+  }
+  .btn-link {
+    color: #fff;
+    &:hover {
+      text-decoration: none !important;
+    }
+    &::after {
+      content: "\2212";
+      width: 35px;
+      font-size: 25px;
+      text-align: center;
+      border-radius: 25px;
+      right: 15px;
+      top: 11px;
+      position: absolute;
+      color: #fff;
+    }
+  }
+  .btn-link {
+    &.collapsed {
+      &::after {
+        content: "\002B";
+        width: 35px;
+        font-size: 25px;
+        text-align: center;
+        border-radius: 25px;
+        right: 15px;
+        top: 11px;
+        position: absolute;
+        color: #fff;
+      }
+    }
+  }
+}
+
+#study-abroad {
+  h2 {
+    color: $primary-color;
+  }
+  h3 {
+    color: $primary-color;
+  }
+  h4 {
+    color: #fff;
+    background-color: $primary-color;
+  }
+  .bord {
+    border: 2px solid $secondary-color;
+  }
+  .bord-ukraine {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6)),
+      url(./Images/about/about-us.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid $primary-color;
+    border-radius: 5px;
+    height: 500px;
+    width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    ul {
+      padding-left: 40px;
+    }
+  }
+  .bord-usa {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6)),
+      url(./Images/about/about-us.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid $primary-color;
+    border-radius: 5px;
+    height: 500px;
+    width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    ul {
+      padding-left: 40px;
+    }
+  }
+  .bord-poland {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6)),
+      url(./Images/about/about-us.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid $primary-color;
+    border-radius: 5px;
+    height: 500px;
+    width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    ul {
+      padding-left: 40px;
+    }
+  }
+  .bord-russia {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6)),
+      url(./Images/about/about-us.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid $primary-color;
+    border-radius: 5px;
+    height: 500px;
+    width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    ul {
+      padding-left: 40px;
+    }
+  }
+  .bord-belarus {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6)),
+      url(./Images/about/about-us.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid $primary-color;
+    border-radius: 5px;
+    height: 500px;
+    width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    ul {
+      padding-left: 40px;
+    }
+  }
+  .bord-kyrgyzstan {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6)),
+      url(./Images/about/about-us.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid $primary-color;
+    border-radius: 5px;
+    height: 500px;
+    width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    ul {
+      padding-left: 40px;
+    }
+  }
+  .bord-georgia {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6)),
+      url(./Images/about/about-us.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid $primary-color;
+    border-radius: 5px;
+    height: 500px;
+    width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    ul {
+      padding-left: 40px;
+    }
+  }
+  .bord-philippines {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6)),
+      url(./Images/about/about-us.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid $primary-color;
+    border-radius: 5px;
+    height: 500px;
+    width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    ul {
+      padding-left: 40px;
+    }
+  }
+  .bord-kazakhstan {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6)),
+      url(./Images/about/about-us.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid $primary-color;
+    border-radius: 5px;
+    height: 500px;
+    width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    ul {
+      padding-left: 40px;
+    }
+  }
+  .bord-china {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6)),
+      url(./Images/about/about-us.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid $primary-color;
+    border-radius: 5px;
+    height: 500px;
+    width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    ul {
+      padding-left: 40px;
+    }
+  }
+  .bord-armenia {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6)),
+      url(./Images/about/about-us.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid $primary-color;
+    border-radius: 5px;
+    height: 500px;
+    width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    ul {
+      padding-left: 40px;
+    }
+  }
+  .bord-1 {
+    border: 2px solid $primary-color;
+    border-radius: 5px;
+  }
+  p {
+    padding: 10px;
+  }
+  #four {
+    h3 {
+      background-color: $primary-color;
+      color: #fff;
+    }
+  }
+  h2 {
+    color: $primary-color;
+  }
+  h3 {
+    color: $primary-color;
+  }
+  h4 {
+    color: #fff;
+    background-color: $primary-color;
+  }
+  .bord {
+    border: 2px solid $secondary-color;
+  }
+}
