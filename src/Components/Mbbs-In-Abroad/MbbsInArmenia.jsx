@@ -29,7 +29,7 @@ const MbbsInArmenia = () => {
       <div id="country" className="pt-5 pb-5">
         <div className="container-fluid">
           <div className="row">
-            <div className="col-md-8">
+            <div className="col-md-12">
               <div className="container">
                 <div className="study-armenia mb-2">
                   <div className="row">
@@ -251,7 +251,7 @@ const MbbsInArmenia = () => {
                 </div>
               </div>
             </div>
-            <div className="col-md-4">
+            {/* <div className="col-md-4">
               <div className="bord-1">
                 <div id="four" className="pb-5">
                   <div className="container">
@@ -267,7 +267,7 @@ const MbbsInArmenia = () => {
                         <div className="">
                           <form action="">
                             <div className="form-group">
-                              {/* <!-- <label for="selectbox">Enter Select Your Country</label> --> */}
+                              {/* <!-- <label for="selectbox">Enter Select Your Country</label> --> 
                               <select
                                 className="form-control"
                                 id="selectbox"
@@ -294,7 +294,7 @@ const MbbsInArmenia = () => {
                         <div className="">
                           <form action="">
                             <div className="form-group">
-                              {/* <!-- <label for="selectbox1">University in?</label> --> */}
+                              {/* <!-- <label for="selectbox1">University in?</label> --> 
                               <select
                                 className="form-control"
                                 id="selectbox1"
@@ -324,9 +324,9 @@ const MbbsInArmenia = () => {
                     </div>
                   </div>
                 </div>
-                {/* <?php include 'templates/sidebar-country-top-medical-university.php' ?> */}
+                {/* <?php include 'templates/sidebar-country-top-medical-university.php' ?>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
