@@ -26,7 +26,7 @@ const YerevanStateMedicalUniversity = () => {
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb">
                               <li class="breadcrumb-item"><a href="/">Home</a></li>
-                              <li class="breadcrumb-item"><a href="../mbbs-in-armenia.php">MBBS in Armenia</a></li>
+                              <li class="breadcrumb-item"><a href="/mbbs-in-armenia">MBBS in Armenia</a></li>
                               <li class="breadcrumb-item active" aria-current="page">Yerevan State Medical University</li>
                             </ol>
                           </nav>

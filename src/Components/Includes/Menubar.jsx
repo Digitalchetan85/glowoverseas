@@ -421,7 +421,7 @@ const Menubar = () => {
                   drop="end"
                   href="/mbbs-in-belarus"
                 >
-                  <NavDropdown.Item href="/belarusian-state-medical-university">
+                  <NavDropdown.Item href="/mbbs-in-belarus/belarusian-state-medical-university">
                     Belarusian State Medical University
                   </NavDropdown.Item>
                   <NavDropdown.Divider />

@@ -12,7 +12,7 @@ const AmaUniversity = () => {
                         <nav aria-label="breadcrumb">
                             <ol className="breadcrumb">
                               <li className="breadcrumb-item"><a href="/">Home</a></li>
-                              <li className="breadcrumb-item"><a href="../mbbs-in-philippines.php">MBBS in Philippines</a></li>
+                              <li className="breadcrumb-item"><a href="/mbbs-in-philippines">MBBS in Philippines</a></li>
                               <li className="breadcrumb-item active" aria-current="page">AMA University</li>
                             </ol>
                           </nav>
@@ -53,7 +53,7 @@ const AmaUniversity = () => {
                                 </div>
                                 <div className="col-md-6">
                                     <div className="text-center">
-                                        <img src="../images/mbbs-in-philippines/medical-universities/ama-school-of-medicine.png" alt="" className="img-fluid">
+                                    <Image src={Img1} alt="" className="img-fluid"></Image>
                                     </div>
                                 </div>
                             </div>
@@ -63,73 +63,93 @@ const AmaUniversity = () => {
                                 <div className="col-md-12">
                                     <div className="pb-2">
                                         <h4 className="text-center pt-2 pb-2">MBBS in Philippines</h4>
-                                        <img src="../images/mbbs-in-philippines-flag.jpg.png" alt="" className="img-fluid rounded-circle ml-3">
+                                        {/* <img src="../images/mbbs-in-philippines-flag.jpg.png" alt="" className="img-fluid rounded-circle ml-3"> */}
                                         <p className="p-2 text-justify">
                                             The Philippines, officially the Republic of the Philippines, is an archipelagic country in Southeast Asia. Philippines offer quality MBBS education with economical tuition fees. If we compare with other US countries then tuition fees are quite low and education pattern is similar to US study-based pattern. In Philippines, MBBS is called as MD (Doctor of Medicine).
                                         </p>
                                         <div className="text-center">
-                                            <?php include '../templates/university-free-councelling.php' ?>
+                                            {/* <?php include '../templates/university-free-councelling.php' ?> */}
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="b-philippines-image">
-                            <div className="m-2">
-                                <div className="row">
-                                    <div className="col-md-12">
-                                        <h2 className="text-center"><u>About philippines</u></h2>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="m-2 about">
-                                <div className="row">
-                                    <div className="col-md-4">
-                                        <div className="">
-                                            <h5 className="text-white">Geografical Position</h5>
-                                            <p className="text-white">Manila - Capital of Philippines</p>
-                                            <p className="text-white">Language spoken - Filipino and English</p>
-                                            <p className="text-white">National currency is Pesso.1 USD = 8, Pesso</p>
-                                        </div>
-                                        <div className="philippines-map">
-                                            <p className="text-white text-center">Population – 10.81 Crores<br>
-                                                Territory – 3,00,000 sq. km</p>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-4">
-                                        <div className="inner-bg">
-                                            <div className="d-flex flex-inline">
-                                                <span className="high">
-                                                    The highest average
-                                                        July temperature is
-                                                        +23… +26°C
-                                                </span>
-                                                <span className="low">
-                                                    The lowest
-                                                        temperature of
-                                                        January and February
-                                                        is +21 … +22°C
-                                                </span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="col-md-4">
-                                        <div className="pt-1 pb-1">
-                                            <h5 className="text-white">Religion in philippines</h5>
-                                            <p className="text-white">philippines in religious geography lies on the boundaries separating Roman Catholic, Eastern Orthodox and Islamic spheres of influence.</p>
-                                        </div>
-                                        <div className="pt-1 pb-1">
-                                            <h5 className="text-white">Education system</h5>
-                                            <p className="text-white">Unlike many other European countries higher education in philippines is comparatively cost effective.It is indeed, recommended for anyone seeking for quality and affordable education abroad.</p>
-                                        </div>
-                                        <div className="pt-1 pb-1">
-                                            <h5 className="text-white">Major cities</h5>
-                                            <p className="text-white">Quezon, Manila, Davao, Caloocan</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                  <div className="m-2">
+                    <div className="row">
+                      <div className="col-md-12">
+                        <h2 className="text-center">
+                          <u>About PHILIPPINES </u>
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="m-2 about">
+                    <div className="row">
+                      <div className="col-md-4">
+                        <div className="">
+                          <h5 className="text-white">Geographical Position</h5>
+                          <p className="text-white">
+                            Manila - Capital of Philippines
+                          </p>
+                          <p className="text-white">
+                            Language spoken - Filipino and English
+                          </p>
+                          <p className="text-white">
+                            National currency is Pesso.1 USD = 8, Pesso
+                          </p>
                         </div>
+                        <div className="usa-map">
+                          <p className="text-white text-center">
+                            Population – 10.81 Crores
+                            <br />
+                            Territory – 3,00,000 sq. km
+                          </p>
+                        </div>
+                      </div>
+                      <div className="col-md-4">
+                        <div className="inner-bg">
+                          <div className="d-flex flex-inline">
+                            <span className="high">
+                              The highest average July temperature is +23… +26°C
+                            </span>
+                            <span className="low">
+                              The lowest temperature of January and February is
+                              +21 … +22°C
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-md-4">
+                        <div className="pt-1 pb-1">
+                          <h5 className="text-white">
+                            Religion in Philippines
+                          </h5>
+                          <p className="text-white">
+                            Philippines in religious geography lies on the
+                            boundaries separating Roman Catholic, Eastern
+                            Orthodox and Islamic spheres of influence.
+                          </p>
+                        </div>
+                        <div className="pt-1 pb-1">
+                          <h5 className="text-white">Education system</h5>
+                          <p className="text-white">
+                            Unlike many other European countries higher
+                            education in Philippines is comparatively cost
+                            effective.It is indeed, recommended for anyone
+                            seeking for quality and affordable education abroad.
+                          </p>
+                        </div>
+                        <div className="pt-1 pb-1">
+                          <h5 className="text-white">Major cities</h5>
+                          <p className="text-white">
+                            Quezon, Manila, Davao, Caloocan
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                         <div className="top-medical-university pt-5 pb-5">
                             <div className="row pt-5">
                                 <div className="col-md-12">
@@ -139,7 +159,7 @@ const AmaUniversity = () => {
                                             Study MBBS in Philippines at Kharkiv National Medical University an affordable cost. Fell free to talk to our counsellors to get the complete fee structure.
                                         </p>
                                         <div className="text-center">
-                                            <<?php include '../templates/university-free-councelling.php' ?>
+                                            {/* <<?php include '../templates/university-free-councelling.php' ?> */}
                                         </div>
                                     </div>
                                 </div>
@@ -167,7 +187,11 @@ const AmaUniversity = () => {
                                     <div className="university">
                                         <h5 className="text-center pb-5">Admission Process for MBBS in Philippines</h5>
                                         <div className="text-center">
-                                            <img src="../images/admission-process.jpg" alt="" className="img-fluid">
+                                        <Image
+                            src={Process}
+                            alt=""
+                            className="img-fluid"
+                          ></Image>
                                         </div>
                                     </div>
                                 </div>

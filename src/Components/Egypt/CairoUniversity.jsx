@@ -1,5 +1,19 @@
 import React from 'react'
 
+
+import { Image } from "react-bootstrap";
+import Ain from "../../Images/mbbs-in-egypt/medical-universities/ain-shams-university-faculty-of-medicine.png";
+import Img1 from "../../Images/mbbs-in-egypt/medical-universities/cairo-university-faculty-of-medicine.png";
+import Process from "../../Images/admission-process.jpg";
+import USA from "../../Images/mbbs-in-usa/medical-universities/spartan-health-sciences-university.png";
+import Poland from "../../Images/mbbs-in-poland/medical-universities/medical-university-of-gdansk.png";
+import Kyrgyzstan from "../../Images/mbbs-in-kyrgyzstan/medical-universities/osh-state-medical-university.png";
+import Georgia from "../../Images/mbbs-in-georgia/medical-universities/batumi-shota-rustaveli-state-university-faculty-of-natural-sciences-and-health-care.png";
+import Philippines from "../../Images/mbbs-in-philippines/medical-universities/our-lady-of-fatima-university-college-of-medicine.png";
+import Russia from "../../Images/mbbs-in-russia/medical-universities/bashkir-state-medical-university.png";
+import Armenia from "../../Images/mbbs-in-armenia/medical-universities/yerevan-state-medical-university.png";
+import Kharkiv from "../../Images/mbbs-in-ukraine/medical-universities/kharkiv-international-medical-university.png";
+
 const CairoUniversity = () => {
   return (
     <>
@@ -13,7 +27,7 @@ const CairoUniversity = () => {
                         <nav aria-label="breadcrumb">
                             <ol className="breadcrumb">
                               <li className="breadcrumb-item"><a href="/">Home</a></li>
-                              <li className="breadcrumb-item"><a href="../mbbs-in-egypt.php">MBBS in Egypt</a></li>
+                              <li className="breadcrumb-item"><a href="/mbbs-in-egypt">MBBS in Egypt</a></li>
                               <li className="breadcrumb-item active" aria-current="page">Cairo University Faculty of Medicine</li>
                             </ol>
                           </nav>
@@ -27,7 +41,7 @@ const CairoUniversity = () => {
     <div id="country" className="pt-5 pb-5">
         <div className="container-fluid">
             <div className="row">
-                <div className="col-md-8">
+                <div className="col-md-12">
                     <div className="container">
                         <div className="border p-2 m-1">
                             <div className="row">
@@ -54,7 +68,7 @@ const CairoUniversity = () => {
                                 </div>
                                 <div className="col-md-6">
                                     <div className="text-center">
-                                        <img src="../images/mbbs-in-egypt/medical-universities/cairo-university-faculty-of-medicine.png" alt="" className="img-fluid">
+                                    <Image src={Img1} alt="" className="img-fluid"></Image>
                                     </div>
                                 </div>
                             </div>
@@ -64,7 +78,7 @@ const CairoUniversity = () => {
                                 <div className="col-md-12">
                                     <div className="pb-2">
                                         <h4 className="text-center pt-2 pb-2">MBBS in Egypt</h4>
-                                        <img src="../images/mbbs-in-Egypt-flag.jpg.png" alt="" className="img-fluid rounded-circle ml-3">
+                                        {/* <img src="../images/mbbs-in-Egypt-flag.jpg.png" alt="" className="img-fluid rounded-circle ml-3"> */}
                                         <p className="p-2 text-justify">
                                             Egypt is one of the safest countries in the world. Egypt is the topmost country to study MBBS in Abroad for Indian students compared to other countries like USA, Russia, Philippines, Kazakhstan. Many of Indian students already studying in the Top Medical Universities in Egypt. Egypt Medical Universities are approved by MCI / WHO.
                                         </p>
@@ -74,9 +88,9 @@ const CairoUniversity = () => {
                                         <p className="p-2 text-justify">
                                             In Egypt, we have many Medical Universities are there to achieve MBBS in Egypt. We are providing all the Medical Universities are approved by MCI / WHO and also Govt. Medical Universities. Feel free to contact for more details like Fees Structure, Hostel, Food, Visa. We are available through phone contact 24/7.
                                         </p>
-                                        <div className="text-center">
+                                        {/* <div className="text-center">
                                             <?php include '../templates/university-free-councelling.php' ?>
-                                        </div>
+                                        </div> */}
                                     </div>
                                 </div>
                             </div>
@@ -93,13 +107,13 @@ const CairoUniversity = () => {
                                 <div className="row">
                                     <div className="col-md-4">
                                         <div className="">
-                                            <h5 className="text-white">Geografical Position</h5>
+                                            <h5 className="text-white">Geographical Position</h5>
                                             <p className="text-white">Cairo - Capital of Egypt</p>
                                             <p className="text-white">Language spoken - Modern Standard Arabic, English</p>
                                             <p className="text-white">National currency is Egyptian Pound. 1 USD = 0.064, Egyptian Pound(01/01/2010)</p>
                                         </div>
                                         <div className="egypt-map">
-                                            <p className="text-white text-center">Population – 10,04 Crores<br>
+                                            <p className="text-white text-center">Population – 10,04 Crores<br />
                                                 Territory – 10,10,408 sq. km</p>
                                         </div>
                                     </div>
@@ -146,7 +160,7 @@ const CairoUniversity = () => {
                                             Study MBBS in Egypt at Cairo University Faculty of Medicine an affordable cost. Fell free to talk to our counsellors to get the complete fee structure.
                                         </p>
                                         <div className="text-center">
-                                            <<?php include '../templates/university-free-councelling.php' ?>
+                                            {/* <<?php include '../templates/university-free-councelling.php' ?> */}
                                         </div>
                                     </div>
                                 </div>
@@ -174,7 +188,11 @@ const CairoUniversity = () => {
                                     <div className="university">
                                         <h5 className="text-center pb-5">Admission Process for MBBS in Egypt</h5>
                                         <div className="text-center">
-                                            <img src="../images/admission-process.jpg" alt="" className="img-fluid">
+                                        <Image
+                            src={Process}
+                            alt=""
+                            className="img-fluid"
+                          ></Image>
                                         </div>
                                     </div>
                                 </div>
@@ -198,170 +216,232 @@ const CairoUniversity = () => {
                                 </div>
                             </div>
                             <div className="row pt-5">
-                                <div className="col-md-6">
-                                    <div className="university">
-                                        <h4 className="text-center">Other Top Medical Universities in Ukraine</h4>
-                                        <div className="m-1 pt-2 pb-2 medical-university">
-                                            <div className="row">
-                                                <div className="col-md-12">
-                                                    <div className="university">
-                                                        <h5 className="pt-2 pb-2 text-center">Ain Shams University Faculty of Medicine</h5>
-                                                        <img src="../images/mbbs-in-egypt/medical-universities/ain-shams-university-faculty-of-medicine.png" alt="" className="img-fluid">
-                                                        <p className="pt-2 pb-2 text-justify">
-                                                            Ain Shams University Faculty of Medicine is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
-                                                        </p>
-                                                        <div className="">
-                                                            <?php include '../templates/university-book-now.php'  ?>
-                                                            <a href="./mbbs-in-egypt/ain-shams-university-faculty-of-medicine.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                    <div className="col-md-12">
+                      <div className="university">
+                        <h4 className="text-center">
+                          Other Top Medical Universities in Egypt
+                        </h4>
+                        <div className="m-1 pt-2 pb-2 medical-university">
+                          <div className="row">
+                            <div className="col-md-8">
+                              <div className="university">
+                                <h5 className="pt-2 pb-2 text-center">
+                                Ain Shams University Faculty of Medicine
+                                </h5>
+                                <Image
+                                  src={Ain}
+                                  alt=""
+                                  className="img-fluid"
+                                />
+                                <p className="pt-2 pb-2 text-justify text-center">
+                                Ain Shams University Faculty of Medicine is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
+                                </p>
+                                <div className="">
+                                  {/* <?php include '../templates/university-book-now.php'  ?> */}
+                                  <a
+                                    href="mbbs-in-egypt/ain-shyams-university"
+                                    className="pt-2 pb-2 btn btn-warning m-2 float-right"
+                                  >
+                                    Read more
+                                  </a>
                                 </div>
-                                <div className="col-md-6">
-                                    <div className="university">
-                                        <h4 className="text-center">Preferred Countries for MBBS in Abroad</h4>
-                                    </div>
-                                    <div className="m-1 pt-2 pb-2 medical-university">
-                                        <div className="row">
-                                            <div className="col-md-12">
-                                                <div className="university">
-                                                    <h5 className="pt-2 pb-2 text-center">Study MBBS in USA</h5>
-                                                    <img src="../images/mbbs-in-usa/medical-universities/spartan-health-sciences-university.png" alt="" className="img-fluid">
-                                                    <p className="pt-2 pb-2 text-justify">
-                                                    Spartan University of Health and Science is one of the top Medical University in USA. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
-                                                    </p>
-                                                    <div className="">
-                                                        <?php include '../templates/university-book-now.php'  ?>
-                                                        <a href="../mbbs-in-usa.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="m-1 pt-2 pb-2 medical-university">
-                                        <div className="row">
-                                            <div className="col-md-12">
-                                                <div className="university">
-                                                    <h5 className="pt-2 pb-2 text-center">Study MBBS in Poland</h5>
-                                                    <img src="../images/mbbs-in-poland/medical-universities/medical-university-of-gdansk.png" alt="" className="img-fluid">
-                                                    <p className="pt-2 pb-2 text-justify">
-                                                    Medical University of Gdansk one of the top Medical University in Poland. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
-                                                    </p>
-                                                    <div className="">
-                                                        <?php include '../templates/university-book-now.php'  ?>
-                                                        <a href="../mbbs-in-poland.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="m-1 pt-2 pb-2 medical-university">
-                                        <div className="row">
-                                            <div className="col-md-12">
-                                                <div className="university">
-                                                    <h5 className="pt-2 pb-2 text-center">Study MBBS in Kyrgyzstan</h5>
-                                                    <img src="../images/mbbs-in-kyrgyzstan/medical-universities/osh-state-medical-university.png" alt="" className="img-fluid">
-                                                    <p className="pt-2 pb-2 text-justify">
-                                                    Osh State Medical University one of the top Medical University in Kyrgyzstan. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
-                                                    </p>
-                                                    <div className="">
-                                                        <?php include '../templates/university-book-now.php'  ?>
-                                                        <a href="../mbbs-in-kyrgyzstan.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="m-1 pt-2 pb-2 medical-university">
-                                        <div className="row">
-                                            <div className="col-md-12">
-                                                <div className="university">
-                                                    <h5 className="pt-2 pb-2 text-center">Study MBBS in Georgia</h5>
-                                                    <img src="../images/mbbs-in-georgia/medical-universities/batumi-shota-rustaveli-state-university-faculty-of-natural-sciences-and-health-care.png" alt="" className="img-fluid">
-                                                    <p className="pt-2 pb-2 text-justify">
-                                                    Batumi Shota Rustaveli State Medical University one of the top Medical University in Georgia. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
-                                                    </p>
-                                                    <div className="">
-                                                        <?php include '../templates/university-book-now.php'  ?>
-                                                        <a href="../mbbs-in-georgia.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="m-1 pt-2 pb-2 medical-university">
-                                        <div className="row">
-                                            <div className="col-md-12">
-                                                <div className="university">
-                                                    <h5 className="pt-2 pb-2 text-center">Study MBBS in Philippines</h5>
-                                                    <img src="../images/mbbs-in-philippines/medical-universities/our-lady-of-fatima-university-college-of-medicine.png" alt="" className="img-fluid">
-                                                    <p className="pt-2 pb-2 text-justify">
-                                                    Our Lady of Fatima University one of the top Medical University in Philippines. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
-                                                    </p>
-                                                    <div className="">
-                                                        <?php include '../templates/university-book-now.php'  ?>
-                                                        <a href="../mbbs-in-philippines.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="m-1 pt-2 pb-2 medical-university">
-                                        <div className="row">
-                                            <div className="col-md-12">
-                                                <div className="university">
-                                                    <h5 className="pt-2 pb-2 text-center">Study MBBS in Russia</h5>
-                                                    <img src="../images/mbbs-in-russia/medical-universities/bashkir-state-medical-university.png" alt="" className="img-fluid">
-                                                    <p className="pt-2 pb-2 text-justify">
-                                                    Bashkir State Medical University one of the top Medical University in Russia. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
-                                                    </p>
-                                                    <div className="">
-                                                        <?php include '../templates/university-book-now.php'  ?>
-                                                        <a href="../mbbs-in-russia.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="m-1 pt-2 pb-2 medical-university">
-                                        <div className="row">
-                                            <div className="col-md-12">
-                                                <div className="university">
-                                                    <h5 className="pt-2 pb-2 text-center">Study MBBS in Ukraine</h5>
-                                                    <img src="../images/mbbs-in-ukraine/medical-universities/kharkiv-international-medical-university.png" alt="" className="img-fluid">
-                                                    <p className="pt-2 pb-2 text-justify">
-                                                    Kharkiv international Medical University one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
-                                                    </p>
-                                                    <div className="">
-                                                        <?php include '../templates/university-book-now.php'  ?>
-                                                        <a href="../mbbs-in-ukraine.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="m-1 pt-2 pb-2 medical-university">
-                                        <div className="row">
-                                            <div className="col-md-12">
-                                                <div className="university">
-                                                    <h5 className="pt-2 pb-2 text-center">Study MBBS in Belarus</h5>
-                                                    <img src="../images/mbbs-in-belarus/medical-universities/belarusian-state-medical-university.png" alt="" className="img-fluid">
-                                                    <p className="pt-2 pb-2 text-justify">
-                                                    Belarusian State Medical University one of the top Medical University in Belarus. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
-                                                    </p>
-                                                    <div className="">
-                                                        <?php include '../templates/university-book-now.php'  ?>
-                                                        <a href="../mbbs-in-belarus.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                              </div>
                             </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="row pt-5">
+                    <h4 className="text-center">
+                      Preferred Countries for MBBS in Abroad
+                    </h4>
+
+                    <div className="col-md-6">
+                      <div className="university">
+                        <h5 className="pt-2 pb-2 text-center">
+                          Study MBBS in USA
+                        </h5>
+                        <Image src={USA} alt="" className="img-fluid" />
+                        <p className="pt-2 pb-2 text-justify">
+                          Spartan University of Health and Science is one of the
+                          top Medical University in USA. Get more details on
+                          Fees Structure, Hostel, Indian Food Facility and other
+                          uncleared information.
+                        </p>
+                        <div className="">
+                          {/* <?php include '../templates/university-book-now.php'  ?> */}
+                          <a
+                            href="/mbbs-in-usa"
+                            className="pt-2 pb-2 btn btn-warning m-2 float-right"
+                          >
+                            Read more
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="university">
+                        <h5 className="pt-2 pb-2 text-center">
+                          Study MBBS in Poland
+                        </h5>
+                        <Image src={Poland} alt="" className="img-fluid" />
+                        <p className="pt-2 pb-2 text-justify">
+                          Medical University of Gdansk one of the top Medical
+                          University in Poland. Get more details on Fees
+                          Structure, Hostel, Indian Food Facility and other
+                          uncleared information.
+                        </p>
+                        <div className="">
+                          {/* <?php include '../templates/university-book-now.php'  ?> */}
+                          <a
+                            href="/mbbs-in-poland"
+                            className="pt-2 pb-2 btn btn-warning m-2 float-right"
+                          >
+                            Read more
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="university">
+                        <h5 className="pt-2 pb-2 text-center">
+                          Study MBBS in Kyrgyzstan
+                        </h5>
+                        <Image src={Kyrgyzstan} alt="" className="img-fluid" />
+                        <p className="pt-2 pb-2 text-justify">
+                          Osh State Medical University one of the top Medical
+                          University in Kyrgyzstan. Get more details on Fees
+                          Structure, Hostel, Indian Food Facility and other
+                          uncleared information.
+                        </p>
+                        <div className="">
+                          {/* <?php include '../templates/university-book-now.php'  ?> */}
+                          <a
+                            href="/mbbs-in-kyrgyzstan"
+                            className="pt-2 pb-2 btn btn-warning m-2 float-right"
+                          >
+                            Read more
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="university">
+                        <h5 className="pt-2 pb-2 text-center">
+                          Study MBBS in Georgia
+                        </h5>
+                        <Image src={Georgia} alt="" className="img-fluid" />
+                        <p className="pt-2 pb-2 text-justify">
+                          Batumi Shota Rustaveli State Medical University one of
+                          the top Medical University in Georgia. Get more
+                          details on Fees Structure, Hostel, Indian Food
+                          Facility and other uncleared information.
+                        </p>
+                        <div className="">
+                          {/* <?php include '../templates/university-book-now.php'  ?> */}
+                          <a
+                            href="../mbbs-in-usa.php"
+                            className="pt-2 pb-2 btn btn-warning m-2 float-right"
+                          >
+                            Read more
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="university">
+                        <h5 className="pt-2 pb-2 text-center">
+                          Study MBBS in Philippines
+                        </h5>
+                        <Image src={Philippines} alt="" className="img-fluid" />
+                        <p className="pt-2 pb-2 text-justify">
+                          Our Lady of Fatima University one of the top Medical
+                          University in Philippines. Get more details on Fees
+                          Structure, Hostel, Indian Food Facility and other
+                          uncleared information.
+                        </p>
+                        <div className="">
+                          {/* <?php include '../templates/university-book-now.php'  ?> */}
+                          <a
+                            href="/mbbs-in-philippines"
+                            className="pt-2 pb-2 btn btn-warning m-2 float-right"
+                          >
+                            Read more
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="university">
+                        <h5 className="pt-2 pb-2 text-center">
+                          Study MBBS in Russia
+                        </h5>
+                        <Image src={Russia} alt="" className="img-fluid" />
+                        <p className="pt-2 pb-2 text-justify">
+                          Bashkir State Medical University one of the top
+                          Medical University in Russia. Get more details on Fees
+                          Structure, Hostel, Indian Food Facility and other
+                          uncleared information.
+                        </p>
+                        <div className="">
+                          {/* <?php include '../templates/university-book-now.php'  ?> */}
+                          <a
+                            href="/mbbs-in-russia"
+                            className="pt-2 pb-2 btn btn-warning m-2 float-right"
+                          >
+                            Read more
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="university">
+                        <h5 className="pt-2 pb-2 text-center">
+                          Study MBBS in Ukraine
+                        </h5>
+                        <Image src={Kharkiv} alt="" className="img-fluid" />
+                        <p className="pt-2 pb-2 text-justify">
+                          Kharkiv international Medical University one of the
+                          top Medical University in Ukraine. Get more details on
+                          Fees Structure, Hostel, Indian Food Facility and other
+                          uncleared information.
+                        </p>
+                        <div className="">
+                          {/* <?php include '../templates/university-book-now.php'  ?> */}
+                          <a
+                            href="/mbbs-in-ukraine"
+                            className="pt-2 pb-2 btn btn-warning m-2 float-right"
+                          >
+                            Read more
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="university">
+                        <h5 className="pt-2 pb-2 text-center">
+                          Study MBBS in Belarus
+                        </h5>
+                        <Image src={Armenia} alt="" className="img-fluid" />
+                        <p className="pt-2 pb-2 text-justify">
+                          Yerevan State Medical University one of the top
+                          Medical University in Armenia. Get more details on
+                          Fees Structure, Hostel, Indian Food Facility and other
+                          uncleared information.
+                        </p>
+                        <div className="">
+                          {/* <?php include '../templates/university-book-now.php'  ?> */}
+                          <a
+                            href="../mbbs-in-belarus.php"
+                            className="pt-2 pb-2 btn btn-warning m-2 float-right"
+                          >
+                            Read more
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                             <div className="pt-5">
                                 <h3 className="text-center">FAQs</h3>
                                 <div className="row">
@@ -473,66 +553,7 @@ const CairoUniversity = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-4">
-                    <div className="bord-1">
-                        <div id="four" className="pb-5">
-                            <div className="container">
-                                <div className="row">
-                                    <div className="col-md-12">
-                                        <h3 className="text-center pt-3 pb-3">Choose Your University</h3>
-                                    </div>
-                                </div>
-                                <div className="row">
-                                    <div className="col-md-12">
-                                        <div className="">
-                                            <form action="">
-                                                <div className="form-group">
-                                                    <!-- <label for="selectbox">Enter Select Your Country</label> -->
-                                                    <select className="form-control" id="selectbox" name="" onchange="mylang(this.value)">
-                                                      <option value="">Select Your Country</option>
-                                                      <option>MBBS in USA</option>
-                                                        <option>MBBS in Kyrgyzstan</option>
-                                                        <option>MBBS in Georgia</option>
-                                                        <option>MBBS in Poland</option>
-                                                        <option>MBBS in Philippines</option>
-                                                        <option>MBBS in Russia</option>
-                                                        <option>MBBS in China</option>
-                                                        <option>MBBS in Kazakhstan</option>
-                                                    </select>
-                                                  </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="row">
-                                    <div className="col-md-12">
-                                        <div className="">
-                                            <form action="">
-                                                <div className="form-group">
-                                                    <!-- <label for="selectbox1">University in?</label> -->
-                                                    <select className="form-control" id="selectbox1" name="" onchange="getSelectedValue();">
-                                                      <option value="">University Lists</option>
-                                                      
-                                                    </select>
-                                                  </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="row">
-                                    <div className="col-md-12">
-                                        <div className="text-center">
-                                            <form action="">
-                                                <a className="btn custom-btn-1" onclick="redirect_url()">Get University Details.</a>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <?php include '../templates/sidebar-university-top-medical-university.php' ?>
-                    </div>
-                </div>
+               
             </div>
         </div>
     </div>

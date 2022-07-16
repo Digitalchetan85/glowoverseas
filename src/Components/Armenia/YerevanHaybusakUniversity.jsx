@@ -27,7 +27,7 @@ const YerevanHaybusakUniversity = () => {
                       <a href="../">Home</a>
                     </li>
                     <li className="breadcrumb-item">
-                      <a href="../mbbs-in-armenia.php">MBBS in Armenia</a>
+                      <a href="/mbbs-in-armenia">MBBS in Armenia</a>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       Yerevan Haybusak University Faculty of Medicine"
