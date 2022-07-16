@@ -4,7 +4,7 @@ const BelarusianStateMedicalUniversity = () => {
   return (
     
     <>
- <div id="abt">
+    <div id="abt">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">

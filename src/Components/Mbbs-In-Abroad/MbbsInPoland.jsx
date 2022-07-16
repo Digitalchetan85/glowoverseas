@@ -1,7 +1,8 @@
 import React from "react";
 import { Image } from "react-bootstrap";
-import Gdansk from "../../Images/mbbs-in-poland/medical-universities/medical-university-of-gdansk.png"
-import Warsaw from "../../Images/mbbs-in-poland/medical-universities/medical-university-of-warsaw.png"
+import Gdansk from "../../Images/mbbs-in-poland/medical-universities/medical-university-of-gdansk.png";
+import Warsaw from "../../Images/mbbs-in-poland/medical-universities/medical-university-of-warsaw.png";
+import FAQ from "../Includes/FAQ";
 
 const MbbsInPoland = () => {
   return (
@@ -105,20 +106,52 @@ const MbbsInPoland = () => {
                           Advantages of Studying in Poland
                         </h2>
                         <p class="pt-2 pb-2 text-justify">
-                                            Poland is one of the best places for Indian students to pursue MBBS because of the following benefits:
-                                        <ul>
-                                            <li> During MBBS in Poland, the students also get coaching for FMGE / MCI Screening Test including mock tests.</li>
-                                            <li> There is no requirement to pay any donation fee or capitation fee to take MBBS admission in Poland.</li>
-                                            <li> The best Poland medical colleges/universities are among world-ranked universities.</li>
-                                            <li> Poland medical colleges/universities have affordable tuition fees structure.</li>
-                                            <li>The process of MBBS admission in Poland is very simple & easy as it does not require any entrance exam.</li>
-                                            <li> After MBBS in Poland, the students will get a globally recognized medical degree.</li>
-                                            <li> The process of MBBS admission in Poland is very simple & easy as it does not require any entrance exam.</li>
-
-                                        </ul>
-                                        </p>
+                          Poland is one of the best places for Indian students
+                          to pursue MBBS because of the following benefits:
+                          <ul>
+                            <li>
+                              {" "}
+                              During MBBS in Poland, the students also get
+                              coaching for FMGE / MCI Screening Test including
+                              mock tests.
+                            </li>
+                            <li>
+                              {" "}
+                              There is no requirement to pay any donation fee or
+                              capitation fee to take MBBS admission in Poland.
+                            </li>
+                            <li>
+                              {" "}
+                              The best Poland medical colleges/universities are
+                              among world-ranked universities.
+                            </li>
+                            <li>
+                              {" "}
+                              Poland medical colleges/universities have
+                              affordable tuition fees structure.
+                            </li>
+                            <li>
+                              The process of MBBS admission in Poland is very
+                              simple & easy as it does not require any entrance
+                              exam.
+                            </li>
+                            <li>
+                              {" "}
+                              After MBBS in Poland, the students will get a
+                              globally recognized medical degree.
+                            </li>
+                            <li>
+                              {" "}
+                              The process of MBBS admission in Poland is very
+                              simple & easy as it does not require any entrance
+                              exam.
+                            </li>
+                          </ul>
+                        </p>
                         <p className="pt-3 pb-2 text-justify text-info">
-                          <strong>Quick Information About MBBS In POLAND </strong>
+                          <strong>
+                            Quick Information About MBBS In POLAND{" "}
+                          </strong>
                         </p>
                         <table className="table-bordered pt-3 pb-3">
                           <tbody>
@@ -133,7 +166,7 @@ const MbbsInPoland = () => {
                                 <b>Eligibility</b>
                               </td>
                               <td>
-                              50% in Physics, Chemistry and Biology Aggregate
+                                50% in Physics, Chemistry and Biology Aggregate
                               </td>
                             </tr>
                             <tr>
@@ -148,7 +181,7 @@ const MbbsInPoland = () => {
                               </td>
                               <td>- Yes, compulsory</td>
                             </tr>
-                            
+
                             <tr>
                               <td>
                                 <b>Medium of Teaching</b>
@@ -181,20 +214,21 @@ const MbbsInPoland = () => {
                         <div className="">
                           <h5 className="text-white">Geographical Position</h5>
                           <p className="text-white">
-                          Warsaw - Capital of Poland
+                            Warsaw - Capital of Poland
                           </p>
                           <p className="text-white">
-                          Language spoken - Polish and English
+                            Language spoken - Polish and English
                           </p>
                           <p className="text-white">
-                          National currency is Polish Zolty. 1 USD = 3.73, Zolty
+                            National currency is Polish Zolty. 1 USD = 3.73,
+                            Zolty
                           </p>
                         </div>
                         <div className="usa-map">
                           <p className="text-white text-center">
                             Population – 64.6 Lakhs
                             <br />
-                            Territory –  199.51 sq. km
+                            Territory – 199.51 sq. km
                           </p>
                         </div>
                       </div>
@@ -202,10 +236,11 @@ const MbbsInPoland = () => {
                         <div className="inner-bg">
                           <div className="d-flex flex-inline">
                             <span className="high">
-                            The lowest temperature of January and February is -1… -3°C
+                              The lowest temperature of January and February is
+                              -1… -3°C
                             </span>
                             <span className="low">
-                            The highest average July temperature is +17… +19°C
+                              The highest average July temperature is +17… +19°C
                             </span>
                           </div>
                         </div>
@@ -214,19 +249,24 @@ const MbbsInPoland = () => {
                         <div className="pt-1 pb-1">
                           <h5 className="text-white">Religion in Poland</h5>
                           <p className="text-white">
-                            UPoland in religious geography lies on the boundaries separating Roman Catholic, Eastern Orthodox and Islamic spheres of influence.
+                            UPoland in religious geography lies on the
+                            boundaries separating Roman Catholic, Eastern
+                            Orthodox and Islamic spheres of influence.
                           </p>
                         </div>
                         <div className="pt-1 pb-1">
                           <h5 className="text-white">Education system</h5>
                           <p className="text-white">
-                          Unlike many other European countries higher education in Poland is comparatively cost effective.It is indeed, recommended for anyone seeking for quality and affordable education abroad.
+                            Unlike many other European countries higher
+                            education in Poland is comparatively cost
+                            effective.It is indeed, recommended for anyone
+                            seeking for quality and affordable education abroad.
                           </p>
                         </div>
                         <div className="pt-1 pb-1">
                           <h5 className="text-white">Major cities</h5>
                           <p className="text-white">
-                          Warsaw, Kraków, Łódź, Poznań
+                            Warsaw, Kraków, Łódź, Poznań
                           </p>
                         </div>
                       </div>
@@ -235,54 +275,130 @@ const MbbsInPoland = () => {
                 </div>
 
                 <div className="top-medical-university pt-5 pb-5">
-                <div className="row">
-                                <div className="col-md-12">
-                                    <h3 className="text-center">Top Medical Universities in Poland</h3>
-                                    <p className="text-justify">
-                                    <ol>
-                                        <li><b>Medical University of Gdansk, Republic of Poland-1945</b></li>
-                                        <li><b> Medical University Of Warsaw, Republic of Poland-1809</b></li>
-                                        <li><b> Medical University Of Bialystok, Republic of Poland-1950</b></li>
-                                        <li><b> Medical University Of Lodz, Republic of Poland-2002</b></li>
-                                        <li><b> Medical University Of Lublin, Republic of Poland-1944</b></li>
-
-                                    </ol>
-                                    </p>
-                                    <h5 className="pt-2 pb-2">Average temperature of Poland</h5>
-                                    <p className="pt-2 pb-2 text-justify">The weather in Poland is also characterized by transitional periods between the four seasons of the year. The weather in Poland is rather unpredictable and varied. The summer can be really hot even 35ᴼC.The temperature from December to late February usually fluctuate around 0ᴼC to -8ᴼC. In the mountains snow usually covers slopes in the period.</p>
-                                    <p className="pt-2 pb-2 text-justify">The climate conditions in Poland often become problematic for some students to adjust well. The local language in Poland is Polish so the students might feel the language as a barrier outside the university campus. But the medium of coaching in Poland medical colleges/universities is English.</p>
-                                </div>
-                            </div>
-                            <div className="row pt-5">
-                                <div className="col-md-6">
-                                    <div className="university-country">
-                                        <h5 className="pt-2 pb-2 text-center">Medical-university of Gdansk</h5>
-                                        {/* <img src="./images/mbbs-in-poland/medical-universities/medical-university-of-gdansk.png" alt="" className="img-fluid"> */}
-                                        <Image src={Gdansk} alt="" className="img-fluid"></Image>
-                                        <p className="pt-2 pb-2 text-justify">
-                                            Medical University of Gdansk one of the top Medical University in Poland. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
-                                        </p>
-                                        <div className="">
-                                            {/* <?php include 'templates/university-book-now.php'  ?> */}
-                                            <a href="mbbs-in-poland/medical-university-of-gdansk.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-6">
-                                    <div className="university-country">
-                                        <h5 className="pt-2 pb-2 text-center">Medical-university of Warsaw</h5>
-                                        {/* <img src="./images/mbbs-in-poland/medical-universities/medical-university-of-warsaw.png" alt="" className="img-fluid"> */}
-                                        <Image src={Warsaw} alt="" className="img-fluid"></Image>
-                                        <p className="pt-2 pb-2 text-justify">
-                                            Medical University of Warsaw one of the top Medical University in Poland. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
-                                        </p>
-                                        <div className="">
-                                            {/* <?php include 'templates/university-book-now.php'  ?> */}
-                                            <a href="mbbs-in-poland/medical-university-of-varsaw.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                  <div className="row">
+                    <div className="col-md-12">
+                      <h3 className="text-center">
+                        Top Medical Universities in Poland
+                      </h3>
+                      <p className="text-justify">
+                        <ol>
+                          <li>
+                            <b>
+                              Medical University of Gdansk, Republic of
+                              Poland-1945
+                            </b>
+                          </li>
+                          <li>
+                            <b>
+                              {" "}
+                              Medical University Of Warsaw, Republic of
+                              Poland-1809
+                            </b>
+                          </li>
+                          <li>
+                            <b>
+                              {" "}
+                              Medical University Of Bialystok, Republic of
+                              Poland-1950
+                            </b>
+                          </li>
+                          <li>
+                            <b>
+                              {" "}
+                              Medical University Of Lodz, Republic of
+                              Poland-2002
+                            </b>
+                          </li>
+                          <li>
+                            <b>
+                              {" "}
+                              Medical University Of Lublin, Republic of
+                              Poland-1944
+                            </b>
+                          </li>
+                        </ol>
+                      </p>
+                      <h5 className="pt-2 pb-2">
+                        Average temperature of Poland
+                      </h5>
+                      <p className="pt-2 pb-2 text-justify">
+                        The weather in Poland is also characterized by
+                        transitional periods between the four seasons of the
+                        year. The weather in Poland is rather unpredictable and
+                        varied. The summer can be really hot even 35ᴼC.The
+                        temperature from December to late February usually
+                        fluctuate around 0ᴼC to -8ᴼC. In the mountains snow
+                        usually covers slopes in the period.
+                      </p>
+                      <p className="pt-2 pb-2 text-justify">
+                        The climate conditions in Poland often become
+                        problematic for some students to adjust well. The local
+                        language in Poland is Polish so the students might feel
+                        the language as a barrier outside the university campus.
+                        But the medium of coaching in Poland medical
+                        colleges/universities is English.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="row pt-5">
+                    <div className="col-md-6">
+                      <div className="university-country">
+                        <h5 className="pt-2 pb-2 text-center">
+                          Medical-university of Gdansk
+                        </h5>
+                        {/* <img src="./images/mbbs-in-poland/medical-universities/medical-university-of-gdansk.png" alt="" className="img-fluid"> */}
+                        <Image
+                          src={Gdansk}
+                          alt=""
+                          className="img-fluid"
+                        ></Image>
+                        <p className="pt-2 pb-2 text-justify">
+                          Medical University of Gdansk one of the top Medical
+                          University in Poland. Get more details on Fees
+                          Structure, Hostel, Indian Food Facility and other
+                          uncleared information.
+                        </p>
+                        <div className="">
+                          {/* <?php include 'templates/university-book-now.php'  ?> */}
+                          <a
+                            href="mbbs-in-poland/medical-university-of-gdansk.php"
+                            className="pt-2 pb-2 btn btn-warning m-2 float-right"
+                          >
+                            Read more
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="university-country">
+                        <h5 className="pt-2 pb-2 text-center">
+                          Medical-university of Warsaw
+                        </h5>
+                        {/* <img src="./images/mbbs-in-poland/medical-universities/medical-university-of-warsaw.png" alt="" className="img-fluid"> */}
+                        <Image
+                          src={Warsaw}
+                          alt=""
+                          className="img-fluid"
+                        ></Image>
+                        <p className="pt-2 pb-2 text-justify">
+                          Medical University of Warsaw one of the top Medical
+                          University in Poland. Get more details on Fees
+                          Structure, Hostel, Indian Food Facility and other
+                          uncleared information.
+                        </p>
+                        <div className="">
+                          {/* <?php include 'templates/university-book-now.php'  ?> */}
+                          <a
+                            href="mbbs-in-poland/medical-university-of-varsaw.php"
+                            className="pt-2 pb-2 btn btn-warning m-2 float-right"
+                          >
+                            Read more
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <FAQ />
                 </div>
               </div>
             </div>

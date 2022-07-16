@@ -2,6 +2,7 @@ import React from 'react'
 import { Image } from 'react-bootstrap'
 import Ain from "../../Images/mbbs-in-egypt/medical-universities/ain-shams-university-faculty-of-medicine.png"
 import Cario from "../../Images/mbbs-in-egypt/medical-universities/cairo-university-faculty-of-medicine.png"
+import FAQ from '../Includes/FAQ'
 
 const MbbsInEgypt = () => {
   return (
@@ -148,6 +149,7 @@ const MbbsInEgypt = () => {
                                 </div>
                             </div>
                         </div>
+                        <FAQ />
                     </div>
                 </div>
               

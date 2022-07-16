@@ -3,93 +3,109 @@ import { Card, Container, Button, Image, Row } from "react-bootstrap";
 import OwlCarousel from "react-owl-carousel2";import "react-owl-carousel2/src/owl.carousel.css";
 import "react-owl-carousel2/src/owl.theme.default.css";
 import { Link } from "react-router-dom";
-// import Ivane  from "../../Images/mbbs-in-georgia/medical-universities/batumi-shota-rustaveli-state-university-faculty-of-natural-sciences-and-health-care.png"
-// import Batumi from "../../Images/mbbs-in-georgia/medical-universities/caucasus-international-university-faculty-of-medicine.png"
-// import Akaki from "../../Images/mbbs-in-georgia/medical-universities/david-tvildiani-medical-university-aieti-medical-school.png"
-// import Tbilisi from "../../Images/mbbs-in-georgia/medical-universities/new-vision-university-school-of-medicine.png"
-// import Caucasus from "../../Images/mbbs-in-georgia/medical-universities/tbilisi-state-medical-university-faculty-of-medicine.png"
-// import David from "../../Images/mbbs-in-georgia/medical-universities/batumi-shota-rustaveli-state-university-faculty-of-natural-sciences-and-health-care.png"
-// import Petre from "../../Images/mbbs-in-georgia/medical-universities/caucasus-international-university-faculty-of-medicine.png"
-// import GeorgiaSchool from "../../Images/mbbs-in-georgia/medical-universities/david-tvildiani-medical-university-aieti-medical-school.png"
-// import European from "../../Images/mbbs-in-georgia/medical-universities/new-vision-university-school-of-medicine.png"
-// import Georgian from "../../Images/mbbs-in-georgia/medical-universities/tbilisi-state-medical-university-faculty-of-medicine.png"
+import Crimea  from "../../Images/mbbs-in-russia/medical-universities/crimea-state-medical-university.png"
+import Kazan  from "../../Images/mbbs-in-russia/medical-universities/kazan-federal-university.png"
+import Loba  from "../../Images/mbbs-in-russia/medical-universities/bashkir-state-medical-university.png" 
+import Kabardino from "../../Images/mbbs-in-russia/medical-universities/kabardino-balkarian-state-university.png"
+import KazanState from "../../Images/mbbs-in-russia/medical-universities/bashkir-state-medical-university.png"
+import Kirov from "../../Images/mbbs-in-russia/medical-universities/bashkir-state-medical-university.png"
+import NorthOsset from "../../Images/mbbs-in-russia/medical-universities/bashkir-state-medical-university.png"
+import Ingush from "../../Images/mbbs-in-russia/medical-universities/bashkir-state-medical-university.png"
+import Caucasian from "../../Images/mbbs-in-russia/medical-universities/bashkir-state-medical-university.png"
+import Bashkir from "../../Images/mbbs-in-russia/medical-universities/bashkir-state-medical-university.png"
+import Volgograd from "../../Images/mbbs-in-russia/medical-universities/bashkir-state-medical-university.png"
+import Kemerovo from "../../Images/mbbs-in-russia/medical-universities/bashkir-state-medical-university.png"
 
 const RussianUniverisities = () => {
     const universities = [
         {
           id: 1,
-          title: "Ivane Javakhishvili Tbilisi State University Faculty of Medicine",
-        //   image: ,
-          desc: "Ivane Javakhishvili Tbilisi State University is one of the best medical universities in Georgia for Indian students.",
-          link: "/ivane-javakhishvili",
+          title: "Crimea Federal University",
+          image: Crimea,
+          desc: "Crimea State Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.",
+          link: "/crimea-state-medical-university",
         },
         {
           id: 2,
-          title: "Batumi Shota Rustaveli State Medical University",
-        //   image: ,
-          desc: "Batumi Shota Rustaveli State University is the multifunctional medical school that provides professional and research-based education to UG & PG students.",
-          link: "/batumi-shota-rustaveli-state-medical-university",
+          title: "Kazan Federal University",
+          image: Kazan,
+          desc: "Kazan Federal University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.",
+          link: "/kazan-federal-university",
         },
         {
           id: 3,
-          title: "Akaki Tsereteli State University Faculty of Medicine",
-        //   image: Akaki,
-          desc: "Akaki Tsereteli State University is a multilevel higher education institution that performs academic and professional programs and is engaged in active research activities.",
-          link: "/akaki-tsereteli-state",
+          title: "Lobachevsky State Medical University",
+          image: Loba,
+          desc: "Kabardino Balkarian State Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.",
+          link: "/lobachevsky-state-Medical-University",
         },
         {
           id: 4,
-          title: "Tbilisi State Medical University Faculty of Medicine",
-        //   image: Tbilisi,
-          desc: "Tbilisi State Medical University. The university is one of the leading medical universities of Georgia.",
-          link: "/tbilisi-state-medical-university",
+          title: "Kabardino Balkarian State Medical University",
+          image: Kabardino,
+          desc: "Kabardino Balkarian State Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.",
+          link: "/kabardino-balkariand-state-medical-university",
         },
         {
             id: 5,
-            title: "Caucasus International University Faculty of Medicine",
-            // image: Caucasus,
+            title: "Kazan State Medical University",
+            image: KazanState,
             desc: "Caucasus International University on the faculty of medicine was founded Anatomical Theater and Clinical Skills Center.",
-            link: "/caucasus-international-medical-university",
+            link: "/kazan-state-medical-university",
           },
           
         {
             id: 6,
-            title: "David Tvildiani Medical University AIETI Medical School",
-            // image: David,
+            title: "Kirov State Medical University",
+            image: Kirov,
             desc: "David Tvildiani Medical University is the best medical university in Georgia offering a 6-year MBBS course in English medium & low admission fees for Indian students.",
-            link: "/david-vildiani-medical-university",
+            link: "/kirov-state-medical-university",
           },
           
         {
             id: 7,
-            title: "Petre Shotadze Tbilisi Medical Academy Faculty of Medicine",
-            // image: Petre,
+            title: "North-Ossetian State Medical University",
+            image: NorthOsset,
             desc: "Petre Shotadze Tbilisi Medical Academy is a teaching university, with highly qualified academic staff, and a self-governed higher education institution which conducts its activities in accordance with all applicable laws and regulations.",
-            link: "/petre-shotadze-tbilisi-medical-academy",
+            link: "/north-ossetian-state-medical-university",
           },
           
         {
             id: 8,
-            title: "University of Georgia School of Health Sciences and Public Health",
-            // image: GeorgiaSchool,
+            title: "Ingush State Medical Academy",
+            image: Ingush,
             desc: "School of Health Sciences of the University of Georgia is a growing health school built on the requirements of modern higher education.",
-            link: "/university-of-georgia-school",
+            link: "/ingush-state-medical-academy",
           },
           
         {
             id: 9,
-            title: "European University Faculty of Medicine",
-            // image: European,
+            title: "North Caucasian State Humanitarian Technological Academy",
+            image: Caucasian,
             desc: "European University is an authorized higher education institution with the status of an educational university, which implements higher education programs in accordance with the rules established by law and issues a certificate of qualification recognized by the state.",
-            link: "/european-university",
+            link: "/north-caucasian-state-humanitarian",
           },
           
         {
             id: 10,
-            title: "Georgian American University",
-            // image:Georgian,
+            title: "Bashkir State Medical University",
+            image:Bashkir,
+            desc: "Bashkir State Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.",
+            link: "/bashkir-state-medical-university",
+          },
+          {
+            id: 11,
+            title: "Volgograd State Medical University",
+            image:Volgograd,
             desc: "Georgian American University provides education based on advanced scientific-research and practical-teaching models, leading research and innovative activities",
-            link: "/georgian-american-university",
+            link: "/volgogra-state-medical-university",
+          },
+          {
+            id: 12,
+            title: "Kemerovo State Medical University",
+            image:Kemerovo,
+            desc: "Georgian American University provides education based on advanced scientific-research and practical-teaching models, leading research and innovative activities",
+            link: "/kemerovo-state-medical-university",
           },
       ];
     

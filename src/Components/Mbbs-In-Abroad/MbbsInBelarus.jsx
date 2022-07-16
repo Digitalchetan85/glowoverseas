@@ -1,8 +1,9 @@
 import React from "react";
 import { Image } from "react-bootstrap";
-import Belarusian from "../../Images/mbbs-in-belarus/medical-universities/belarusian-state-medical-university.png"
-import Grodno from "../../Images/mbbs-in-belarus/medical-universities/grodno-state-medical-university.png"
-import Vitebsk from "../../Images/mbbs-in-belarus/medical-universities/vitebsk-state-medical-university.png"
+import Belarusian from "../../Images/mbbs-in-belarus/medical-universities/belarusian-state-medical-university.png";
+import Grodno from "../../Images/mbbs-in-belarus/medical-universities/grodno-state-medical-university.png";
+import Vitebsk from "../../Images/mbbs-in-belarus/medical-universities/vitebsk-state-medical-university.png";
+import FAQ from "../Includes/FAQ";
 
 const MbbsInBelarus = () => {
   return (
@@ -254,50 +255,79 @@ const MbbsInBelarus = () => {
                     </div>
                   </div>
                   <div className="row pt-5">
-                  <div class="col-md-6">
-                                    <div class="university-country">
-                                        <h5 class="pt-2 pb-2 text-center">Belarusian State Medical University</h5>
-                                        {/* <img src="../../Images/mbbs-in-belarus/medical-universities/belarusian-state-medical-university.png" alt="" class="img-fluid" /> */}
-                                        <Image src={Belarusian} alt="" className="img-fluid"></Image>
-                                        <p class="pt-2 pb-2 text-justify">
-                                            Belarusian State Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
-                                        </p>
-                                        {/* <div class="">
+                    <div class="col-md-6">
+                      <div class="university-country">
+                        <h5 class="pt-2 pb-2 text-center">
+                          Belarusian State Medical University
+                        </h5>
+                        {/* <img src="../../Images/mbbs-in-belarus/medical-universities/belarusian-state-medical-university.png" alt="" class="img-fluid" /> */}
+                        <Image
+                          src={Belarusian}
+                          alt=""
+                          className="img-fluid"
+                        ></Image>
+                        <p class="pt-2 pb-2 text-justify">
+                          Belarusian State Medical University is one of the top
+                          Medical University in Ukraine. Get more details on
+                          Fees Structure, Hostel, Indian Food Facility and other
+                          uncleared information.
+                        </p>
+                        {/* <div class="">
                                             <?php include 'templates/university-book-now.php'  ?>
                                             <a href="./mbbs-in-belarus/belarusian-state-medical-university.php" class="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                         </div> */}
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="university-country">
-                                        <h5 class="pt-2 pb-2 text-center">Grodno State Medical University</h5>
-                                        {/* <img src="./images/mbbs-in-belarus/medical-universities/grodno-state-medical-university.png" alt="" class="img-fluid" /> */}
-                                        <Image src={Grodno} alt="" className="img-fluid"></Image>
-                                        <p class="pt-2 pb-2 text-justify">
-                                            Grodno State Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
-                                        </p>
-                                        {/* <div class="">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="university-country">
+                        <h5 class="pt-2 pb-2 text-center">
+                          Grodno State Medical University
+                        </h5>
+                        {/* <img src="./images/mbbs-in-belarus/medical-universities/grodno-state-medical-university.png" alt="" class="img-fluid" /> */}
+                        <Image
+                          src={Grodno}
+                          alt=""
+                          className="img-fluid"
+                        ></Image>
+                        <p class="pt-2 pb-2 text-justify">
+                          Grodno State Medical University is one of the top
+                          Medical University in Ukraine. Get more details on
+                          Fees Structure, Hostel, Indian Food Facility and other
+                          uncleared information.
+                        </p>
+                        {/* <div class="">
                                             <?php include 'templates/university-book-now.php'  ?>
                                             <a href="./mbbs-in-belarus/grodno-state-medical-universiry.php" class="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                         </div> */}
-                                    </div>
-                                </div>
+                        <FAQ />                                        
+                      </div>
+                    </div>
                   </div>
                   <div class="row pt-5">
-                                <div class="col-md-6">
-                                    <div class="university-country">
-                                        <h5 class="pt-2 pb-2 text-center">Vitbsk State Medical University</h5>
-                                        {/* <img src="./images/mbbs-in-belarus/medical-universities/vitebsk-state-medical-university.png" alt="" class="img-fluid" /> */}
-                                        <Image src={Vitebsk} alt="" className="img-fluid"></Image>
-                                        <p class="pt-2 pb-2 text-justify">
-                                            Vitbsk State Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
-                                        </p>
-                                        {/* <div class="">
+                    <div class="col-md-6">
+                      <div class="university-country">
+                        <h5 class="pt-2 pb-2 text-center">
+                          Vitbsk State Medical University
+                        </h5>
+                        {/* <img src="./images/mbbs-in-belarus/medical-universities/vitebsk-state-medical-university.png" alt="" class="img-fluid" /> */}
+                        <Image
+                          src={Vitebsk}
+                          alt=""
+                          className="img-fluid"
+                        ></Image>
+                        <p class="pt-2 pb-2 text-justify">
+                          Vitbsk State Medical University is one of the top
+                          Medical University in Ukraine. Get more details on
+                          Fees Structure, Hostel, Indian Food Facility and other
+                          uncleared information.
+                        </p>
+                        {/* <div class="">
                                             <?php include 'templates/university-book-now.php'  ?>
                                             <a href="./mbbs-in-belarus/vitbsk-state-medical-university.php" class="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                         </div> */}
-                                    </div>
-                                </div>
+                        <FAQ />                
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

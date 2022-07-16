@@ -1,4 +1,6 @@
 import React from "react";
+import FAQ from "../Includes/FAQ";
+import RussianUniverisities from "../Includes/RussianUniverisities";
 
 const MbbsInRussia = () => {
   return (
@@ -55,18 +57,7 @@ const MbbsInRussia = () => {
                           universities occupy the top 30 in the ranking.
                         </p>
                         <p className="pt-2 pb-2 text-justify">
-                          These specific reasons attract the students to a
-                          country like Russia. The Russian service and the
-                          training benefit the students in a great extension and
-                          that helps them in their fruitful career. Russia is a
-                          common destination for students to study MBBS. Other
-                          than Russia there are other countries like China,
-                          Nepal, Germany, Philippines, Ukraine, Bangladesh and
-                          Kyrgyzstan. These countries also provide an affordable
-                          course for students. Even though the duration of the
-                          course is 5.8 years, the international students who
-                          opt to study in Russia are not needed to undergo one
-                          year of the preparatory course.
+                        These specific reasons attract the students to a country like Russia. The Russian service and the training benefit the students in a great extension and that helps them in their fruitful career. Russia is a common destination for students to study MBBS. Other than Russia there are other countries like China, Nepal, Germany, Philippines, Ukraine, Bangladesh and Kyrgyzstan. These countries also provide an affordable course for students. Even though the duration of the course is 5.8 years, the international students who opt to study in Russia are not needed to undergo one year of the preparatory course.
                         </p>
                         <h5 className="pt-2 pb-2">
                           More Information About MBBS In Russia
@@ -423,7 +414,7 @@ const MbbsInRussia = () => {
                 <div className="top-medical-university pt-5 pb-5">
                   <div className="row">
                     <div className="col-md-12">
-                      <h3 className="text-center">MBBS In Georgia Syllabus</h3>
+                      <h3 className="text-center">Top Medical Universities in Russia</h3>
                       <p className="text-justify">
                         Some of the Top Universities which we recommend to study
                         are: -
@@ -586,11 +577,11 @@ const MbbsInRussia = () => {
                       </ul>
 
                       <h3 className="text-center pt-5 pb-3">
-                        Top Medical Universities in Georgia
+                        Top Medical Universities in Russia
                       </h3>
                       <p className="text-justify">
-                        Here are the top Georgia universities for studying MBBS
-                        in Georgia
+                        Here are the top Russia universities for studying MBBS
+                        in Russia
                       </p>
                       <ul className="pt-2 pb-2">
                         <li>
@@ -712,11 +703,13 @@ const MbbsInRussia = () => {
                           </tr>
                         </tbody>
                       </table> */}
+                      
                      
                     </div>
                   </div>
                   <div className="row pt-5">
-                    {/* <RussiaUniversities /> */}
+                    <RussianUniverisities />
+                    <FAQ />
                   </div>
                 </div>
               </div>

@@ -149,6 +149,43 @@ p {
   }
 }
 
+#abt {
+  background: rgba(0,0,0,0.5) url(../src/Images/abt-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 150px;
+  background-blend-mode: multiply;
+
+  .breadcrumb {
+      padding: 0px 0px !important;
+      background: transparent !important;
+      a {
+          color: #fff;
+          &:hover {
+              color: $secondary-color;
+              text-decoration: none;
+          }
+      }
+      .breadcrumb-item {
+          color: #fff;
+          font-weight: 600;
+          &:hover {
+              color: $secondary-color;
+              text-decoration: none;
+          }
+          &::before {
+              color: $secondary-color;
+          }
+          &.active {
+              color: $secondary-color !important;
+          }
+      }
+  }
+  h2, h1 {
+      color: #fff;
+      font-size: 2rem;
+  }
+}
 #abt1 {
   background: rgba(0, 0, 0, 0.5) url(../src/Images/abt-bg.jpg);
   background-repeat: no-repeat;
@@ -300,8 +337,8 @@ p {
   }
   .study-ukraine {
     h4 {
-      background-color: $primary-color;
-      color: white !important;
+      // background-color: $primary-color;
+      color: $info-color !important;
     }
     p {
       font-size: 16px;
@@ -409,6 +446,15 @@ p {
       border-radius: 5px;
 
     }
+    .b-ukraine-image{
+      background-image: url(./Images/mbbs-in-ukraine/mbbs-in-ukraine.png);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border: 2px solid $primary-color;
+      border-radius: 5px;
+
+    }
 
   .map {
     background-image: url(./Images/mbbs-in-ukraine/ukraine-map.png);
@@ -446,7 +492,7 @@ p {
     border: 1px solid $primary-color;
   }
   .card-header {
-    background-color: $primary-color !important;
+    background-color: $info-color !important;
     border-radius: 5px;
   }
   .btn-link {

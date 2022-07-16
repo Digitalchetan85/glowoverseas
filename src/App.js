@@ -10,7 +10,7 @@ import MbbsInChina from "./Components/Mbbs-In-Abroad/MbbsInChina";
 
 import MbbsInGeorgia from "./Components/Mbbs-In-Abroad/MbbsInGeorgia";
 import MbbsInKazakhstan from "./Components/Mbbs-In-Abroad/MbbsInKazakhstan";
-// import YerevanHaybusakUniversity from "./Components/Armenia/YerevanHaybusakUniversity";
+import YerevanHaybusakUniversity from "./Components/Armenia/YerevanHaybusakUniversity";
 // import BelarusianStateMedicalUniversity from "./Components/Belarus/BelarusianStateMedicalUniversity";
 // import VitebskStateMedicalUniversity from "./Components/Belarus/VitebskStateMedicalUniversity";
 // import ChinaMedicalUniversity from "./Components/China/ChinaMedicalUniversity";
@@ -75,10 +75,9 @@ import MbbsInKyrgystan from "./Components/Mbbs-In-Abroad/MbbsInKyrgystan";
 import MbbsInPhillipines from "./Components/Mbbs-In-Abroad/MbbsInPhillipines";
 import MbbsInPoland from "./Components/Mbbs-In-Abroad/MbbsInPoland";
 import MbbsInRussia from "./Components/Mbbs-In-Abroad/MbbsInRussia";
-// import MbbsInUkraine from "./Components/Mbbs-In-Abroad/MbbsInUkraine";
+import MbbsInUkraine from "./Components/Mbbs-In-Abroad/MbbsInUkraine";
 import MbbsInUSA from "./Components/Mbbs-In-Abroad/MbbsInUSA";
 import MbbsInArmenia from "./Components/Mbbs-In-Abroad/MbbsInArmenia";
-import YerevanHaybusakUniversity from "./Components/Armenia/YerevanHaybusakUniversity";
 import YerevanStateMedicalUniversity from "./Components/Armenia/YerevanStateMedicalUniversity";
 import MbbsInEgypt from "./Components/Mbbs-In-Abroad/MbbsInEgypt";
 // import MbbsInBangladesh from "./Components/Mbbs-In-Abroad/MbbsInBangladesh";
@@ -102,35 +101,35 @@ function App() {
             <Route
               path="yerevan-haybusak-university"
               element={<YerevanHaybusakUniversity />}
-            />
+            ></Route>
             <Route
               path="yerevan-state-medical-university"
               element={<YerevanStateMedicalUniversity />}
-            />
+            ></Route>
           </Route>
           {/* <Route
             path="/mbbs-in-bangaladesh"
             element={<MbbsInBangladesh />}
           ></Route> */}
           <Route path="/mbbs-in-belarus" element={<MbbsInBelarus />}>
-        {/* <Route path="/belarusian-state-medical-university" element={<BelarusianStateMedicalUniversity />} />
+            {/* <Route path="/belarusian-state-medical-university" element={<BelarusianStateMedicalUniversity />} />
         <Route path="/grodno-state-medical-university" element={<GrodnoStateMedicalUniversity />} />
         <Route path="/vitebsk-state-medical-university" element={<VitebskStateMedicalUniversity />} /> */}
-        </Route>
-        <Route path="/mbbs-in-china" element={<MbbsInChina />}>
-        {/* <Route path="/china-medical-university" element={<ChinaMedicalUniversityy />} />
+          </Route>
+          <Route path="/mbbs-in-china" element={<MbbsInChina />}>
+            {/* <Route path="/china-medical-university" element={<ChinaMedicalUniversityy />} />
         <Route path="/dalian-medical-university" element={<DalianMedicalUniversity />} />
         <Route path="/fujian-medical-university" element={<FujianMedicalUniversity />} />
         <Route path="/jilin-medical-university" element={<JilinMedicalUniversity />} />
         <Route path="/kunming-medical-university" element={<KunmingMedicalUniversity />} />
         <Route path="/nanjing-medical-university" element={<NanjingMedicalUniversity />} /> */}
-         </Route>      
-        <Route path="/mbbs-in-egypt" element={<MbbsInEgypt />}> 
-        {/* <Route path="/ain-shyams-university" element={<AinShyamsUniversity />} />
+          </Route>
+          <Route path="/mbbs-in-egypt" element={<MbbsInEgypt />}>
+            {/* <Route path="/ain-shyams-university" element={<AinShyamsUniversity />} />
         <Route path="/cairo-university" element={<CairoUniversity />} /> */}
-        </Route>      
-         <Route path="/mbbs-in-georgia" element={<MbbsInGeorgia />}> 
-        {/* <Route path="/akaki-tsereteli-state" element={<AkakiTsereteliState />} />
+          </Route>
+          <Route path="/mbbs-in-georgia" element={<MbbsInGeorgia />}>
+            {/* <Route path="/akaki-tsereteli-state" element={<AkakiTsereteliState />} />
         <Route path="/batumi-shota-rustaveli-state-medical-university" element={<BatumiShotaRustaveliStateMedicalUniversity />} />
         <Route path="/caucasus-international-medical-university" element={<CaucasusInternationalMedicalUniversity />} />
         <Route path="/david-vildiani-medical-university" element={<DavidTvildianiMedicalUniversity />} />
@@ -140,46 +139,48 @@ function App() {
         <Route path="/petre-shotadze-tbilisi-medical-academy" element={<PetreShotadzeTbilisiMedicalAcademy />} />
         <Route path="/tbilisi-state-medical-university" element={<TbilisiStateMedicalUniversity />} />
         <Route path="/university-of-georgia-school" element={<UniversityOfGeorgiaSchool />} /> */}
-        </Route>          
-        <Route path="/mbbs-in-kazakhstan" element={<MbbsInKazakhstan />}> 
-        {/* <Route path="/al-farabi-national-medical-university" element={<AlFarabiNationalMedicalUniversity />} />
+          </Route>
+          <Route path="/mbbs-in-kazakhstan" element={<MbbsInKazakhstan />}>
+            {/* <Route path="/al-farabi-national-medical-university" element={<AlFarabiNationalMedicalUniversity />} />
         <Route path="/international-medical-school" element={<InternationalMedicalSchool />} />
         <Route path="/jsc-national-medical-university" element={<JscNationalMedicalUniversity />} /> */}
-        </Route>  
-        <Route path="/mbbs-in-kyrgystan" element={<MbbsInKyrgystan />}> 
-        {/* <Route path="/osh-state-medical-university" element={<OshStateMedicalUniversity />} />
+          </Route>
+          <Route path="/mbbs-in-kyrgystan" element={<MbbsInKyrgystan />}>
+            {/* <Route path="/osh-state-medical-university" element={<OshStateMedicalUniversity />} />
         <Route path="/salymbekov-university" element={<SalymbekovUniversity />} /> */}
-        </Route>      
-        <Route path="/mbbs-in-phillipines" element={<MbbsInPhillipines />}>
-        {/* <Route path="/ama-university" element={<AmaUniversity />} />
+          </Route>
+          <Route path="/mbbs-in-phillipines" element={<MbbsInPhillipines />}>
+            {/* <Route path="/ama-university" element={<AmaUniversity />} />
         <Route path="/davao-medical-college" element={<DavaoMedicalCollege />} />
         <Route path="/emilio-aguinaldo-college" element={<EmilioAguinaldoCollege />} />
         <Route path="/our-lady-of-fatima-university" element={<OurLadyOfFatimaUniversity  />} />
         <Route path="/university-of-perpetual-help" element={<UniversityOfPerpetualHelp />} /> */}
-          
-           </Route>      
-        <Route path="/mbbs-in-poland" element={<MbbsInPoland />}> 
-        {/* <Route path="/medical-university-of-gdansk" element={<Medicaluniversityofgdansk  />} />
+          </Route>
+          <Route path="/mbbs-in-poland" element={<MbbsInPoland />}>
+            {/* <Route path="/medical-university-of-gdansk" element={<Medicaluniversityofgdansk  />} />
         <Route path="/medical-university-of-warsaw" element={<MedicalUniversityOfWarsaw  />} /> */}
-        </Route>      
-        <Route path="/mbbs-in-russia" element={<MbbsInRussia />}> 
-        {/* <Route path="/bashkir-state-medical-university" element={<BashkirStateMedicalUniversity />} />
+          </Route>
+          <Route path="/mbbs-in-russia" element={<MbbsInRussia />}>
+            {/* <Route path="/bashkir-state-medical-university" element={<BashkirStateMedicalUniversity />} />
         <Route path="/crimea-state-medical-university" element={<CrimeaStateMedicalUniversity />} />
         <Route path="/ingush-state-medical-academy" element={<IngushStateMedicalAcademy />} />
         <Route path="/kabardino-balkariand-state-medical-university" element={<KabardinoBalkarianStateMedicalUniversity />} />
         <Route path="/kazan-federal-university" element={<KazanFederalUniversity />} />
         <Route path="/kazan-state-medical-university" element={<KazanStateMedicalUniversity />} />
         <Route path="/kirov-state-medical-university" element={<KirovStateMedicalUniversity />} />
+                <Route path="/krusk-state-medical-university" element={<KruskStateMedicalUniversity  />} />
         <Route path="/kemerovo-state-medical-university" element={<Kemerovo State Medical University  />} />
         <Route path="/lobachevsky-state-Medical-University" element={<LobachevskyStateMedicalUniversity />} />
           <Route path="/volgogra-state-medical-university" element={<VolgograStateMedicalUniversity />} />
           <Route path="/north-caucasian-state-humanitarian" element={<NorthCaucasianStateHumanitarian />} />
-          <Route path="north-ossetian-state-medical-university" element={<NorthOssetianStateMedicalUniversity />} /> */}
-
-
-        </Route>              
-        {/* <Route path="/mbbs-in-ukraine" element={<MbbsInUkraine />}> 
-        <Route path="/black-sea-national-medical-university" element={<BlackSeaNationalMedicalUniversity />} />
+          <Route path="/north-ossetian-state-medical-university" element={<NorthOssetianStateMedicalUniversity />} /> */}
+          </Route>
+          <Route path="/mbbs-in-ukraine" element={<MbbsInUkraine />}> 
+        {/* <Route path="/black-sea-national-medical-university" element={<BlackSeaNationalMedicalUniversity />} />
+         <Route path="/ternopil-state-medical-university" element={<TernopilStateMedicalUniversity />} />
+          <Route path="/odessa-national
+" element={<OdessaNational
+ />} />
         <Route path="/bukovinian-state-medical-university" element={<BukovinianStateMedicalUniversity />} />
         <Route path="/dnipropetrovsk-state-medical-university" element={<DnipropetrovskStateMedicalUniversity />} />
          <Route path="/ivano-frankvisk-national-medical-university" element={<IvanoFrankviskNationalMedicalUniversity />} />
@@ -192,10 +193,10 @@ function App() {
                  <Route path="/taras-shevchenko-national-medical-university" element={<TarasShevchenkoNationalMedicalUniversity />} />  
                  <Route path="/vinnitsa-national-medical-university" element={<VinnitsaNationalMedicalUniversity />} />
                          <Route path="/v-n-karazin-kharkiv-national-medical-university" element={<VNKarazinKharkivNationalMedicalUniversity />} />
-                         <Route path="/zaporizhzhia-state-medical-university" element={<ZaporizhzhiaStateMedicalUniversity />} />
+                         <Route path="/zaporizhzhia-state-medical-university" element={<ZaporizhzhiaStateMedicalUniversity />} /> */}
         </Route>      
         
-        <Route path="/mbbs-uzbekistan" element={<MbbsUzbekistan />}> 
+        {/* <Route path="/mbbs-uzbekistan" element={<MbbsUzbekistan />}> 
         <Route path="/fergana-medical-institute" element={<FerganaMedicalInstitute />} />
         </Route> */}
           <Route path="/mbbs-in-usa" element={<MbbsInUSA />} />

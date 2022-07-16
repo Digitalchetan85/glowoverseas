@@ -3,7 +3,7 @@ import React from 'react'
 const AinShyamsUniversity = () => {
   return (
     <>
-<div id="abt">
+    <div id="abt">
         <div className="container">
             <div className="row">
                 <div className="col-md-12">

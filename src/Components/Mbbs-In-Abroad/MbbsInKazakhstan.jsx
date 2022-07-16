@@ -3,6 +3,7 @@ import { Image } from "react-bootstrap";
 import Farabi from "../../Images/mbbs-in-kazakhstan/medical-universities/al-farabi-kazakh-national-university-faculty-of-medicine-and-health-care.png"
 import International from "../../Images/mbbs-in-kazakhstan/medical-universities/international-medical-school.png"
 import JSC from "../../Images/mbbs-in-kazakhstan/medical-universities/jsc-national-medical-university.png"
+import FAQ from "../Includes/FAQ";
 
 const MbbsInKazakhstan = () => {
   return (
@@ -763,6 +764,7 @@ const MbbsInKazakhstan = () => {
                       </div>
                     </div>
                   </div>
+                  <FAQ />
                 </div>
               </div>
             </div>

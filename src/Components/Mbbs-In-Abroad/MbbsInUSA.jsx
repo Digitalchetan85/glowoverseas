@@ -1,6 +1,7 @@
 import React from "react";
 import { Image } from "react-bootstrap";
 import Texila from "../../Images/mbbs-in-usa/medical-universities/texila.png";
+import FAQ from "../Includes/FAQ";
 
 const MbbsInUSA = () => {
   return (
@@ -667,7 +668,9 @@ const MbbsInUSA = () => {
                       </div>
                     </div>
                   </div>
+
                 </div>
+                <FAQ />
               </div>
             </div>
           </div>

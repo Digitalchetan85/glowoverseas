@@ -3,6 +3,7 @@ import { Image } from "react-bootstrap";
 import ArmeniaMap from '../../Images/mbbs-in-armenia/mbbs-in-armenia.png'
 import Yerevan from "../../Images/mbbs-in-armenia/medical-universities/yerevan-haybusak-university-faculty-of-medicine.png"
 import Yerevan1 from "../../Images/mbbs-in-armenia/medical-universities/yerevan-state-medical-university.png"
+import FAQ from "../Includes/FAQ";
 
 const MbbsInArmenia = () => {
   return (
@@ -193,6 +194,8 @@ const MbbsInArmenia = () => {
                           </a>
                         </li>
                       </ul>
+
+                      <FAQ />
                     </div>
                   </div>
                   <div className="row pt-5">

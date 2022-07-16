@@ -94,6 +94,7 @@ const Menubar = () => {
                   title="MBBS in Ukraine"
                   id="collasible-nav-dropdown"
                   drop="end"
+                  href="/mbbs-in-ukraine"
                 >
                   <NavDropdown.Item href="/black-sea-national-medical-university">
                   Black Sea National Medical University
@@ -160,6 +161,7 @@ const Menubar = () => {
                   title="MBBS in USA"
                   id="collasible-nav-dropdown"
                   drop="end"
+                  href="/mbbs-in-usa"
                 >
                   {/* <NavDropdown.Item href="">
                     Spartan University of Health and Science
@@ -178,6 +180,7 @@ const Menubar = () => {
                   title="MBBS in Poland"
                   id="collasible-nav-dropdown"
                   drop="end"
+                  href="/mbbs-in-poland"
                 >
                   <NavDropdown.Item href="/medical-university-of-gdansk">
                     Medical University of Gdansk
@@ -192,6 +195,7 @@ const Menubar = () => {
                   title="MBBS in Kyrgystan"
                   id="collasible-nav-dropdown"
                   drop="end"
+                  href="/mbbs-in-kyrgystan"
                 >
                   <NavDropdown.Item href="/osh-state-medical-university">
                     Osh State Medical University
@@ -206,6 +210,7 @@ const Menubar = () => {
                   title="MBBS in Kazakhstan"
                   id="collasible-nav-dropdown"
                   drop="end"
+                  href="/mbbs-in-kazakhstan"
                 >
                   <NavDropdown.Item href="/international-medical-school">
                     International Medical School
@@ -225,6 +230,7 @@ const Menubar = () => {
                   title="MBBS in Georgia"
                   id="collasible-nav-dropdown"
                   drop="end"
+                  href="/mbbs-in-georgia"
                 >
                   <NavDropdown.Item href="">
                     New Vision University
@@ -277,6 +283,7 @@ const Menubar = () => {
                   title="MBBS in Philippines"
                   id="collasible-nav-dropdown"
                   drop="end"
+                  href="/mbbs-in-phillipines"
                 >
                   <NavDropdown.Item href="/ama-university">AMA University</NavDropdown.Item>
                   <NavDropdown.Divider />
@@ -301,6 +308,7 @@ const Menubar = () => {
                   title="MBBS in Russia"
                   id="collasible-nav-dropdown"
                   drop="end"
+                  href="/mbbs-in-russia"
                 >
                   <NavDropdown.Item href="/crimea-state-medical-university">
                     Crimea State Medical University
@@ -348,17 +356,17 @@ const Menubar = () => {
                 </NavDropdown>
 
                 <NavDropdown
-                href="/mbbs-in-armenia"
+                href="mbbs-in-armenia"
                   title="MBBS in Armenia"
                   id="collasible-nav-dropdown"
                   drop="end"
                 >
-                  <NavDropdown.Item href="/yerevan-haybusak-university">
+                  <NavDropdown.Item href="mbbs-in-armenia/yerevan-haybusak-university">
                     Yerevan Haybusak University Faculty of Medicine
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="/yerevan-state-medical-university">
-                    Yerevan State Medical University
+                  <NavDropdown.Item href="mbbs-in-armenia/yerevan-state-medical-university">
+                  Yerevan State Medical University
                   </NavDropdown.Item>
                 </NavDropdown>
 
@@ -366,6 +374,7 @@ const Menubar = () => {
                   title="MBBS in Egypt"
                   id="collasible-nav-dropdown"
                   drop="end"
+                  href="/mbbs-in-egypt"
                 >
                   <NavDropdown.Item href="/ain-shyams-university">
                     Ain Shyams University Faculty of Medicine
@@ -380,6 +389,7 @@ const Menubar = () => {
                   title="MBBS in China"
                   id="collasible-nav-dropdown"
                   drop="end"
+                  href="/mbbs-in-china"
                 >
                   <NavDropdown.Item href="/china-medical-university">
                     China Medical University
@@ -409,6 +419,7 @@ const Menubar = () => {
                   title="MBBS in Belarus"
                   id="collasible-nav-dropdown"
                   drop="end"
+                  href="/mbbs-in-belarus"
                 >
                   <NavDropdown.Item href="/belarusian-state-medical-university">
                     Belarusian State Medical University

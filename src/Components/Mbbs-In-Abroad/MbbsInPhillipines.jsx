@@ -5,6 +5,7 @@ import Davao from "../../Images/mbbs-in-philippines/medical-universities/davao-m
 import Emilio from "../../Images/mbbs-in-philippines/medical-universities/emilio-aguinaldo-college-school-of-medicine.png"
 import Lady from "../../Images/mbbs-in-philippines/medical-universities/our-lady-of-fatima-university-college-of-medicine.png"
 import Perpetual from "../../Images/mbbs-in-philippines/medical-universities/university-of-perpetual-help.png"
+import FAQ from "../Includes/FAQ";
 
 const MbbsInPhillipines = () => {
   return (
@@ -652,6 +653,7 @@ const MbbsInPhillipines = () => {
                     </div>
                   </div>
                 </div>
+                <FAQ />
               </div>
             </div>
           </div>

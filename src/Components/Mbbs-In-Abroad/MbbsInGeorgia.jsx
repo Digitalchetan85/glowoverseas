@@ -1,4 +1,5 @@
 import React from "react";
+import FAQ from "../Includes/FAQ";
 import GerogiaUniversities from "../Includes/GerogiaUniversities";
 
 const MbbsInGeorgia = () => {
@@ -706,6 +707,7 @@ const MbbsInGeorgia = () => {
                   </div>
                   <div className="row pt-5">
                     <GerogiaUniversities />
+                    <FAQ />
                   </div>
                 </div>
               </div>
