@@ -39,9 +39,9 @@ const MbbsInArmenia = () => {
                   <div className="row">
                     <div className="col-md-12">
                       <div className="pb-2">
-                        <h4 className="text-start text-info pt-2 pb-2">
+                        <h2 className="text-start text-info pt-2 pb-2">
                           MBBS in Armenia
-                        </h4>
+                        </h2>
                         {/* <img
                           src={ArmeniaMap}
                           alt=""
@@ -73,10 +73,10 @@ const MbbsInArmenia = () => {
                           other countries people. The first church in the world
                           was built in Armenia.
                         </p>
-                        <h2 className="text-center pb-2 pt-2">
+                        <h3 className="pb-2 pt-4">
                           Advantages for Studying MBBS in Armenia
-                        </h2>
-                        <ul className="pt-2 pb-2">
+                        </h3>
+                        <ul className="pb-2">
                           <li>Affordable course fee</li>
                           <li>More than 2000 Indian students studying.</li>
                           <li>Global Recognized Universities</li>
@@ -90,7 +90,7 @@ const MbbsInArmenia = () => {
                           <li>Separate Compartments for Boys and Girls.</li>
                         </ul>
                         <div className="text-center">
-                          {/* <?php include 'templates/free-councelling.php' ?> */}
+                          {/* <?php include 'templates/free-councelling' ?> */}
                         </div>
                       </div>
                     </div>
@@ -184,18 +184,16 @@ const MbbsInArmenia = () => {
                       </p>
                       <ul className="pt-2 pb-2">
                         <li>
-                          <a href="mbbs-in-armenia/yerevan-haybusak-university-faculty-of-medicine.php">
+                          <a className="text-decoration-none" href="mbbs-in-armenia/yerevan-haybusak-university-faculty-of-medicine">
                             Yerevan Haybusak University Faculty of Medicine
                           </a>
                         </li>
                         <li>
-                          <a href="mbbs-in-armenia/yerevan-state-medical-university.php">
+                          <a className="text-decoration-none" href="mbbs-in-armenia/yerevan-state-medical-university">
                             Yerevan State Medical University
                           </a>
                         </li>
                       </ul>
-
-                      <FAQ />
                     </div>
                   </div>
                   <div className="row pt-5">
@@ -217,9 +215,9 @@ const MbbsInArmenia = () => {
                           uncleared information.
                         </p>
                         <div className="">
-                          {/* <?php include 'templates/university-book-now.php'  ?> */}
+                          {/* <?php include 'templates/university-book-now'  ?> */}
                           <a
-                            href="mbbs-ins-armenia/yerevan-haybusak-medical-university.php"
+                            href="mbbs-ins-armenia/yerevan-haybusak-medical-university"
                             className="pt-2 pb-2 btn btn-warning m-2 float-right"
                           >
                             Read more
@@ -245,9 +243,9 @@ const MbbsInArmenia = () => {
                           uncleared information.
                         </p>
                         <div className="">
-                          {/* <?php include 'templates/university-book-now.php'  ?> */}
+                          {/* <?php include 'templates/university-book-now'  ?> */}
                           <a
-                            href="mbbs-in-armenia/yerevan-state-medical-university.php"
+                            href="mbbs-in-armenia/yerevan-state-medical-university"
                             className="pt-2 pb-2 btn btn-warning m-2 float-right"
                           >
                             Read more
@@ -259,6 +257,7 @@ const MbbsInArmenia = () => {
                 </div>
               </div>
             </div>
+            <FAQ />
             {/* <div className="col-md-4">
               <div className="bord-1">
                 <div id="four" className="pb-5">
@@ -332,7 +331,7 @@ const MbbsInArmenia = () => {
                     </div>
                   </div>
                 </div>
-                {/* <?php include 'templates/sidebar-country-top-medical-university.php' ?>
+                {/* <?php include 'templates/sidebar-country-top-medical-university' ?>
               </div>
             </div> */}
           </div>

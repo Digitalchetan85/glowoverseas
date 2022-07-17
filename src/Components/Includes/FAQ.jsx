@@ -6,15 +6,13 @@ const FAQ = () => {
     <>
       <section id="counselling" className="bg-light">
         <Container>
-          <Row className="justify-content-center">
-            <Col md={12}>
-              <div className="py-md-3">
-                <h2 className="text-center text-info py-md-3">
-                  Free Counselling Session
-                </h2>
-                <h3 className="text-secondary py-md-1">
-                  Online Counselling Session
-                </h3>
+          <Row className="justify-content-center g-3">
+            <h2 className="text-center text-info py-md-3">
+              Free Counselling Session
+            </h2>
+            <Col md={6}>
+              <div className="py-3">
+                <h3 className="py-md-1">Online Counselling Session</h3>
                 <p className="text-justify">
                   <b>Glow overseas education </b> conducts online counselling by
                   various experts who impart complete info MBBS in abroad MBBS
@@ -28,9 +26,11 @@ const FAQ = () => {
                     glowoverseasedu@gmail.com
                   </b>
                 </p>
-                <h3 className="text-secondary py-md-1">
-                  Tele-Counselling Session
-                </h3>
+              </div>
+            </Col>
+            <Col md={6}>
+              <div className="py-3">
+                <h3 className="py-md-1">Tele-Counselling Session</h3>
                 <p className="text-justify">
                   <b>GLOW OVERSEAS EDUCATION </b>has an extremely knowledgeable
                   and experienced team of MBBS counsellors Get in touch with one
@@ -39,9 +39,11 @@ const FAQ = () => {
                   will be more than happy to solve your doubts and help you in
                   the field of medicine.
                 </p>
-                <h3 className="text-secondary py-md-1">
-                  Personal Counselling Session
-                </h3>
+              </div>
+            </Col>
+            <Col md={6}>
+              <div className="py-3">
+                <h3 className="py-md-1">Personal Counselling Session</h3>
                 <p className="text-justify">
                   GLOW OVERSEAS EDUCATION HAPPILY WELCOME YOU TO VISIT OUR
                   OFFICE <br />
@@ -58,9 +60,11 @@ const FAQ = () => {
                   book your appointment our friendly counsellor shall arrange
                   personal counselling session
                 </p>
-                <h3 className="text-secondary py-md-1">
-                  Home Counselling Session
-                </h3>
+              </div>
+            </Col>
+            <Col md={6}>
+              <div className="py-3">
+                <h3 className="py-md-1">Home Counselling Session</h3>
                 <p class="text-justify">
                   <b> GLOW OVERSEAS EDUCATION </b>experts visit your place and
                   give you counselling and complete info MBBS in abroad MBBS in
@@ -85,7 +89,7 @@ const FAQ = () => {
               <div className="">
                 <h3 className="text-info py-md-1">Important FAQ</h3>
                 <Accordion>
-                  <Accordion.Item eventKey="0" className="mb-3">
+                  <Accordion.Item eventKey="0">
                     <Accordion.Header>
                       Can I practice in India on my return, after MBBS/MD degree
                       from abroad?
@@ -101,7 +105,7 @@ const FAQ = () => {
                       India.
                     </Accordion.Body>
                   </Accordion.Item>
-                  <Accordion.Item eventKey="1" className="mb-3">
+                  <Accordion.Item eventKey="1">
                     <Accordion.Header>
                       Can I get a job in government hospitals or applied in
                       medical institution of India?
@@ -113,7 +117,7 @@ const FAQ = () => {
                       a qualified doctor.
                     </Accordion.Body>
                   </Accordion.Item>
-                  <Accordion.Item eventKey="2" className="mb-3">
+                  <Accordion.Item eventKey="2">
                     <Accordion.Header>
                       How many times can I appear in the screening test?
                     </Accordion.Header>
@@ -124,7 +128,7 @@ const FAQ = () => {
                       class 12 test.it is not an elimination test such as PMT.
                     </Accordion.Body>
                   </Accordion.Item>
-                  <Accordion.Item eventKey="3" className="mb-3">
+                  <Accordion.Item eventKey="3">
                     <Accordion.Header>
                       WHAT KIND OF FOOD WILL I GET IN FOREIGN COUNTRIES?
                     </Accordion.Header>
@@ -149,7 +153,7 @@ const FAQ = () => {
                       </ul>
                     </Accordion.Body>
                   </Accordion.Item>
-                  <Accordion.Item eventKey="4" className="mb-3">
+                  <Accordion.Item eventKey="4">
                     <Accordion.Header>
                       ARE THERE ANY INDIAN STUDENTS ALREADY STUDYING IN THESE
                       COLLEGES?
@@ -160,7 +164,7 @@ const FAQ = () => {
                       from India..
                     </Accordion.Body>
                   </Accordion.Item>
-                  <Accordion.Item eventKey="5" className="mb-3">
+                  <Accordion.Item eventKey="5">
                     <Accordion.Header>
                       CAN I GET BANK LOAN AND TO WHAT EXTENT?
                     </Accordion.Header>
@@ -174,7 +178,7 @@ const FAQ = () => {
                       nationalized banks in your area to find out more.
                     </Accordion.Body>
                   </Accordion.Item>
-                  <Accordion.Item eventKey="6" className="mb-3">
+                  <Accordion.Item eventKey="6">
                     <Accordion.Header>
                       IS FOREIGN MEDICAL COLLEGES ARE LISTED IN THE WORLD
                       ORGANIZATION [WHO]DIRECTORY?
@@ -185,7 +189,7 @@ const FAQ = () => {
                       given by various countries.
                     </Accordion.Body>
                   </Accordion.Item>
-                  <Accordion.Item eventKey="7" className="mb-3">
+                  <Accordion.Item eventKey="7">
                     <Accordion.Header>
                       CAN I DO MASTERS OR POST GRADUATION THERE?
                     </Accordion.Header>
@@ -197,7 +201,7 @@ const FAQ = () => {
                       also the masters and PHD level.
                     </Accordion.Body>
                   </Accordion.Item>
-                  <Accordion.Item eventKey="8" className="mb-3">
+                  <Accordion.Item eventKey="8">
                     <Accordion.Header>
                       IS THE BACHELOR’S DEGREE RECOGNIZED IN INDIA AND ABROAD?
                     </Accordion.Header>
@@ -223,7 +227,7 @@ const FAQ = () => {
                       </ol>
                     </Accordion.Body>
                   </Accordion.Item>
-                  <Accordion.Item eventKey="9" className="mb-3">
+                  <Accordion.Item eventKey="9">
                     <Accordion.Header>
                       HOW TO APPLY FOR PASSPORT AND WHAT DOCUMENT WOULD I NEED?
                     </Accordion.Header>
@@ -241,7 +245,7 @@ const FAQ = () => {
                     </Accordion.Body>
                   </Accordion.Item>
 
-                  <Accordion.Item eventKey="10" className="mb-3">
+                  <Accordion.Item eventKey="10">
                     <Accordion.Header>
                       What are the facilities in hostel?
                     </Accordion.Header>
@@ -262,7 +266,7 @@ const FAQ = () => {
                     </Accordion.Body>
                   </Accordion.Item>
 
-                  <Accordion.Item eventKey="11" className="mb-3">
+                  <Accordion.Item eventKey="11">
                     <Accordion.Header>
                       CAN MY PARENTS VISIT ME IN UNIVERSITY ABROAD? CAN I TRAVEL
                       IN MY HOLIDAYS OR STAY BACK IN ABROAD?
@@ -284,31 +288,73 @@ const FAQ = () => {
                       </ul>
                     </Accordion.Body>
                   </Accordion.Item>
-                  <Accordion.Item eventKey="12" className="mb-3">
-                    <Accordion.Header>IS THERE ANY LOCAL BODIES WHO CAN HELP ME PROVIDING THE OVERALL INFO?</Accordion.Header>
-                    <Accordion.Body>We have representatives in various cities. Please send your query to us and we shall send it to our local representation office and they would to getting in touch with you.</Accordion.Body>
+                  <Accordion.Item eventKey="12">
+                    <Accordion.Header>
+                      IS THERE ANY LOCAL BODIES WHO CAN HELP ME PROVIDING THE
+                      OVERALL INFO?
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      We have representatives in various cities. Please send
+                      your query to us and we shall send it to our local
+                      representation office and they would to getting in touch
+                      with you.
+                    </Accordion.Body>
                   </Accordion.Item>
-                  <Accordion.Item eventKey="13" className="mb-3">
-                    <Accordion.Header>WHAT ARE THE BENEFITS GIVEN TO STUDENTS JOINING THROUGHT OUR COMPANY?</Accordion.Header>
-                    <Accordion.Body>We are authorized by the universities we have over a decade of experience in dealing with students. We have [plenty of information and tips of value to students and parents for the course. We provide networking with doctors in USA & UK for those wanting to go overseas for jobs</Accordion.Body>
+                  <Accordion.Item eventKey="13">
+                    <Accordion.Header>
+                      WHAT ARE THE BENEFITS GIVEN TO STUDENTS JOINING THROUGHT
+                      OUR COMPANY?
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      We are authorized by the universities we have over a
+                      decade of experience in dealing with students. We have
+                      [plenty of information and tips of value to students and
+                      parents for the course. We provide networking with doctors
+                      in USA & UK for those wanting to go overseas for jobs
+                    </Accordion.Body>
                   </Accordion.Item>
-                  <Accordion.Item eventKey="14" className="mb-3">
-                    <Accordion.Header>IS VEGETRAIAN FOODS AVAILABLE?</Accordion.Header>
-                    <Accordion.Body>Yes. Vegetarian food is available. If needed: pure vegetarians can cook their own food so that they happy about what they eat.</Accordion.Body>
+                  <Accordion.Item eventKey="14">
+                    <Accordion.Header>
+                      IS VEGETRAIAN FOODS AVAILABLE?
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      Yes. Vegetarian food is available. If needed: pure
+                      vegetarians can cook their own food so that they happy
+                      about what they eat.
+                    </Accordion.Body>
                   </Accordion.Item>
-                  <Accordion.Item eventKey="15" className="mb-3">
-                    <Accordion.Header>Can I do my internship from my country?</Accordion.Header>
-                    <Accordion.Body>Yes, but it also depends on the university applied for and also the medical board of the country where the students want to do the internships.</Accordion.Body>
+                  <Accordion.Item eventKey="15">
+                    <Accordion.Header>
+                      Can I do my internship from my country?
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      Yes, but it also depends on the university applied for and
+                      also the medical board of the country where the students
+                      want to do the internships.
+                    </Accordion.Body>
                   </Accordion.Item>
 
-                  <Accordion.Item eventKey="16" className="mb-3">
-                    <Accordion.Header>HOW STUDENTS IS GOING TO PAY THE TUTION FEES AND OTHERS FEES?</Accordion.Header>
-                    <Accordion.Body>They can be paid directly to the university applied for and also the medical board of the country where the students want to do the internships.</Accordion.Body>
+                  <Accordion.Item eventKey="16">
+                    <Accordion.Header>
+                      HOW STUDENTS IS GOING TO PAY THE TUTION FEES AND OTHERS
+                      FEES?
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      They can be paid directly to the university applied for
+                      and also the medical board of the country where the
+                      students want to do the internships.
+                    </Accordion.Body>
                   </Accordion.Item>
 
-                  <Accordion.Item eventKey="17" className="mb-3">
-                    <Accordion.Header>IS THERE ANY SPECIAL PROVISION FOR INTERNATIONAL STUDENTS TO SLOVE THEIR ANY PERSONAL PROBLEMS OR QUERIES?</Accordion.Header>
-                    <Accordion.Body>Every university has an international student’s department where students could address their problems directly.</Accordion.Body>
+                  <Accordion.Item eventKey="17">
+                    <Accordion.Header>
+                      IS THERE ANY SPECIAL PROVISION FOR INTERNATIONAL STUDENTS
+                      TO SLOVE THEIR ANY PERSONAL PROBLEMS OR QUERIES?
+                    </Accordion.Header>
+                    <Accordion.Body>
+                      Every university has an international student’s department
+                      where students could address their problems directly.
+                    </Accordion.Body>
                   </Accordion.Item>
                 </Accordion>
               </div>

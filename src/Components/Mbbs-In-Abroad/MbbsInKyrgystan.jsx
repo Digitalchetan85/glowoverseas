@@ -287,7 +287,7 @@ const MbbsInKyrgystan = () => {
                             84.77, Soma
                           </p>
                         </div>
-                        <div className="usa-map">
+                        <div className="kyrgyzstan-map">
                           <p className="text-white text-center">
                             Population – 64,6 Lakhs
                             <br />

@@ -1,4 +1,7 @@
 import React from 'react'
+import { Image } from 'react-bootstrap'
+import Img1 from '../../Images/mbbs-in-philippines/medical-universities/ama-school-of-medicine.png'
+import Process from '../../Images/admission-process.png'
 
 const AmaUniversity = () => {
   return (
@@ -25,7 +28,7 @@ const AmaUniversity = () => {
     <div id="country" className="pt-5 pb-5">
         <div className="container-fluid">
             <div className="row">
-                <div className="col-md-8">
+                <div className="col-md-12">
                     <div className="container">
                         <div className="border p-2 m-1">
                             <div className="row">
@@ -99,7 +102,7 @@ const AmaUniversity = () => {
                             National currency is Pesso.1 USD = 8, Pesso
                           </p>
                         </div>
-                        <div className="usa-map">
+                        <div className="philippines-map">
                           <p className="text-white text-center">
                             Population – 10.81 Crores
                             <br />
@@ -223,12 +226,12 @@ const AmaUniversity = () => {
                                                 <div className="col-md-12">
                                                     <div className="university">
                                                         <h5 className="pt-2 pb-2 text-center">Davao Medical College</h5>
-                                                        <img src="../images/mbbs-in-philippines/medical-universities/davao-medical-school-foundation-college-of-medicine.png" alt="" className="img-fluid">
+                                                        <img src="../images/mbbs-in-philippines/medical-universities/davao-medical-school-foundation-college-of-medicine.png" alt="" className="img-fluid"/>
                                                         <p className="pt-2 pb-2 text-justify">
                                                             Davao Medical College is one of the top Medical University in Philippines. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
                                                         </p>
                                                         <div className="">
-                                                            <?php include '../templates/university-book-now.php'  ?>
+                                                            
                                                             <a href="../mbbs-in-philippines/davao-medical-college.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                                         </div>
                                                     </div>
@@ -240,12 +243,12 @@ const AmaUniversity = () => {
                                                 <div className="col-md-12">
                                                     <div className="university">
                                                         <h5 className="pt-2 pb-2 text-center">Emilio Aguinaldo College of Medicine</h5>
-                                                        <img src="../images/mbbs-in-philippines/medical-universities/emilio-aguinaldo-college-school-of-medicine.png" alt="" className="img-fluid">
+                                                        <img src="../images/mbbs-in-philippines/medical-universities/emilio-aguinaldo-college-school-of-medicine.png" alt="" className="img-fluid" />
                                                         <p className="pt-2 pb-2 text-justify">
                                                             Emilio Aguinaldo College of Medicine is one of the top Medical University in Philippines. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
                                                         </p>
                                                         <div className="">
-                                                            <?php include '../templates/university-book-now.php'  ?>
+                                                            
                                                             <a href="../mbbs-in-philippines/emilio-aguinaldo-college-of-medicine.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                                         </div>
                                                     </div>
@@ -257,12 +260,12 @@ const AmaUniversity = () => {
                                                 <div className="col-md-12">
                                                     <div className="university">
                                                         <h5 className="pt-2 pb-2 text-center">Our Lady of Fatima University</h5>
-                                                        <img src="../images/mbbs-in-philippines/medical-universities/our-lady-of-fatima-university-college-of-medicine.png" alt="" className="img-fluid">
+                                                        <img src="../images/mbbs-in-philippines/medical-universities/our-lady-of-fatima-university-college-of-medicine.png" alt="" className="img-fluid"/>
                                                         <p className="pt-2 pb-2 text-justify">
                                                             Our Lady of Fatima University is one of the top Medical University in Philippines. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
                                                         </p>
                                                         <div className="">
-                                                            <?php include '../templates/university-book-now.php'  ?>
+                                                            
                                                             <a href="../mbbs-in-philippines/our-lady-of-fatima-university.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                                         </div>
                                                     </div>
@@ -274,12 +277,12 @@ const AmaUniversity = () => {
                                                 <div className="col-md-12">
                                                     <div className="university">
                                                         <h5 className="pt-2 pb-2 text-center">University of Perpetual Help</h5>
-                                                        <img src="./images/mbbs-in-philippines/medical-universities/university-of-perpetual-help.png" alt="" className="img-fluid">
+                                                        <img src="./images/mbbs-in-philippines/medical-universities/university-of-perpetual-help.png" alt="" className="img-fluid" />
                                                         <p className="pt-2 pb-2 text-justify">
                                                             University of Perpetual Help is one of the top Medical University in Philippines. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
                                                         </p>
                                                         <div className="">
-                                                            <?php include '../templates/university-book-now.php'  ?>
+                                                            
                                                             <a href="../mbbs-in-philippines/university-of-perpetual-help.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                                         </div>
                                                     </div>
@@ -297,12 +300,12 @@ const AmaUniversity = () => {
                                             <div className="col-md-12">
                                                 <div className="university">
                                                     <h5 className="pt-2 pb-2 text-center">Study MBBS in USA</h5>
-                                                    <img src="../images/mbbs-in-usa/medical-universities/spartan-health-sciences-university.png" alt="" className="img-fluid">
+                                                    <img src="../images/mbbs-in-usa/medical-universities/spartan-health-sciences-university.png" alt="" className="img-fluid" />
                                                     <p className="pt-2 pb-2 text-justify">
                                                     Spartan University of Health and Science is one of the top Medical University in USA. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
                                                     </p>
                                                     <div className="">
-                                                        <?php include '../templates/university-book-now.php'  ?>
+                                                        
                                                         <a href="../mbbs-in-usa.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                                     </div>
                                                 </div>
@@ -314,12 +317,12 @@ const AmaUniversity = () => {
                                             <div className="col-md-12">
                                                 <div className="university">
                                                     <h5 className="pt-2 pb-2 text-center">Study MBBS in Poland</h5>
-                                                    <img src="../images/mbbs-in-poland/medical-universities/medical-university-of-gdansk.png" alt="" className="img-fluid">
+                                                    <img src="../images/mbbs-in-poland/medical-universities/medical-university-of-gdansk.png" alt="" className="img-fluid"/>
                                                     <p className="pt-2 pb-2 text-justify">
                                                     Medical University of Gdansk one of the top Medical University in Poland. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
                                                     </p>
                                                     <div className="">
-                                                        <?php include '../templates/university-book-now.php'  ?>
+                                                        
                                                         <a href="../mbbs-in-poland.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                                     </div>
                                                 </div>
@@ -331,12 +334,12 @@ const AmaUniversity = () => {
                                             <div className="col-md-12">
                                                 <div className="university">
                                                     <h5 className="pt-2 pb-2 text-center">Study MBBS in Kyrgyzstan</h5>
-                                                    <img src="../images/mbbs-in-kyrgyzstan/medical-universities/osh-state-medical-university.png" alt="" className="img-fluid">
+                                                    <img src="../images/mbbs-in-kyrgyzstan/medical-universities/osh-state-medical-university.png" alt="" className="img-fluid"/>
                                                     <p className="pt-2 pb-2 text-justify">
                                                     Osh State Medical University one of the top Medical University in Kyrgyzstan. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
                                                     </p>
                                                     <div className="">
-                                                        <?php include '../templates/university-book-now.php'  ?>
+                                                        
                                                         <a href="../mbbs-in-kyrgyzstan.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                                     </div>
                                                 </div>
@@ -348,12 +351,12 @@ const AmaUniversity = () => {
                                             <div className="col-md-12">
                                                 <div className="university">
                                                     <h5 className="pt-2 pb-2 text-center">Study MBBS in Georgia</h5>
-                                                    <img src="../images/mbbs-in-georgia/medical-universities/batumi-shota-rustaveli-state-university-faculty-of-natural-sciences-and-health-care.png" alt="" className="img-fluid">
+                                                    <img src="../images/mbbs-in-georgia/medical-universities/batumi-shota-rustaveli-state-university-faculty-of-natural-sciences-and-health-care.png" alt="" className="img-fluid"/>
                                                     <p className="pt-2 pb-2 text-justify">
                                                     Batumi Shota Rustaveli State Medical University one of the top Medical University in Georgia. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
                                                     </p>
                                                     <div className="">
-                                                        <?php include '../templates/university-book-now.php'  ?>
+                                                        
                                                         <a href="../mbbs-in-georgia.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                                     </div>
                                                 </div>
@@ -365,12 +368,12 @@ const AmaUniversity = () => {
                                             <div className="col-md-12">
                                                 <div className="university">
                                                     <h5 className="pt-2 pb-2 text-center">Study MBBS in Philippines</h5>
-                                                    <img src="../images/mbbs-in-philippines/medical-universities/our-lady-of-fatima-university-college-of-medicine.png" alt="" className="img-fluid">
+                                                    <img src="../images/mbbs-in-philippines/medical-universities/our-lady-of-fatima-university-college-of-medicine.png" alt="" className="img-fluid" />
                                                     <p className="pt-2 pb-2 text-justify">
                                                     Our Lady of Fatima University one of the top Medical University in Philippines. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
                                                     </p>
                                                     <div className="">
-                                                        <?php include '../templates/university-book-now.php'  ?>
+                                                        
                                                         <a href="../mbbs-in-philippines.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                                     </div>
                                                 </div>
@@ -382,12 +385,12 @@ const AmaUniversity = () => {
                                             <div className="col-md-12">
                                                 <div className="university">
                                                     <h5 className="pt-2 pb-2 text-center">Study MBBS in Russia</h5>
-                                                    <img src="../images/mbbs-in-russia/medical-universities/bashkir-state-medical-university.png" alt="" className="img-fluid">
+                                                    <img src="../images/mbbs-in-russia/medical-universities/bashkir-state-medical-university.png" alt="" className="img-fluid" />
                                                     <p className="pt-2 pb-2 text-justify">
                                                     Bashkir State Medical University one of the top Medical University in Russia. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
                                                     </p>
                                                     <div className="">
-                                                        <?php include '../templates/university-book-now.php'  ?>
+                                                         
                                                         <a href="../mbbs-in-russia.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                                     </div>
                                                 </div>
@@ -399,12 +402,12 @@ const AmaUniversity = () => {
                                             <div className="col-md-12">
                                                 <div className="university">
                                                     <h5 className="pt-2 pb-2 text-center">Study MBBS in Ukraine</h5>
-                                                    <img src="../images/mbbs-in-ukraine/medical-universities/kharkiv-international-medical-university.png" alt="" className="img-fluid">
+                                                    <img src="../images/mbbs-in-ukraine/medical-universities/kharkiv-international-medical-university.png" alt="" className="img-fluid"/>
                                                     <p className="pt-2 pb-2 text-justify">
                                                     Kharkiv international Medical University one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
                                                     </p>
                                                     <div className="">
-                                                        <?php include '../templates/university-book-now.php'  ?>
+                                                        
                                                         <a href="../mbbs-in-ukraine.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                                     </div>
                                                 </div>
@@ -416,12 +419,12 @@ const AmaUniversity = () => {
                                             <div className="col-md-12">
                                                 <div className="university">
                                                     <h5 className="pt-2 pb-2 text-center">Study MBBS in Belarus</h5>
-                                                    <img src="../images/mbbs-in-belarus/medical-universities/belarusian-state-medical-university.png" alt="" className="img-fluid">
+                                                    <img src="../images/mbbs-in-belarus/medical-universities/belarusian-state-medical-university.png" alt="" className="img-fluid"/>
                                                     <p className="pt-2 pb-2 text-justify">
                                                     Belarusian State Medical University one of the top Medical University in Belarus. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
                                                     </p>
                                                     <div className="">
-                                                        <?php include '../templates/university-book-now.php'  ?>
+                                                        
                                                         <a href="../mbbs-in-belarus.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                                     </div>
                                                 </div>
@@ -541,86 +544,6 @@ const AmaUniversity = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-4">
-                    <div className="bord-1">
-                        <div id="four" className="pb-5">
-                            <div className="container">
-                                <div className="row">
-                                    <div className="col-md-12">
-                                        <h3 className="text-center pt-3 pb-3">Choose Your University</h3>
-                                    </div>
-                                </div>
-                                <div className="row">
-                                    <div className="col-md-12">
-                                        <div className="">
-                                            <form action="">
-                                                <div className="form-group">
-                                                    <!-- <label for="selectbox">Enter Select Your Country</label> -->
-                                                    <select className="form-control" id="selectbox" name="" onchange="mylang(this.value)">
-                                                      <option value="">Select Your Country</option>
-                                                      <option>MBBS in USA</option>
-                                                        <option>MBBS in Kyrgyzstan</option>
-                                                        <option>MBBS in Georgia</option>
-                                                        <option>MBBS in Poland</option>
-                                                        <option>MBBS in Philippines</option>
-                                                        <option>MBBS in Russia</option>
-                                                        <option>MBBS in China</option>
-                                                        <option>MBBS in Kazakhstan</option>
-                                                    </select>
-                                                  </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="row">
-                                    <div className="col-md-12">
-                                        <div className="">
-                                            <form action="">
-                                                <div className="form-group">
-                                                    <!-- <label for="selectbox1">University in?</label> -->
-                                                    <select className="form-control" id="selectbox1" name="" onchange="getSelectedValue();">
-                                                      <option value="">University Lists</option>
-                                                      
-                                                    </select>
-                                                  </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="row">
-                                    <div className="col-md-12">
-                                        <div className="text-center">
-                                            <form action="">
-                                                <a className="btn custom-btn-1" onclick="redirect_url()">Get University Details.</a>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <?php include '../templates/sidebar-university-top-medical-university.php' ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="social" className="pb-5">
-        <div className="container">
-            <div className="row">
-                <div className="col-md-2"></div>
-                <div className="col-md-8">
-                    <div className="">
-                        <h2 className="text-center pt-2 pb-2">Social Connect</h2>
-                        <div className="text-center pt-3 pb-3">
-                            <a href="https://www.facebook.com/glowoverseaseducation" target="_blank"><i className="fab fa-facebook-f icons"></i></a> &nbsp;
-                            <a href="https://twitter.com/GlowOverseas" target="_blank"><i className="fab fa-twitter icons"></i></a> &nbsp;
-                            <a href="https://www.youtube.com/channel/UCjYolwMMKKnzceHVQnJnmSQ" target="_blank"><i className="fab fa-youtube icons"></i></a> &nbsp;
-                            <a href="https://www.instagram.com/glowoverseaseducation/" target="_blank"><i className="fab fa-instagram icons"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div className="col-md-2"></div>
             </div>
         </div>
     </div>
