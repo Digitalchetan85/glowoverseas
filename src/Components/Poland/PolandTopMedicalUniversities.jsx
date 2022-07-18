@@ -84,7 +84,7 @@ const PolandTopMedicalUniversities = () => {
                   Read more
                 </a>
                 <Button onClick={handleShow} className="btn btn-info float-end">
-                  Free Councelling
+                  Free Counselling
                 </Button>
               </div>
             </div>
@@ -94,7 +94,7 @@ const PolandTopMedicalUniversities = () => {
       <FreeCouncelling
         show={show}
         handleClose={handleClose}
-        title="Contact Us for Free Councelling"
+        title="Contact Us for Free Counselling"
       />
     </Container>
   );

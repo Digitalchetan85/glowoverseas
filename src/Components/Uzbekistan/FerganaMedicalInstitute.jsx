@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react"; import {Link} from 'react-router-dom'; import { Helmet } from "react-helmet";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { Button, Image } from "react-bootstrap";
 import Img1 from "../../Images/mbbs-in-uzbekistan/medical-universities/fergana.png";
 import AdmissionProcess from "../Includes/AdmissionProcess";
@@ -8,13 +10,26 @@ import UzbekistanUniversities from "./UzbekistanUniversities";
 import FreeCouncelling from "../Includes/FreeCouncelling";
 
 const FerganaMedicalInstitute = () => {
-  const [show, setShow] = useState(false); useEffect(() => {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
     window.scrollTo(0, 0);
   });
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title> Fergana Medical Institute | MBBS in Uzbekistan | GOE</title>
+        <link
+          rel="canonical"
+          href="https://glowoverseas.com/mbbs-in-uzbekistan/fergana-medical-institute"
+        />
+        <meta
+          name="description"
+          content="MBBS in Fergana Medical University is the best place to Study MBBS in Uzbekistan. Call Us for Free Counselling"
+        />
+      </Helmet>
       <div id="abt">
         <div className="container">
           <div className="row">
@@ -24,17 +39,18 @@ const FerganaMedicalInstitute = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a className="text-decoration-none" as={Link} to="/">
+                      <Link className="text-decoration-none" to="/">
                         Home
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item">
-                      <a
+                      <Link
                         className="text-decoration-none"
-                        as={Link} to="/mbbs-in-Uzbekistan"
+                        
+                        to="/mbbs-in-Uzbekistan"
                       >
                         MBBS in Uzbekistan
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       Fergana Medical Institute
@@ -127,7 +143,7 @@ const FerganaMedicalInstitute = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
                           </Button>
                         </div>
                       </div>
@@ -148,23 +164,21 @@ const FerganaMedicalInstitute = () => {
                     <div className="row">
                       <div className="col-md-4">
                         <div className="">
-                          <h5 className="text-white">Geografical Position</h5>
+                          <h5 className="text-white">Geographical Position</h5>
                           <p className="text-white">
-                            Washington D C - Capital of Uzbekistan
+                            Tashkent - Capital of Uzbekistan
                           </p>
+                          <p className="text-white">Language spoken - Uzbek</p>
                           <p className="text-white">
-                            Language spoken - Russian, Ukrainian, English
-                          </p>
-                          <p className="text-white">
-                            National currency is Hryvnia (UHR).1 USD =
-                            8,0Hryvnia(01/01/2010)
+                            National currency is Uzbekistan is sum (also som,
+                            soum).1 Uzbek Sum = 0.0073 Indian Rupee
                           </p>
                         </div>
                         <div className="uzbekistan-map">
                           <p className="text-white text-center">
-                            Population – 46,5 million
+                            Population – 3.42 crores
                             <br />
-                            Territory – 6, 03,700 sq. km
+                            Territory – 448.9 thousand sq. km
                           </p>
                         </div>
                       </div>
@@ -172,11 +186,12 @@ const FerganaMedicalInstitute = () => {
                         <div className="inner-bg">
                           <div className="d-flex flex-inline">
                             <span className="high">
-                              The highest average July temperature is +17… +19°C
+                              The highest average July temperature is 19.7°C
+                              (67.5°F) and max 35.6°C (96.1°F).
                             </span>
                             <span className="low">
                               The lowest temperature of January and February is
-                              -7… -8°C
+                              (6.9°C)
                             </span>
                           </div>
                         </div>
@@ -185,9 +200,12 @@ const FerganaMedicalInstitute = () => {
                         <div className="pt-1 pb-1">
                           <h5 className="text-white">Religion in Uzbekistan</h5>
                           <p className="text-white">
-                            Uzbekistan in religious geography lies on the
-                            boundaries separating Roman Catholic, Eastern
-                            Orthodox and Islamic spheres of influence.
+                            Uzbekistan is more than 80 percent Muslim. The
+                            majority of the country's Muslims are Sunni and
+                            regard themselves as followers of the Hannafi branch
+                            of Sunnism. In the Stalin era, Muslim clerics
+                            suffered persecution, as did Christian clerics
+                            throughout the Soviet Union.
                           </p>
                         </div>
                         <div className="pt-1 pb-1">
@@ -224,7 +242,7 @@ const FerganaMedicalInstitute = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
                           </Button>
                         </div>
                       </div>
@@ -272,7 +290,8 @@ const FerganaMedicalInstitute = () => {
       <FreeCouncelling
         show={show}
         handleClose={handleClose}
-        title="Contact Us for Free Councelling"
+        title="Contact Us for Free Counselling
+                    "
       />
     </>
   );

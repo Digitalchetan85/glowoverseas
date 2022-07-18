@@ -321,7 +321,8 @@ const MbbsInRussia = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
+                    
                           </Button>
                         </div>
                       </div>
@@ -663,7 +664,8 @@ const MbbsInRussia = () => {
       <FreeCouncelling
         show={show}
         handleClose={handleClose}
-        title="Contact Us for Free Councelling"
+        title="Contact Us for Free Counselling
+                    "
       />
     </>
   );

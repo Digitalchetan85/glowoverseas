@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react"; import {Link} from 'react-router-dom'; import { Helmet } from "react-helmet";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { Button, Image } from "react-bootstrap";
 import Img1 from "../../Images/mbbs-in-kazakhstan/medical-universities/international-medical-school.png";
 import AdmissionProcess from "../Includes/AdmissionProcess";
@@ -8,13 +10,27 @@ import FAQ from "../Includes/FAQ";
 import FreeCouncelling from "../Includes/FreeCouncelling";
 
 const InternationalMedicalSchool = () => {
-  const [show, setShow] = useState(false); useEffect(() => {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
     window.scrollTo(0, 0);
   });
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title> International Medical School | MBBS in Kazakhstan | GOE</title>
+        <link
+          rel="canonical"
+          href="https://glowoverseas.com/mbbs-in-kazakhstan/international-medical-school"
+        />
+        <meta
+          name="description"
+          content="MBBS in International Medical School is the best place to Study MBBS in Kazakhstan. Call Us for Free Counselling"
+        />
+      </Helmet>
+
       <div id="abt">
         <div className="container">
           <div className="row">
@@ -24,17 +40,17 @@ const InternationalMedicalSchool = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a className="text-decoration-none" as={Link} to="/">
+                      <Link className="text-decoration-none" to="/">
                         Home
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item">
-                      <a
+                      <Link
                         className="text-decoration-none"
-                        as={Link} to="/mbbs-in-kazakhstan"
+                        to="/mbbs-in-kazakhstan"
                       >
                         MBBS in Kazakhstan
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       International Medical School
@@ -142,7 +158,7 @@ const InternationalMedicalSchool = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
                           </Button>
                         </div>
                       </div>
@@ -238,7 +254,7 @@ const InternationalMedicalSchool = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
                           </Button>
                         </div>
                       </div>
@@ -286,7 +302,7 @@ const InternationalMedicalSchool = () => {
       <FreeCouncelling
         show={show}
         handleClose={handleClose}
-        title="Contact Us for Free Councelling"
+        title="Contact Us for Free Counselling"
       />
     </>
   );

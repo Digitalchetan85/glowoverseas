@@ -84,7 +84,8 @@ const EgyptTopMedicalUniversities = () => {
                   className="btn btn-info text-white float-end"
                   onClick={handleShow}
                 >
-                  Free Councelling
+                  Free Counselling
+                    
                 </Button>
               </div>
             </div>
@@ -94,7 +95,8 @@ const EgyptTopMedicalUniversities = () => {
       <FreeCouncelling
         show={show}
         handleClose={handleClose}
-        title="Contact Us for Free Councelling"
+        title="Contact Us for Free Counselling
+                    "
       />
     </Container>
   );

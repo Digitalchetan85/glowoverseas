@@ -83,7 +83,8 @@ const USAUniversities = () => {
                     onClick={handleShow}
                     className="btn btn-info text-white float-end"
                   >
-                    Free Councelling
+                    Free Counselling
+                    
                   </Button>
                 </Card.Footer>
               </Card>
@@ -93,7 +94,8 @@ const USAUniversities = () => {
         <FreeCouncelling
           show={show}
           handleClose={handleClose}
-          title="Contact Us for Free Councelling"
+          title="Contact Us for Free Counselling
+                    "
         />
       </Container>
     </>

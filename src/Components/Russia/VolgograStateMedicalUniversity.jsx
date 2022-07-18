@@ -24,9 +24,9 @@ const VolgograStateMedicalUniversity = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a className="text-decoration-none" as={Link} to="/">
+                      <Link className="text-decoration-none" to="/">
                         Home
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item">
                       <a
@@ -111,7 +111,7 @@ const VolgograStateMedicalUniversity = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
                           </Button>
                         </div>
                       </div>
@@ -209,7 +209,7 @@ const VolgograStateMedicalUniversity = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
                           </Button>
                         </div>
                       </div>
@@ -257,7 +257,7 @@ const VolgograStateMedicalUniversity = () => {
       <FreeCouncelling
         show={show}
         handleClose={handleClose}
-        title="Contact Us for Free Councelling"
+        title="Contact Us for Free Counselling"
       />
     </>
   );

@@ -79,7 +79,7 @@ const ArmeniaTopMedicalUniversities = () => {
                   onClick={handleShow}
                   className="pt-2 pb-2 btn btn-info text-white ms-2 float-end"
                 >
-                  Free Councelling
+                  Free Counselling
                 </Button>
               </div>
             </div>

@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react"; import {Link} from 'react-router-dom'; import { Helmet } from "react-helmet";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 import { Button, Image } from "react-bootstrap";
 import Img1 from "../../Images/mbbs-in-kazakhstan/medical-universities/jsc-national-medical-university.png";
@@ -8,13 +10,26 @@ import OtherCountries from "../Includes/OtherCountries";
 import FAQ from "../Includes/FAQ";
 import FreeCouncelling from "../Includes/FreeCouncelling";
 const JscNationalMedicalUniversity = () => {
-  const [show, setShow] = useState(false); useEffect(() => {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
     window.scrollTo(0, 0);
   });
   const handleShow = () => setShow(true);
   const handleClose = () => setShow(false);
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title> JSC National Medical University | MBBS in Kazakhstan | GOE</title>
+        <link
+          rel="canonical"
+          href="https://glowoverseas.com/mbbs-in-kazakhstan/jsc-national-medical-university"
+        />
+        <meta
+          name="description"
+          content="MBBS in  JSC National Medical University is the best place to Study MBBS in Kazakhstan. Call Us for Free Counselling"
+        />
+      </Helmet>
       <div id="abt">
         <div className="container">
           <div className="row">
@@ -24,17 +39,18 @@ const JscNationalMedicalUniversity = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a className="text-decoration-none" as={Link} to="/">
+                      <Link className="text-decoration-none" to="/">
                         Home
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item">
-                      <a
+                      <Link
                         className="text-decoration-none"
-                        as={Link} to="/mbbs-in-kazakhstan"
+                       
+                        to="/mbbs-in-kazakhstan"
                       >
                         MBBS in Kazakhstan
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       JSC National Medical University
@@ -144,7 +160,7 @@ const JscNationalMedicalUniversity = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
                           </Button>
                         </div>
                       </div>
@@ -240,7 +256,7 @@ const JscNationalMedicalUniversity = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
                           </Button>
                         </div>
                       </div>
@@ -289,7 +305,7 @@ const JscNationalMedicalUniversity = () => {
       <FreeCouncelling
         show={show}
         handleClose={handleClose}
-        title="Contact Us for Free Councelling"
+        title="Contact Us for Free Counselling"
       />
     </>
   );

@@ -16,6 +16,15 @@ const FujianMedicalUniversity = () => {
   const handleShow = () => setShow(true);
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title> Fujian Medical University | MBBS in China | GOE</title>
+        <link rel="canonical" href="https://glowoverseas.com/mbbs-in-china/fujian-medical-university" />
+        <meta
+          name="description"
+          content="MBBS in Fujian Medical University is the best place to Study MBBS in China. Call Us for Free Counselling"
+        />
+      </Helmet>
       <div id="abt">
         <div className="container">
           <div className="row">
@@ -25,10 +34,10 @@ const FujianMedicalUniversity = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a className="text-decoration-none" as={Link} to="/">Home</a>
+                      <Link className="text-decoration-none" to="/">Home</Link>
                     </li>
                     <li className="breadcrumb-item">
-                      <a className="text-decoration-none" as={Link} to="/mbbs-in-china">MBBS in China</a>
+                      <Link className="text-decoration-none" to="/mbbs-in-china">MBBS in China</Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       Fujian Medical University
@@ -248,7 +257,8 @@ const FujianMedicalUniversity = () => {
       <OtherCountries />
       <AdmissionProcess />
       <FAQ />
-      <FreeCouncelling show={show} handleClose={handleClose} title="Contact Us for Free Councelling" />
+      <FreeCouncelling show={show} handleClose={handleClose} title="Contact Us for Free Counselling
+                    " />
     </div>
   );
 };

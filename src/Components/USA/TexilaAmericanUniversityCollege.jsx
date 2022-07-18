@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react"; import {Link} from 'react-router-dom'; import { Helmet } from "react-helmet";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 import { Button, Image } from "react-bootstrap";
 import Img1 from "../../Images/mbbs-in-usa/medical-universities/texila.png";
@@ -9,7 +11,8 @@ import FAQ from "../Includes/FAQ";
 import FreeCouncelling from "../Includes/FreeCouncelling";
 
 const TexilaAmericanUniversityCollege = () => {
-  const [show, setShow] = useState(false); useEffect(() => {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
     window.scrollTo(0, 0);
   });
   const handleClose = () => setShow(false);
@@ -17,23 +20,35 @@ const TexilaAmericanUniversityCollege = () => {
 
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title> Texila American University | MBBS in Georgia | GOE</title>
+        <link
+          rel="canonical"
+          href="https://glowoverseas.com/mbbs-in-georgia/texila-american-university-college"
+        />
+        <meta
+          name="description"
+          content="MBBS in Texila American University is the best place to Study MBBS in Georgia. Call Us for Free Counselling"
+        />
+      </Helmet>
       <div id="abt">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
               <div className="pt-5 pb-5">
-                <h2>MBBS in Poland</h2>
+                <h2>MBBS in USA</h2>
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a className="text-decoration-none" as={Link} to="/">
+                      <Link className="text-decoration-none" to="/">
                         Home
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item">
-                      <a className="text-decoration-none" as={Link} to="/mbbs-in-usa">
+                      <Link className="text-decoration-none" to="/mbbs-in-usa">
                         MBBS in USA
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       Texila American University College of Medicine
@@ -127,7 +142,7 @@ const TexilaAmericanUniversityCollege = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
                           </Button>
                         </div>
                       </div>
@@ -148,16 +163,15 @@ const TexilaAmericanUniversityCollege = () => {
                     <div className="row">
                       <div className="col-md-4">
                         <div className="">
-                          <h5 className="text-white">Geografical Position</h5>
+                          <h5 className="text-white">Geographical Position</h5>
                           <p className="text-white">
                             Washington D C - Capital of USA
                           </p>
                           <p className="text-white">
-                            Language spoken - Russian, Ukrainian, English
+                            Language spoken - English
                           </p>
                           <p className="text-white">
-                            National currency is Hryvnia (UHR).1 USD =
-                            8,0Hryvnia(01/01/2010)
+                            National currency is US Dollar (USD).
                           </p>
                         </div>
                         <div className="usa-map">
@@ -172,7 +186,7 @@ const TexilaAmericanUniversityCollege = () => {
                         <div className="inner-bg">
                           <div className="d-flex flex-inline">
                             <span className="high">
-                              The highest average July temperature is +17… +19°C
+                              The highest average July temperature is +17… +24°C
                             </span>
                             <span className="low">
                               The lowest temperature of January and February is
@@ -185,9 +199,10 @@ const TexilaAmericanUniversityCollege = () => {
                         <div className="pt-1 pb-1">
                           <h5 className="text-white">Religion in USA</h5>
                           <p className="text-white">
-                            USA in religious geography lies on the boundaries
-                            separating Roman Catholic, Eastern Orthodox and
-                            Islamic spheres of influence.
+                            The United States remains a predominantly Christian
+                            nation, with 78% of all adults identifying with a
+                            Christian faith, and more than 9 in 10 of those who
+                            have a religious identity identifying as Christians.
                           </p>
                         </div>
                         <div className="pt-1 pb-1">
@@ -224,7 +239,7 @@ const TexilaAmericanUniversityCollege = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
                           </Button>
                         </div>
                       </div>
@@ -272,7 +287,7 @@ const TexilaAmericanUniversityCollege = () => {
       <FreeCouncelling
         show={show}
         handleClose={handleClose}
-        title="Contact Us for Free Councelling"
+        title="Contact Us for Free Counselling"
       />
     </>
   );

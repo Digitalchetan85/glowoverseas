@@ -15,6 +15,16 @@ const JilinMedicalUniversity = () => {
   const handleShow = () => setShow(true);
   return (
     <>
+    
+<Helmet>
+        <meta charSet="utf-8" />
+        <title> Jilin Medical University | MBBS in China | GOE</title>
+        <link rel="canonical" href="https://glowoverseas.com/mbbs-in-china/jilin-medical-university" />
+        <meta
+          name="description"
+          content="MBBS in China Medical University is the best place to Study MBBS in China. Call Us for Free Counselling"
+        />
+      </Helmet>
       <div id="abt">
         <div className="container">
           <div className="row">
@@ -24,10 +34,10 @@ const JilinMedicalUniversity = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a className="text-decoration-none" as={Link} to="/">Home</a>
+                      <Link className="text-decoration-none"  to="/">Home</Link>
                     </li>
                     <li className="breadcrumb-item">
-                      <a className="text-decoration-none" as={Link} to="/">MBBS in China</a>
+                      <Link className="text-decoration-none"  to="/">MBBS in China</Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       Jilin Medical University
@@ -248,7 +258,8 @@ const JilinMedicalUniversity = () => {
       <ChinaUniversities />
       <OtherCountries />
       <FAQ />
-      <FreeCouncelling show={show} handleClose={handleClose} title="Contact Us for Free Councelling" />
+      <FreeCouncelling show={show} handleClose={handleClose} title="Contact Us for Free Counselling
+                    " />
     </>
   );
 };

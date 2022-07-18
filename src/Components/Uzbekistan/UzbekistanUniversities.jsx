@@ -79,7 +79,7 @@ const UzbekistanUniversities = () => {
                     Read more
                   </Button>
                   <Button className="custom-btn text-white btn btn-info float-end">
-                    Free Councelling
+                    Free Counselling
                   </Button>
                 </Card.Footer>
               </Card>
@@ -89,7 +89,8 @@ const UzbekistanUniversities = () => {
         <FreeCouncelling
           show={show}
           handleClose={handleClose}
-          title="Contact Us for Free Councelling"
+          title="Contact Us for Free Counselling
+                    "
         />
       </Container>
     </>

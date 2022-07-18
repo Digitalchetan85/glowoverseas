@@ -5,6 +5,7 @@ import FAQ from "../Includes/FAQ";
 import FreeCouncelling from "../Includes/FreeCouncelling";
 import OtherCountries from "../Includes/OtherCountries";
 
+
 const MbbsInChina = () => {
   const [show, setShow] = useState(false); useEffect(() => {
     window.scrollTo(0, 0);
@@ -13,6 +14,15 @@ const MbbsInChina = () => {
   const handleShow = () => setShow(true);
   return (
     <>
+    <Helmet>
+        <meta charSet="utf-8" />
+        <title>MBBS in China | MBBS in Abroad | GOE</title>
+        <link rel="canonical" href="https://glowoverseas.com/mbbs-in-china" />
+        <meta
+          name="description"
+          content="MBBS in China is the best place to Study MBBS in Abroad. Call Us for Free Counselling"
+        />
+      </Helmet>
       <div id="abt1">
         <div className="container">
           <div className="row">
@@ -22,7 +32,7 @@ const MbbsInChina = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a as={Link} to="/">Home</a>
+                    <Link to="/">Home</Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       MBBS in China
@@ -76,7 +86,7 @@ const MbbsInChina = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
                           </Button>
                         </div>
                       </div>
@@ -168,7 +178,7 @@ const MbbsInChina = () => {
       <OtherCountries />
       <FAQ />
 
-      <FreeCouncelling show={show} handleClose={handleClose} title="Contact Us for Free Councelling" />
+      <FreeCouncelling show={show} handleClose={handleClose} title="Contact Us for Free Counselling" />
     </>
   );
 };

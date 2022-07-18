@@ -15,6 +15,15 @@ const BatumiShotaRustaveliStateMedicalUniversity = () => {
   const handleShow = () => setShow(true);
   return (
     <>
+    	<Helmet>
+        <meta charSet="utf-8" />
+        <title> Batumi Shota Rustaveli | MBBS in Georgia| GOE</title>
+        <link rel="canonical" href="https://glowoverseas.com/mbbs-in-georgia/batumi-shota-rustaveli-state-medical-university"/>
+        <meta
+          name="description"
+          content="MBBS in Batumi Shota Rustaveli State Medical University is the best place to Study MBBS in Georgia. Call Us for Free Counselling"
+        />
+      </Helmet>
       <div id="abt">
         <div className="container">
           <div className="row">
@@ -24,17 +33,17 @@ const BatumiShotaRustaveliStateMedicalUniversity = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a className="text-decoration-none" as={Link} to="/">
+                      <Link className="text-decoration-none" href="/">
                         Home
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item">
-                      <a
+                    <Link
                         className="text-decoration-none"
-                        as={Link} to="/mbbs-in-georgia"
+                        to="/mbbs-in-georgia"
                       >
                         MBBS in Georgia
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       Batumi Shota Rustaveli State Medical University
@@ -184,7 +193,7 @@ const BatumiShotaRustaveliStateMedicalUniversity = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
                           </Button>
                         </div>
                       </div>
@@ -205,7 +214,7 @@ const BatumiShotaRustaveliStateMedicalUniversity = () => {
                     <div className="row">
                       <div className="col-md-4">
                         <div className="">
-                          <h5 className="text-white">Geografical Position</h5>
+                          <h5 className="text-white">Geographical Position</h5>
                           <p className="text-white">
                             Tbilisi - Capital of Georgia
                           </p>
@@ -273,7 +282,7 @@ const BatumiShotaRustaveliStateMedicalUniversity = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
                           </Button>
                         </div>
                       </div>
@@ -285,7 +294,7 @@ const BatumiShotaRustaveliStateMedicalUniversity = () => {
                         <h5 className="pt-2 pb-2 text-center">Indian Food</h5>
                         <p className="pt-2 pb-2 text-justify">
                           Many students and parents are doubting whether Indian
-                          food is available or not. In Ukraine surely we get
+                          food is available or not. In Georgia surely we get
                           Indian food. Indian Restaurants are available. So
                           students can easily concentrate on his studies rather
                           than thinking about Food.
@@ -321,7 +330,8 @@ const BatumiShotaRustaveliStateMedicalUniversity = () => {
       <FreeCouncelling
         show={show}
         handleClose={handleClose}
-        title="Contact Us for Free Councelling"
+        title="Contact Us for Free Counselling
+                    "
       />
     </>
   );

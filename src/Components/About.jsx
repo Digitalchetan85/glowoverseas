@@ -4,7 +4,7 @@ import Abt from "../Images/about/about-us-1.jpg";
 import Prashanth from "../Images/prashanth.png";
 import Saranya from "../Images/saranya.png";
 import Abt2 from "../Images/about/about-us.jpg";
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 
 const About = () => {
@@ -13,15 +13,16 @@ const About = () => {
   });
   return (
     <>
-    <Helmet>
-      <meta charSet="utf-8" />
-      <title>MBBS in Abroad | Glowoverseas Education | GOE</title>
-      <link rel="canonical" href="https://glowoverseas.com/about" />
-      <meta
-        name="description"
-        content="GOE is one of the best MBBS in Abroad Consultants in Bangalore. Call Us for Free Councelling"
-      />
-    </Helmet>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>MBBS in Abroad | Glowoverseas Education | GOE</title>
+        <link rel="canonical" href="https://glowoverseas.com/about" />
+        <meta
+          name="description"
+          content="GOE is one of the best MBBS in Abroad Consultants in Bangalore. Call Us for Free Counselling
+                    "
+        />
+      </Helmet>
       <section id="abt1">
         <Container>
           <Row>
@@ -31,7 +32,7 @@ const About = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a as={Link} to="/">Home</a>
+                      <Link to="/">Home</Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       About Us

@@ -54,7 +54,7 @@ const BlackSeaNationalMedicalUniversity = () => {
                                 </div>
                                 <div className="col-md-6">
                                     <div className="text-center">
-                                        <img src="../images/mbbs-in-ukraine/medical-universities/black-sea-national-medical-university.png" alt="" className="img-fluid">
+                                        <img src="../images/mbbs-in-ukraine/medical-universities/black-sea-national-medical-university.png" alt="" className="img-fluid"/>
                                     </div>
                                 </div>
                             </div>

@@ -29,32 +29,32 @@ const Footer = () => {
                 </h5>
                 <ul className="list-unstyled">
                   <li>
-                    <a as={Link} to="/mbbs-in-kazakhstan" className="text-decoration-none text-white">
+                    <a href="/mbbs-in-kazakhstan" className="text-decoration-none text-white">
                       MBBS in Kazkhstan
                     </a>
                   </li>
                   <li>
-                    <a as={Link} to="/mbbs-in-usa" className="text-decoration-none text-white">
+                    <a href="/mbbs-in-usa" className="text-decoration-none text-white">
                       MBBS in USA
                     </a>
                   </li>
                   <li>
-                    <a as={Link} to="/mbbs-in-kyrgyzstan" className="text-decoration-none text-white">
+                    <a href="/mbbs-in-kyrgyzstan" className="text-decoration-none text-white">
                       MBBS in Kyrgyzstan
                     </a>
                   </li>
                   <li>
-                    <a as={Link} to="/mbbs-in-georgia" className="text-decoration-none text-white">
+                    <a href="/mbbs-in-georgia" className="text-decoration-none text-white">
                       MBBS in Georgia
                     </a>
                   </li>
                   <li>
-                    <a as={Link} to="/mbbs-in-poland" className="text-decoration-none text-white">
+                    <a href="/mbbs-in-poland" className="text-decoration-none text-white">
                       MBBS in Poland
                     </a>
                   </li>
                   <li>
-                    <a as={Link} to="/mbbs-in-russia" className="text-decoration-none text-white">
+                    <a href="/mbbs-in-russia" className="text-decoration-none text-white">
                       MBBS in Russia
                     </a>
                   </li>

@@ -16,6 +16,18 @@ const CairoUniversity = () => {
   const handleShow = () => setShow(true);
   return (
     <>
+    <Helmet>
+     <meta charSet="utf-8" />
+        <title> Cairo University | MBBS in Egypt | GOE</title>
+        <link
+          rel="canonical"
+          href="https://glowoverseas.com/mbbs-in-egypt/cairo-university"
+        />
+        <meta
+          name="description"
+          content="MBBS in Cairo University Faculty of Medicine is the best place to Study MBBS in Egypt. Call Us for Free Counselling"
+        />
+      </Helmet>
       <div id="abt">
         <div className="container">
           <div className="row">
@@ -25,9 +37,9 @@ const CairoUniversity = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a className="text-decoration-none" as={Link} to="/">
+                      <Link className="text-decoration-none" to="/">
                         Home
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item">
                       <a className="text-decoration-none" as={Link} to="/mbbs-in-egypt">
@@ -121,7 +133,8 @@ const CairoUniversity = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
+                    
                           </Button>
                         </div>
                       </div>
@@ -216,7 +229,8 @@ const CairoUniversity = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
+                    
                           </Button>
                         </div>
                       </div>
@@ -264,7 +278,8 @@ const CairoUniversity = () => {
       <FreeCouncelling
         show={show}
         handleClose={handleClose}
-        title="Contact Us for Free Councelling"
+        title="Contact Us for Free Counselling
+                    "
       />
     </>
   );

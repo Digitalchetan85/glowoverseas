@@ -179,7 +179,8 @@ const RussianUniverisities = () => {
             </div>
           ))}
         </OwlCarousel>
-        <FreeCouncelling show={show} handleClose={handleClose} title="Contact Us for Free Councelling" />
+        <FreeCouncelling show={show} handleClose={handleClose} title="Contact Us for Free Counselling
+                    " />
       </Container>
     </>
   );

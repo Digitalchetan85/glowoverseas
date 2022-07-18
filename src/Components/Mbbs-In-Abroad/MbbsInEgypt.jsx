@@ -13,6 +13,16 @@ const MbbsInEgypt = () => {
   const handleShow = () => setShow(true);
   return (
     <>
+    
+<Helmet>
+        <meta charSet="utf-8" />
+        <title>MBBS in Egypt | MBBS in Abroad | GOE</title>
+        <link rel="canonical" href="https://glowoverseas.com/mbbs-in-egypt" />
+        <meta
+          name="description"
+          content="MBBS in Egypt is the best place to Study MBBS in Abroad. Call Us for Free Counselling"
+        />
+      </Helmet>
       <div id="abt1">
         <div className="container">
           <div className="row">
@@ -22,7 +32,7 @@ const MbbsInEgypt = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a as={Link} to="/">Home</a>
+                    <Link to="/">Home</Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       MBBS in Egypt
@@ -76,7 +86,7 @@ const MbbsInEgypt = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
                           </Button>
                         </div>
                       </div>
@@ -167,7 +177,7 @@ const MbbsInEgypt = () => {
       <FreeCouncelling
         show={show}
         handleClose={handleClose}
-        title="Contact Us for Free Councelling"
+        title="Contact Us for Free Counselling"
       />
     </>
   );

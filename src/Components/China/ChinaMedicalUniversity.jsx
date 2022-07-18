@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react"; import {Link} from 'react-router-dom'; import { Helmet } from "react-helmet";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 import { Button, Image } from "react-bootstrap";
 import Img1 from "../../Images/mbbs-in-china/medical-universities/china.png";
@@ -9,13 +11,23 @@ import AdmissionProcess from "../Includes/AdmissionProcess";
 import FreeCouncelling from "../Includes/FreeCouncelling";
 
 const ChinaMedicalUniversity = () => {
-  const [show, setShow] = useState(false); useEffect(() => {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
     window.scrollTo(0, 0);
   });
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title> China Medical University | MBBS in China | GOE</title>
+        <link rel="canonical" href="https://glowoverseas.com/mbbs-in-china/china-medical-university" />
+        <meta
+          name="description"
+          content="MBBS in China Medical University is the best place to Study MBBS in China. Call Us for Free Counselling"
+        />
+      </Helmet>
       <div id="abt">
         <div className="container">
           <div className="row">
@@ -25,10 +37,17 @@ const ChinaMedicalUniversity = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a className="text-decoration-none" as={Link} to="/">Home</a>
+                      <Link className="text-decoration-none" to="/">
+                        Home
+                      </Link>
                     </li>
                     <li className="breadcrumb-item">
-                      <a className="text-decoration-none" as={Link} to="/mbbs-in-china">MBBS in China</a>
+                      <Link
+                        className="text-decoration-none"
+                        to="/mbbs-in-china"
+                      >
+                        MBBS in China
+                      </Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       China Medical University
@@ -72,7 +91,11 @@ const ChinaMedicalUniversity = () => {
                     </div>
                     <div className="col-md-4">
                       <div className="text-center">
-                        <Image src={Img1} alt="" className="img-fluid rounded shadow-sm"></Image>
+                        <Image
+                          src={Img1}
+                          alt=""
+                          className="img-fluid rounded shadow-sm"
+                        ></Image>
                       </div>
                     </div>
                   </div>
@@ -107,7 +130,12 @@ const ChinaMedicalUniversity = () => {
                           Visa. We are available through phone contact 24/7.
                         </p>
                         <div className="text-center">
-                          <Button onClick={handleShow} className="btn btn-info text-white">Free Councelling</Button>
+                          <Button
+                            onClick={handleShow}
+                            className="btn btn-info text-white"
+                          >
+                            Free Counselling
+                          </Button>
                         </div>
                       </div>
                     </div>
@@ -199,7 +227,12 @@ const ChinaMedicalUniversity = () => {
                           our counsellors to get the complete fee structure.
                         </p>
                         <div className="text-center">
-                          <Button onClick={handleShow} className="btn btn-info text-white">Free Councelling</Button>
+                          <Button
+                            onClick={handleShow}
+                            className="btn btn-info text-white"
+                          >
+                            Free Counselling
+                          </Button>
                         </div>
                       </div>
                     </div>
@@ -239,12 +272,16 @@ const ChinaMedicalUniversity = () => {
           </div>
         </div>
       </div>
-      
+
       <ChinaUniversities />
       <OtherCountries />
       <AdmissionProcess />
       <FAQ />
-      <FreeCouncelling show={show} handleClose={handleClose} title="Contact Us for Free Councelling" />
+      <FreeCouncelling
+        show={show}
+        handleClose={handleClose}
+        title="Contact Us for Free Counselling"
+      />
     </>
   );
 };

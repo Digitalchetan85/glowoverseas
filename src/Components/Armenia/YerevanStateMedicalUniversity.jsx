@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react"; import {Link} from 'react-router-dom'; import { Helmet } from "react-helmet";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import Img1 from "../../Images/mbbs-in-armenia/medical-universities/yerevan-state-medical-university.png";
 import { Button, Image } from "react-bootstrap";
 import AdmissionProcess from "../Includes/AdmissionProcess";
@@ -8,13 +10,26 @@ import FAQ from "../Includes/FAQ";
 import FreeCouncelling from "../Includes/FreeCouncelling";
 
 const YerevanStateMedicalUniversity = () => {
-  const [show, setShow] = useState(false); useEffect(() => {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
     window.scrollTo(0, 0);
   });
   const handleShow = () => setShow(true);
   const handleClose = () => setShow(false);
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title> Yerevan State Medical University | MBBS in Armenia | GOE</title>
+        <link
+          rel="canonical"
+          href="https://glowoverseas.com/mbbs-in-armenia//yerevan-state-medical-university"
+        />
+        <meta
+          name="description"
+          content="MBBS in Yerevan State Medical University is the best place to Study MBBS in Armenia. Call Us for Free Counselling"
+        />
+      </Helmet>
       <div id="abt">
         <div className="container">
           <div className="row">
@@ -24,10 +39,17 @@ const YerevanStateMedicalUniversity = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a className="text-decoration-none" as={Link} to="/">Home</a>
+                      <Link to="/" className="text-decoration-none">
+                        Home
+                      </Link>
                     </li>
                     <li className="breadcrumb-item">
-                      <a className="text-decoration-none" as={Link} to="/mbbs-in-armenia">MBBS in Armenia</a>
+                      <Link
+                        to="/mbbs-in-armenia"
+                        className="text-decoration-none"
+                      >
+                        MBBS in Armenia
+                      </Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       Yerevan State Medical University
@@ -102,9 +124,7 @@ const YerevanStateMedicalUniversity = () => {
                   <div className="row">
                     <div className="col-md-12">
                       <div className="pb-2">
-                        <h4 className="text-info py-2">
-                          MBBS in Armenia
-                        </h4>
+                        <h4 className="text-info py-2">MBBS in Armenia</h4>
                         <p className=" text-justify">
                           Armenia is a nation, and former Soviet republic, in
                           the mountainous Caucasus region between Asia and
@@ -147,7 +167,12 @@ const YerevanStateMedicalUniversity = () => {
                           <li>Separate Compartments for Boys and Girls.</li>
                         </ul>
                         <div className="text-center">
-                          <Button onClick={handleShow} className="btn btn-info text-white">Free Councelling</Button>
+                          <Button
+                            onClick={handleShow}
+                            className="btn btn-info text-white"
+                          >
+                            Free Counselling
+                          </Button>
                         </div>
                       </div>
                     </div>
@@ -241,7 +266,12 @@ const YerevanStateMedicalUniversity = () => {
                           structure.
                         </p>
                         <div className="text-center">
-                          <Button onClick={handleShow} className="btn btn-info text-white">Free Councelling</Button>
+                          <Button
+                            onClick={handleShow}
+                            className="btn btn-info text-white"
+                          >
+                            Free Counselling
+                          </Button>
                         </div>
                       </div>
                     </div>
@@ -286,7 +316,11 @@ const YerevanStateMedicalUniversity = () => {
       <ArmeniaTopMedicalUniversities />
       <OtherCountries />
       <FAQ />
-      <FreeCouncelling show={show} handleClose={handleClose} title="Contact Us for Free Councelling" />
+      <FreeCouncelling
+        show={show}
+        handleClose={handleClose}
+        title="Contact Us for Free Counselling"
+      />
     </>
   );
 };

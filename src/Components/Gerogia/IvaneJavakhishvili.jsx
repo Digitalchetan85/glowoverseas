@@ -15,6 +15,18 @@ const IvaneJavakhishvili = () => {
   const handleShow = () => setShow(true);
   return (
     <>
+    
+
+	<Helmet>
+        <meta charSet="utf-8" />
+        <title> Ivane Javakhishvili Tbilisi | MBBS in Georgia | GOE</title>
+        <link rel="canonical" href="https://glowoverseas.com/mbbs-in-georgia/ivane-javakhishvili"/>
+        <meta
+          name="description"
+          content="MBBS in Ivane Javakhishvili Tbilisi State University Faculty of
+          Medicine is the best place to Study MBBS in Georgia. Call Us for Free Counselling"
+        />
+      </Helmet>
       <div id="abt">
         <div className="container">
           <div className="row">
@@ -24,17 +36,17 @@ const IvaneJavakhishvili = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a className="text-decoration-none" as={Link} to="/">
+                      <Link className="text-decoration-none" to="/">
                         Home
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item">
-                      <a
+                      <Link
                         className="text-decoration-none"
-                        as={Link} to="/mbbs-in-georgia"
+                        to="/mbbs-in-georgia"
                       >
                         MBBS in Georgia
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       Ivane Javakhishvili Tbilisi State University Faculty of
@@ -186,7 +198,7 @@ const IvaneJavakhishvili = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
                           </Button>
                         </div>
                       </div>
@@ -207,7 +219,7 @@ const IvaneJavakhishvili = () => {
                     <div className="row">
                       <div className="col-md-4">
                         <div className="">
-                          <h5 className="text-white">Geografical Position</h5>
+                          <h5 className="text-white">Geographical Position</h5>
                           <p className="text-white">
                             Tbilisi - Capital of Georgia
                           </p>
@@ -274,7 +286,7 @@ const IvaneJavakhishvili = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
                           </Button>
                         </div>
                       </div>
@@ -322,7 +334,7 @@ const IvaneJavakhishvili = () => {
       <FreeCouncelling
         show={show}
         handleClose={handleClose}
-        title="Contact Us for Free Councelling"
+        title="Contact Us for Free Counselling"
       />
     </>
   );

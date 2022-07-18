@@ -123,14 +123,16 @@ const ChinaUniversities = () => {
                     onClick={handleShow}
                     className="custom-btn float-end text-white"
                   >
-                    Free Councelling
+                    Free Counselling
+                    
                   </Button>
                 </Card.Footer>
               </Card>
             </div>
           ))}
         </OwlCarousel>
-        <FreeCouncelling show={show} handleClose={handleClose} title="Contact Us for Free Councelling" />
+        <FreeCouncelling show={show} handleClose={handleClose} title="Contact Us for Free Counselling
+                    " />
       </Container>
     </>
   );

@@ -15,6 +15,16 @@ const CaucasusInternationalMedicalUniversity = () => {
   const handleShow = () => setShow(true);
   return (
     <>
+    
+	<Helmet>
+        <meta charSet="utf-8" />
+        <title> Caucasus International | MBBS in Georgia| GOE</title>
+        <link rel="canonical" href="https://glowoverseas.com/mbbs-in-georgia/caucasus-international-medical-university"/>
+        <meta
+          name="description"
+          content="MBBS in Caucasus International Medical University the best place to Study MBBS in Georgia. Call Us for Free Counselling"
+        />
+      </Helmet>
       <div id="abt">
         <div className="container">
           <div className="row">
@@ -24,17 +34,17 @@ const CaucasusInternationalMedicalUniversity = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a className="text-decoration-none" as={Link} to="/">
+                      <Link className="text-decoration-none" to="/">
                         Home
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item">
-                      <a
+                      <Link
                         className="text-decoration-none"
-                        as={Link} to="/mbbs-in-georgia"
+                         to="/mbbs-in-georgia"
                       >
                         MBBS in Georgia
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       Caucasus International Medical University
@@ -200,7 +210,7 @@ const CaucasusInternationalMedicalUniversity = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
                           </Button>
                         </div>
                       </div>
@@ -289,7 +299,7 @@ const CaucasusInternationalMedicalUniversity = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
                           </Button>
                         </div>
                       </div>
@@ -337,7 +347,7 @@ const CaucasusInternationalMedicalUniversity = () => {
       <FreeCouncelling
         show={show}
         handleClose={handleClose}
-        title="Contact Us for Free Councelling"
+        title="Contact Us for Free Counselling"
       />
     </>
   );

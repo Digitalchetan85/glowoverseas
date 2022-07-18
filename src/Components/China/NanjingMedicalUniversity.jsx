@@ -15,6 +15,15 @@ const NanjingMedicalUniversity = () => {
   const handleShow = () => setShow(true);
   return (
     <>
+    <Helmet>
+        <meta charSet="utf-8" />
+        <title> Nanjing Medical University | MBBS in China | GOE</title>
+        <link rel="canonical" href="https://glowoverseas.com/mbbs-in-china/nanjing-medical-university" />
+        <meta
+          name="description"
+          content="MBBS in Nanjing Medical University is the best place to Study MBBS in China. Call Us for Free Counselling"
+        />
+      </Helmet>
       <div id="abt">
         <div className="container">
           <div className="row">
@@ -24,10 +33,10 @@ const NanjingMedicalUniversity = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a className="text-decoration-none" as={Link} to="/">Home</a>
+                      <Link className="text-decoration-none" to="/">Home</Link>
                     </li>
                     <li className="breadcrumb-item">
-                      <a className="text-decoration-none" as={Link} to="/mbbs-in-china">MBBS in China</a>
+                      <Link className="text-decoration-none" to="/mbbs-in-china">MBBS in China</Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       Nanjing Medical University
@@ -249,7 +258,8 @@ const NanjingMedicalUniversity = () => {
       <ChinaUniversities />
       <OtherCountries />
       <FAQ />
-      <FreeCouncelling show={show} handleClose={handleClose} title="Contact Us for Free Councelling" />
+      <FreeCouncelling show={show} handleClose={handleClose} title="Contact Us for Free Counselling
+                    " />
     </>
   );
 };

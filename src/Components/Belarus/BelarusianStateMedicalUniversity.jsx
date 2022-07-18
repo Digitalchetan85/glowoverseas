@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react"; import {Link} from 'react-router-dom'; import { Helmet } from "react-helmet";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { Button, Image } from "react-bootstrap";
 import Img1 from "../../Images/mbbs-in-belarus/medical-universities/belarusian-state-medical-university.png";
 import BelarusTopMedicalUniversities from "./BelarusTopMedicalUniversity";
@@ -8,13 +10,23 @@ import FAQ from "../Includes/FAQ";
 import FreeCouncelling from "../Includes/FreeCouncelling";
 
 const BelarusianStateMedicalUniversity = () => {
-  const [show, setShow] = useState(false); useEffect(() => {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
     window.scrollTo(0, 0);
   });
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(false);
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title> Belarusian State Medical | MBBS in Belarus | GOE</title>
+        <link rel="canonical" href="https://glowoverseas.com/mbbs-in-belarus/belarusian-state-medical-university" />
+        <meta
+          name="description"
+          content="MBBS in Belarusian State Medical University is the best place to Study MBBS in Belarus. Call Us for Free Counselling"
+        />
+      </Helmet>
       <div id="abt">
         <div className="container">
           <div className="row">
@@ -24,17 +36,17 @@ const BelarusianStateMedicalUniversity = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a className="text-decoration-none" as={Link} to="/">
+                      <Link className="text-decoration-none" to="/">
                         Home
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item">
-                      <a
+                      <Link
                         className="text-decoration-none"
-                        as={Link} to="/mbbs-in-belarus"
+                        to="/mbbs-in-belarus"
                       >
                         MBBS in Belarus
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       Belarusian State Medical University
@@ -206,7 +218,12 @@ const BelarusianStateMedicalUniversity = () => {
                           </li>
                         </ul>
                         <div className="text-center">
-                          <Button onClick={handleShow} className="btn btn-info text-white">Free Councelling</Button>
+                          <Button
+                            onClick={handleShow}
+                            className="btn btn-info text-white"
+                          >
+                            Free Counselling
+                          </Button>
                         </div>
                       </div>
                     </div>
@@ -302,7 +319,12 @@ const BelarusianStateMedicalUniversity = () => {
                           counsellors to get the complete fee structure.
                         </p>
                         <div className="text-center">
-                          <Button onClick={handleShow} className="btn btn-info text-white">Free Councelling</Button>
+                          <Button
+                            onClick={handleShow}
+                            className="btn btn-info text-white"
+                          >
+                            Free Counselling
+                          </Button>
                         </div>
                       </div>
                     </div>
@@ -342,12 +364,16 @@ const BelarusianStateMedicalUniversity = () => {
           </div>
         </div>
       </div>
-      
+
       <BelarusTopMedicalUniversities />
       <OtherCountries />
       <AdmissionProcess />
       <FAQ />
-      <FreeCouncelling show={show} handleClose={handleClose} title="Contact Us for Free Councelling" />
+      <FreeCouncelling
+        show={show}
+        handleClose={handleClose}
+        title="Contact Us for Free Counselling"
+      />
     </>
   );
 };

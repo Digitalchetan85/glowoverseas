@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react"; import {Link} from 'react-router-dom'; import { Helmet } from "react-helmet";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 import { Button, Image } from "react-bootstrap";
 import Img1 from "../../Images/mbbs-in-egypt/medical-universities/ain-shams-university-faculty-of-medicine.png";
@@ -9,7 +11,8 @@ import FAQ from "../Includes/FAQ";
 import FreeCouncelling from "../Includes/FreeCouncelling";
 
 const AinShyamsUniversity = () => {
-  const [show, setShow] = useState(false); useEffect(() => {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
     window.scrollTo(0, 0);
   });
   const handleClose = () => setShow(false);
@@ -17,6 +20,18 @@ const AinShyamsUniversity = () => {
 
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title> Ain Shams University | MBBS in Egypt | GOE</title>
+        <link
+          rel="canonical"
+          href="https://glowoverseas.com/mbbs-in-egypt/ain-shyams-university"
+        />
+        <meta
+          name="description"
+          content="MBBS in Ain Shams University Faculty of Medicine is the best place to Study MBBS in Egypt. Call Us for Free Counselling"
+        />
+      </Helmet>
       <div id="abt">
         <div className="container">
           <div className="row">
@@ -26,10 +41,17 @@ const AinShyamsUniversity = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a className="text-decoration-none" as={Link} to="/">Home</a>
+                      <Link className="text-decoration-none" to="/">
+                        Home
+                      </Link>
                     </li>
                     <li className="breadcrumb-item">
-                      <a className="text-decoration-none" as={Link} to="/mbbs-in-egypt">MBBS in Egypt</a>
+                      <Link
+                        className="text-decoration-none"
+                        to="/mbbs-in-egypt"
+                      >
+                        MBBS in Egypt
+                      </Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       Ain Shams University Faculty of Medicine
@@ -76,7 +98,11 @@ const AinShyamsUniversity = () => {
                     </div>
                     <div className="col-md-4">
                       <div className="text-center">
-                        <Image src={Img1} alt="" className="img-fluid rounded shadow-sm"></Image>
+                        <Image
+                          src={Img1}
+                          alt=""
+                          className="img-fluid rounded shadow-sm"
+                        ></Image>
                       </div>
                     </div>
                   </div>
@@ -106,7 +132,12 @@ const AinShyamsUniversity = () => {
                         <p className="text-justify"></p>
 
                         <div className="text-center">
-                          <Button onClick={handleShow} className="btn btn-info text-white">Free Councelling</Button>
+                          <Button
+                            onClick={handleShow}
+                            className="btn btn-info text-white"
+                          >
+                            Free Councelling
+                          </Button>
                         </div>
                       </div>
                     </div>
@@ -196,7 +227,12 @@ const AinShyamsUniversity = () => {
                           counsellors to get the complete fee structure.
                         </p>
                         <div className="text-center">
-                          <Button onClick={handleShow} className="btn btn-info text-white">Free Councelling</Button>
+                          <Button
+                            onClick={handleShow}
+                            className="btn btn-info text-white"
+                          >
+                            Free Councelling
+                          </Button>
                         </div>
                       </div>
                     </div>
@@ -236,12 +272,17 @@ const AinShyamsUniversity = () => {
           </div>
         </div>
       </div>
-      
+
       <AdmissionProcess />
       <EgyptTopMedicalUniversities />
       <OtherCountries />
       <FAQ />
-      <FreeCouncelling show={show} handleClose={handleClose} title="Contact Us for Free Councelling" />
+      <FreeCouncelling
+        show={show}
+        handleClose={handleClose}
+        title="Contact Us for Free Counselling
+                    "
+      />
     </>
   );
 };

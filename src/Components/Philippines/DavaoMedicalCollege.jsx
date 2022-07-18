@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react"; import {Link} from 'react-router-dom'; import { Helmet } from "react-helmet";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { Button } from "react-bootstrap";
 import img1 from "../../Images/mbbs-in-philippines/medical-universities/ama-school-of-medicine.png";
 import AdmissionProcess from "../Includes/AdmissionProcess";
@@ -8,13 +10,27 @@ import OtherCountries from "../Includes/OtherCountries";
 import PhilippinesTopMedicalUniversities from "./PhilippinesTopMedicalUniversities";
 
 const DavaoMedicalCollege = () => {
-  const [show, setShow] = useState(false); useEffect(() => {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
     window.scrollTo(0, 0);
   });
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Davao Medical College | MBBS in Philippines | GOE</title>
+        <link
+          rel="canonical"
+          href="https://glowoverseas.com/mbbs-in-philippines/davao-medical-college"
+        />
+        <meta
+          name="description"
+          content="MBBS in Davao Medical College is the best place to Study MBBS in Philippines. Call Us for Free Counselling"
+        />
+      </Helmet>
+
       <div id="abt">
         <div className="container">
           <div className="row">
@@ -24,17 +40,17 @@ const DavaoMedicalCollege = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a className="text-decoration-none" as={Link} to="/">
+                      <Link className="text-decoration-none" to="/">
                         Home
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item">
-                      <a
+                      <Link
                         className="text-decoration-none"
-                        as={Link} to="/mbbs-in-philippines"
+                        to="/mbbs-in-philippines"
                       >
                         MBBS in Philippines
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       Davao Medical College
@@ -118,7 +134,7 @@ const DavaoMedicalCollege = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
                           </Button>
                         </div>
                       </div>
@@ -139,7 +155,7 @@ const DavaoMedicalCollege = () => {
                     <div className="row">
                       <div className="col-md-4">
                         <div className="">
-                          <h5 className="text-white">Geografical Position</h5>
+                          <h5 className="text-white">Geographical Position</h5>
                           <p className="text-white">
                             Manila - Capital of Philippines
                           </p>
@@ -216,7 +232,7 @@ const DavaoMedicalCollege = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
                           </Button>
                         </div>
                       </div>
@@ -264,7 +280,7 @@ const DavaoMedicalCollege = () => {
       <FreeCouncelling
         show={show}
         handleClose={handleClose}
-        title="Contact Us for Free Councelling"
+        title="Contact Us for Free Counselling"
       />
     </>
   );

@@ -104,7 +104,7 @@ const PhilippinesTopMedicalUniversities = () => {
                   onClick={handleShow}
                   className="btn btn-info text-white float-end"
                 >
-                  Free Councelling
+                  Free Counselling
                 </Button>
               </div>
             </div>

@@ -23,7 +23,7 @@ const MbbsInBelarus = () => {
         <link rel="canonical" href="https://glowoverseas.com/mbbs-in-belarus" />
         <meta
           name="description"
-          content="MBBS in Belarus is the best place to Study MBBS in Abroad. Call Us for Free Councelling"
+          content="MBBS in Belarus is the best place to Study MBBS in Abroad. Call Us for Free Counselling"
         />
       </Helmet>
       <div id="abt1">
@@ -35,9 +35,8 @@ const MbbsInBelarus = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a as={Link} to="/">
-                        Home
-                      </a>
+                      <Link to="/">Home</Link>
+                    
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       MBBS in Belarus
@@ -158,7 +157,7 @@ const MbbsInBelarus = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
                           </Button>
                         </div>
                       </div>
@@ -256,7 +255,7 @@ const MbbsInBelarus = () => {
       <FreeCouncelling
         show={show}
         handleClose={handleClose}
-        title="Contact Us for Free Councelling"
+        title="Contact Us for Free Counselling"
       />
     </>
   );

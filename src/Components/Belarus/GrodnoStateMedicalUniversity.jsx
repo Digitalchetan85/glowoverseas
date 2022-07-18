@@ -15,6 +15,15 @@ const GrodnoStateMedicalUniversity = () => {
   const handleShow = () => setShow(true);
   return (
     <>
+    <Helmet>
+        <meta charSet="utf-8" />
+        <title> Grodno State Medical | MBBS in Belarus | GOE</title>
+        <link rel="canonical" href="https://glowoverseas.com/mbbs-in-belarus/grodno-state-medical-university" />
+        <meta
+          name="description"
+          content="MBBS in Grodno State Medical University is the best place to Study MBBS in Belarus. Call Us for Free Counselling"
+        />
+      </Helmet>
       <div id="abt">
         <div className="container">
           <div className="row">
@@ -24,17 +33,17 @@ const GrodnoStateMedicalUniversity = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a className="text-decoration-none" as={Link} to="/">
+                      <Link className="text-decoration-none" to="/">
                         Home
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item">
-                      <a
+                      <Link
                         className="text-decoration-none"
-                        as={Link} to="/mbbs-in-belarus"
+                        to="/mbbs-in-belarus"
                       >
                         MBBS in Belarus
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       Grodno State Medical University
@@ -208,7 +217,7 @@ const GrodnoStateMedicalUniversity = () => {
                           </li>
                         </ul>
                         <div className="text-center">
-                          <Button onClick={handleShow} className="btn btn-info text-white">Free Councelling</Button>
+                          <Button onClick={handleShow} className="btn btn-info text-white">Free Counselling</Button>
                         </div>
                       </div>
                     </div>
@@ -304,7 +313,7 @@ const GrodnoStateMedicalUniversity = () => {
                           counsellors to get the complete fee structure.
                         </p>
                         <div className="text-center">
-                          <Button onClick={handleShow} className="btn btn-info text-white">Free Councelling</Button>
+                          <Button onClick={handleShow} className="btn btn-info text-white">Free Counselling</Button>
                         </div>
                       </div>
                     </div>
@@ -348,7 +357,7 @@ const GrodnoStateMedicalUniversity = () => {
       <BelarusTopMedicalUniversities />
       <OtherCountries />
       <FAQ />
-      <FreeCouncelling show={show} handleClose={handleClose} title="Contact Us for Free Councelling" />
+      <FreeCouncelling show={show} handleClose={handleClose} title="Contact Us for Free Counselling" />
      </>
   );
 };

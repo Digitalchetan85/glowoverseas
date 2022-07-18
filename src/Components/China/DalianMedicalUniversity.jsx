@@ -8,6 +8,7 @@ import FAQ from "../Includes/FAQ";
 import AdmissionProcess from "../Includes/AdmissionProcess";
 import FreeCouncelling from "../Includes/FreeCouncelling";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 const DalianMedicalUniversity = () => {
   const [show, setShow] = useState(false);
@@ -18,6 +19,15 @@ const DalianMedicalUniversity = () => {
   const handleShow = () => setShow(true);
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title> Dalian Medical University | MBBS in China | GOE</title>
+        <link rel="canonical" href="https://glowoverseas.com/mbbs-in-china/dalian-medical-university" />
+        <meta
+          name="description"
+          content="MBBS in Dalian Medical University is the best place to Study MBBS in China. Call Us for Free Counselling"
+        />
+      </Helmet>
       <div id="abt">
         <div className="container">
           <div className="row">
@@ -27,18 +37,18 @@ const DalianMedicalUniversity = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a className="text-decoration-none" as={Link} to="/">
+                      <Link className="text-decoration-none" to="/">
                         Home
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item">
-                      <a
+                      <Link
                         className="text-decoration-none"
-                        as={Link}
+                        
                         to="/mbbs-in-china"
                       >
                         MBBS in China
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       Dalian Medical University
@@ -125,7 +135,8 @@ const DalianMedicalUniversity = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
+                    
                           </Button>
                         </div>
                       </div>
@@ -222,7 +233,8 @@ const DalianMedicalUniversity = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
+                    
                           </Button>
                         </div>
                       </div>
@@ -270,7 +282,8 @@ const DalianMedicalUniversity = () => {
       <FreeCouncelling
         show={show}
         handleClose={handleClose}
-        title="Contact Us for Free Councelling"
+        title="Contact Us for Free Counselling
+                    "
       />
     </div>
   );

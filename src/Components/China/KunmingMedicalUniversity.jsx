@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react"; import {Link} from 'react-router-dom'; import { Helmet } from "react-helmet";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { Button, Image } from "react-bootstrap";
 import Img1 from "../../Images/mbbs-in-china/medical-universities/Kunming.png";
 import ChinaUniversities from "../Includes/ChinaUniversities";
@@ -8,13 +10,27 @@ import FAQ from "../Includes/FAQ";
 import FreeCouncelling from "../Includes/FreeCouncelling";
 
 const KunmingMedicalUniversity = () => {
-  const [show, setShow] = useState(false); useEffect(() => {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
     window.scrollTo(0, 0);
   });
+
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title> Kunming Medical University | MBBS in China | GOE</title>
+        <link
+          rel="canonical"
+          href="https://glowoverseas.com/mbbs-in-china/kunming-medical-university"
+        />
+        <meta
+          name="description"
+          content="MBBS in Kunming Medical University is the best place to Study MBBS in China. Call Us for Free Counselling"
+        />
+      </Helmet>
       <div id="abt">
         <div className="container">
           <div className="row">
@@ -24,10 +40,17 @@ const KunmingMedicalUniversity = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a className="text-decoration-none" as={Link} to="/">Home</a>
+                      <Link className="text-decoration-none" to="/">
+                        Home
+                      </Link>
                     </li>
                     <li className="breadcrumb-item">
-                      <a className="text-decoration-none" as={Link} to="/mbbs-in-china">MBBS in China</a>
+                      <Link
+                        className="text-decoration-none"
+                        to="/mbbs-in-china"
+                      >
+                        MBBS in China
+                      </Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       Kunming Medical University
@@ -76,7 +99,11 @@ const KunmingMedicalUniversity = () => {
                     </div>
                     <div className="col-md-4">
                       <div className="text-center">
-                        <Image src={Img1} alt="" className="img-fluid rounded shadow-sm"></Image>
+                        <Image
+                          src={Img1}
+                          alt=""
+                          className="img-fluid rounded shadow-sm"
+                        ></Image>
                       </div>
                     </div>
                   </div>
@@ -111,7 +138,12 @@ const KunmingMedicalUniversity = () => {
                           Visa. We are available through phone contact 24/7.
                         </p>
                         <div className="text-center">
-                          <Button onClick={handleShow} className="btn btn-info text-white">Free Councelling</Button>
+                          <Button
+                            onClick={handleShow}
+                            className="btn btn-info text-white"
+                          >
+                            Free Councelling
+                          </Button>
                         </div>
                       </div>
                     </div>
@@ -203,7 +235,12 @@ const KunmingMedicalUniversity = () => {
                           our counsellors to get the complete fee structure.
                         </p>
                         <div className="text-center">
-                          <Button onClick={handleShow} className="btn btn-info text-white">Free Councelling</Button>
+                          <Button
+                            onClick={handleShow}
+                            className="btn btn-info text-white"
+                          >
+                            Free Councelling
+                          </Button>
                         </div>
                       </div>
                     </div>
@@ -243,12 +280,17 @@ const KunmingMedicalUniversity = () => {
           </div>
         </div>
       </div>
-      
+
       <AdmissionProcess />
       <ChinaUniversities />
       <OtherCountries />
       <FAQ />
-      <FreeCouncelling show={show} handleClose={handleClose} title="Contact Us for Free Councelling" />
+      <FreeCouncelling
+        show={show}
+        handleClose={handleClose}
+        title="Contact Us for Free Counselling
+                    "
+      />
     </>
   );
 };

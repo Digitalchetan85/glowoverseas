@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react"; import {Link} from 'react-router-dom'; import { Helmet } from "react-helmet";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 import { Button, Image } from "react-bootstrap";
 import Img1 from "../../Images/mbbs-in-kyrgyzstan/medical-universities/kyrgyz-state-medical-academy.png";
@@ -9,13 +11,26 @@ import FAQ from "../Includes/FAQ";
 import FreeCouncelling from "../Includes/FreeCouncelling";
 
 const SalymbekovUniversity = () => {
-  const [show, setShow] = useState(false); useEffect(() => {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
     window.scrollTo(0, 0);
   });
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title> Salymbekov University | MBBS in Kyrgyzstan | GOE</title>
+        <link
+          rel="canonical"
+          href="https://glowoverseas.com/mbbs-in-kyrgyzstan/salymbekov-university"
+        />
+        <meta
+          name="description"
+          content="MBBS in Salymbekov University Faculty of Medicine is the best place to Study MBBS in Kyrgyzstan. Call Us for Free Counselling"
+        />
+      </Helmet>
       <div id="abt">
         <div className="container">
           <div className="row">
@@ -25,14 +40,15 @@ const SalymbekovUniversity = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a className="text-decoration-none" as={Link} to="/">
+                      <Link className="text-decoration-none" to="/">
                         Home
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item">
                       <a
                         className="text-decoration-none"
-                        as={Link} to="/mbbs-in-kyrgyzstan"
+                        as={Link}
+                        to="/mbbs-in-kyrgyzstan"
                       >
                         MBBS in Kyrgyzstan
                       </a>
@@ -155,7 +171,7 @@ const SalymbekovUniversity = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
                           </Button>
                         </div>
                       </div>
@@ -253,7 +269,7 @@ const SalymbekovUniversity = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
                           </Button>
                         </div>
                       </div>
@@ -302,7 +318,7 @@ const SalymbekovUniversity = () => {
       <FreeCouncelling
         show={show}
         handleClose={handleClose}
-        title="Contact Us for Free Councelling"
+        title="Contact Us for Free Counselling"
       />
     </>
   );

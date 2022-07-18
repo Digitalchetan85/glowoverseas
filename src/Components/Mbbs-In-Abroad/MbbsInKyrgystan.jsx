@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react"; import {Link} from 'react-router-dom'; import { Helmet } from "react-helmet";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import FAQ from "../Includes/FAQ";
 import AdmissionProcess from "../Includes/AdmissionProcess";
 import OtherCountries from "../Includes/OtherCountries";
@@ -7,23 +9,33 @@ import { Button } from "react-bootstrap";
 import FreeCouncelling from "../Includes/FreeCouncelling";
 
 const MbbsInKyrgystan = () => {
-  const [show, setShow] = useState(false); useEffect(() => {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
     window.scrollTo(0, 0);
   });
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>MBBS in Kyrgyzstan | MBBS in Abroad | GOE</title>
+        <link rel="canonical" href="https://glowoverseas.com/mbbs-in-kyrgyzstan" />
+        <meta
+          name="description"
+          content="MBBS in Kyrgyzstan is the best place to Study MBBS in Abroad. Call Us for Free Counselling"
+        />
+      </Helmet>
       <div id="abt1">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
               <div className="pt-5 pb-5">
-                <h2>MBBS in kyrgyzstan</h2>
+                <h2>MBBS in Kyrgyzstan</h2>
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a as={Link} to="/">Home</a>
+                    <Link to="/">Home</Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       MBBS in Kyrgyzstan
@@ -251,7 +263,7 @@ const MbbsInKyrgystan = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
                           </Button>
                         </div>
                       </div>
@@ -572,7 +584,7 @@ const MbbsInKyrgystan = () => {
       <FreeCouncelling
         show={show}
         handleClose={handleClose}
-        title="Contact Us for Free Councelling"
+        title="Contact Us for Free Counselling"
       />
     </>
   );

@@ -15,6 +15,16 @@ const YerevanHaybusakUniversity = () => {
   const handleShow = () => setShow(true);
   return (
     <>
+    <Helmet>
+        <meta charSet="utf-8" />
+        <title> Yerevan Haybusak University | MBBS in Armenia | GOE</title>
+        <link rel="canonical" href="https://glowoverseas.com/mbbs-in-armenia/yerevan-haybusak-university-faculty-of-medicine"/>
+        <meta
+          name="description"
+          content="MBBS in Yerevan Haybusak University Faculty of Medicine is the best place to Study MBBS in Armenia. Call Us for Free Counselling"
+        />
+      </Helmet>
+
       <div id="abt">
         <div className="container">
           <div className="row">
@@ -24,17 +34,16 @@ const YerevanHaybusakUniversity = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a as={Link} to="/" className="text-decoration-none">
+                      <Link to="/" className="text-decoration-none">
                         Home
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item">
-                      <a
-                        as={Link} to="/mbbs-in-armenia"
+                      <Link to="/mbbs-in-armenia"
                         className="text-decoration-none"
                       >
                         MBBS in Armenia
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       Yerevan Haybusak University Faculty of Medicine"
@@ -152,7 +161,7 @@ const YerevanHaybusakUniversity = () => {
                       onClick={handleShow}
                       className="btn btn-info text-white"
                     >
-                      Free Councelling
+                      Free Counselling
                     </Button>
                   </div>
                 </div>
@@ -247,7 +256,7 @@ const YerevanHaybusakUniversity = () => {
                       onClick={handleShow}
                       className="btn btn-info text-white"
                     >
-                      Free Councelling
+                      Free Counselling
                     </Button>
                   </div>
                 </div>
@@ -296,7 +305,7 @@ const YerevanHaybusakUniversity = () => {
       <FreeCouncelling
         show={show}
         handleClose={handleClose}
-        title="Contact us for Free Councelling"
+        title="Contact us for Free Counselling"
       />
     </>
   );

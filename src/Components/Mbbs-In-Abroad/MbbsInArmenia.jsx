@@ -22,7 +22,7 @@ const MbbsInArmenia = () => {
         <link rel="canonical" href="https://glowoverseas.com/mbbs-in-armenia" />
         <meta
           name="description"
-          content="MBBS in Armenia is the best place to Study MBBS in Abroad. Call Us for Free Councelling"
+          content="MBBS in Armenia is the best place to Study MBBS in Abroad. Call Us for Free Counselling"
         />
       </Helmet>
       <div id="abt1">
@@ -34,9 +34,7 @@ const MbbsInArmenia = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a as={Link} to="/">
-                        Home
-                      </a>
+                      <Link to="/">Home</Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       MBBS in Armenia
@@ -104,7 +102,8 @@ const MbbsInArmenia = () => {
                         </ul>
                         <div className="text-center">
                           <Button onClick={handleShow} className="btn btn-info">
-                            Free Councelling
+                            Free Counselling
+                    
                           </Button>
                         </div>
                       </div>
@@ -200,7 +199,7 @@ const MbbsInArmenia = () => {
       <FreeCouncelling
         show={show}
         handleClose={handleClose}
-        title="Contact Us for Free Councelling."
+        title="Contact Us for Free Counselling."
       />
     </>
   );

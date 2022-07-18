@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react"; import {Link} from 'react-router-dom'; import { Helmet } from "react-helmet";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { Button } from "react-bootstrap";
 import img1 from "../../Images/mbbs-in-georgia/medical-universities/tbilisi-state-medical-university-faculty-of-medicine.png";
 import AdmissionProcess from "../Includes/AdmissionProcess";
@@ -8,13 +10,26 @@ import OtherCountries from "../Includes/OtherCountries";
 import GeorgiaTopMedicalUniversities from "./GeorgiaTopMedicalUniversity";
 
 const PetreShotadzeTbilisiMedicalAcademy = () => {
-  const [show, setShow] = useState(false); useEffect(() => {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
     window.scrollTo(0, 0);
   });
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title> Petre Shotadze Tbilisi | MBBS in Georgia | GOE</title>
+        <link
+          rel="canonical"
+          href="https://glowoverseas.com/mbbs-in-georgia/petre-shotadze-tbilisi-medical-academy"
+        />
+        <meta
+          name="description"
+          content="MBBS in Petre Shotadze Tbilisi Medical Academy Faculty of Medicine is the best place to Study MBBS in Georgia. Call Us for Free Counselling"
+        />
+      </Helmet>
       <div id="abt">
         <div className="container">
           <div className="row">
@@ -24,17 +39,17 @@ const PetreShotadzeTbilisiMedicalAcademy = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a className="text-decoration-none" as={Link} to="/">
+                      <Link className="text-decoration-none" to="/">
                         Home
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item">
-                      <a
+                      <Link
                         className="text-decoration-none"
-                        as={Link} to="/mbbs-in-georgia"
+                        to="/mbbs-in-georgia"
                       >
                         MBBS in Georgia
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       Petre Shotadze Tbilisi Medical Academy Faculty of Medicine
@@ -166,7 +181,7 @@ const PetreShotadzeTbilisiMedicalAcademy = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
                           </Button>
                         </div>
                       </div>
@@ -187,7 +202,7 @@ const PetreShotadzeTbilisiMedicalAcademy = () => {
                     <div className="row">
                       <div className="col-md-4">
                         <div className="">
-                          <h5 className="text-white">Geografical Position</h5>
+                          <h5 className="text-white">Geograhical Position</h5>
                           <p className="text-white">
                             Tbilisi - Capital of Georgia
                           </p>
@@ -251,7 +266,12 @@ const PetreShotadzeTbilisiMedicalAcademy = () => {
                           complete fee structure.
                         </p>
                         <div className="text-center">
-                            <Button onClick={handleShow} className="btn btn-info text-white">Free Councelling</Button>
+                          <Button
+                            onClick={handleShow}
+                            className="btn btn-info text-white"
+                          >
+                            Free Counselling
+                          </Button>
                         </div>
                       </div>
                     </div>
@@ -296,7 +316,11 @@ const PetreShotadzeTbilisiMedicalAcademy = () => {
       <GeorgiaTopMedicalUniversities />
       <OtherCountries />
       <FAQ />
-      <FreeCouncelling show={show} handleClose={handleClose} title="Contact Us for Free Councelling"/>
+      <FreeCouncelling
+        show={show}
+        handleClose={handleClose}
+        title="Contact Us for Free Counselling"
+      />
     </>
   );
 };

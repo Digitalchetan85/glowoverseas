@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react"; import {Link} from 'react-router-dom'; import { Helmet } from "react-helmet";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { Button } from "react-bootstrap";
 import img1 from "../../Images/mbbs-in-georgia/medical-universities/david-tvildiani-medical-university-aieti-medical-school.png";
 import AdmissionProcess from "../Includes/AdmissionProcess";
@@ -8,13 +10,23 @@ import OtherCountries from "../Includes/OtherCountries";
 import GeorgiaTopMedicalUniversities from "./GeorgiaTopMedicalUniversity";
 
 const AkakiTsereteliState = () => {
-  const [show, setShow] = useState(false); useEffect(() => {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
     window.scrollTo(0, 0);
   });
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
     <>
+    <Helmet>
+        <meta charSet="utf-8" />
+        <title> Akaki Tsereteli State University | MBBS in Georgia| GOE</title>
+        <link rel="canonical" href="https://glowoverseas.com/mbbs-in-georgia/akaki-tsereteli-state-medical-university" />
+        <meta
+          name="description"
+          content="MBBS in Akaki Tsereteli State University is the best place to Study MBBS in Georgia. Call Us for Free Counselling"
+        />
+      </Helmet>
       <div id="abt">
         <div className="container">
           <div className="row">
@@ -24,17 +36,17 @@ const AkakiTsereteliState = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a className="text-decoration-none" as={Link} to="/">
+                      <Link className="text-decoration-none" to="/">
                         Home
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item">
-                      <a
+                      <Link
                         className="text-decoration-none"
-                        as={Link} to="/mbbs-in-georgia"
+                        to="/mbbs-in-georgia"
                       >
                         MBBS in Georgia
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       Akaki Tsereteli State University Faculty of Medicine
@@ -192,7 +204,7 @@ const AkakiTsereteliState = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
                           </Button>
                         </div>
                       </div>
@@ -280,7 +292,7 @@ const AkakiTsereteliState = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
                           </Button>
                         </div>
                       </div>
@@ -328,7 +340,7 @@ const AkakiTsereteliState = () => {
       <FreeCouncelling
         show={show}
         handleClose={handleClose}
-        title="Contact Us for Free Councelling"
+        title="Contact Us for Free Counselling"
       />
     </>
   );

@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react"; import {Link} from 'react-router-dom'; import { Helmet } from "react-helmet";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { Button } from "react-bootstrap";
 import University from "../../Images/mbbs-in-georgia/medical-universities/tbilisi-state-medical-university-faculty-of-medicine.png";
 import AdmissionProcess from "../Includes/AdmissionProcess";
@@ -8,13 +10,27 @@ import OtherCountries from "../Includes/OtherCountries";
 import GeorgiaTopMedicalUniversities from "./GeorgiaTopMedicalUniversity";
 
 const UniversityOfGeorgiaSchool = () => {
-  const [show, setShow] = useState(false); useEffect(() => {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
     window.scrollTo(0, 0);
   });
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>
+          {" "}
+          Georgia School of Health Sciences | MBBS in Georgia | GOE
+        </title>
+        <link rel="canonical" href="https://glowoverseas.com/mbbs-in-georgia/university-of-georgia-school" />
+        <meta
+          name="description"
+          content="MBBS in  University of Georgia School of Health Sciences and Public
+          Health is the best place to Study MBBS in Georgia. Call Us for Free Counselling"
+        />
+      </Helmet>
       <div id="abt">
         <div className="container">
           <div className="row">
@@ -24,17 +40,17 @@ const UniversityOfGeorgiaSchool = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a className="text-decoration-none" as={Link} to="/">
+                      <Link className="text-decoration-none" to="/">
                         Home
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item">
-                      <a
+                      <Link
                         className="text-decoration-none"
-                        as={Link} to="/mbbs-in-georgia"
+                        to="/mbbs-in-georgia"
                       >
                         MBBS in Georgia
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       University of Georgia School of Health Sciences and Public
@@ -165,7 +181,7 @@ const UniversityOfGeorgiaSchool = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
                           </Button>
                         </div>
                       </div>
@@ -253,7 +269,7 @@ const UniversityOfGeorgiaSchool = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
                           </Button>
                         </div>
                       </div>
@@ -278,7 +294,7 @@ const UniversityOfGeorgiaSchool = () => {
                           Hostel Facilities
                         </h5>
                         <p className="pt-2 pb-2 text-justify">
-                          In Georgian Medical Universitiesprovides a quality
+                          In Georgian Medical Universities provides a quality
                           hostel facility with security cameras and also
                           Internet Facilities are available. Separate Indian
                           hostel facilities also available who are booking your
@@ -301,7 +317,7 @@ const UniversityOfGeorgiaSchool = () => {
       <FreeCouncelling
         show={show}
         handleClose={handleClose}
-        title="Contact Us for Free Councelling"
+        title="Contact Us for Free Counselling"
       />
     </>
   );

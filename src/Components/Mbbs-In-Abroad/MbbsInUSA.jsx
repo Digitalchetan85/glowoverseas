@@ -257,7 +257,7 @@ const MbbsInUSA = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
                           </Button>
                         </div>
                       </div>
@@ -287,13 +287,13 @@ const MbbsInUSA = () => {
                             Language spoken - English
                           </p>
                           <p className="text-white">
-                            National currency is Hryvnia (UHR).1 USD =
-                            8,0Hryvnia(01/01/2010)
+                            National currency is US Dollar (USD).
+          
                           </p>
                         </div>
                         <div className="usa-map">
                           <p className="text-white text-center">
-                            Population – 46,5 million
+                            Population 32.95 crores (2020)
                             <br />
                             Territory – 6, 03,700 sq. km
                           </p>
@@ -303,7 +303,7 @@ const MbbsInUSA = () => {
                         <div className="inner-bg">
                           <div className="d-flex flex-inline">
                             <span className="high">
-                              The highest average July temperature is +17… +19°C
+                              The highest average July temperature is +17… +24°C
                             </span>
                             <span className="low">
                               The lowest temperature of January and February is
@@ -316,9 +316,7 @@ const MbbsInUSA = () => {
                         <div className="pt-1 pb-1">
                           <h5 className="text-white">Religion in USA</h5>
                           <p className="text-white">
-                            USA in religious geography lies on the boundaries
-                            separating Roman Catholic, Eastern Orthodox and
-                            Islamic spheres of influence.
+                          The United States remains a predominantly Christian nation, with 78% of all adults identifying with a Christian faith, and more than 9 in 10 of those who have a religious identity identifying as Christians.
                           </p>
                         </div>
                         <div className="pt-1 pb-1">
@@ -634,7 +632,7 @@ const MbbsInUSA = () => {
       <FreeCouncelling
         show={show}
         handleClose={handleClose}
-        title="Contact Us for Free Councelling"
+        title="Contact Us for Free Counselling"
       />
     </>
   );

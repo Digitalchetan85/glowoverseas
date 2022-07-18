@@ -15,6 +15,15 @@ const EuropeanUniversity = () => {
   const handleShow = () => setShow(true);
   return (
     <>
+    <Helmet>
+        <meta charSet="utf-8" />
+        <title> European University | MBBS in Georgia| GOE</title>
+        <link rel="canonical" href="https://glowoverseas.com/mbbs-in-georgia/european-university"/>
+        <meta
+          name="description"
+          content="MBBS in European University is the best place to Study MBBS in Georgia. Call Us for Free Counselling"
+        />
+      </Helmet>
       <div id="abt">
         <div className="container">
           <div className="row">
@@ -24,17 +33,17 @@ const EuropeanUniversity = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a className="text-decoration-none" as={Link} to="/">
+                      <Link className="text-decoration-none" to="/">
                         Home
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item">
-                      <a
+                      <Link
                         className="text-decoration-none"
-                        as={Link} to="/mbbs-in-georgia"
+                         to="/mbbs-in-georgia"
                       >
                         MBBS in Georgia
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       European University
@@ -193,7 +202,7 @@ const EuropeanUniversity = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
                           </Button>
                         </div>
                       </div>
@@ -214,7 +223,7 @@ const EuropeanUniversity = () => {
                     <div className="row">
                       <div className="col-md-4">
                         <div className="">
-                          <h5 className="text-white">Geografical Position</h5>
+                          <h5 className="text-white">Geographical Position</h5>
                           <p className="text-white">
                             Tbilisi - Capital of Georgia
                           </p>
@@ -273,7 +282,7 @@ const EuropeanUniversity = () => {
                         <h3 className="pb-2 text-center">Fees Structure</h3>
                         <p className="text-justify">
                           Study MBBS in Georgia at David Tvildiani Medical
-                          Universityan affordable cost. Fell free to talk to our
+                          University an affordable cost. Fell free to talk to our
                           counsellors to get the complete fee structure.
                         </p>
                         <div className="text-center">
@@ -281,7 +290,7 @@ const EuropeanUniversity = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
                           </Button>
                         </div>
                       </div>
@@ -329,7 +338,7 @@ const EuropeanUniversity = () => {
       <FreeCouncelling
         show={show}
         handleClose={handleClose}
-        title="Contact Us for Free Councelling"
+        title="Contact Us for Free Counselling"
       />
     </>
   );

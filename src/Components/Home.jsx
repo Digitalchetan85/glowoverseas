@@ -34,7 +34,8 @@ const Home = () => {
         <link rel="canonical" href="https://glowoverseas.com/" />
         <meta
           name="description"
-          content="Glowoveas Overseas Education is one of the best MBBS in Abroad Consultants in Bangalore. Call Us for Free Councelling"
+          content="Glowoveas Overseas Education is one of the best MBBS in Abroad Consultants in Bangalore. Call Us for Free Counselling
+                    "
         />
       </Helmet>
       <section id="slider">
@@ -330,12 +331,11 @@ const Home = () => {
                   <Image src={USA} alt="" className="img-fluid" />
                 </div>
                 <div className="text-center pt-3 pb-3">
-                  <a
-                    as={Link} to="/mbbs-in-usa"
+                  <Link to="/mbbs-in-usa"
                     className="btn custom-btn-1 btn-primary text-uppercase"
                   >
                     MBBS in USA
-                  </a>
+                  </Link>
                   {/* <Button type="submit" className="custom-btn-1 btn-primary">
                     MBBS in USA
                   </Button> */}
@@ -348,12 +348,11 @@ const Home = () => {
                   <Image src={Ukraine} alt="" className="img-fluid" />
                 </div>
                 <div className="text-center pt-3 pb-3">
-                  <a
-                    as={Link} to="/mbbs-in-ukraine"
+                  <Link to="/mbbs-in-ukraine"
                     className="btn custom-btn-1 btn-primary text-uppercase"
                   >
                     MBBS in Ukraine
-                  </a>
+                  </Link>
                   {/* <Button type="submit" className="custom-btn-1 btn-primary">
                     MBBS in Ukraine
                   </Button> */}
@@ -366,12 +365,11 @@ const Home = () => {
                   <Image src={Georgia} alt="" className="img-fluid" />
                 </div>
                 <div className="text-center pt-3 pb-3">
-                  <a
-                    as={Link} to="/mbbs-in-georgia"
+                  <Link to="/mbbs-in-georgia"
                     className="btn custom-btn-1 btn-primary text-uppercase"
                   >
                     MBBS in Georgia
-                  </a>
+                  </Link>
                   {/* <Button type="submit" className="custom-btn-1 btn-primary">
                     MBBS in Georgia
                   </Button> */}
@@ -384,12 +382,11 @@ const Home = () => {
                   <Image src={Kyrgystan} alt="" className="img-fluid" />
                 </div>
                 <div className="text-center pt-3 pb-3">
-                  <a
-                    as={Link} to="/mbbs-in-kyrgyzstan"
+                  <Link to="/mbbs-in-kyrgyzstan"
                     className="btn custom-btn-1 btn-primary text-uppercase"
                   >
                     MBBS in Kyrgyzstan
-                  </a>
+                  </Link>
                   {/* <Button type="submit" className="custom-btn-1 btn-primary">
                     MBBS in Kyrgyzstan
                   </Button> */}
@@ -404,12 +401,11 @@ const Home = () => {
                   <Image src={Phillipines} alt="" className="img-fluid" />
                 </div>
                 <div className="text-center pt-3 pb-3">
-                  <a
-                    as={Link} to="/mbbs-in-philippines"
+                  <Link to="/mbbs-in-philippines"
                     className="btn custom-btn-1 btn-primary text-uppercase"
                   >
                     MBBS in Philippines
-                  </a>
+                  </Link>
                   {/* <Button type="submit" className="custom-btn-1 btn-primary">
                     MBBS in Philippines
                   </Button> */}
@@ -422,12 +418,11 @@ const Home = () => {
                   <Image src={Kazakhstan} alt="" className="img-fluid" />
                 </div>
                 <div className="text-center pt-3 pb-3">
-                  <a
-                    as={Link} to="/mbbs-in-kazakhstan"
+                  <Link to="/mbbs-in-kazakhstan"
                     className="btn custom-btn-1 btn-primary text-uppercase"
                   >
                     MBBS in Kazakhstan
-                  </a>
+                  </Link>
                   {/* <Button type="submit" className="custom-btn-1 btn-primary">
                     MBBS in Kazakhstan
                   </Button> */}
@@ -440,12 +435,11 @@ const Home = () => {
                   <Image src={Russia} alt="" className="img-fluid" />
                 </div>
                 <div className="text-center pt-3 pb-3">
-                  <a
-                    as={Link} to="/mbbs-in-russia"
+                  <Link to="/mbbs-in-russia"
                     className="btn custom-btn-1 btn-primary text-uppercase"
                   >
                     MBBS in Russia
-                  </a>
+                  </Link>
                   {/* <Button type="submit" className="custom-btn-1 btn-primary">
                     MBBS in Russia
                   </Button> */}
@@ -458,12 +452,11 @@ const Home = () => {
                   <Image src={Poland} alt="" className="img-fluid " />
                 </div>
                 <div className="text-center pt-3 pb-3">
-                  <a
-                    as={Link} to="/mbbs-in-poland"
+                  <Link to="/mbbs-in-poland"
                     className="btn custom-btn-1 btn-primary text-uppercase"
                   >
                     MBBS in Poland
-                  </a>
+                  </Link>
                   {/* <Button type="submit" className="custom-btn-1 btn-primary">
                     MBBS in Poland
                   </Button> */}

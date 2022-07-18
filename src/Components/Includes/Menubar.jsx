@@ -268,39 +268,39 @@ const Menubar = () => {
                   title="MBBS in Philippines"
                   id="collasible-nav-dropdown"
                   drop="end"
-                  to="/mbbs-in-phillipines"
+                  to="/mbbs-in-philippines"
                 >
                   <NavDropdown.Item
                     as={NavLink}
-                    to="/mbbs-in-phillipines/ama-university"
+                    to="/mbbs-in-philippines/ama-university"
                   >
                     AMA University
                   </NavDropdown.Item>
 
                   <NavDropdown.Item
                     as={NavLink}
-                    to="/mbbs-in-phillipines/university-of-perpetual-help"
+                    to="/mbbs-in-philippines/university-of-perpetual-help"
                   >
                     University of Perpetual Help
                   </NavDropdown.Item>
 
                   <NavDropdown.Item
                     as={NavLink}
-                    to="/mbbs-in-phillipines/davao-medical-college"
+                    to="/mbbs-in-philippines/davao-medical-college"
                   >
                     Davao Medical College
                   </NavDropdown.Item>
 
                   <NavDropdown.Item
                     as={NavLink}
-                    to="/mbbs-in-phillipines/our-lady-of-fatima-university"
+                    to="/mbbs-in-philippines/our-lady-of-fatima-university"
                   >
                     Our Lady of Fatima University
                   </NavDropdown.Item>
 
                   <NavDropdown.Item
                     as={NavLink}
-                    to="/mbbs-in-phillipines/emilio-aguinaldo-college"
+                    to="/mbbs-in-philippines/emilio-aguinaldo-college"
                   >
                     Emilio Aguinaldo College of Medicine
                   </NavDropdown.Item>
@@ -370,7 +370,7 @@ const Menubar = () => {
                 >
                   <NavDropdown.Item
                     as={NavLink}
-                    to="mbbs-in-armenia/yerevan-haybusak-university"
+                    to="mbbs-in-armenia/yerevan-haybusak-university-faculty-of-medicine"
                   >
                     Yerevan Haybusak University Faculty of Medicine
                   </NavDropdown.Item>
@@ -546,7 +546,7 @@ const Menubar = () => {
               </Nav.Link>
               {/* <Nav.Link as={NavLink} to="">Franchise Enquiry</Nav.Link> */}
               {/* <Nav.Link as={NavLink} to="">Blog</Nav.Link> */}
-              <Nav.Link as={NavLink} to="">
+              <Nav.Link as={NavLink} to="/contact">
                 Contact Us
               </Nav.Link>
             </Nav>
@@ -593,7 +593,7 @@ const Menubar = () => {
                   About Us
                 </Nav.Link>
                 <NavDropdown
-                  title="MBBS in Abroad "
+                  title="MBBS in Abroad"
                   id="collasible-nav-dropdown"
                 >
                   {/* <NavDropdown
@@ -737,39 +737,39 @@ const Menubar = () => {
                     title="MBBS in Philippines"
                     id="collasible-nav-dropdown"
                     drop="end"
-                    to="/mbbs-in-phillipines"
+                    to="/mbbs-in-philippines"
                   >
                     <NavDropdown.Item
                       as={NavLink}
-                      to="/mbbs-in-phillipines/ama-university"
+                      to="/mbbs-in-philippines/ama-university"
                     >
                       AMA University
                     </NavDropdown.Item>
 
                     <NavDropdown.Item
                       as={NavLink}
-                      to="/mbbs-in-phillipines/university-of-perpetual-help"
+                      to="/mbbs-in-philippines/university-of-perpetual-help"
                     >
                       University of Perpetual Help
                     </NavDropdown.Item>
 
                     <NavDropdown.Item
                       as={NavLink}
-                      to="/mbbs-in-phillipines/davao-medical-college"
+                      to="/mbbs-in-philippines/davao-medical-college"
                     >
                       Davao Medical College
                     </NavDropdown.Item>
 
                     <NavDropdown.Item
                       as={NavLink}
-                      to="/mbbs-in-phillipines/our-lady-of-fatima-university"
+                      to="/mbbs-in-philippines/our-lady-of-fatima-university"
                     >
                       Our Lady of Fatima University
                     </NavDropdown.Item>
 
                     <NavDropdown.Item
                       as={NavLink}
-                      to="/mbbs-in-phillipines/emilio-aguinaldo-college"
+                      to="/mbbs-in-philippines/emilio-aguinaldo-college"
                     >
                       Emilio Aguinaldo College of Medicine
                     </NavDropdown.Item>
@@ -839,7 +839,7 @@ const Menubar = () => {
                   >
                     <NavDropdown.Item
                       as={NavLink}
-                      to="mbbs-in-armenia/yerevan-haybusak-university"
+                      to="mbbs-in-armenia/yerevan-haybusak-university-faculty-of-medicine"
                     >
                       Yerevan Haybusak University Faculty of Medicine
                     </NavDropdown.Item>
@@ -1015,7 +1015,7 @@ const Menubar = () => {
                 </Nav.Link>
                 {/* <Nav.Link as={NavLink} to="">Franchise Enquiry</Nav.Link> */}
                 {/* <Nav.Link as={NavLink} to="">Blog</Nav.Link> */}
-                <Nav.Link as={NavLink} to="">
+                <Nav.Link as={NavLink} to="/contact">
                   Contact Us
                 </Nav.Link>
               </Nav>

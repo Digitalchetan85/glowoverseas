@@ -14,6 +14,15 @@ const MbbsInPhillipines = () => {
   const handleShow = () => setShow(true);
   return (
     <>
+    <Helmet>
+        <meta charSet="utf-8" />
+        <title>MBBS in Philippines | MBBS in Abroad | GOE</title>
+        <link rel="canonical" href="https://glowoverseas.com/mbbs-in-philippines" />
+        <meta
+          name="description"
+          content="MBBS in Philippines is the best place to Study MBBS in Abroad. Call Us for Free Counselling"
+        />
+      </Helmet>
       <div id="abt1">
         <div className="container">
           <div className="row">
@@ -23,7 +32,7 @@ const MbbsInPhillipines = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a as={Link} to="/">Home</a>
+                    <Link to="/">Home</Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       MBBS in Philippines
@@ -374,7 +383,8 @@ const MbbsInPhillipines = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
+                    
                           </Button>
                         </div>
                       </div>
@@ -571,7 +581,8 @@ const MbbsInPhillipines = () => {
       <FreeCouncelling
         show={show}
         handleClose={handleClose}
-        title="Contact Us for Free Councelling"
+        title="Contact Us for Free Counselling
+                    "
       />
     </>
   );

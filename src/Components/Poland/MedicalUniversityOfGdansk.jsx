@@ -16,6 +16,15 @@ const MedicalUniversityOfGdansk = () => {
   const handleShow = () => setShow(true);
   return (
     <>
+    	<Helmet>
+        <meta charSet="utf-8" />
+        <title>  Medical University of Gdansk | MBBS in Poland | GOE</title>
+        <link rel="canonical" href="https://glowoverseas.com/mbbs-in-poland/medical-university-of-gdansk" />
+        <meta
+          name="description"
+          content="MBBS in  Medical University of Gdansk is the best place to Study MBBS in Poland. Call Us for Free Counselling"
+        />
+      </Helmet>
       <div id="abt">
         <div className="container">
           <div className="row">
@@ -25,17 +34,17 @@ const MedicalUniversityOfGdansk = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a className="text-decoration-none" as={Link} to="/">
+                      <Link className="text-decoration-none" to="/">
                         Home
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item">
-                      <a
+                      <Link
                         className="text-decoration-none"
-                        as={Link} to="/mbbs-in-poland"
+                        to="/mbbs-in-poland"
                       >
                         MBBS in Poland
-                      </a>
+                      </Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       Medical University of Gdansk
@@ -208,7 +217,7 @@ const MedicalUniversityOfGdansk = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
                           </Button>
                         </div>
                       </div>
@@ -305,7 +314,7 @@ const MedicalUniversityOfGdansk = () => {
                             onClick={handleShow}
                             className="btn btn-info text-white"
                           >
-                            Free Councelling
+                            Free Counselling
                           </Button>
                         </div>
                       </div>
@@ -353,7 +362,7 @@ const MedicalUniversityOfGdansk = () => {
       <FreeCouncelling
         show={show}
         handleClose={handleClose}
-        title="Contact Us for Free Councelling"
+        title="Contact Us for Free Counselling"
       />
     </>
   );
