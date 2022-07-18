@@ -1,13 +1,17 @@
-import React from "react";
-import { Image } from "react-bootstrap";
-import Ama from "../../Images/mbbs-in-philippines/medical-universities/ama-school-of-medicine.png"
-import Davao from "../../Images/mbbs-in-philippines/medical-universities/davao-medical-school-foundation-college-of-medicine.png"
-import Emilio from "../../Images/mbbs-in-philippines/medical-universities/emilio-aguinaldo-college-school-of-medicine.png"
-import Lady from "../../Images/mbbs-in-philippines/medical-universities/our-lady-of-fatima-university-college-of-medicine.png"
-import Perpetual from "../../Images/mbbs-in-philippines/medical-universities/university-of-perpetual-help.png"
+import React, { useState, useEffect } from "react"; import {Link} from 'react-router-dom'; import { Helmet } from "react-helmet";
+import { Button } from "react-bootstrap";
+import AdmissionProcess from "../Includes/AdmissionProcess";
 import FAQ from "../Includes/FAQ";
+import FreeCouncelling from "../Includes/FreeCouncelling";
+import OtherCountries from "../Includes/OtherCountries";
+import PhilippinesTopMedicalUniversities from "../Philippines/PhilippinesTopMedicalUniversities";
 
 const MbbsInPhillipines = () => {
+  const [show, setShow] = useState(false); useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <>
       <div id="abt1">
@@ -15,14 +19,14 @@ const MbbsInPhillipines = () => {
           <div className="row">
             <div className="col-md-12">
               <div className="pt-5 pb-5">
-                <h2>MBBS in PHILIPPINES </h2>
+                <h2>MBBS in Philippines </h2>
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a href="/">Home</a>
+                      <a as={Link} to="/">Home</a>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
-                      MBBS in PHILIPPINES
+                      MBBS in Philippines
                     </li>
                   </ol>
                 </nav>
@@ -32,7 +36,7 @@ const MbbsInPhillipines = () => {
         </div>
       </div>
 
-      <div id="country" className="pt-5 pb-5">
+      <div id="country" className="pt-5">
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-12">
@@ -42,11 +46,10 @@ const MbbsInPhillipines = () => {
                     <div className="col-md-12">
                       <div className="pb-2">
                         <h4 className="text-start text-info pt-2 pb-2">
-                          MBBS in PHILIPPINES
+                          MBBS in Philippines
                         </h4>
-                        {/* <img src="./images/mbbs-in-USA-flag.jpg.png" alt="" className="img-fluid rounded-circle ml-3"> */}
-                        
-                        <p className="pt-2 pb-2 text-justify">
+
+                        <p className="text-justify">
                           MBBS in Philippines is the best considerable
                           destination to study a course of medicine for Indian
                           students. It enables the students to have brighter
@@ -55,7 +58,7 @@ const MbbsInPhillipines = () => {
                           practical education which empowers the candidates to
                           become successful practitioners.
                         </p>
-                        <p className="pt-2 pb-2 text-justify">
+                        <p className="text-justify">
                           The Philippines provides the American system of
                           medical education and the Primary Medical
                           qualification. The MBBS course offered to students in
@@ -63,11 +66,11 @@ const MbbsInPhillipines = () => {
                           Medicine). Philippines MBBS College fees would range
                           anywhere between 12 to 25 lacs.
                         </p>
-                        <p className="pt-2 pb-2 text-justify">
+                        <p className="text-justify">
                           Philippines is an English-speaking country more than
                           95% of people speaks English language.
                         </p>
-                        <p className="pt-2 pb-2 text-justify">
+                        <p className="text-justify">
                           MBBS in Philippines has an advantage such as good
                           weather and low-cost medical colleges for Indian
                           students. Hence it becomes a great option for students
@@ -79,7 +82,7 @@ const MbbsInPhillipines = () => {
                           Philippines is different for different medical
                           universes moreover MBBS Philippines fees is not much
                         </p>
-                        <p className="pt-2 pb-2 text-justify">
+                        <p className="text-justify">
                           <b>WHY STUDY IN PHILIPPINES & ITS ADVANTAGES ?</b>
                           <ol>
                             <li>
@@ -151,11 +154,11 @@ const MbbsInPhillipines = () => {
                             </li>
                           </ol>
                         </p>
-                        <h2 className="text-center pt-2 pb-2">
-                          WHAT ARE THE OPPORTUNITIES AFTER MBBS IN THE
-                          PHILIPPINES?
+                        <h2 className="text-info pt-2 pb-2">
+                          What are the opportunities after MBBS in the
+                          Philippines?
                         </h2>
-                        <p className="pt-2 pb-2 text-justify">
+                        <p className="text-justify">
                           The Philippines has good educational, medical
                           institutes that provide top-quality education. One of
                           the important factors about this country is that the
@@ -168,7 +171,7 @@ const MbbsInPhillipines = () => {
                           it is because of the same methodology; it gets easy
                           for students to study for a PG program in the USA.
                         </p>
-                        <p className="pt-2 pb-2 text-justify">
+                        <p className="text-justify">
                           Apart from the USA, Indian Students who are pursuing
                           their MBBS degree from the Philippines can also apply
                           for PG in the UK and PG in Australia. These are the
@@ -182,65 +185,67 @@ const MbbsInPhillipines = () => {
                             Quick Information About MBBS In Philippines
                           </strong>
                         </p>
-                        <table className="table-bordered pt-3 pb-3">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <b>Recognition</b>
-                              </td>
-                              <td>- NMC and WHO approved</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <b>Eligibility</b>
-                              </td>
-                              <td>
-                                - 50% in Physics, Chemistry and Biology
-                                Aggregate 40% for the Reserved
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <b>Course Duration</b>
-                              </td>
-                              <td>- 5.5 to 6 Years</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <b>NEET</b>
-                              </td>
-                              <td>- Yes, compulsory</td>
-                            </tr>
+                        <div className="table-responsive">
+                          <table className="table-bordered pt-3 pb-3 w-100 align-middle">
+                            <tbody>
+                              <tr>
+                                <td className="px-2">
+                                  <b>Recognition</b>
+                                </td>
+                                <td className="px-2">- NMC and WHO approved</td>
+                              </tr>
+                              <tr>
+                                <td className="px-2">
+                                  <b>Eligibility</b>
+                                </td>
+                                <td className="px-2">
+                                  - 50% in Physics, Chemistry and Biology
+                                  Aggregate 40% for the Reserved
+                                </td>
+                              </tr>
+                              <tr>
+                                <td className="px-2">
+                                  <b>Course Duration</b>
+                                </td>
+                                <td className="px-2">- 5.5 to 6 Years</td>
+                              </tr>
+                              <tr>
+                                <td className="px-2">
+                                  <b>NEET</b>
+                                </td>
+                                <td className="px-2">- Yes, compulsory</td>
+                              </tr>
 
-                            <tr>
-                              <td>
-                                <b>IELTS/TOFEL</b>
-                              </td>
-                              <td>- Not Required</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <b>Medium of Teaching</b>
-                              </td>
-                              <td>- English </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        <h5 className="pt-2 pb-2">
+                              <tr>
+                                <td className="px-2">
+                                  <b>IELTS/TOFEL</b>
+                                </td>
+                                <td className="px-2">- Not Required</td>
+                              </tr>
+                              <tr>
+                                <td className="px-2">
+                                  <b>Medium of Teaching</b>
+                                </td>
+                                <td className="px-2">- English </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <h3 className="py-3 text-info">
                           MBBS Syllabus in Philippines
-                        </h5>
-                        <p className="pt-2 pb-2 text-justify">
+                        </h3>
+                        <p className="text-justify">
                           <b>First Year - </b>Human Anatomy and Physiology,
                           Biochemistry, Preventive Medicine, Community health,
-                          Psychiatry and Medical Practice{" "}
+                          Psychiatry and Medical Practice
                         </p>
-                        <p className="pt-2 pb-2 text-justify">
+                        <p className="text-justify">
                           <b>Second Year - </b>fundamental concepts in
                           Pathology, Microbiology and Parasitology,
                           Pharmacology, Medicine and Surgery, Psychiatry II and
                           Medical Economics.
                         </p>
-                        <p className="pt-2 pb-2 text-justify">
+                        <p className="text-justify">
                           <b>Third and Fourth year - </b>The core focus is
                           placed on studying the specializations in both
                           medicine and surgery. The subjects taught in the
@@ -250,7 +255,7 @@ const MbbsInPhillipines = () => {
                           Surgery allied subjects like Anaesthesiology, ENT,
                           Ophthalmology, Orthopaedics.
                         </p>
-                        <p className="pt-2 pb-2 text-justify">
+                        <p className="text-justify">
                           <b>Internship</b>It provides a platform for students
                           to put their learned skills in practice. The
                           internship is mandatory and lasts for one year at the
@@ -262,99 +267,116 @@ const MbbsInPhillipines = () => {
                           gynaecology, etc.
                         </p>
 
-                        <table className="table-bordered">
-                          <thead>
-                            <tr className="bg-primary text-white text-center">
-                              <th scope="col">Basis</th>
-                              <th scope="col">MBBS in India</th>
-                              <th scope="col">MBBS in Philippines</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td className="text-center">Name</td>
-                              <td className="table-info">
-                                In India, MBBS is the (Bachelor of Medicine and
-                                Bachelor of Surgery) basic formal graduate
-                                degree In USA, the graduate medical degree is
-                                known as M.D. and since the Philippines follows
-                                the same education system, they also call it
-                                M.D. (Doctor of Medicine).
-                              </td>
-                              <td>
-                                In USA, the graduate medical degree is known as
-                                M.D. and since the Philippines follows the same
-                                education system, they also call it M.D. (Doctor
-                                of Medicine).
-                              </td>
-                            </tr>
-                            <tr>
-                              <td className="text-center">
-                                Eligibility Criteria
-                              </td>
-                              <td className="table-info">
-                                Students who have completed their 10+2 with
-                                science are eligible for MBBS competitive exams.
-                              </td>
-                              <td>
-                                In Philippines candidates must complete 2 years
-                                of B.S. (Bachelor of Science) prior to pursuing
-                                4 years of M.D. Students who have completed
-                                their 10+2 require completing their B.S. course
-                                from the Philippines medical college. B.S. is a
-                                10 to 18 months program, which depends on the
-                                University you choose to pursue your medical
-                                education. Between B.S. and M.D., you need to
-                                appear for NMAT (National medical aptitude test)
-                                to qualify for the M.D. course.
-                              </td>
-                            </tr>
-                            <tr>
-                              <td className="text-center">
-                                Educational Approach
-                              </td>
-                              <td className="table-info">
-                                In MBBS, the focus is usually given on a
-                                detailed study in human anatomy, physiology,
-                                medical biochemistry, pathology, applied
-                                pharmacology microbiology, dermatology,
-                                paediatrics, otolaryngology, and general
-                                surgery.
-                              </td>
-                              <td>
-                                In the Philippines, more emphasis is given on
-                                practical learning and objective paper models.
-                              </td>
-                            </tr>
+                        <div className="table-responsive">
+                          <table className="table-bordered mt-3 mb-3 w-100 align-middle">
+                            <thead>
+                              <tr className="bg-info text-white text-center">
+                                <th className="px-2" scope="col">
+                                  Basis
+                                </th>
+                                <th className="px-2" scope="col">
+                                  MBBS in India
+                                </th>
+                                <th className="px-2" scope="col">
+                                  MBBS in Philippines
+                                </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td className="text-center px-2">Name</td>
+                                <td className="px-2">
+                                  In India, MBBS is the (Bachelor of Medicine
+                                  and Bachelor of Surgery) basic formal graduate
+                                  degree In USA, the graduate medical degree is
+                                  known as M.D. and since the Philippines
+                                  follows the same education system, they also
+                                  call it M.D. (Doctor of Medicine).
+                                </td>
+                                <td className="px-2">
+                                  In USA, the graduate medical degree is known
+                                  as M.D. and since the Philippines follows the
+                                  same education system, they also call it M.D.
+                                  (Doctor of Medicine).
+                                </td>
+                              </tr>
+                              <tr>
+                                <td className="text-center px-2">
+                                  Eligibility Criteria
+                                </td>
+                                <td className="px-2">
+                                  Students who have completed their 10+2 with
+                                  science are eligible for MBBS competitive
+                                  exams.
+                                </td>
+                                <td className="px-2">
+                                  In Philippines candidates must complete 2
+                                  years of B.S. (Bachelor of Science) prior to
+                                  pursuing 4 years of M.D. Students who have
+                                  completed their 10+2 require completing their
+                                  B.S. course from the Philippines medical
+                                  college. B.S. is a 10 to 18 months program,
+                                  which depends on the University you choose to
+                                  pursue your medical education. Between B.S.
+                                  and M.D., you need to appear for NMAT
+                                  (National medical aptitude test) to qualify
+                                  for the M.D. course.
+                                </td>
+                              </tr>
+                              <tr>
+                                <td className="text-center px-2">
+                                  Educational Approach
+                                </td>
+                                <td className="px-2">
+                                  In MBBS, the focus is usually given on a
+                                  detailed study in human anatomy, physiology,
+                                  medical biochemistry, pathology, applied
+                                  pharmacology microbiology, dermatology,
+                                  paediatrics, otolaryngology, and general
+                                  surgery.
+                                </td>
+                                <td className="px-2">
+                                  In the Philippines, more emphasis is given on
+                                  practical learning and objective paper models.
+                                </td>
+                              </tr>
 
-                            <tr>
-                              <td className="text-center">Education Cost</td>
-                              <td className="table-info">
-                                Pursuing MBBS in India is expensive.
-                              </td>
-                              <td>
-                                The entire cost of education, including the stay
-                                in the Philippines, is a lot more reasonable
-                                compared to India.
-                              </td>
-                            </tr>
+                              <tr>
+                                <td className="text-center px-2">
+                                  Education Cost
+                                </td>
+                                <td className="px-2">
+                                  Pursuing MBBS in India is expensive.
+                                </td>
+                                <td className="px-2">
+                                  The entire cost of education, including the
+                                  stay in the Philippines, is a lot more
+                                  reasonable compared to India.
+                                </td>
+                              </tr>
 
-                            <tr>
-                              <td className="text-center">Exposure</td>
-                              <td className="table-info">
-                                Students get international exposure and you get
-                                more growth opportunities
-                              </td>
-                              <td>
-                                Students have no international exposure and
-                                limited opportunities for growth
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        {/* <div className="text-center">
-                                            <?php include 'templates/free-councelling.php' ?>
-                                        </div> */}
+                              <tr>
+                                <td className="text-center px-2">Exposure</td>
+                                <td className="px-2">
+                                  Students get international exposure and you
+                                  get more growth opportunities
+                                </td>
+                                <td className="px-2">
+                                  Students have no international exposure and
+                                  limited opportunities for growth
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div className="text-center">
+                          <Button
+                            onClick={handleShow}
+                            className="btn btn-info text-white"
+                          >
+                            Free Councelling
+                          </Button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -437,92 +459,98 @@ const MbbsInPhillipines = () => {
                   </div>
                 </div>
 
-                <div className="top-medical-university pt-5 pb-5">
+                <div className="top-medical-university pt-5">
                   <div className="row">
                     <div className="col-md-12">
-                      <h3 className="text-center pt-5 pb-3">
+                      <h3 className="text-center pt-3 pb-3">
                         Top Medical Universities in Philippines
                       </h3>
-                      <table className="table-bordered mt-3 mb-3">
-                        <thead>
-                          <tr>
-                            <th scope="col">University Name</th>
-                            <th scope="col">Year of Establishment</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">
-                              <b>University of Perpetual Help System DALTA </b>
-                            </th>
-                            <td>1975</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">
-                              <b>AMA School of Medicine</b>
-                            </th>
-                            <td>1975</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">
-                              <b>UV Gullas College of Medicine</b>
-                            </th>
-                            <td>1919</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">
-                              <b>Davao Medical School Foundation</b>
-                            </th>
-                            <td>1969 </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">
-                              <b>Lyceum North-western University</b>
-                            </th>
-                            <td>1969</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">
-                              <b>Xavier University</b>
-                            </th>
-                            <td>1933</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">
-                              <b>Our Lady of Fatima University</b>
-                            </th>
-                            <td>1973</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">
-                              <b>Bicol Christian College of Medicine</b>
-                            </th>
-                            <td>1980</td>
-                          </tr>
-                        </tbody>
-                      </table>
+                      <div className="table-responsive">
+                        <table className="table-bordered mt-3 mb-3 w-100 align-middle">
+                          <thead>
+                            <tr>
+                              <th className="px-2" scope="col">
+                                University Name
+                              </th>
+                              <th className="px-2" scope="col">
+                                Year of Establishment
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th className="px-2" scope="row">
+                                University of Perpetual Help System DALTA
+                              </th>
+                              <td className="px-2">1975</td>
+                            </tr>
+                            <tr>
+                              <th className="px-2" scope="row">
+                                AMA School of Medicine
+                              </th>
+                              <td className="px-2">1975</td>
+                            </tr>
+                            <tr>
+                              <th className="px-2" scope="row">
+                                UV Gullas College of Medicine
+                              </th>
+                              <td className="px-2">1919</td>
+                            </tr>
+                            <tr>
+                              <th className="px-2" scope="row">
+                                Davao Medical School Foundation
+                              </th>
+                              <td className="px-2">1969 </td>
+                            </tr>
+                            <tr>
+                              <th className="px-2" scope="row">
+                                Lyceum North-western University
+                              </th>
+                              <td className="px-2">1969</td>
+                            </tr>
+                            <tr>
+                              <th className="px-2" scope="row">
+                                Xavier University
+                              </th>
+                              <td className="px-2">1933</td>
+                            </tr>
+                            <tr>
+                              <th className="px-2" scope="row">
+                                Our Lady of Fatima University
+                              </th>
+                              <td className="px-2">1973</td>
+                            </tr>
+                            <tr>
+                              <th className="px-2" scope="row">
+                                Bicol Christian College of Medicine
+                              </th>
+                              <td className="px-2">1980</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
 
                       <p className="text-justify">
                         Glow Overseas Education recommended Universities to
                         Study MBBS in Philippines.
                         <ul className="pt-2">
                           <li>
-                            <a href="mbbs-in-philippines/ama-university.php">
+                            <a as={Link} to="mbbs-in-philippines/ama-university">
                               AMA University
                             </a>
                           </li>
                           <li>
-                            <a href="mbbs-in-philippines/davao-medical-college.php">
+                            <a as={Link} to="mbbs-in-philippines/davao-medical-college">
                               Davao Medical College
                             </a>
                           </li>
                           <li>
-                            <a href="mbbs-in-philippines/our-lady-of-fatima-university.php">
+                            <a as={Link} to="mbbs-in-philippines/our-lady-of-fatima-university">
                               Our Lady of Fatima University
                             </a>
                           </li>
                           <li>
-                            <a href="mbbs-in-philippines/university-perpetual-help.php">
+                            <a as={Link} to="mbbs-in-philippines/university-perpetual-help">
                               University Perpetual Help
                             </a>
                           </li>
@@ -530,175 +558,21 @@ const MbbsInPhillipines = () => {
                       </p>
                     </div>
                   </div>
-                  <div class="row pt-5">
-                    <div class="col-md-6">
-                      <div class="university-country">
-                        <h5 class="pt-2 pb-2 text-center">AMA University</h5>
-                        {/* <img src="./images/mbbs-in-philippines/medical-universities/ama-school-of-medicine.png" alt="" class="img-fluid"> */}
-                        <Image src={Ama} alt="" className="img-fluid"></Image>
-                        <p class="pt-2 pb-2 text-justify">
-                          AMA University is one of the top Medical University in
-                          Ukraine. Get more details on Fees Structure, Hostel,
-                          Indian Food Facility and other uncleared information.
-                        </p>
-                        <div class="">
-                          {/* <?php include 'templates/university-book-now.php'  ?> */}
-                          <a
-                            href="/ama-university"
-                            class="pt-2 pb-2 btn btn-warning m-2 float-right"
-                          >
-                            Read more
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="university-country">
-                        <h5 class="pt-2 pb-2 text-center">
-                          Davao Medical College
-                        </h5>
-                        {/* <img src="./images/mbbs-in-philippines/medical-universities/davao-medical-school-foundation-college-of-medicine.png" alt="" class="img-fluid"> */}
-                        <Image src={Davao} alt="" className="img-fluid"></Image>
-                        <p class="pt-2 pb-2 text-justify">
-                          Davao Medical College is one of the top Medical
-                          University in Ukraine. Get more details on Fees
-                          Structure, Hostel, Indian Food Facility and other
-                          uncleared information.
-                        </p>
-                        <div class="">
-                          {/* <?php include 'templates/university-book-now.php'  ?> */}
-                          <a
-                            href="/davao-medical-college"
-                            class="pt-2 pb-2 btn btn-warning m-2 float-right"
-                          >
-                            Read more
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row pt-5">
-                    <div class="col-md-6">
-                      <div class="university-country">
-                        <h5 class="pt-2 pb-2 text-center">
-                          Emilio Aguinaldo College of Medicine
-                        </h5>
-                        {/* <img src="./images/mbbs-in-philippines/medical-universities/emilio-aguinaldo-college-school-of-medicine.png" alt="" class="img-fluid"> */}
-                        <Image src={Emilio} alt="" className="img-fluid"></Image>
-                        <p class="pt-2 pb-2 text-justify">
-                          Emilio Aguinaldo College of Medicine is one of the top
-                          Medical University in Ukraine. Get more details on
-                          Fees Structure, Hostel, Indian Food Facility and other
-                          uncleared information.
-                        </p>
-                        <div class="">
-                          {/* <?php include 'templates/university-book-now.php'  ?> */}
-                          <a
-                            href="/emilio-aguinaldo-college"
-                            class="pt-2 pb-2 btn btn-warning m-2 float-right"
-                          >
-                            Read more
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="university-country">
-                        <h5 class="pt-2 pb-2 text-center">
-                          Our Lady of Fatima University
-                        </h5>
-                        {/* <img src="./images/mbbs-in-philippines/medical-universities/our-lady-of-fatima-university-college-of-medicine.png" alt="" class="img-fluid"> */}<Image src={Lady} alt="" className="img-fluid"></Image>
-                        <p class="pt-2 pb-2 text-justify">
-                          Our Lady of Fatima University is one of the top
-                          Medical University in Ukraine. Get more details on
-                          Fees Structure, Hostel, Indian Food Facility and other
-                          uncleared information.
-                        </p>
-                        <div class="">
-                          {/* <?php include 'templates/university-book-now.php'  ?> */}
-                          <a
-                            href="/our-lady-of-fatima-university"
-                            class="pt-2 pb-2 btn btn-warning m-2 float-right"
-                          >
-                            Read more
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row pt-5">
-                    <div class="col-md-6">
-                      <div class="university-country">
-                        <h5 class="pt-2 pb-2 text-center">
-                          University of Perpetual Help
-                        </h5>
-                        {/* <img src="./images/mbbs-in-philippines/medical-universities/university-of-perpetual-help.png" alt="" class="img-fluid"> */}
-                        <Image src={Perpetual} alt="" className="img-fluid"></Image>
-                        <p class="pt-2 pb-2 text-justify">
-                          University of Perpetual Help is one of the top Medical
-                          University in Ukraine. Get more details on Fees
-                          Structure, Hostel, Indian Food Facility and other
-                          uncleared information.
-                        </p>
-                        <div class="">
-                          {/* <?php include 'templates/university-book-now.php'  ?> */}
-                          <a
-                            href="/university-of-perpetual-help"
-                            class="pt-2 pb-2 btn btn-warning m-2 float-right"
-                          >
-                            Read more
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-                <FAQ />
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <div id="social" className="pt-5 pb-5">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-2"></div>
-            <div className="col-md-8">
-              <div className="">
-                <h2 className="text-center pt-2 pb-2">Social Connect</h2>
-                <div className="text-center pt-3 pb-3">
-                  <a
-                    href="https://www.facebook.com/glowoverseaseducation"
-                    target="_blank"
-                  >
-                    <i className="fab fa-facebook-f icons"></i>
-                  </a>{" "}
-                  &nbsp;
-                  <a href="https://twitter.com/GlowOverseas" target="_blank">
-                    <i className="fab fa-twitter icons"></i>
-                  </a>{" "}
-                  &nbsp;
-                  <a
-                    href="https://www.youtube.com/channel/UCjYolwMMKKnzceHVQnJnmSQ"
-                    target="_blank"
-                  >
-                    <i className="fab fa-youtube icons"></i>
-                  </a>{" "}
-                  &nbsp;
-                  <a
-                    href="https://www.instagram.com/glowoverseaseducation/"
-                    target="_blank"
-                  >
-                    <i className="fab fa-instagram icons"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-2"></div>
-          </div>
-        </div>
-      </div>
+      <PhilippinesTopMedicalUniversities />
+      <AdmissionProcess />
+      <OtherCountries />
+      <FAQ />
+      <FreeCouncelling
+        show={show}
+        handleClose={handleClose}
+        title="Contact Us for Free Councelling"
+      />
     </>
   );
 };

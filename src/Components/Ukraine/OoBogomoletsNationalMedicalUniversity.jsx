@@ -11,8 +11,8 @@ const OoBogomoletsNationalMedicalUniversity = () => {
                         <h2>MBBS in Ukraine</h2>
                         <nav aria-label="breadcrumb">
                             <ol className="breadcrumb">
-                              <li className="breadcrumb-item"><a href="/">Home</a></li>
-                              <li className="breadcrumb-item"><a href="../mbbs-in-ukraine.php">MBBS in Ukraine</a></li>
+                              <li className="breadcrumb-item"><a as={Link} to="/">Home</a></li>
+                              <li className="breadcrumb-item"><a as={Link} to="/mbbs-in-ukraine">MBBS in Ukraine</a></li>
                               <li className="breadcrumb-item active" aria-current="page">O O Bogomolets National Medical University</li>
                             </ol>
                           </nav>
@@ -95,7 +95,7 @@ const OoBogomoletsNationalMedicalUniversity = () => {
                                             <li>The candidate should have to clear NEET entrance test followed by Medical Council of India.</li>
                                         </ul>
                                         <div className="text-center">
-                                            <?php include '../templates/university-free-councelling.php' ?>
+                                            <?php include '../templates/university-free-councelling' ?>
                                         </div>
                                     </div>
                                 </div>
@@ -166,7 +166,7 @@ const OoBogomoletsNationalMedicalUniversity = () => {
                                             Study MBBS in Ukraine at Black Sea National Medical University an affordable cost. Fell free to talk to our counsellors to get the complete fee structure.
                                         </p>
                                         <div className="text-center">
-                                            <<?php include '../templates/university-free-councelling.php' ?>
+                                            <<?php include '../templates/university-free-councelling' ?>
                                         </div>
                                     </div>
                                 </div>
@@ -231,8 +231,8 @@ const OoBogomoletsNationalMedicalUniversity = () => {
                                                             Taras Schevchenko National Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
                                                         </p>
                                                         <div className="">
-                                                            <?php include '../templates/university-free-councelling.php' ?>
-                                                            <a href="../mbbs-in-ukraine/taras-schevchenko-national-medical-university.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
+                                                            <?php include '../templates/university-free-councelling' ?>
+                                                            <a as={Link} to="/mbbs-in-ukraine/taras-schevchenko-national-medical-university" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -248,8 +248,8 @@ const OoBogomoletsNationalMedicalUniversity = () => {
                                                             Kharkiv Interational Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
                                                         </p>
                                                         <div className="">
-                                                            <?php include '../templates/university-free-councelling.php' ?>
-                                                            <a href="../mbbs-in-ukraine/kharkiv-national-medical-university.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
+                                                            <?php include '../templates/university-free-councelling' ?>
+                                                            <a as={Link} to="/mbbs-in-ukraine/kharkiv-national-medical-university" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -265,8 +265,8 @@ const OoBogomoletsNationalMedicalUniversity = () => {
                                                             Vinnitsa National Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
                                                         </p>
                                                         <div className="">
-                                                            <?php include '../templates/university-free-councelling.php' ?>
-                                                            <a href="../mbbs-in-ukraine/vinnitsa-national-medical-university.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
+                                                            <?php include '../templates/university-free-councelling' ?>
+                                                            <a as={Link} to="/mbbs-in-ukraine/vinnitsa-national-medical-university" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -282,8 +282,8 @@ const OoBogomoletsNationalMedicalUniversity = () => {
                                                             Dnipropetrovsk State Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
                                                         </p>
                                                         <div className="">
-                                                            <?php include '../templates/university-free-councelling.php' ?>
-                                                            <a href="../mbbs-in-ukraine/dnipropetrovsk-national-medical-university.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
+                                                            <?php include '../templates/university-free-councelling' ?>
+                                                            <a as={Link} to="/mbbs-in-ukraine/dnipropetrovsk-national-medical-university" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -299,8 +299,8 @@ const OoBogomoletsNationalMedicalUniversity = () => {
                                                             Ivano-Frankvisk National Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
                                                         </p>
                                                         <div className="">
-                                                            <?php include '../templates/university-free-councelling.php' ?>
-                                                            <a href="../mbbs-in-ukraine/ivano-frankvisk-national-medical-university.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
+                                                            <?php include '../templates/university-free-councelling' ?>
+                                                            <a as={Link} to="/mbbs-in-ukraine/ivano-frankvisk-national-medical-university" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -316,8 +316,8 @@ const OoBogomoletsNationalMedicalUniversity = () => {
                                                             V. N. Karazin National Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
                                                         </p>
                                                         <div className="">
-                                                            <?php include '../templates/university-free-councelling.php' ?>
-                                                            <a href="../mbbs-in-ukraine/v-n-karazin-national-medical-university.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
+                                                            <?php include '../templates/university-free-councelling' ?>
+                                                            <a as={Link} to="/mbbs-in-ukraine/v-n-karazin-national-medical-university" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -333,8 +333,8 @@ const OoBogomoletsNationalMedicalUniversity = () => {
                                                             O O Bogomolets National Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
                                                         </p>
                                                         <div className="">
-                                                            <?php include '../templates/university-free-councelling.php' ?>
-                                                            <a href="../mbbs-in-ukraine/black-sea-national-medical-university.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
+                                                            <?php include '../templates/university-free-councelling' ?>
+                                                            <a as={Link} to="/mbbs-in-ukraine/black-sea-national-medical-university" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -350,8 +350,8 @@ const OoBogomoletsNationalMedicalUniversity = () => {
                                                         Kharkiv National Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
                                                         </p>
                                                         <div className="">
-                                                            <?php include '../templates/university-free-councelling.php' ?>
-                                                            <a href="../mbbs-in-ukraine/kharkiv-national-medical-university.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
+                                                            <?php include '../templates/university-free-councelling' ?>
+                                                            <a as={Link} to="/mbbs-in-ukraine/kharkiv-national-medical-university" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -367,8 +367,8 @@ const OoBogomoletsNationalMedicalUniversity = () => {
                                                             Lviv National Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
                                                         </p>
                                                         <div className="">
-                                                            <?php include '../templates/university-free-councelling.php' ?>
-                                                            <a href="../mbbs-in-ukraine/lviv-national-medical-university.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
+                                                            <?php include '../templates/university-free-councelling' ?>
+                                                            <a as={Link} to="/mbbs-in-ukraine/lviv-national-medical-university" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -384,8 +384,8 @@ const OoBogomoletsNationalMedicalUniversity = () => {
                                                             Poltava State Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
                                                         </p>
                                                         <div className="">
-                                                            <?php include '../templates/university-free-councelling.php' ?>
-                                                            <a href="../mbbs-in-ukraine/poltava-state-medical-university.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
+                                                            <?php include '../templates/university-free-councelling' ?>
+                                                            <a as={Link} to="/mbbs-in-ukraine/poltava-state-medical-university" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -401,8 +401,8 @@ const OoBogomoletsNationalMedicalUniversity = () => {
                                                             Kyiv Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
                                                         </p>
                                                         <div className="">
-                                                            <?php include '../templates/university-free-councelling.php' ?>
-                                                            <a href="../mbbs-in-ukraine/kyiv-medical-university.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
+                                                            <?php include '../templates/university-free-councelling' ?>
+                                                            <a as={Link} to="/mbbs-in-ukraine/kyiv-medical-university" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -418,8 +418,8 @@ const OoBogomoletsNationalMedicalUniversity = () => {
                                                             Ternopil State Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
                                                         </p>
                                                         <div className="">
-                                                            <?php include '../templates/university-free-councelling.php' ?>
-                                                            <a href="./mbbs-in-ukraine/ternopil-state-medical-university.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
+                                                            <?php include '../templates/university-free-councelling' ?>
+                                                            <a as={Link} to="./mbbs-in-ukraine/ternopil-state-medical-university" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -435,8 +435,8 @@ const OoBogomoletsNationalMedicalUniversity = () => {
                                                             Bukovinian State Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
                                                         </p>
                                                         <div className="">
-                                                            <?php include '../templates/university-free-councelling.php' ?>
-                                                            <a href="../mbbs-in-ukraine/bukovinian-state-medical-university.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
+                                                            <?php include '../templates/university-free-councelling' ?>
+                                                            <a as={Link} to="/mbbs-in-ukraine/bukovinian-state-medical-university" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -452,8 +452,8 @@ const OoBogomoletsNationalMedicalUniversity = () => {
                                                             Zaporizhzhia State Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
                                                         </p>
                                                         <div className="">
-                                                            <?php include '../templates/university-free-councelling.php' ?>
-                                                            <a href="../mbbs-in-ukraine/zaporizhzhia-state-medical-university.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
+                                                            <?php include '../templates/university-free-councelling' ?>
+                                                            <a as={Link} to="/mbbs-in-ukraine/zaporizhzhia-state-medical-university" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -475,8 +475,8 @@ const OoBogomoletsNationalMedicalUniversity = () => {
                                                     Spartan University of Health and Science is one of the top Medical University in USA. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
                                                     </p>
                                                     <div className="">
-                                                        <?php include '../templates/university-book-now.php'  ?>
-                                                        <a href="../mbbs-in-usa.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
+                                                        <?php include '../templates/university-book-now'  ?>
+                                                        <a as={Link} to="/mbbs-in-usa" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -492,8 +492,8 @@ const OoBogomoletsNationalMedicalUniversity = () => {
                                                     Medical University of Gdansk one of the top Medical University in Poland. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
                                                     </p>
                                                     <div className="">
-                                                        <?php include '../templates/university-book-now.php'  ?>
-                                                        <a href="../mbbs-in-poland.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
+                                                        <?php include '../templates/university-book-now'  ?>
+                                                        <a as={Link} to="/mbbs-in-poland" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -509,8 +509,8 @@ const OoBogomoletsNationalMedicalUniversity = () => {
                                                     Osh State Medical University one of the top Medical University in Kyrgyzstan. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
                                                     </p>
                                                     <div className="">
-                                                        <?php include '../templates/university-book-now.php'  ?>
-                                                        <a href="../mbbs-in-kyrgyzstan.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
+                                                        <?php include '../templates/university-book-now'  ?>
+                                                        <a as={Link} to="/mbbs-in-kyrgyzstan" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -526,8 +526,8 @@ const OoBogomoletsNationalMedicalUniversity = () => {
                                                     Batumi Shota Rustaveli State Medical University one of the top Medical University in Georgia. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
                                                     </p>
                                                     <div className="">
-                                                        <?php include '../templates/university-book-now.php'  ?>
-                                                        <a href="../mbbs-in-georgia.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
+                                                        <?php include '../templates/university-book-now'  ?>
+                                                        <a as={Link} to="/mbbs-in-georgia" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -543,8 +543,8 @@ const OoBogomoletsNationalMedicalUniversity = () => {
                                                     Our Lady of Fatima University one of the top Medical University in Philippines. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
                                                     </p>
                                                     <div className="">
-                                                        <?php include '../templates/university-book-now.php'  ?>
-                                                        <a href="../mbbs-in-philippines.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
+                                                        <?php include '../templates/university-book-now'  ?>
+                                                        <a as={Link} to="/mbbs-in-philippines" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -560,8 +560,8 @@ const OoBogomoletsNationalMedicalUniversity = () => {
                                                     Bashkir State Medical University one of the top Medical University in Russia. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
                                                     </p>
                                                     <div className="">
-                                                        <?php include '../templates/university-book-now.php'  ?>
-                                                        <a href="../mbbs-in-russia.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
+                                                        <?php include '../templates/university-book-now'  ?>
+                                                        <a as={Link} to="/mbbs-in-russia" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -577,8 +577,8 @@ const OoBogomoletsNationalMedicalUniversity = () => {
                                                     Kharkiv international Medical University one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
                                                     </p>
                                                     <div className="">
-                                                        <?php include '../templates/university-book-now.php'  ?>
-                                                        <a href="../mbbs-in-ukraine.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
+                                                        <?php include '../templates/university-book-now'  ?>
+                                                        <a as={Link} to="/mbbs-in-ukraine" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -594,8 +594,8 @@ const OoBogomoletsNationalMedicalUniversity = () => {
                                                     Belarusian State Medical University one of the top Medical University in Belarus. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
                                                     </p>
                                                     <div className="">
-                                                        <?php include '../templates/university-book-now.php'  ?>
-                                                        <a href="../mbbs-in-belarus.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
+                                                        <?php include '../templates/university-book-now'  ?>
+                                                        <a as={Link} to="/mbbs-in-belarus" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -771,7 +771,7 @@ const OoBogomoletsNationalMedicalUniversity = () => {
                                 </div>
                             </div>
                         </div>
-                        <?php include '../templates/sidebar-university-top-medical-university.php' ?>
+                        <?php include '../templates/sidebar-university-top-medical-university' ?>
                     </div>
                 </div>
             </div>
@@ -786,10 +786,10 @@ const OoBogomoletsNationalMedicalUniversity = () => {
                     <div className="">
                         <h2 className="text-center pt-2 pb-2">Social Connect</h2>
                         <div className="text-center pt-3 pb-3">
-                            <a href="https://www.facebook.com/glowoverseaseducation" target="_blank"><i className="fab fa-facebook-f icons"></i></a> &nbsp;
-                            <a href="https://twitter.com/GlowOverseas" target="_blank"><i className="fab fa-twitter icons"></i></a> &nbsp;
-                            <a href="https://www.youtube.com/channel/UCjYolwMMKKnzceHVQnJnmSQ" target="_blank"><i className="fab fa-youtube icons"></i></a> &nbsp;
-                            <a href="https://www.instagram.com/glowoverseaseducation/" target="_blank"><i className="fab fa-instagram icons"></i></a>
+                            <a as={Link} to="https://www.facebook.com/glowoverseaseducation" target="_blank"><i className="fab fa-facebook-f icons"></i></a> &nbsp;
+                            <a as={Link} to="https://twitter.com/GlowOverseas" target="_blank"><i className="fab fa-twitter icons"></i></a> &nbsp;
+                            <a as={Link} to="https://www.youtube.com/channel/UCjYolwMMKKnzceHVQnJnmSQ" target="_blank"><i className="fab fa-youtube icons"></i></a> &nbsp;
+                            <a as={Link} to="https://www.instagram.com/glowoverseaseducation/" target="_blank"><i className="fab fa-instagram icons"></i></a>
                         </div>
                     </div>
                 </div>

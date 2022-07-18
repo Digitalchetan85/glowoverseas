@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col, Image } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import Logo from "../../Images/logo.png";
 
 const Footer = () => {
@@ -28,32 +29,32 @@ const Footer = () => {
                 </h5>
                 <ul className="list-unstyled">
                   <li>
-                    <a href="" className="text-decoration-none text-white">
-                      MBBS in Ukraine
+                    <a as={Link} to="/mbbs-in-kazakhstan" className="text-decoration-none text-white">
+                      MBBS in Kazkhstan
                     </a>
                   </li>
                   <li>
-                    <a href="" className="text-decoration-none text-white">
+                    <a as={Link} to="/mbbs-in-usa" className="text-decoration-none text-white">
                       MBBS in USA
                     </a>
                   </li>
                   <li>
-                    <a href="" className="text-decoration-none text-white">
+                    <a as={Link} to="/mbbs-in-kyrgyzstan" className="text-decoration-none text-white">
                       MBBS in Kyrgyzstan
                     </a>
                   </li>
                   <li>
-                    <a href="" className="text-decoration-none text-white">
+                    <a as={Link} to="/mbbs-in-georgia" className="text-decoration-none text-white">
                       MBBS in Georgia
                     </a>
                   </li>
                   <li>
-                    <a href="" className="text-decoration-none text-white">
+                    <a as={Link} to="/mbbs-in-poland" className="text-decoration-none text-white">
                       MBBS in Poland
                     </a>
                   </li>
                   <li>
-                    <a href="" className="text-decoration-none text-white">
+                    <a as={Link} to="/mbbs-in-russia" className="text-decoration-none text-white">
                       MBBS in Russia
                     </a>
                   </li>
@@ -68,7 +69,7 @@ const Footer = () => {
                 <ul className="list-unstyled">
                   <li>
                     <a
-                      href="services.html"
+                      href="#"
                       className="text-decoration-none text-white"
                     >
                       Kharkiv National Medical University
@@ -76,7 +77,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href="services.html"
+                      href="#"
                       className="text-decoration-none text-white"
                     >
                       Osh State Medical University
@@ -84,7 +85,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href="services.html"
+                      href="#"
                       className="text-decoration-none text-white"
                     >
                       AMA University
@@ -92,7 +93,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href="services.html"
+                      href="#"
                       className="text-decoration-none text-white"
                     >
                       Spartan University of Health and Science
@@ -100,7 +101,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href="services.html"
+                      href="#"
                       className="text-decoration-none text-white"
                     >
                       Batumi Shota Rustaveli State Medical University
@@ -114,17 +115,17 @@ const Footer = () => {
                 <h5 className="text-left text-white pt-3 pb-3">Quick Links</h5>
                 <ul className="list-unstyled">
                   <li>
-                    <a href="" className="text-decoration-none text-white">
+                    <a as={Link} to="" className="text-decoration-none text-white">
                       About GOE
                     </a>
                   </li>
                   <li>
-                    <a href="/" className="text-decoration-none text-white">
+                    <a as={Link} to="/" className="text-decoration-none text-white">
                       Contact Us
                     </a>
                   </li>
                   <li>
-                    <a href="/" className="text-decoration-none text-white">
+                    <a as={Link} to="/" className="text-decoration-none text-white">
                       Top Medical University
                     </a>
                   </li>
@@ -133,15 +134,13 @@ const Footer = () => {
             </Col>
           </Row>
         </div>
-        <div className="pt-3 border-top border-white">
-          <Row>
-            <Col md={3}></Col>
-            <Col md={6}>
-              <p className="text-center text-white">
-                © Copyrights Glow Overseas Education 2022. All Rights Reserved.
+        <div className="pt-2 border-top border-white">
+          <Row className="justify-content-center">
+            <Col md={10}>
+              <p className="text-center text-white" style={{fontSize: '14px'}}>
+                © Copyrights Glow Overseas Education 2022. All Rights Reserved. Design & Developed by <a href="https://shanthaswebz.com" target="_blank" className="text-decoration-none text-white">Shanthaswebz</a>
               </p>
             </Col>
-            <Col md={3}></Col>
           </Row>
         </div>
       </Container>

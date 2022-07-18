@@ -1,15 +1,16 @@
-import React from "react";
-import { Image } from "react-bootstrap";
-import China from "../../Images/mbbs-in-china/medical-universities/china.png";
-import Dalian from "../../Images/mbbs-in-china/medical-universities/dalian.png";
-import Fujian from "../../Images/mbbs-in-china/medical-universities/fujian.png";
-import Jilin from "../../Images/mbbs-in-china/medical-universities/jilin.png";
-import Kunming from "../../Images/mbbs-in-china/medical-universities/Kunming.png";
-import Nanjing from "../../Images/mbbs-in-china/medical-universities/Nanjing.png";
+import React, { useState, useEffect } from "react"; import {Link} from 'react-router-dom'; import { Helmet } from "react-helmet";
+import { Button } from "react-bootstrap";
 import ChinaUniversities from "../Includes/ChinaUniversities";
 import FAQ from "../Includes/FAQ";
+import FreeCouncelling from "../Includes/FreeCouncelling";
+import OtherCountries from "../Includes/OtherCountries";
 
 const MbbsInChina = () => {
+  const [show, setShow] = useState(false); useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <>
       <div id="abt1">
@@ -21,7 +22,7 @@ const MbbsInChina = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a href="/">Home</a>
+                      <a as={Link} to="/">Home</a>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       MBBS in China
@@ -34,7 +35,7 @@ const MbbsInChina = () => {
         </div>
       </div>
 
-      <div id="country" className="pt-5 pb-5">
+      <div id="country" className="pt-5">
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-12">
@@ -46,8 +47,7 @@ const MbbsInChina = () => {
                         <h4 className="text-start text-info pt-2 pb-2">
                           MBBS in China
                         </h4>
-                        {/* <img src="./images/mbbs-in-China-flag.jpg.png" alt="" className="img-fluid rounded-circle ml-3"> */}
-                        <p className="p-2 text-justify">
+                        <p className="text-justify">
                           China is one of the safest countries in the world.
                           China is the topmost country to study MBBS in Abroad
                           for Indian students compared to other countries like
@@ -56,14 +56,14 @@ const MbbsInChina = () => {
                           Medical Universities in China. China Medical
                           Universities are approved by MCI / WHO.
                         </p>
-                        <p className="p-2 text-justify">
+                        <p className="text-justify">
                           Nowadays Indian students preferring to study MBBS in
                           Abroad countries like MBBS in USA, MBBS in Russia,
                           MBBS in Kazakhstan, MBBS in Georgia and MBBS in
                           Kyrgyzstan because the cost of MBBS course in Indian
                           Private Medical Colleges are High.
                         </p>
-                        <p className="p-2 text-justify">
+                        <p className="text-justify">
                           In China, we have many Medical Universities are there
                           to achieve MBBS in China. We are providing all the
                           Medical Universities are approved by MCI / WHO and
@@ -71,9 +71,14 @@ const MbbsInChina = () => {
                           for more details like Fees Structure, Hostel, Food,
                           Visa. We are available through phone contact 24/7.
                         </p>
-                        {/* <div className="text-center">
-                                            <a href="/" className="pt-2 pb-2 btn btn-warning m-2">Get Free Counselling</a>
-                                        </div> */}
+                        <div className="text-center">
+                          <Button
+                            onClick={handleShow}
+                            className="btn btn-info text-white"
+                          >
+                            Free Councelling
+                          </Button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -153,70 +158,17 @@ const MbbsInChina = () => {
                     </div>
                   </div>
                 </div>
-                <div className="top-medical-university pt-5 pb-5">
-                  <div className="row">
-                    <div className="col-md-12">
-                      <h3 className="text-center">
-                        Top Medical Universities in China
-                      </h3>
-                      <p className="text-justify">
-                        Glow Overseas Education recommended Universities to
-                        Study MBBS in China. China Medical University, Dalian
-                        Medical University, Fujian Medical University, Jilin
-                        Medical University, Kunming Medical University and
-                        Nanjing Medical University. Free feel to contact for
-                        more details on Kazakhstan Top Medical University.
-                      </p>
-                    </div>
-                  </div>
-                  <ChinaUniversities />
-                  <FAQ />
-                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div id="social" className="pt-5 pb-5">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-2"></div>
-            <div className="col-md-8">
-              <div className="">
-                <h2 className="text-center pt-2 pb-2">Social Connect</h2>
-                <div className="text-center pt-3 pb-3">
-                  <a
-                    href="https://www.facebook.com/glowoverseaseducation"
-                    target="_blank"
-                  >
-                    <i className="fab fa-facebook-f icons"></i>
-                  </a>{" "}
-                  &nbsp;
-                  <a href="https://twitter.com/GlowOverseas" target="_blank">
-                    <i className="fab fa-twitter icons"></i>
-                  </a>{" "}
-                  &nbsp;
-                  <a
-                    href="https://www.youtube.com/channel/UCjYolwMMKKnzceHVQnJnmSQ"
-                    target="_blank"
-                  >
-                    <i className="fab fa-youtube icons"></i>
-                  </a>{" "}
-                  &nbsp;
-                  <a
-                    href="https://www.instagram.com/glowoverseaseducation/"
-                    target="_blank"
-                  >
-                    <i className="fab fa-instagram icons"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-2"></div>
-          </div>
-        </div>
-      </div>
+      <ChinaUniversities />
+      <OtherCountries />
+      <FAQ />
+
+      <FreeCouncelling show={show} handleClose={handleClose} title="Contact Us for Free Councelling" />
     </>
   );
 };

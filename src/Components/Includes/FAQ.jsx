@@ -20,7 +20,7 @@ const FAQ = () => {
                   different choices, PG preparation etc this is followed by a Q
                   & A session with doubt clearance where you can ask everything
                   you want to know to the experts To attend online counselling
-                  you may call{" "}
+                  you may call
                   <b>
                     9513332386, or WhatsApp 9513332386 or email
                     glowoverseasedu@gmail.com
@@ -65,7 +65,7 @@ const FAQ = () => {
             <Col md={6}>
               <div className="py-3">
                 <h3 className="py-md-1">Home Counselling Session</h3>
-                <p class="text-justify">
+                <p className="text-justify">
                   <b> GLOW OVERSEAS EDUCATION </b>experts visit your place and
                   give you counselling and complete info MBBS in abroad MBBS in
                   India how to choose universities country pros and cons of
@@ -73,7 +73,7 @@ const FAQ = () => {
                   & A session with doubt clearance where you can ask everything
                   you want to know to the experts and there are charges for this
                   it’s totally free counselling <br />
-                  For home counselling you may call{" "}
+                  For home counselling you may call
                   <b>9513332386, or WhatsApp 9513332386</b>
                 </p>
               </div>
@@ -87,7 +87,7 @@ const FAQ = () => {
           <Row className="justify-content-center">
             <Col md={12}>
               <div className="">
-                <h3 className="text-info py-md-1">Important FAQ</h3>
+                <h3 className="text-info py-md-1">Frequently Asked Questions</h3>
                 <Accordion>
                   <Accordion.Item eventKey="0">
                     <Accordion.Header>

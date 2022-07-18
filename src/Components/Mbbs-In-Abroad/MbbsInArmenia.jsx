@@ -1,13 +1,30 @@
-import React from "react";
-import { Image } from "react-bootstrap";
-import ArmeniaMap from '../../Images/mbbs-in-armenia/mbbs-in-armenia.png'
-import Yerevan from "../../Images/mbbs-in-armenia/medical-universities/yerevan-haybusak-university-faculty-of-medicine.png"
-import Yerevan1 from "../../Images/mbbs-in-armenia/medical-universities/yerevan-state-medical-university.png"
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
+import { Button, Image } from "react-bootstrap";
+import ArmeniaTopMedicalUniversities from "../Armenia/ArmeniaTopMedicalUniversities";
 import FAQ from "../Includes/FAQ";
+import FreeCouncelling from "../Includes/FreeCouncelling";
+import OtherCountries from "../Includes/OtherCountries";
 
 const MbbsInArmenia = () => {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>MBBS in Armenia | MBBS in Abroad | GOE</title>
+        <link rel="canonical" href="https://glowoverseas.com/mbbs-in-armenia" />
+        <meta
+          name="description"
+          content="MBBS in Armenia is the best place to Study MBBS in Abroad. Call Us for Free Councelling"
+        />
+      </Helmet>
       <div id="abt1">
         <div className="container">
           <div className="row">
@@ -17,7 +34,9 @@ const MbbsInArmenia = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a href="/">Home</a>
+                      <a as={Link} to="/">
+                        Home
+                      </a>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       MBBS in Armenia
@@ -30,7 +49,7 @@ const MbbsInArmenia = () => {
         </div>
       </div>
 
-      <div id="country" className="pt-5 pb-5">
+      <div id="country" className="pt-5">
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-12">
@@ -42,12 +61,6 @@ const MbbsInArmenia = () => {
                         <h2 className="text-start text-info pt-2 pb-2">
                           MBBS in Armenia
                         </h2>
-                        {/* <img
-                          src={ArmeniaMap}
-                          alt=""
-                          className="img-fluid rounded-circle ml-3"
-                          style={{height: '100px', width: '100px'}}
-                        /> */}
                         <p className="text-justify">
                           Armenia is a nation, and former Soviet republic, in
                           the mountainous Caucasus region between Asia and
@@ -73,7 +86,7 @@ const MbbsInArmenia = () => {
                           other countries people. The first church in the world
                           was built in Armenia.
                         </p>
-                        <h3 className="pb-2 pt-4">
+                        <h3 className="text-info pb-2 pt-4">
                           Advantages for Studying MBBS in Armenia
                         </h3>
                         <ul className="pb-2">
@@ -90,7 +103,9 @@ const MbbsInArmenia = () => {
                           <li>Separate Compartments for Boys and Girls.</li>
                         </ul>
                         <div className="text-center">
-                          {/* <?php include 'templates/free-councelling' ?> */}
+                          <Button onClick={handleShow} className="btn btn-info">
+                            Free Councelling
+                          </Button>
                         </div>
                       </div>
                     </div>
@@ -172,211 +187,21 @@ const MbbsInArmenia = () => {
                     </div>
                   </div>
                 </div>
-                <div className="top-medical-university pt-5 pb-5">
-                  <div className="row">
-                    <div className="col-md-12">
-                      <h3 className="text-center">
-                        Top Medical Universities in Armenia
-                      </h3>
-                      <p className="text-justify">
-                        Glow Overseas Education recommended Universities to
-                        Study MBBS in Armenia.
-                      </p>
-                      <ul className="pt-2 pb-2">
-                        <li>
-                          <a className="text-decoration-none" href="mbbs-in-armenia/yerevan-haybusak-university-faculty-of-medicine">
-                            Yerevan Haybusak University Faculty of Medicine
-                          </a>
-                        </li>
-                        <li>
-                          <a className="text-decoration-none" href="mbbs-in-armenia/yerevan-state-medical-university">
-                            Yerevan State Medical University
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="row pt-5">
-                    <div className="col-md-6">
-                      <div className="university-country">
-                        <h5 className="pt-2 pb-2 text-center">
-                          Yerevan Haybusak Medical University
-                        </h5>
-                        {/* <img
-                          src="images/mbbs-in-armenia/medical-universities/yerevan-haybusak-university-faculty-of-medicine.png"
-                          alt=""
-                          className="img-fluid"
-                        /> */}
-                        <Image src={Yerevan} alt="" className="img-fluid"></Image>
-                        <p className="pt-2 pb-2 text-justify">
-                          Yerevan Haybusak Medical University is one of the top
-                          Medical University in Armenia. Get more details on
-                          Fees Structure, Hostel, Indian Food Facility and other
-                          uncleared information.
-                        </p>
-                        <div className="">
-                          {/* <?php include 'templates/university-book-now'  ?> */}
-                          <a
-                            href="mbbs-ins-armenia/yerevan-haybusak-medical-university"
-                            className="pt-2 pb-2 btn btn-warning m-2 float-right"
-                          >
-                            Read more
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="university-country">
-                        <h5 className="pt-2 pb-2 text-center">
-                          Yerevan State Medical University
-                        </h5>
-                        {/* <img
-                          src="images/mbbs-in-Armenia/medical-universities/yerevan-state-medical-university.png"
-                          alt=""
-                          className="img-fluid"
-                        /> */}
-                        <Image src={Yerevan1} alt="" className="img-fluid"></Image>
-                        <p className="pt-2 pb-2 text-justify">
-                          Yerevan State Medical University is one of the top
-                          Medical University in Armenia. Get more details on
-                          Fees Structure, Hostel, Indian Food Facility and other
-                          uncleared information.
-                        </p>
-                        <div className="">
-                          {/* <?php include 'templates/university-book-now'  ?> */}
-                          <a
-                            href="mbbs-in-armenia/yerevan-state-medical-university"
-                            className="pt-2 pb-2 btn btn-warning m-2 float-right"
-                          >
-                            Read more
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
-            <FAQ />
-            {/* <div className="col-md-4">
-              <div className="bord-1">
-                <div id="four" className="pb-5">
-                  <div className="container">
-                    <div className="row">
-                      <div className="col-md-12">
-                        <h3 className="text-center pt-3 pb-3">
-                          Choose Your University
-                        </h3>
-                      </div>
-                    </div>
-                    <div className="row">
-                      <div className="col-md-12">
-                        <div className="">
-                          <form action="">
-                            <div className="form-group">
-                              {/* <!-- <label for="selectbox">Enter Select Your Country</label> --> 
-                              <select
-                                className="form-control"
-                                id="selectbox"
-                                name=""
-                                onchange="mylang(this.value)"
-                              >
-                                <option value="">Select Your Country</option>
-                                <option>MBBS in USA</option>
-                                <option>MBBS in Kyrgyzstan</option>
-                                <option>MBBS in Georgia</option>
-                                <option>MBBS in Poland</option>
-                                <option>MBBS in Philippines</option>
-                                <option>MBBS in Russia</option>
-                                <option>MBBS in China</option>
-                                <option>MBBS in Kazakhstan</option>
-                              </select>
-                            </div>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="row">
-                      <div className="col-md-12">
-                        <div className="">
-                          <form action="">
-                            <div className="form-group">
-                              {/* <!-- <label for="selectbox1">University in?</label> --> 
-                              <select
-                                className="form-control"
-                                id="selectbox1"
-                                name=""
-                                onchange="getSelectedValue();"
-                              >
-                                <option value="">University Lists</option>
-                              </select>
-                            </div>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="row">
-                      <div className="col-md-12">
-                        <div className="text-center">
-                          <form action="">
-                            <a
-                              className="btn custom-btn-1"
-                              onclick="redirect_url()"
-                            >
-                              Get University Details.
-                            </a>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* <?php include 'templates/sidebar-country-top-medical-university' ?>
-              </div>
-            </div> */}
           </div>
         </div>
       </div>
 
-      <div id="social" className="pt-5 pb-5">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-2"></div>
-            <div className="col-md-8">
-              <div className="">
-                <h2 className="text-center pt-2 pb-2">Social Connect</h2>
-                <div className="text-center pt-3 pb-3">
-                  <a
-                    href="https://www.facebook.com/glowoverseaseducation"
-                    target="_blank"
-                  >
-                    <i className="fab fa-facebook-f icons"></i>
-                  </a>{" "}
-                  &nbsp;
-                  <a href="https://twitter.com/GlowOverseas" target="_blank">
-                    <i className="fab fa-twitter icons"></i>
-                  </a>{" "}
-                  &nbsp;
-                  <a
-                    href="https://www.youtube.com/channel/UCjYolwMMKKnzceHVQnJnmSQ"
-                    target="_blank"
-                  >
-                    <i className="fab fa-youtube icons"></i>
-                  </a>{" "}
-                  &nbsp;
-                  <a
-                    href="https://www.instagram.com/glowoverseaseducation/"
-                    target="_blank"
-                  >
-                    <i className="fab fa-instagram icons"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-2"></div>
-          </div>
-        </div>
-      </div>
+      <ArmeniaTopMedicalUniversities />
+      <OtherCountries />
+
+      <FAQ />
+      <FreeCouncelling
+        show={show}
+        handleClose={handleClose}
+        title="Contact Us for Free Councelling."
+      />
     </>
   );
 };

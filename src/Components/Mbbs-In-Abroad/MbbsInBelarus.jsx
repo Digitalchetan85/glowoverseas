@@ -1,26 +1,46 @@
-import React from "react";
-import { Image } from "react-bootstrap";
-import Belarusian from "../../Images/mbbs-in-belarus/medical-universities/belarusian-state-medical-university.png";
-import Grodno from "../../Images/mbbs-in-belarus/medical-universities/grodno-state-medical-university.png";
-import Vitebsk from "../../Images/mbbs-in-belarus/medical-universities/vitebsk-state-medical-university.png";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
+import { Button } from "react-bootstrap";
+import BelarusTopMedicalUniversities from "../Belarus/BelarusTopMedicalUniversity";
+import AdmissionProcess from "../Includes/AdmissionProcess";
 import FAQ from "../Includes/FAQ";
+import FreeCouncelling from "../Includes/FreeCouncelling";
+import OtherCountries from "../Includes/OtherCountries";
 
 const MbbsInBelarus = () => {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+  const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false);
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>MBBS in Belarus | MBBS in Abroad | GOE</title>
+        <link rel="canonical" href="https://glowoverseas.com/mbbs-in-belarus" />
+        <meta
+          name="description"
+          content="MBBS in Belarus is the best place to Study MBBS in Abroad. Call Us for Free Councelling"
+        />
+      </Helmet>
       <div id="abt1">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
               <div className="pt-5 pb-5">
-                <h2>MBBS in belarus</h2>
+                <h2>MBBS in Belarus</h2>
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a href="/">Home</a>
+                      <a as={Link} to="/">
+                        Home
+                      </a>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
-                      MBBS in belarus
+                      MBBS in Belarus
                     </li>
                   </ol>
                 </nav>
@@ -30,7 +50,7 @@ const MbbsInBelarus = () => {
         </div>
       </div>
 
-      <div id="country" className="pt-5 pb-5">
+      <div id="country" className="pt-5">
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-12">
@@ -42,12 +62,6 @@ const MbbsInBelarus = () => {
                         <h4 className="text-start text-info pt-2 pb-2">
                           MBBS in Belrus
                         </h4>
-                        {/* <img
-                          src={ArmeniaMap}
-                          alt=""
-                          className="img-fluid rounded-circle ml-3"
-                          style={{height: '100px', width: '100px'}}
-                        /> */}
                         <p className="text-justify">
                           Belarus, officially the Republic of Belarus, is a
                           landlocked country in Eastern Europe. It is bordered
@@ -81,7 +95,7 @@ const MbbsInBelarus = () => {
                           became a founding member of the United Nations, along
                           with the Soviet Union.
                         </p>
-                        <h2 className="text-center pb-2 pt-2">
+                        <h2 className="text-dark pb-2 pt-2">
                           Advantages for Studying MBBS in Belarus
                         </h2>
                         <ul className="pt-2 pb-2">
@@ -140,7 +154,12 @@ const MbbsInBelarus = () => {
                           </li>
                         </ul>
                         <div className="text-center">
-                          {/* <?php include 'templates/free-councelling.php' ?> */}
+                          <Button
+                            onClick={handleShow}
+                            className="btn btn-info text-white"
+                          >
+                            Free Councelling
+                          </Button>
                         </div>
                       </div>
                     </div>
@@ -225,232 +244,20 @@ const MbbsInBelarus = () => {
                     </div>
                   </div>
                 </div>
-                <div className="top-medical-university pt-5 pb-5">
-                  <div className="row">
-                    <div className="col-md-12">
-                      <h3 className="text-center">
-                        Top Medical Universities in Belarus
-                      </h3>
-                      <p className="text-justify">
-                        Glow Overseas Education recommended Universities to
-                        Study MBBS in Belarus.
-                      </p>
-                      <ul className="pt-2 pb-2">
-                        <li>
-                          <a href="/belarusian-state-medical-university">
-                            Belarusian State Medical University
-                          </a>
-                        </li>
-                        <li>
-                          <a href="/grodno-state-medical-university">
-                            Grodno State Medical University{" "}
-                          </a>
-                        </li>
-                        <li>
-                          <a href="/vitebsk-state-medical-university">
-                            Vitebsk State Medical University{" "}
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div className="row pt-5">
-                    <div class="col-md-6">
-                      <div class="university-country">
-                        <h5 class="pt-2 pb-2 text-center">
-                          Belarusian State Medical University
-                        </h5>
-                        {/* <img src="../../Images/mbbs-in-belarus/medical-universities/belarusian-state-medical-university.png" alt="" class="img-fluid" /> */}
-                        <Image
-                          src={Belarusian}
-                          alt=""
-                          className="img-fluid"
-                        ></Image>
-                        <p class="pt-2 pb-2 text-justify">
-                          Belarusian State Medical University is one of the top
-                          Medical University in Ukraine. Get more details on
-                          Fees Structure, Hostel, Indian Food Facility and other
-                          uncleared information.
-                        </p>
-                        {/* <div class="">
-                                            <?php include 'templates/university-book-now.php'  ?>
-                                            <a href="./mbbs-in-belarus/belarusian-state-medical-university.php" class="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
-                                        </div> */}
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="university-country">
-                        <h5 class="pt-2 pb-2 text-center">
-                          Grodno State Medical University
-                        </h5>
-                        {/* <img src="./images/mbbs-in-belarus/medical-universities/grodno-state-medical-university.png" alt="" class="img-fluid" /> */}
-                        <Image
-                          src={Grodno}
-                          alt=""
-                          className="img-fluid"
-                        ></Image>
-                        <p class="pt-2 pb-2 text-justify">
-                          Grodno State Medical University is one of the top
-                          Medical University in Ukraine. Get more details on
-                          Fees Structure, Hostel, Indian Food Facility and other
-                          uncleared information.
-                        </p>
-                        {/* <div class="">
-                                            <?php include 'templates/university-book-now.php'  ?>
-                                            <a href="./mbbs-in-belarus/grodno-state-medical-universiry.php" class="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
-                                        </div> */}
-                        <FAQ />                                        
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row pt-5">
-                    <div class="col-md-6">
-                      <div class="university-country">
-                        <h5 class="pt-2 pb-2 text-center">
-                          Vitbsk State Medical University
-                        </h5>
-                        {/* <img src="./images/mbbs-in-belarus/medical-universities/vitebsk-state-medical-university.png" alt="" class="img-fluid" /> */}
-                        <Image
-                          src={Vitebsk}
-                          alt=""
-                          className="img-fluid"
-                        ></Image>
-                        <p class="pt-2 pb-2 text-justify">
-                          Vitbsk State Medical University is one of the top
-                          Medical University in Ukraine. Get more details on
-                          Fees Structure, Hostel, Indian Food Facility and other
-                          uncleared information.
-                        </p>
-                        {/* <div class="">
-                                            <?php include 'templates/university-book-now.php'  ?>
-                                            <a href="./mbbs-in-belarus/vitbsk-state-medical-university.php" class="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
-                                        </div> */}
-                        <FAQ />                
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
-            {/* <div className="col-md-4">
-              <div className="bord-1">
-                <div id="four" className="pb-5">
-                  <div className="container">
-                    <div className="row">
-                      <div className="col-md-12">
-                        <h3 className="text-center pt-3 pb-3">
-                          Choose Your University
-                        </h3>
-                      </div>
-                    </div>
-                    <div className="row">
-                      <div className="col-md-12">
-                        <div className="">
-                          <form action="">
-                            <div className="form-group">
-                              {/* <!-- <label for="selectbox">Enter Select Your Country</label> --> 
-                              <select
-                                className="form-control"
-                                id="selectbox"
-                                name=""
-                                onchange="mylang(this.value)"
-                              >
-                                <option value="">Select Your Country</option>
-                                <option>MBBS in USA</option>
-                                <option>MBBS in Kyrgyzstan</option>
-                                <option>MBBS in Georgia</option>
-                                <option>MBBS in Poland</option>
-                                <option>MBBS in Philippines</option>
-                                <option>MBBS in Russia</option>
-                                <option>MBBS in China</option>
-                                <option>MBBS in Kazakhstan</option>
-                              </select>
-                            </div>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="row">
-                      <div className="col-md-12">
-                        <div className="">
-                          <form action="">
-                            <div className="form-group">
-                              {/* <!-- <label for="selectbox1">University in?</label> --> 
-                              <select
-                                className="form-control"
-                                id="selectbox1"
-                                name=""
-                                onchange="getSelectedValue();"
-                              >
-                                <option value="">University Lists</option>
-                              </select>
-                            </div>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="row">
-                      <div className="col-md-12">
-                        <div className="text-center">
-                          <form action="">
-                            <a
-                              className="btn custom-btn-1"
-                              onclick="redirect_url()"
-                            >
-                              Get University Details.
-                            </a>
-                          </form>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                {/* <?php include 'templates/sidebar-country-top-medical-university.php' ?>
-              </div>
-            </div> */}
           </div>
         </div>
       </div>
-
-      <div id="social" className="pt-5 pb-5">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-2"></div>
-            <div className="col-md-8">
-              <div className="">
-                <h2 className="text-center pt-2 pb-2">Social Connect</h2>
-                <div className="text-center pt-3 pb-3">
-                  <a
-                    href="https://www.facebook.com/glowoverseaseducation"
-                    target="_blank"
-                  >
-                    <i className="fab fa-facebook-f icons"></i>
-                  </a>{" "}
-                  &nbsp;
-                  <a href="https://twitter.com/GlowOverseas" target="_blank">
-                    <i className="fab fa-twitter icons"></i>
-                  </a>{" "}
-                  &nbsp;
-                  <a
-                    href="https://www.youtube.com/channel/UCjYolwMMKKnzceHVQnJnmSQ"
-                    target="_blank"
-                  >
-                    <i className="fab fa-youtube icons"></i>
-                  </a>{" "}
-                  &nbsp;
-                  <a
-                    href="https://www.instagram.com/glowoverseaseducation/"
-                    target="_blank"
-                  >
-                    <i className="fab fa-instagram icons"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-2"></div>
-          </div>
-        </div>
-      </div>
+      <BelarusTopMedicalUniversities />
+      <OtherCountries />
+      <AdmissionProcess />
+      <FAQ />
+      <FreeCouncelling
+        show={show}
+        handleClose={handleClose}
+        title="Contact Us for Free Councelling"
+      />
     </>
   );
 };

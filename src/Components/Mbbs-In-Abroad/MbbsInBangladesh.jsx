@@ -12,7 +12,7 @@ const MbbsInBangladesh = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a href="/">Home</a>
+                      <a as={Link} to="/">Home</a>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       MBBS in bangladesh
@@ -72,7 +72,7 @@ const MbbsInBangladesh = () => {
                           <li>Separate Compartments for Boys and Girls.</li>
                         </ul> */}
                         <div className="text-center">
-                          {/* <?php include 'templates/free-councelling.php' ?> */}
+                          {/* <?php include 'templates/free-councelling' ?> */}
                         </div>
                       </div>
                     </div>
@@ -165,12 +165,12 @@ const MbbsInBangladesh = () => {
                       </p>
                       <ul className="pt-2 pb-2">
                         <li>
-                          <a href="mbbs-in-armenia/yerevan-haybusak-university-faculty-of-medicine.php">
+                          <a as={Link} to="mbbs-in-armenia/yerevan-haybusak-university-faculty-of-medicine">
                             Yerevan Haybusak University Faculty of Medicine
                           </a>
                         </li>
                         <li>
-                          <a href="mbbs-in-armenia/yerevan-state-medical-university.php">
+                          <a as={Link} to="mbbs-in-armenia/yerevan-state-medical-university">
                             Yerevan State Medical University
                           </a>
                         </li>
@@ -195,9 +195,9 @@ const MbbsInBangladesh = () => {
                           uncleared information.
                         </p>
                         <div className="">
-                          <?php include 'templates/university-book-now.php'  ?>
+                          <?php include 'templates/university-book-now'  ?>
                           <a
-                            href="mbbs-ins-armenia/yerevan-haybusak-medical-university.php"
+                            href="mbbs-ins-armenia/yerevan-haybusak-medical-university"
                             className="pt-2 pb-2 btn btn-warning m-2 float-right"
                           >
                             Read more
@@ -222,9 +222,9 @@ const MbbsInBangladesh = () => {
                           uncleared information.
                         </p>
                         <div className="">
-                          <?php include 'templates/university-book-now.php'  ?>
+                          <?php include 'templates/university-book-now'  ?>
                           <a
-                            href="mbbs-in-armenia/yerevan-state-medical-university.php"
+                            href="mbbs-in-armenia/yerevan-state-medical-university"
                             className="pt-2 pb-2 btn btn-warning m-2 float-right"
                           >
                             Read more
@@ -309,7 +309,7 @@ const MbbsInBangladesh = () => {
                     </div>
                   </div>
                 </div>
-                {/* <?php include 'templates/sidebar-country-top-medical-university.php' ?>
+                {/* <?php include 'templates/sidebar-country-top-medical-university' ?>
               </div>
             </div> */}
           </div>
@@ -329,18 +329,18 @@ const MbbsInBangladesh = () => {
                     target="_blank"
                   >
                     <i className="fab fa-facebook-f icons"></i>
-                  </a>{" "}
+                  </a>
                   &nbsp;
-                  <a href="https://twitter.com/GlowOverseas" target="_blank">
+                  <a as={Link} to="https://twitter.com/GlowOverseas" target="_blank">
                     <i className="fab fa-twitter icons"></i>
-                  </a>{" "}
+                  </a>
                   &nbsp;
                   <a
                     href="https://www.youtube.com/channel/UCjYolwMMKKnzceHVQnJnmSQ"
                     target="_blank"
                   >
                     <i className="fab fa-youtube icons"></i>
-                  </a>{" "}
+                  </a>
                   &nbsp;
                   <a
                     href="https://www.instagram.com/glowoverseaseducation/"

@@ -2,7 +2,6 @@ import React from 'react'
 import { Card, Container, Button, Image, Row } from "react-bootstrap";
 import OwlCarousel from "react-owl-carousel2";import "react-owl-carousel2/src/owl.carousel.css";
 import "react-owl-carousel2/src/owl.theme.default.css";
-import { Link } from "react-router-dom";
 import Ivane  from "../../Images/mbbs-in-georgia/medical-universities/batumi-shota-rustaveli-state-university-faculty-of-natural-sciences-and-health-care.png"
 import Batumi from "../../Images/mbbs-in-georgia/medical-universities/caucasus-international-university-faculty-of-medicine.png"
 import Akaki from "../../Images/mbbs-in-georgia/medical-universities/david-tvildiani-medical-university-aieti-medical-school.png"
@@ -35,7 +34,7 @@ const GerogiaUniversities = () => {
           title: "Akaki Tsereteli State University Faculty of Medicine",
           image: Akaki,
           desc: "Akaki Tsereteli State University is a multilevel higher education institution that performs academic and professional programs and is engaged in active research activities.",
-          link: "/akaki-tsereteli-state",
+          link: "/akaki-tsereteli-state-medical-university",
         },
         {
           id: 4,

@@ -1,83 +1,131 @@
-import React from 'react'
-import { Image } from 'react-bootstrap'
-import Img1 from '../../Images/mbbs-in-philippines/medical-universities/ama-school-of-medicine.png'
-import Process from '../../Images/admission-process.png'
+import React, { useState, useEffect } from "react"; import {Link} from 'react-router-dom'; import { Helmet } from "react-helmet";
+import { Button, Image } from "react-bootstrap";
+import Img1 from "../../Images/mbbs-in-philippines/medical-universities/ama-school-of-medicine.png";
+import AdmissionProcess from "../Includes/AdmissionProcess";
+import PhilippinesTopMedicalUniversities from "./PhilippinesTopMedicalUniversities";
+import OtherCountries from "../Includes/OtherCountries";
+import FAQ from "../Includes/FAQ";
+import FreeCouncelling from "../Includes/FreeCouncelling";
 
 const AmaUniversity = () => {
+  const [show, setShow] = useState(false); useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <>
- <div id="abt">
+      <div id="abt">
         <div className="container">
-            <div className="row">
-                <div className="col-md-12">
-                    <div className="pt-5 pb-5">
-                        <h2>MBBS in Philippines</h2>
-                        <nav aria-label="breadcrumb">
-                            <ol className="breadcrumb">
-                              <li className="breadcrumb-item"><a href="/">Home</a></li>
-                              <li className="breadcrumb-item"><a href="/mbbs-in-philippines">MBBS in Philippines</a></li>
-                              <li className="breadcrumb-item active" aria-current="page">AMA University</li>
-                            </ol>
-                          </nav>
-                    </div>
-                </div>
+          <div className="row">
+            <div className="col-md-12">
+              <div className="pt-5 pb-5">
+                <h2>MBBS in Philippines</h2>
+                <nav aria-label="breadcrumb">
+                  <ol className="breadcrumb">
+                    <li className="breadcrumb-item">
+                      <a className="text-decoration-none" as={Link} to="/">
+                        Home
+                      </a>
+                    </li>
+                    <li className="breadcrumb-item">
+                      <a
+                        className="text-decoration-none"
+                        as={Link} to="/mbbs-in-philippines"
+                      >
+                        MBBS in Philippines
+                      </a>
+                    </li>
+                    <li className="breadcrumb-item active" aria-current="page">
+                      AMA University
+                    </li>
+                  </ol>
+                </nav>
+              </div>
             </div>
+          </div>
         </div>
-    </div> 
-    
-    <div id="country" className="pt-5 pb-5">
+      </div>
+
+      <div id="country" className="pt-5 pb-5">
         <div className="container-fluid">
-            <div className="row">
-                <div className="col-md-12">
-                    <div className="container">
-                        <div className="border p-2 m-1">
-                            <div className="row">
-                                <div className="col-md-12">
-                                    <h3 className="text-center">AMA University</h3>
-                                </div>
-                            </div>
-                            <div className="row pt-2">
-                                <div className="col-md-6">
-                                    <div className="university">
-                                        <p className="text-justify pb-2">
-                                        Ama School of Medicine is a medical school of AMA Education System (AMAES) which is housed in AMA College Makati and strategically located in the heart of Makati City, the Philippines’ financial and business capital where the highest concentration of multinational, transnational and local corporations and international organizations and embassies hold their offices. The office of AMASOM is on 8th floor of AMA College Makati, which is located at 5486 South Superhighway, Bangka, Makati City.
-                                        </p>
-                                        <ul>
-                                            <li>Established in 1980</li>
-                                            <li>University Type - Private.</li>
-                                            <li>English Medium Courses</li>
-                                            <li>MBBS course duration 6 years</li>
-                                            <li>Recognized by MCI / WHO / CHED / FAIMER</li>
-                                            <li>Conducting MCI Coaching classes.</li>
-                                            <li>Indian Food Available</li>
-                                            <li>Good Hostel Facility available</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div className="col-md-6">
-                                    <div className="text-center">
-                                    <Image src={Img1} alt="" className="img-fluid"></Image>
-                                    </div>
-                                </div>
-                            </div>
+          <div className="row">
+            <div className="col-md-12">
+              <div className="container">
+                <div className="">
+                  <div className="row">
+                    <div className="col-md-12">
+                      <h3 className="text-info">AMA University</h3>
+                    </div>
+                  </div>
+                  <div className="row pt-2">
+                    <div className="col-md-8">
+                      <div className="university">
+                        <p className="text-justify">
+                          Ama School of Medicine is a medical school of AMA
+                          Education System (AMAES) which is housed in AMA
+                          College Makati and strategically located in the heart
+                          of Makati City, the Philippines’ financial and
+                          business capital where the highest concentration of
+                          multinational, transnational and local corporations
+                          and international organizations and embassies hold
+                          their offices. The office of AMASOM is on 8th floor of
+                          AMA College Makati, which is located at 5486 South
+                          Superhighway, Bangka, Makati City.
+                        </p>
+                        <ul>
+                          <li>Established in 1980</li>
+                          <li>University Type - Private.</li>
+                          <li>English Medium Courses</li>
+                          <li>MBBS course duration 6 years</li>
+                          <li>Recognized by MCI / WHO / CHED / FAIMER</li>
+                          <li>Conducting MCI Coaching classes.</li>
+                          <li>Indian Food Available</li>
+                          <li>Good Hostel Facility available</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div className="col-md-4">
+                      <div className="text-center">
+                        <Image
+                          src={Img1}
+                          alt=""
+                          className="img-fluid rounded shadow-sm"
+                        ></Image>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="study-philippines mb-2">
+                  <div className="row">
+                    <div className="col-md-12">
+                      <div className="pb-2">
+                        <h4 className="text-info pt-2 pb-2">
+                          MBBS in Philippines
+                        </h4>
+                        <p className="p-2 text-justify">
+                          The Philippines, officially the Republic of the
+                          Philippines, is an archipelagic country in Southeast
+                          Asia. Philippines offer quality MBBS education with
+                          economical tuition fees. If we compare with other US
+                          countries then tuition fees are quite low and
+                          education pattern is similar to US study-based
+                          pattern. In Philippines, MBBS is called as MD (Doctor
+                          of Medicine).
+                        </p>
+                        <div className="text-center">
+                          <Button
+                            onClick={handleShow}
+                            className="btn btn-info text-white"
+                          >
+                            Free Councelling
+                          </Button>
                         </div>
-                        <div className="study-philippines mb-2">
-                            <div className="row">
-                                <div className="col-md-12">
-                                    <div className="pb-2">
-                                        <h4 className="text-center pt-2 pb-2">MBBS in Philippines</h4>
-                                        {/* <img src="../images/mbbs-in-philippines-flag.jpg.png" alt="" className="img-fluid rounded-circle ml-3"> */}
-                                        <p className="p-2 text-justify">
-                                            The Philippines, officially the Republic of the Philippines, is an archipelagic country in Southeast Asia. Philippines offer quality MBBS education with economical tuition fees. If we compare with other US countries then tuition fees are quite low and education pattern is similar to US study-based pattern. In Philippines, MBBS is called as MD (Doctor of Medicine).
-                                        </p>
-                                        <div className="text-center">
-                                            {/* <?php include '../templates/university-free-councelling.php' ?> */}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="b-philippines-image">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="b-philippines-image">
                   <div className="m-2">
                     <div className="row">
                       <div className="col-md-12">
@@ -153,402 +201,73 @@ const AmaUniversity = () => {
                     </div>
                   </div>
                 </div>
-                        <div className="top-medical-university pt-5 pb-5">
-                            <div className="row pt-5">
-                                <div className="col-md-12">
-                                    <div className="university">
-                                        <h3 className="pb-2 text-center">Fees Structure</h3>
-                                        <p className="text-justify">
-                                            Study MBBS in Philippines at Kharkiv National Medical University an affordable cost. Fell free to talk to our counsellors to get the complete fee structure.
-                                        </p>
-                                        <div className="text-center">
-                                            {/* <<?php include '../templates/university-free-councelling.php' ?> */}
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="row pt-5">
-                                <div className="col-md-6">
-                                    <div className="university">
-                                        <h5 className="pt-2 pb-2 text-center">Indian Food</h5>
-                                        <p className="pt-2 pb-2 text-justify">
-                                            Many students and parents are doubting whether Indian food is available or not. In Philippines surely we get Indian food. Indian Restaurants are available. So students can easily concentrate on his studies rather than thinking about Food.
-                                        </p>
-                                    </div>
-                                </div>
-                                <div className="col-md-6">
-                                    <div className="university">
-                                        <h5 className="pt-2 pb-2 text-center">Hostel Facilities</h5>
-                                        <p className="pt-2 pb-2 text-justify">
-                                            In Philippines Medical Universities provides a quality hostel facility with security cameras and also Internet Facilities are available. Separate Indian hostel facilities also available who are booking your seat at the earliest. Hostel to College will be a reachable distance between 1 to 2km.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="row pt-5">
-                                <div className="col-md-12">
-                                    <div className="university">
-                                        <h5 className="text-center pb-5">Admission Process for MBBS in Philippines</h5>
-                                        <div className="text-center">
-                                        <Image
-                            src={Process}
-                            alt=""
-                            className="img-fluid"
-                          ></Image>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="row pt-5">
-                                <div className="col-md-12">
-                                    <div className="university">
-                                        <ul>
-                                            <li>Step 1: Expert Free Counseling</li>
-                                            <li>Step 2: Identify the Student Requirements</li>
-                                            <li>Step 3: Country and University</li>
-                                            <li>Step 4: Documentation</li>
-                                            <li>Step 5: Application Process</li>
-                                            <li>Step 6: Invitation Letter</li>
-                                            <li>Step 7: Visa Assistance</li>
-                                            <li>Step 8: Forex exchange</li>
-                                            <li>Step 9: Flight Ticket Booking</li>
-                                            <li>Step 10: Assisting students till completion of the course</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="row pt-5">
-                                <div className="col-md-6">
-                                    <div className="university">
-                                        <h4 className="text-center">Other Top Medical Universities in Philippines</h4>
-                                        <div className="m-1 pt-2 pb-2 medical-university">
-                                            <div className="row">
-                                                <div className="col-md-12">
-                                                    <div className="university">
-                                                        <h5 className="pt-2 pb-2 text-center">Davao Medical College</h5>
-                                                        <img src="../images/mbbs-in-philippines/medical-universities/davao-medical-school-foundation-college-of-medicine.png" alt="" className="img-fluid"/>
-                                                        <p className="pt-2 pb-2 text-justify">
-                                                            Davao Medical College is one of the top Medical University in Philippines. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
-                                                        </p>
-                                                        <div className="">
-                                                            
-                                                            <a href="../mbbs-in-philippines/davao-medical-college.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="m-1 pt-2 pb-2 medical-university">
-                                            <div className="row">
-                                                <div className="col-md-12">
-                                                    <div className="university">
-                                                        <h5 className="pt-2 pb-2 text-center">Emilio Aguinaldo College of Medicine</h5>
-                                                        <img src="../images/mbbs-in-philippines/medical-universities/emilio-aguinaldo-college-school-of-medicine.png" alt="" className="img-fluid" />
-                                                        <p className="pt-2 pb-2 text-justify">
-                                                            Emilio Aguinaldo College of Medicine is one of the top Medical University in Philippines. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
-                                                        </p>
-                                                        <div className="">
-                                                            
-                                                            <a href="../mbbs-in-philippines/emilio-aguinaldo-college-of-medicine.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="m-1 pt-2 pb-2 medical-university">
-                                            <div className="row">
-                                                <div className="col-md-12">
-                                                    <div className="university">
-                                                        <h5 className="pt-2 pb-2 text-center">Our Lady of Fatima University</h5>
-                                                        <img src="../images/mbbs-in-philippines/medical-universities/our-lady-of-fatima-university-college-of-medicine.png" alt="" className="img-fluid"/>
-                                                        <p className="pt-2 pb-2 text-justify">
-                                                            Our Lady of Fatima University is one of the top Medical University in Philippines. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
-                                                        </p>
-                                                        <div className="">
-                                                            
-                                                            <a href="../mbbs-in-philippines/our-lady-of-fatima-university.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="m-1 pt-2 pb-2 medical-university">
-                                            <div className="row">
-                                                <div className="col-md-12">
-                                                    <div className="university">
-                                                        <h5 className="pt-2 pb-2 text-center">University of Perpetual Help</h5>
-                                                        <img src="./images/mbbs-in-philippines/medical-universities/university-of-perpetual-help.png" alt="" className="img-fluid" />
-                                                        <p className="pt-2 pb-2 text-justify">
-                                                            University of Perpetual Help is one of the top Medical University in Philippines. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
-                                                        </p>
-                                                        <div className="">
-                                                            
-                                                            <a href="../mbbs-in-philippines/university-of-perpetual-help.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-6">
-                                    <div className="university">
-                                        <h4 className="text-center">Preferred Countries for MBBS in Abroad</h4>
-                                    </div>
-                                    <div className="m-1 pt-2 pb-2 medical-university">
-                                        <div className="row">
-                                            <div className="col-md-12">
-                                                <div className="university">
-                                                    <h5 className="pt-2 pb-2 text-center">Study MBBS in USA</h5>
-                                                    <img src="../images/mbbs-in-usa/medical-universities/spartan-health-sciences-university.png" alt="" className="img-fluid" />
-                                                    <p className="pt-2 pb-2 text-justify">
-                                                    Spartan University of Health and Science is one of the top Medical University in USA. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
-                                                    </p>
-                                                    <div className="">
-                                                        
-                                                        <a href="../mbbs-in-usa.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="m-1 pt-2 pb-2 medical-university">
-                                        <div className="row">
-                                            <div className="col-md-12">
-                                                <div className="university">
-                                                    <h5 className="pt-2 pb-2 text-center">Study MBBS in Poland</h5>
-                                                    <img src="../images/mbbs-in-poland/medical-universities/medical-university-of-gdansk.png" alt="" className="img-fluid"/>
-                                                    <p className="pt-2 pb-2 text-justify">
-                                                    Medical University of Gdansk one of the top Medical University in Poland. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
-                                                    </p>
-                                                    <div className="">
-                                                        
-                                                        <a href="../mbbs-in-poland.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="m-1 pt-2 pb-2 medical-university">
-                                        <div className="row">
-                                            <div className="col-md-12">
-                                                <div className="university">
-                                                    <h5 className="pt-2 pb-2 text-center">Study MBBS in Kyrgyzstan</h5>
-                                                    <img src="../images/mbbs-in-kyrgyzstan/medical-universities/osh-state-medical-university.png" alt="" className="img-fluid"/>
-                                                    <p className="pt-2 pb-2 text-justify">
-                                                    Osh State Medical University one of the top Medical University in Kyrgyzstan. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
-                                                    </p>
-                                                    <div className="">
-                                                        
-                                                        <a href="../mbbs-in-kyrgyzstan.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="m-1 pt-2 pb-2 medical-university">
-                                        <div className="row">
-                                            <div className="col-md-12">
-                                                <div className="university">
-                                                    <h5 className="pt-2 pb-2 text-center">Study MBBS in Georgia</h5>
-                                                    <img src="../images/mbbs-in-georgia/medical-universities/batumi-shota-rustaveli-state-university-faculty-of-natural-sciences-and-health-care.png" alt="" className="img-fluid"/>
-                                                    <p className="pt-2 pb-2 text-justify">
-                                                    Batumi Shota Rustaveli State Medical University one of the top Medical University in Georgia. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
-                                                    </p>
-                                                    <div className="">
-                                                        
-                                                        <a href="../mbbs-in-georgia.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="m-1 pt-2 pb-2 medical-university">
-                                        <div className="row">
-                                            <div className="col-md-12">
-                                                <div className="university">
-                                                    <h5 className="pt-2 pb-2 text-center">Study MBBS in Philippines</h5>
-                                                    <img src="../images/mbbs-in-philippines/medical-universities/our-lady-of-fatima-university-college-of-medicine.png" alt="" className="img-fluid" />
-                                                    <p className="pt-2 pb-2 text-justify">
-                                                    Our Lady of Fatima University one of the top Medical University in Philippines. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
-                                                    </p>
-                                                    <div className="">
-                                                        
-                                                        <a href="../mbbs-in-philippines.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="m-1 pt-2 pb-2 medical-university">
-                                        <div className="row">
-                                            <div className="col-md-12">
-                                                <div className="university">
-                                                    <h5 className="pt-2 pb-2 text-center">Study MBBS in Russia</h5>
-                                                    <img src="../images/mbbs-in-russia/medical-universities/bashkir-state-medical-university.png" alt="" className="img-fluid" />
-                                                    <p className="pt-2 pb-2 text-justify">
-                                                    Bashkir State Medical University one of the top Medical University in Russia. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
-                                                    </p>
-                                                    <div className="">
-                                                         
-                                                        <a href="../mbbs-in-russia.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="m-1 pt-2 pb-2 medical-university">
-                                        <div className="row">
-                                            <div className="col-md-12">
-                                                <div className="university">
-                                                    <h5 className="pt-2 pb-2 text-center">Study MBBS in Ukraine</h5>
-                                                    <img src="../images/mbbs-in-ukraine/medical-universities/kharkiv-international-medical-university.png" alt="" className="img-fluid"/>
-                                                    <p className="pt-2 pb-2 text-justify">
-                                                    Kharkiv international Medical University one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
-                                                    </p>
-                                                    <div className="">
-                                                        
-                                                        <a href="../mbbs-in-ukraine.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="m-1 pt-2 pb-2 medical-university">
-                                        <div className="row">
-                                            <div className="col-md-12">
-                                                <div className="university">
-                                                    <h5 className="pt-2 pb-2 text-center">Study MBBS in Belarus</h5>
-                                                    <img src="../images/mbbs-in-belarus/medical-universities/belarusian-state-medical-university.png" alt="" className="img-fluid"/>
-                                                    <p className="pt-2 pb-2 text-justify">
-                                                    Belarusian State Medical University one of the top Medical University in Belarus. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.
-                                                    </p>
-                                                    <div className="">
-                                                        
-                                                        <a href="../mbbs-in-belarus.php" className="pt-2 pb-2 btn btn-warning m-2 float-right">Read more</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="pt-5">
-                                <h3 className="text-center">FAQs</h3>
-                                <div className="row">
-                                    <div className="col-md-12">
-                                        <div id="accordion">
-                                            <div className="card m-1">
-                                              <div className="card-header" id="headingOne">
-                                                <h5 className="mb-0">
-                                                  <button className="btn btn-link" data-toggle="collapse" data-target="#question-1" aria-expanded="true" aria-controls="question-1">
-                                                    Can Students take up any part-time job to earn money? 
-                                                  </button>
-                                                </h5>
-                                              </div>
-                                          
-                                              <div id="question-1" className="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                                                <div className="card-body">
-                                                    As per the Law, the students cannot take up a full time/part-time job, while living on the “Student’s well acquire his educational qualification, to fulfill his main aim of arrival than taking up any part-time assignments, which are generally low paid. A foreign citizen can work only if their employer is licensed to hire particular foreign citizen/citizens. The students are liable to expulsion from the educational establishments due to poor attendance poor academic record due to such activities.
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div className="card m-1">
-                                              <div className="card-header" id="headingTwo">
-                                                <h5 className="mb-0">
-                                                  <button className="btn btn-link collapsed" data-toggle="collapse" data-target="#question-2" aria-expanded="false" aria-controls="question-2">
-                                                    Can parents / Gaurdian visit the students?
-                                                  </button>
-                                                </h5>
-                                              </div>
-                                              <div id="question-2" className="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                                                <div className="card-body">
-                                                    Yes, even it has now become as custom, that most of the parents arrive during the degree award function every year to share the precious moment with their children. A special invitation is needed for a visa. For which students can approach the Dean’s office for assistance.
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div className="card m-1">
-                                              <div className="card-header" id="headingThree">
-                                                <h5 className="mb-0">
-                                                  <button className="btn btn-link collapsed" data-toggle="collapse" data-target="#question-3" aria-expanded="false" aria-controls="question-3">
-                                                    How much expenses should students have for books & other materials?
-                                                  </button>
-                                                </h5>
-                                              </div>
-                                              <div id="question-3" className="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                                                <div className="card-body">
-                                                    Academic books are provided to the students from the library of the institution, free of cost. Besides students can get additional reading material from the “Reading rooms” for no charges, students can also use the internet and other means for getting the literature or other books.
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div className="card m-1">
-                                              <div className="card-header" id="headingFour">
-                                                <h5 className="mb-0">
-                                                  <button className="btn btn-link collapsed" data-toggle="collapse" data-target="#question-4" aria-expanded="false" aria-controls="question-4">
-                                                    If students are not well are facilities available for the emergency?
-                                                  </button>
-                                                </h5>
-                                              </div>
-                                              <div id="question-4" className="collapse" aria-labelledby="headingFour" data-parent="#accordion">
-                                                <div className="card-body">
-                                                    Medical check-up of the students is a formal & compulsory routine before the start of every academic year. A doctor is always available in the “Health care point” of the hostel for the free consultation. In case of any emergency, the doctor with an ambulance can be called free of cost, any time.
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div className="card m-1">
-                                              <div className="card-header" id="headingFive">
-                                                <h5 className="mb-0">
-                                                  <button className="btn btn-link collapsed" data-toggle="collapse" data-target="#question-5" aria-expanded="false" aria-controls="question-5">
-                                                    Is it necessary to learn the local language of the country?
-                                                  </button>
-                                                </h5>
-                                              </div>
-                                              <div id="question-5" className="collapse" aria-labelledby="headingFive" data-parent="#accordion">
-                                                <div className="card-body">
-                                                    local Language is the official language in any country and forms a part of the curriculum for making it easy for foreign students to converse with the local population and the patients during their entire MBBS course.Any country students opt for MBBS studies is the important to learn the language for the day to day life and for practical classes but in china it is compulsory to read speak and write the language from HSK 1 TO HSK 4 Level for any international students .
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div className="card m-1">
-                                              <div className="card-header" id="headingSix">
-                                                <h5 className="mb-0">
-                                                  <button className="btn btn-link collapsed" data-toggle="collapse" data-target="#question-6" aria-expanded="false" aria-controls="question-6">
-                                                    what is the eligibility cretiria to take admission in any foregn medical university ?
-                                                  </button>
-                                                </h5>
-                                              </div>
-                                              <div id="question-6" className="collapse" aria-labelledby="headingSix" data-parent="#accordion">
-                                                <div className="card-body">
-                                                    The student must have passed (12th Standard) with physics, chemistry, biology & English from a recognized board with a minimum mark of 50% in physics, chemistry and biology in aggregate (General category) and 40% for other reserved categories.
-                                                </div>
-                                              </div>
-                                            </div>
-                                            <div className="card m-1">
-                                              <div className="card-header" id="headingSeven">
-                                                <h5 className="mb-0">
-                                                  <button className="btn btn-link collapsed" data-toggle="collapse" data-target="#question-6" aria-expanded="false" aria-controls="question-7">
-                                                    what is the eligibility cretiria to take admission in any foregn medical university ?
-                                                  </button>
-                                                </h5>
-                                              </div>
-                                              <div id="question-7" className="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
-                                                <div className="card-body">
-                                                    The student must have passed (12th Standard) with physics, chemistry, biology & English from a recognized board with a minimum mark of 50% in physics, chemistry and biology in aggregate (General category) and 40% for other reserved categories.
-                                                </div>
-                                              </div>
-                                            </div>
-                                          </div>
-                                    </div>
-                                </div>
-                            </div>
+                <div className="top-medical-university pt-5 pb-5">
+                  <div className="row pt-5">
+                    <div className="col-md-12">
+                      <div className="university">
+                        <h3 className="pb-2 text-center">Fees Structure</h3>
+                        <p className="text-justify">
+                          Study MBBS in Philippines at Kharkiv National Medical
+                          University an affordable cost. Fell free to talk to
+                          our counsellors to get the complete fee structure.
+                        </p>
+                        <div className="text-center">
+                          <Button
+                            onClick={handleShow}
+                            className="btn btn-info text-white"
+                          >
+                            Free Councelling
+                          </Button>
                         </div>
+                      </div>
                     </div>
+                  </div>
+                  <div className="row pt-5">
+                    <div className="col-md-6">
+                      <div className="university">
+                        <h5 className="pt-2 pb-2 text-center">Indian Food</h5>
+                        <p className="pt-2 pb-2 text-justify">
+                          Many students and parents are doubting whether Indian
+                          food is available or not. In Philippines surely we get
+                          Indian food. Indian Restaurants are available. So
+                          students can easily concentrate on his studies rather
+                          than thinking about Food.
+                        </p>
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="university">
+                        <h5 className="pt-2 pb-2 text-center">
+                          Hostel Facilities
+                        </h5>
+                        <p className="pt-2 pb-2 text-justify">
+                          In Philippines Medical Universities provides a quality
+                          hostel facility with security cameras and also
+                          Internet Facilities are available. Separate Indian
+                          hostel facilities also available who are booking your
+                          seat at the earliest. Hostel to College will be a
+                          reachable distance between 1 to 2km.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
-    </div>
+      </div>
+      <AdmissionProcess />
+      <PhilippinesTopMedicalUniversities />
+      <OtherCountries />
+      <FAQ />
+      <FreeCouncelling
+        show={show}
+        handleClose={handleClose}
+        title="Contact Us for Free Councelling"
+      />
     </>
-  )
-}
+  );
+};
 
-export default AmaUniversity
+export default AmaUniversity;

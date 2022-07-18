@@ -1,23 +1,30 @@
-import React from "react";
-import { Image } from "react-bootstrap";
-import Texila from "../../Images/mbbs-in-usa/medical-universities/texila.png";
+import React, { useState, useEffect } from "react"; import {Link} from 'react-router-dom'; import { Helmet } from "react-helmet";
+import { Button } from "react-bootstrap";
 import FAQ from "../Includes/FAQ";
+import FreeCouncelling from "../Includes/FreeCouncelling";
+import OtherCountries from "../Includes/OtherCountries";
+import USAUniversities from "../USA/USAUniversities";
 
 const MbbsInUSA = () => {
+  const [show, setShow] = useState(false); useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <>
       <div id="abt1">
         <div className="container">
           <div className="row">
-            <div class="col-md-12">
-              <div class="pt-5 pb-5">
+            <div className="col-md-12">
+              <div className="pt-5 pb-5">
                 <h2>MBBS in USA</h2>
                 <nav aria-label="breadcrumb">
-                  <ol class="breadcrumb">
-                    <li class="breadcrumb-item">
-                      <a href="/">Home</a>
+                  <ol className="breadcrumb">
+                    <li className="breadcrumb-item">
+                      <a as={Link} to="/">Home</a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">
+                    <li className="breadcrumb-item active" aria-current="page">
                       MBBS in USA
                     </li>
                   </ol>
@@ -40,8 +47,7 @@ const MbbsInUSA = () => {
                         <h4 className="text-start text-info pt-2 pb-2">
                           MBBS in USA
                         </h4>
-                        {/* <img src="./images/mbbs-in-USA-flag.jpg.png" alt="" className="img-fluid rounded-circle ml-3"> */}
-                        <p className="pt-2 pb-2 text-justify">
+                        <p className="text-justify">
                           MBBS in the USA is the dream of every Indian student
                           who wants to pursue their medical career in the USA
                           after education. An MBBS is one of the long-term
@@ -57,7 +63,7 @@ const MbbsInUSA = () => {
                           depends on the criteria of the board, universities,
                           and the entrance test.
                         </p>
-                        <p className="pt-2 pb-2 text-justify">
+                        <p className="text-justify">
                           <b>Via MCAT – </b> is one of the most difficult
                           roadmaps for any aspirant. Rarely do any student get a
                           pass. Also, the cost of this program is much more
@@ -66,7 +72,7 @@ const MbbsInUSA = () => {
                           top medical college in the USA, you need more than a
                           500 score on MCAT.
                         </p>
-                        <p className="pt-2 pb-2 text-justify">
+                        <p className="text-justify">
                           <b>Via the Caribbean – </b>This roadmap is quite
                           famous in India. Many aspirants select the MD program
                           of the USA via the Caribbean Islands. It is one of the
@@ -76,11 +82,10 @@ const MbbsInUSA = () => {
                           Caribbean at low cost. It looks easy, but it is not,
                           though all you really require is the right knowledge.
                         </p>
-                        <p className="pt-2 pb-2 text-justify">
+                        <p className="text-justify">
                           <b>WHY STUDY MBBS IN USA?</b>
                           <ol>
                             <li>
-                              {" "}
                               passing ratio is remarkably high for students who
                               are completing their MD program in the USA.
                             </li>
@@ -99,92 +104,77 @@ const MbbsInUSA = () => {
                             </li>
                           </ol>
                         </p>
-                        <h2 className="text-center pt-2 pb-2">
+                        <h2 className="text-info pt-2 pb-2">
                           Advantages of Studying in USA
                         </h2>
-                        <p className="pt-2 pb-2 text-justify">
+                        <p className="text-justify">
                           <ul>
                             <li>
-                              {" "}
                               Universities in the United States offer a
                               well-designed syllabus as well as a lot of
                               practical sessions.
                             </li>
                             <li>
-                              {" "}
                               There is a good ratio between teachers and
                               students, and each student receives individual
                               attention.
                             </li>
                             <li>
-                              {" "}
                               In addition to international research projects,
                               students can participate in international
                               competitions.
                             </li>
                             <li>
-                              {" "}
                               Students can take a break from studying by
                               participating in cultural events at American
                               universities.
                             </li>
                             <li>
-                              {" "}
                               The diversity of students in the USA allows them
                               to familiarize themselves with the culture and
                               customs of other places.
                             </li>
                             <li>
-                              {" "}
                               While studying medicine in the United States, the
                               campus, as well as the surrounding environment,
                               are friendly to students.
                             </li>
                             <li>
-                              {" "}
                               Staff members are renowned for being extremely
                               helpful to students.
                             </li>
                             <li>
-                              {" "}
                               Guidance professors and student guides assist
                               students as they settle into universities
                             </li>
                             <li>
-                              {" "}
                               Students can commute easily to the university with
                               the university's assistance.
                             </li>
                             <li>
-                              {" "}
                               International students can study MBBS in the USA
                               with great confidence, and this certainly provides
                               a great deal of relief to the students.
                             </li>
                             <li>
-                              {" "}
                               Moreover, universities strongly encourage
                               anti-ragging committees as well as no
                               discrimination based on caste, creed, or gender.
                             </li>
                             <li>
-                              {" "}
                               Indian banks provide very good interest rates on
                               student loans to Indian students.
                             </li>
                             <li>
-                              {" "}
                               The visa application process is hassle-free for
                               students and most student visa applications are
                               approved.
                             </li>
                             <li>
-                              {" "}
                               University capitalization and donation fees are
                               not charged.
                             </li>
                             <li>
-                              {" "}
                               MBBS in the USA includes three phases, including
                               Clinical Rotations. Clinical rotations allow
                               students to gain clinical experience at some of
@@ -193,7 +183,6 @@ const MbbsInUSA = () => {
                               expert supervision.
                             </li>
                             <li>
-                              {" "}
                               MBBS programs in America can be followed by
                               postgraduate medical programs anywhere in the
                               world. A medical student who earns a degree in the
@@ -201,68 +190,76 @@ const MbbsInUSA = () => {
                               US after graduation.
                             </li>
                             <li>
-                              {" "}
                               On the university campus, medical students
                               pursuing MBBS in the USA are offered good
                               facilities.
                             </li>
                           </ul>
                         </p>
-                        <p className="pt-3 pb-2 text-justify text-info">
+                        <p className="pt-3 pb-3 text-justify text-info">
                           <strong>Quick Information About MBBS In USA</strong>
                         </p>
-                        <table className="table-bordered pt-3 pb-3">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <b>Recognition</b>
-                              </td>
-                              <td>- NMC and WHO approved</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <b>Eligibility</b>
-                              </td>
-                              <td>
-                                - 50% in PCB for General and 40% for SC/ ST/OBCs
-                                in 10+2
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <b>Course Duration</b>
-                              </td>
-                              <td>- 4.5 + 1 year Internship</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <b>NEET</b>
-                              </td>
-                              <td>- Yes, compulsory</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <b>MCAT Exam</b>
-                              </td>
-                              <td>- Required</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <b>IELTS/TOFEL</b>
-                              </td>
-                              <td>- Required</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <b>Medium of Teaching</b>
-                              </td>
-                              <td>- English </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        {/* <div className="text-center">
-                                            <?php include 'templates/free-councelling.php' ?>
-                                        </div> */}
+                        <div className="table-responsive">
+                          <table className="table-bordered pt-3 pb-3 w-100 align-middle">
+                            <tbody>
+                              <tr>
+                                <td className="px-2">
+                                  <b>Recognition</b>
+                                </td>
+                                <td className="px-2">- NMC and WHO approved</td>
+                              </tr>
+                              <tr>
+                                <td className="px-2">
+                                  <b>Eligibility</b>
+                                </td>
+                                <td className="px-2">
+                                  - 50% in PCB for General and 40% for SC/
+                                  ST/OBCs in 10+2
+                                </td>
+                              </tr>
+                              <tr>
+                                <td className="px-2">
+                                  <b>Course Duration</b>
+                                </td>
+                                <td className="px-2">
+                                  - 4.5 + 1 year Internship
+                                </td>
+                              </tr>
+                              <tr>
+                                <td className="px-2">
+                                  <b>NEET</b>
+                                </td>
+                                <td className="px-2">- Yes, compulsory</td>
+                              </tr>
+                              <tr>
+                                <td className="px-2">
+                                  <b>MCAT Exam</b>
+                                </td>
+                                <td className="px-2">- Required</td>
+                              </tr>
+                              <tr>
+                                <td className="px-2">
+                                  <b>IELTS/TOFEL</b>
+                                </td>
+                                <td className="px-2">- Required</td>
+                              </tr>
+                              <tr>
+                                <td className="px-2">
+                                  <b>Medium of Teaching</b>
+                                </td>
+                                <td className="px-2">- English </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div className="text-center">
+                          <Button
+                            onClick={handleShow}
+                            className="btn btn-info text-white"
+                          >
+                            Free Councelling
+                          </Button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -272,7 +269,7 @@ const MbbsInUSA = () => {
                   <div className="m-2">
                     <div className="row">
                       <div className="col-md-12">
-                        <h2 className="text-center">
+                        <h2 className="text-info">
                           <u>About USA</u>
                         </h2>
                       </div>
@@ -370,71 +367,87 @@ const MbbsInUSA = () => {
                       <h5 className="pt-3 pb-3">
                         MBBS In USA Vs MBBS In India
                       </h5>
-                      <table className="table-bordered">
-                        <thead>
-                          <tr>
-                            <th scope="col">MBBS In USA </th>
-                            <th scope="col">MBBS In India</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>
-                              There is no such degree as MBBS in the USA. As a
-                              result, it grants MD degrees, which are equivalent
-                              to medical degrees.
-                            </td>
-                            <td>
-                              Degree: The first degree in medicine is the MBBS
-                              (Bachelor of Medicine and Bachelor of Surgery).
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>
-                              MBBS fees is on the higher side of the spectrum.
-                            </td>
-                            <td>MBBS fees are affordable.</td>
-                          </tr>
-                          <tr>
-                            <td>
-                              Along with NEET, FMGE and TOEFL/IELTS need to be
-                              applied for.
-                            </td>
-                            <td>Admission in India is granted through NEET.</td>
-                          </tr>
+                      <div className="table-responsive">
+                        <table className="table-bordered mt-3 mb-3 w-100 align-middle">
+                          <thead>
+                            <tr>
+                              <th className="px-2" scope="col">
+                                MBBS In USA{" "}
+                              </th>
+                              <th className="px-2" scope="col">
+                                MBBS In India
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td className="px-2">
+                                There is no such degree as MBBS in the USA. As a
+                                result, it grants MD degrees, which are
+                                equivalent to medical degrees.
+                              </td>
+                              <td className="px-2">
+                                Degree: The first degree in medicine is the MBBS
+                                (Bachelor of Medicine and Bachelor of Surgery).
+                              </td>
+                            </tr>
+                            <tr>
+                              <td className="px-2">
+                                MBBS fees is on the higher side of the spectrum.
+                              </td>
+                              <td className="px-2">
+                                MBBS fees are affordable.
+                              </td>
+                            </tr>
+                            <tr>
+                              <td className="px-2">
+                                Along with NEET, FMGE and TOEFL/IELTS need to be
+                                applied for.
+                              </td>
+                              <td className="px-2">
+                                Admission in India is granted through NEET.
+                              </td>
+                            </tr>
 
-                          <tr>
-                            <td>
-                              Residency and Fellowship are the pathways to
-                              specialization after MD.
-                            </td>
-                            <td>
-                              MBBS can be followed by specialization in MD/MS or
-                              DM/MCh.
-                            </td>
-                          </tr>
+                            <tr>
+                              <td className="px-2">
+                                Residency and Fellowship are the pathways to
+                                specialization after MD.
+                              </td>
+                              <td className="px-2">
+                                MBBS can be followed by specialization in MD/MS
+                                or DM/MCh.
+                              </td>
+                            </tr>
 
-                          <tr>
-                            <td>Duration of Education 4 Years.</td>
-                            <td>Duration of education 5.5 Years.</td>
-                          </tr>
+                            <tr>
+                              <td className="px-2">
+                                Duration of Education 4 Years.
+                              </td>
+                              <td className="px-2">
+                                Duration of education 5.5 Years.
+                              </td>
+                            </tr>
 
-                          <tr>
-                            <td>
-                              No donation charge can be asked by universities
-                            </td>
-                            <td>
-                              Donation fees can be demanded by the university
-                            </td>
-                          </tr>
-                          <tr>
-                            <td>Flexible patterns and practical sessions.</td>
-                            <td>
-                              Rigid patterns with very uniformed scheduling.
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                            <tr>
+                              <td className="px-2">
+                                No donation charge can be asked by universities
+                              </td>
+                              <td className="px-2">
+                                Donation fees can be demanded by the university
+                              </td>
+                            </tr>
+                            <tr>
+                              <td className="px-2">
+                                Flexible patterns and practical sessions.
+                              </td>
+                              <td className="px-2">
+                                Rigid patterns with very uniformed scheduling.
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                       <h5 className="pt-3 pb-1">
                         SELECTION OF UNIVERSITIES TO STUDY IN USA?
                       </h5>
@@ -456,7 +469,7 @@ const MbbsInUSA = () => {
                       <h5 className=" pt-2 pb-2">
                         SCHOLARSHIP FOR INDIAN STUDENTS TO STUDY MBBS IN THE USA
                       </h5>
-                      <p className=" pt-2 pb-2 text-justify">
+                      <p className="text-justify">
                         As we see, studying MBBS in the USA is much more
                         expensive as compared to all other countries. This fee
                         becomes one of the major challenges for many aspirants
@@ -464,7 +477,7 @@ const MbbsInUSA = () => {
                         there are many scholarships the US government provides
                         in the educational system for international students.
                       </p>
-                      <p className=" pt-2 pb-2 text-justify">
+                      <p className="text-justify">
                         For getting a generous grant the candidate must have to
                         fulfil the requirements. Students must have an excellent
                         academic record with outstanding co-curriculars and
@@ -474,7 +487,7 @@ const MbbsInUSA = () => {
                         grades. The team GLOW OVERSEAS EDUCATION will help you
                         with that.
                       </p>
-                      <p className=" pt-2 pb-2 text-justify">
+                      <p className="text-justify">
                         <b>
                           Some of the reasons why studying MBBS in America is a
                           wise choice:
@@ -483,134 +496,110 @@ const MbbsInUSA = () => {
                       <ul>
                         <li> The country is developed.</li>
                         <li>
-                          {" "}
                           The theory is taught in conjunction with classroom
                           teaching and world-class technology provided to
                           students.
                         </li>
                         <li>
-                          {" "}
                           MBBS degrees are accepted worldwide and students do
                           not have to pass the FMGE (Foreign Medical Graduate
                           Examination) to work in India.
                         </li>
                         <li>
-                          {" "}
                           The medical council of India recognizes top
                           universities in America, and many of their alumni work
                           for international health organizations.
                         </li>
                         <li>
-                          {" "}
                           Accommodations are readily available at universities
                           in the form of dorms and hostels.
                         </li>
                         <li>
-                          {" "}
                           Additionally, if a student wishes to stay in rented
                           apartments, they can get great deals on those as well.
                         </li>
                         <li>
-                          {" "}
                           There is a well-connected travel system in place and
                           constant roadmaps are provided so that students are
                           not lost.
                         </li>
                         <li>
-                          {" "}
                           Food options in the United States are diverse, so
                           students can pick and choose their favourites.
                         </li>
                         <li>
-                          {" "}
                           Campus cultural events can keep students' minds
                           engaged and give them a break from studying.
                         </li>
                         <li>
-                          {" "}
                           In universities, students have access to a fully
                           equipped library with books from almost all genres to
                           read and study.
                         </li>
                         <li>
-                          {" "}
                           In addition, there are many public libraries where
                           students can study.
                         </li>
                         <li>
-                          {" "}
                           When students travel within the country, they can take
                           advantage of great discounts
                         </li>
                         <li>
-                          {" "}
                           Scholarships are offered by many universities in
                           America.
                         </li>
                         <li>
-                          {" "}
                           Students have access to various cafes and workspaces
                           where they can study and enjoy some alone time.
                         </li>
                         <li>
-                          {" "}
                           The weather in America varies greatly, and students
                           can experience warm summers and very cold winters.
                         </li>
                         <li>
-                          {" "}
                           Holidays offer great opportunities to explore some of
                           America's most iconic tourist attractions, such as the
                           Statue of Liberty and the MET museum.
                         </li>
                         <li>
-                          {" "}
                           Graduates of the program can work in repeated
                           hospitals in the country after they complete their
                           studies.
                         </li>
                         <li>
-                          {" "}
                           Moreover, they can pursue their Ph.D. degree in
                           America as well.
                         </li>
                         <li>
-                          {" "}
                           For students who wish to earn some extra money while
                           learning, internships and part-time jobs are
                           available.
                         </li>
                         <li>
-                          {" "}
                           Due to the high quality of education in the USA, its
                           degree has a lot of value in almost any country.
                         </li>
                         <li>
-                          {" "}
                           There is a very strict code of hiring for teaching
                           staff in American universities, so someone with a rich
                           knowledge background and experience teaching at
                           universities is an essential candidate.
                         </li>
                         <li>
-                          {" "}
                           There are exchange programs available at some of the
                           universities in the United States with reputable
                           universities all over the world.
                         </li>
                         <li>
-                          {" "}
                           All universities use English as their medium of
                           instruction.
                         </li>
                         <li>
-                          {" "}
                           There is great demand for doctors from the USA around
                           the world, and they are highly respected as well as
                           acclaimed.
                         </li>
                         <li>
-                          {" "}
                           Despite the higher tuition fees in the most
                           prestigious universities in America, it is an
                           investment in a better future
@@ -626,96 +615,27 @@ const MbbsInUSA = () => {
                       </p>
                       <ul className="pt-2 pb-2">
                         <li>
-                          <a href="/texila-american-university-college">
-                          Texila American University College
+                          <a as={Link} to="/mbbs-in-usa/texila-american-university-college">
+                            Texila American University College
                           </a>
                         </li>
                       </ul>
                     </div>
                   </div>
-                  <div className="row pt-5">
-                    <div className="col-md-6">
-                      <div className="university-country">
-                        <h5 className="pt-2 pb-2 text-center">
-                          Texila American University College
-                        </h5>
-                        {/* <img src="./images/mbbs-in-USA/medical-universities/oo-bogomolets-national-medical-university.jpg" alt="" className="img-fluid"> */}
-                        <Image
-                          src={Texila}
-                          alt=""
-                          className="img-fluid"
-                        ></Image>
-                        <p className="pt-2 pb-2 text-justify">
-                          Lorem ipsum dolor sit aliquam suscipit? Saepe unde
-                          consequuntur rem, corporis ipsum quidem ea harum
-                          obcaecati, perspiciatis, placeat doloremque
-                          perferendis dolorum numquam aspernatur nisi ullam?
-                        </p>
-                        <div className="">
-                          <a
-                            href="/"
-                            className="pt-2 pb-2 btn btn-warning m-2 float-left"
-                          >
-                            Book Now
-                          </a>
-                          <a
-                            href="/"
-                            className="pt-2 pb-2 btn btn-warning m-2 float-right"
-                          >
-                            Read more
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
                 </div>
-                <FAQ />
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <div id="social" className="pt-5 pb-5">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-2"></div>
-            <div className="col-md-8">
-              <div className="">
-                <h2 className="text-center pt-2 pb-2">Social Connect</h2>
-                <div className="text-center pt-3 pb-3">
-                  <a
-                    href="https://www.facebook.com/glowoverseaseducation"
-                    target="_blank"
-                  >
-                    <i className="fab fa-facebook-f icons"></i>
-                  </a>{" "}
-                  &nbsp;
-                  <a href="https://twitter.com/GlowOverseas" target="_blank">
-                    <i className="fab fa-twitter icons"></i>
-                  </a>{" "}
-                  &nbsp;
-                  <a
-                    href="https://www.youtube.com/channel/UCjYolwMMKKnzceHVQnJnmSQ"
-                    target="_blank"
-                  >
-                    <i className="fab fa-youtube icons"></i>
-                  </a>{" "}
-                  &nbsp;
-                  <a
-                    href="https://www.instagram.com/glowoverseaseducation/"
-                    target="_blank"
-                  >
-                    <i className="fab fa-instagram icons"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-2"></div>
-          </div>
-        </div>
-      </div>
+      <USAUniversities />
+      <OtherCountries />
+      <FAQ />
+      <FreeCouncelling
+        show={show}
+        handleClose={handleClose}
+        title="Contact Us for Free Councelling"
+      />
     </>
   );
 };

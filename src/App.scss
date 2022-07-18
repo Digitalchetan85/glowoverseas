@@ -39,10 +39,14 @@ p {
   }
 }
 
+// .nav-item.dropdown:hover .dropdown-menu {
+//   display: block;
+// }
+
 #navbar {
   .nav-link {
     color: $dark-color;
-    padding: 15px 25px !important;
+    padding: 10px 25px !important;
     font-size: 15px;
     font-weight: 600;
     text-transform: uppercase;
@@ -54,10 +58,33 @@ p {
     background-color: $primary-color;
   }
   .dropdown-item {
-    color: $white-color;
+    color: $black-color;
     &:hover {
-      color: $white-color;
-      background-color: $secondary-color;
+      color: $secondary-color;
+      background-color: transparent;
+    }
+  }
+}
+
+#mobile-nav {
+  .nav-link {
+    color: $dark-color;
+    padding: 10px 25px !important;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+  .dropdown-menu {
+    background-color: $primary-color;
+  }
+  .dropdown-item {
+    color: $black-color;
+    &:hover {
+      color: $secondary-color;
+      background-color: transparent;
     }
   }
 }
@@ -98,6 +125,7 @@ p {
     transform: scale(0.95);
     transition: all 0.5s ease;
     border-radius: 20px;
+    cursor: pointer;
     &:hover {
       transform: scale(1);
       // box-shadow: opx #ceced4;
@@ -150,40 +178,41 @@ p {
 }
 
 #abt {
-  background: rgba(0,0,0,0.5) url(../src/Images/abt-bg.jpg);
+  background: rgba(0, 0, 0, 0.5) url(../src/Images/abt-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 150px;
   background-blend-mode: multiply;
 
   .breadcrumb {
-      padding: 0px 0px !important;
-      background: transparent !important;
-      a {
-          color: #fff;
-          &:hover {
-              color: $secondary-color;
-              text-decoration: none;
-          }
-      }
-      .breadcrumb-item {
-          color: #fff;
-          font-weight: 600;
-          &:hover {
-              color: $secondary-color;
-              text-decoration: none;
-          }
-          &::before {
-              color: $secondary-color;
-          }
-          &.active {
-              color: $secondary-color !important;
-          }
-      }
-  }
-  h2, h1 {
+    padding: 0px 0px !important;
+    background: transparent !important;
+    a {
       color: #fff;
-      font-size: 2rem;
+      &:hover {
+        color: $secondary-color;
+        text-decoration: none;
+      }
+    }
+    .breadcrumb-item {
+      color: #fff;
+      font-weight: 600;
+      &:hover {
+        color: $secondary-color;
+        text-decoration: none;
+      }
+      &::before {
+        color: $secondary-color;
+      }
+      &.active {
+        color: $secondary-color !important;
+      }
+    }
+  }
+  h2,
+  h1 {
+    color: #fff;
+    font-size: 2rem;
   }
 }
 #abt1 {
@@ -325,10 +354,6 @@ p {
       background-color: $primary-color;
     }
   }
-  p {
-    padding: 0px;
-    margin: 0rem;
-  }
   #four {
     h3 {
       background-color: $primary-color;
@@ -362,7 +387,7 @@ p {
     border-radius: 5px;
   }
 
- .b-belarus-image{
+  .b-belarus-image {
     background-image: url(./Images/mbbs-in-belarus/mbbs-in-belarus.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -379,7 +404,7 @@ p {
     border: 2px solid $primary-color;
     border-radius: 5px;
   }
-  .b-usa-image{
+  .b-usa-image {
     background-image: url(./Images/mbbs-in-usa/mbbs-in-usa.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -387,7 +412,7 @@ p {
     border: 2px solid $primary-color;
     border-radius: 5px;
   }
-  .b-kyrgyzstan-image{
+  .b-kyrgyzstan-image {
     background-image: url(./Images/mbbs-in-kyrgyzstan/mbbs-in-kyrgyzstan.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -395,7 +420,7 @@ p {
     border: 2px solid $primary-color;
     border-radius: 5px;
   }
-  .b-philippines-image{
+  .b-philippines-image {
     background-image: url(./Images/mbbs-in-philippines/mbbs-in-philippines.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -403,7 +428,7 @@ p {
     border: 2px solid $primary-color;
     border-radius: 5px;
   }
-  .b-egypt-image{
+  .b-egypt-image {
     background-image: url(./Images/mbbs-in-egypt/mbbs-in-egypt.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -411,7 +436,7 @@ p {
     border: 2px solid $primary-color;
     border-radius: 5px;
   }
-  .b-kazakhstan-image{
+  .b-kazakhstan-image {
     background-image: url(./Images/mbbs-in-kazakhstan/mbbs-in-kazakhstan.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -419,7 +444,7 @@ p {
     border: 2px solid $primary-color;
     border-radius: 5px;
   }
-  .b-china-image{
+  .b-china-image {
     background-image: url(./Images/mbbs-in-china/mbbs-in-china.png);
     background-position: center center;
     background-repeat: no-repeat;
@@ -427,34 +452,39 @@ p {
     border: 2px solid $primary-color;
     border-radius: 5px;
   }
-    
-    .b-georgia-image{
-      background-image: url(./Images/mbbs-in-georgia/mbbs-in-georgia.png);
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      border: 2px solid $primary-color;
-      border-radius: 5px;
 
-    }
-   .b-russia-image{
-      background-image: url(./Images/mbbs-in-russia/mbbs-in-russia.png);
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      border: 2px solid $primary-color;
-      border-radius: 5px;
-
-    }
-    .b-ukraine-image{
-      background-image: url(./Images/mbbs-in-ukraine/mbbs-in-ukraine.png);
-      background-position: center center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      border: 2px solid $primary-color;
-      border-radius: 5px;
-
-    }
+  .b-georgia-image {
+    background-image: url(./Images/mbbs-in-georgia/mbbs-in-georgia.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid $primary-color;
+    border-radius: 5px;
+  }
+  .b-russia-image {
+    background-image: url(./Images/mbbs-in-russia/mbbs-in-russia.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid $primary-color;
+    border-radius: 5px;
+  }
+  .b-ukraine-image {
+    background-image: url(./Images/mbbs-in-ukraine/mbbs-in-ukraine.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid $primary-color;
+    border-radius: 5px;
+  }
+  .b-uzbekistan-image {
+    background-image: url(./Images/mbbs-in-ukraine/mbbs-in-ukraine.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid $primary-color;
+    border-radius: 5px;
+  }
 
   .map {
     background-image: url(./Images/mbbs-in-ukraine/ukraine-map.png);
@@ -469,6 +499,17 @@ p {
   }
   .armenia-map {
     background-image: url(./Images/mbbs-in-armenia/armenia-map.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 200px;
+    p {
+      position: relative;
+      top: 60px;
+    }
+  }
+  .uzbekistan-map {
+    background-image: url(./Images/mbbs-in-uzbekistan/uzbekistan-map.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;

@@ -12,7 +12,7 @@ const TopMedicalUniversity = () => {
                         <h2>Top Medical Universities</h2>
                         <nav aria-label="breadcrumb">
                             <ol className="breadcrumb">
-                              <li className="breadcrumb-item"><a href="/">Home</a></li>
+                              <li className="breadcrumb-item"><a as={Link} to="/">Home</a></li>
                               <li className="breadcrumb-item active" aria-current="page">Top Medical Universities</li>
                             </ol>
                           </nav>
@@ -41,7 +41,7 @@ const TopMedicalUniversity = () => {
                                         Top Medical Universities to Study MBBS in USA, MBBS in Ukraine, MBBS in Kyrgyzstan, MBBS in Georgia, MBBS in Russia and MBBS in Philippines. Glow Overseas Education recommends the below Mentioned Medical Universities to study MBBS in Abroad.
                                     </p>
                                     <div className="text-center">
-                                        {/* <?php include 'templates/university-free-councelling.php' ?> */}
+                                        {/* <?php include 'templates/university-free-councelling' ?> */}
                                     </div>
                                 </Col>
                             </Row>
@@ -66,7 +66,7 @@ const TopMedicalUniversity = () => {
                                         <tr>
                                         <th scope="row">
                                             <div className="text-center">
-                                                {/* <?php include "templates/university-book-now.php"?>  */}
+                                                {/* <?php include "templates/university-book-now"?>  */}
                                             </div>
                                         </th>
                                         </tr>
@@ -95,7 +95,7 @@ const TopMedicalUniversity = () => {
                                         <tr>
                                         <th scope="row">
                                             <div className="text-center">
-                                                {/* <?php include "templates/university-book-now.php"?>  */}
+                                                {/* <?php include "templates/university-book-now"?>  */}
                                             </div>
                                         </th>
                                         </tr>
@@ -163,7 +163,7 @@ const TopMedicalUniversity = () => {
                                 </Row>
                             </Container>
                          </div>
-                        {/* <?php include 'templates/sidebar-country-top-medical-university.php' ?> */}
+                        {/* <?php include 'templates/sidebar-country-top-medical-university' ?> */}
                     </div>
                 </Col>
             </Row>
@@ -178,10 +178,10 @@ const TopMedicalUniversity = () => {
                     <div className="">
                         <h2 className="text-center pt-2 pb-2">Social Connect</h2>
                         <div className="text-center pt-3 pb-3">
-                            <a href="https://www.facebook.com/glowoverseaseducation" target="_blank"><i className="fab fa-facebook-f icons"></i></a> &nbsp;
-                            <a href="https://twitter.com/GlowOverseas" target="_blank"><i className="fab fa-twitter icons"></i></a> &nbsp;
-                            <a href="https://www.youtube.com/channel/UCjYolwMMKKnzceHVQnJnmSQ" target="_blank"><i className="fab fa-youtube icons"></i></a> &nbsp;
-                            <a href="https://www.instagram.com/glowoverseaseducation/" target="_blank"><i className="fab fa-instagram icons"></i></a>
+                            <a as={Link} to="https://www.facebook.com/glowoverseaseducation" target="_blank"><i className="fab fa-facebook-f icons"></i></a> &nbsp;
+                            <a as={Link} to="https://twitter.com/GlowOverseas" target="_blank"><i className="fab fa-twitter icons"></i></a> &nbsp;
+                            <a as={Link} to="https://www.youtube.com/channel/UCjYolwMMKKnzceHVQnJnmSQ" target="_blank"><i className="fab fa-youtube icons"></i></a> &nbsp;
+                            <a as={Link} to="https://www.instagram.com/glowoverseaseducation/" target="_blank"><i className="fab fa-instagram icons"></i></a>
                         </div>
                     </div>
                 </Col>

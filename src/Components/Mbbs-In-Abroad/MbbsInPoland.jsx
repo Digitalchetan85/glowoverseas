@@ -1,10 +1,16 @@
-import React from "react";
-import { Image } from "react-bootstrap";
-import Gdansk from "../../Images/mbbs-in-poland/medical-universities/medical-university-of-gdansk.png";
-import Warsaw from "../../Images/mbbs-in-poland/medical-universities/medical-university-of-warsaw.png";
+import React, { useState, useEffect } from "react"; import {Link} from 'react-router-dom'; import { Helmet } from "react-helmet";
+import { Button } from "react-bootstrap";
 import FAQ from "../Includes/FAQ";
+import FreeCouncelling from "../Includes/FreeCouncelling";
+import OtherCountries from "../Includes/OtherCountries";
+import PolandTopMedicalUniversities from "../Poland/PolandTopMedicalUniversities";
 
 const MbbsInPoland = () => {
+  const [show, setShow] = useState(false); useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <>
       <div id="abt1">
@@ -16,7 +22,7 @@ const MbbsInPoland = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a href="/">Home</a>
+                      <a as={Link} to="/">Home</a>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       MBBS in Poland
@@ -29,7 +35,7 @@ const MbbsInPoland = () => {
         </div>
       </div>
 
-      <div id="country" className="pt-5 pb-5">
+      <div id="country" className="pt-5">
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-12">
@@ -41,8 +47,7 @@ const MbbsInPoland = () => {
                         <h4 className="text-start text-info pt-2 pb-2">
                           MBBS in Poland
                         </h4>
-                        {/* <img src="./images/mbbs-in-Poland-flag.jpg.png" alt="" className="img-fluid rounded-circle ml-3"> */}
-                        <p className="pt-2 pb-2 text-justify">
+                        <p className="text-justify">
                           Poland is one of the best destinations to pursue MBBS
                           because of the high-quality medical education &
                           low-cost fees structure. Poland universities/colleges
@@ -58,43 +63,37 @@ const MbbsInPoland = () => {
                           colleges without any hassle.
                         </p>
 
-                        <p className="pt-2 pb-2 text-justify">
+                        <p className="text-justify">
                           <b>Why Study MBBS in Poland</b>
                         </p>
 
-                        <p className="pt-2 pb-2 text-justify">
+                        <p className="text-justify">
                           MBBS in Poland is the best option because of the
                           following reasons:
                           <ul>
                             <li>
-                              {" "}
                               There is no requirement for any entrance exam to
                               take MBBS admission in Poland.
                             </li>
                             <li>
-                              {" "}
                               Poland colleges/universities facilitate students
                               with a high-quality medical education system.
                             </li>
                             <li>
-                              {" "}
                               Poland colleges/universities provide 1 year of
                               internship with the best government as well as
                               private hospitals.
                             </li>
                             <li>
-                              {" "}
                               The medium of instruction in all the Poland
                               medical colleges is English.
                             </li>
                             <li>
-                              {" "}
                               The medical universities in Poland are recognized
                               and approved by WHO & MCI & Poland medical degree
                               is a globally recognized degree.
                             </li>
                             <li>
-                              {" "}
                               After completing MBBS in Poland, this country
                               provides a blue card work permit to students so
                               that they can get a job and settle down as well in
@@ -102,31 +101,27 @@ const MbbsInPoland = () => {
                             </li>
                           </ul>
                         </p>
-                        <h2 className="text-center pt-2 pb-2">
+                        <h2 className="text-info pt-2 pb-2">
                           Advantages of Studying in Poland
                         </h2>
-                        <p class="pt-2 pb-2 text-justify">
+                        <p className="text-justify">
                           Poland is one of the best places for Indian students
                           to pursue MBBS because of the following benefits:
                           <ul>
                             <li>
-                              {" "}
                               During MBBS in Poland, the students also get
                               coaching for FMGE / MCI Screening Test including
                               mock tests.
                             </li>
                             <li>
-                              {" "}
                               There is no requirement to pay any donation fee or
                               capitation fee to take MBBS admission in Poland.
                             </li>
                             <li>
-                              {" "}
                               The best Poland medical colleges/universities are
                               among world-ranked universities.
                             </li>
                             <li>
-                              {" "}
                               Poland medical colleges/universities have
                               affordable tuition fees structure.
                             </li>
@@ -136,12 +131,10 @@ const MbbsInPoland = () => {
                               exam.
                             </li>
                             <li>
-                              {" "}
                               After MBBS in Poland, the students will get a
                               globally recognized medical degree.
                             </li>
                             <li>
-                              {" "}
                               The process of MBBS admission in Poland is very
                               simple & easy as it does not require any entrance
                               exam.
@@ -150,49 +143,57 @@ const MbbsInPoland = () => {
                         </p>
                         <p className="pt-3 pb-2 text-justify text-info">
                           <strong>
-                            Quick Information About MBBS In POLAND{" "}
+                            Quick Information About MBBS In POLAND
                           </strong>
                         </p>
-                        <table className="table-bordered pt-3 pb-3">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <b>Recognition</b>
-                              </td>
-                              <td>- NMC and WHO approved</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <b>Eligibility</b>
-                              </td>
-                              <td>
-                                50% in Physics, Chemistry and Biology Aggregate
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <b>Course Duration</b>
-                              </td>
-                              <td>6 Years</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <b>NEET</b>
-                              </td>
-                              <td>- Yes, compulsory</td>
-                            </tr>
+                        <div className="table-responsive">
+                          <table className="table-bordered pt-3 pb-3 w-100 align-middle">
+                            <tbody>
+                              <tr>
+                                <td className="px-2">
+                                  <b>Recognition</b>
+                                </td>
+                                <td className="px-2">- NMC and WHO approved</td>
+                              </tr>
+                              <tr>
+                                <td className="px-2">
+                                  <b>Eligibility</b>
+                                </td>
+                                <td className="px-2">
+                                  50% in Physics, Chemistry and Biology
+                                  Aggregate
+                                </td>
+                              </tr>
+                              <tr>
+                                <td className="px-2">
+                                  <b>Course Duration</b>
+                                </td>
+                                <td className="px-2">6 Years</td>
+                              </tr>
+                              <tr>
+                                <td className="px-2">
+                                  <b>NEET</b>
+                                </td>
+                                <td className="px-2">- Yes, compulsory</td>
+                              </tr>
 
-                            <tr>
-                              <td>
-                                <b>Medium of Teaching</b>
-                              </td>
-                              <td>- English </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        {/* <div className="text-center">
-                                            <?php include 'templates/free-councelling.php' ?>
-                                        </div> */}
+                              <tr>
+                                <td className="px-2">
+                                  <b>Medium of Teaching</b>
+                                </td>
+                                <td className="px-2">- English </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div className="text-center">
+                          <Button
+                            onClick={handleShow}
+                            className="btn btn-info text-white"
+                          >
+                            Free Councelling
+                          </Button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -290,38 +291,34 @@ const MbbsInPoland = () => {
                           </li>
                           <li>
                             <b>
-                              {" "}
                               Medical University Of Warsaw, Republic of
                               Poland-1809
                             </b>
                           </li>
                           <li>
                             <b>
-                              {" "}
                               Medical University Of Bialystok, Republic of
                               Poland-1950
                             </b>
                           </li>
                           <li>
                             <b>
-                              {" "}
                               Medical University Of Lodz, Republic of
                               Poland-2002
                             </b>
                           </li>
                           <li>
                             <b>
-                              {" "}
                               Medical University Of Lublin, Republic of
                               Poland-1944
                             </b>
                           </li>
                         </ol>
                       </p>
-                      <h5 className="pt-2 pb-2">
+                      <h5 className="text-info pt-2 pb-2">
                         Average temperature of Poland
                       </h5>
-                      <p className="pt-2 pb-2 text-justify">
+                      <p className="text-justify">
                         The weather in Poland is also characterized by
                         transitional periods between the four seasons of the
                         year. The weather in Poland is rather unpredictable and
@@ -330,7 +327,7 @@ const MbbsInPoland = () => {
                         fluctuate around 0ᴼC to -8ᴼC. In the mountains snow
                         usually covers slopes in the period.
                       </p>
-                      <p className="pt-2 pb-2 text-justify">
+                      <p className="text-justify">
                         The climate conditions in Poland often become
                         problematic for some students to adjust well. The local
                         language in Poland is Polish so the students might feel
@@ -340,111 +337,20 @@ const MbbsInPoland = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="row pt-5">
-                    <div className="col-md-6">
-                      <div className="university-country">
-                        <h5 className="pt-2 pb-2 text-center">
-                          Medical-university of Gdansk
-                        </h5>
-                        {/* <img src="./images/mbbs-in-poland/medical-universities/medical-university-of-gdansk.png" alt="" className="img-fluid"> */}
-                        <Image
-                          src={Gdansk}
-                          alt=""
-                          className="img-fluid"
-                        ></Image>
-                        <p className="pt-2 pb-2 text-justify">
-                          Medical University of Gdansk one of the top Medical
-                          University in Poland. Get more details on Fees
-                          Structure, Hostel, Indian Food Facility and other
-                          uncleared information.
-                        </p>
-                        <div className="">
-                          {/* <?php include 'templates/university-book-now.php'  ?> */}
-                          <a
-                            href="mbbs-in-poland/medical-university-of-gdansk.php"
-                            className="pt-2 pb-2 btn btn-warning m-2 float-right"
-                          >
-                            Read more
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="university-country">
-                        <h5 className="pt-2 pb-2 text-center">
-                          Medical-university of Warsaw
-                        </h5>
-                        {/* <img src="./images/mbbs-in-poland/medical-universities/medical-university-of-warsaw.png" alt="" className="img-fluid"> */}
-                        <Image
-                          src={Warsaw}
-                          alt=""
-                          className="img-fluid"
-                        ></Image>
-                        <p className="pt-2 pb-2 text-justify">
-                          Medical University of Warsaw one of the top Medical
-                          University in Poland. Get more details on Fees
-                          Structure, Hostel, Indian Food Facility and other
-                          uncleared information.
-                        </p>
-                        <div className="">
-                          {/* <?php include 'templates/university-book-now.php'  ?> */}
-                          <a
-                            href="mbbs-in-poland/medical-university-of-varsaw.php"
-                            className="pt-2 pb-2 btn btn-warning m-2 float-right"
-                          >
-                            Read more
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <FAQ />
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <div id="social" className="pt-5 pb-5">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-2"></div>
-            <div className="col-md-8">
-              <div className="">
-                <h2 className="text-center pt-2 pb-2">Social Connect</h2>
-                <div className="text-center pt-3 pb-3">
-                  <a
-                    href="https://www.facebook.com/glowoverseaseducation"
-                    target="_blank"
-                  >
-                    <i className="fab fa-facebook-f icons"></i>
-                  </a>{" "}
-                  &nbsp;
-                  <a href="https://twitter.com/GlowOverseas" target="_blank">
-                    <i className="fab fa-twitter icons"></i>
-                  </a>{" "}
-                  &nbsp;
-                  <a
-                    href="https://www.youtube.com/channel/UCjYolwMMKKnzceHVQnJnmSQ"
-                    target="_blank"
-                  >
-                    <i className="fab fa-youtube icons"></i>
-                  </a>{" "}
-                  &nbsp;
-                  <a
-                    href="https://www.instagram.com/glowoverseaseducation/"
-                    target="_blank"
-                  >
-                    <i className="fab fa-instagram icons"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-2"></div>
-          </div>
-        </div>
-      </div>
+      <PolandTopMedicalUniversities />
+      <OtherCountries />
+      <FAQ />
+      <FreeCouncelling
+        show={show}
+        handleClose={handleClose}
+        title="Contact Us for Free Councelling"
+      />
     </>
   );
 };

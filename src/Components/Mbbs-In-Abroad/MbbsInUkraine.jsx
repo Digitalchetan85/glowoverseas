@@ -14,7 +14,7 @@ const MbbsInUkraine = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a href="/">Home</a>
+                      <a as={Link} to="/">Home</a>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       MBBS in Ukraine
@@ -92,12 +92,12 @@ const MbbsInUkraine = () => {
                         <ul>
                           <li>
                             Ukraine in internationally known for its quality and
-                            cost of MBBS in Ukraine{" "}
+                            cost of MBBS in Ukraine
                           </li>
                           <li>
-                            {" "}
+                            
                             MCI WHO UNESCO perceive most medical universities in
-                            Ukraine{" "}
+                            Ukraine
                           </li>
                           <li>
                             For Indian students Ukraine MBBS expenses for
@@ -195,41 +195,41 @@ const MbbsInUkraine = () => {
                           <ul>
                             <li>
                               The authority upholds of Ukraine for keeping up
-                              quality and world-wide norm{" "}
+                              quality and world-wide norm
                             </li>
                             <li>
                               MBBS confirmation in Ukraine for medical students
-                              is an immediate decision{" "}
+                              is an immediate decision
                             </li>
                             <li>
                               WHO & MCI affirm Ukraine medical universities
                               students moving on form Indian can work across any
-                              part of the world{" "}
+                              part of the world
                             </li>
 
                             <li> No requirement for IELTS & TOEFL</li>
                             <li>
-                              {" "}
+                              
                               Government support for research and monetary issue
-                              in training{" "}
+                              in training
                             </li>
                             <li>
-                              {" "}
-                              You do not have to pay donation to get admission{" "}
+                              
+                              You do not have to pay donation to get admission
                             </li>
                             <li>
-                              {" "}
+                              
                               The living cost is exceptionally reasonable
                             </li>
                             <li>
-                              {" "}
+                              
                               English is offered as an education language
                             </li>
                             <li> Ease of living and educational expenses </li>
                             <li>
-                              {" "}
+                              
                               Ukraine offers a multicultural and multi ethic
-                              climate for students{" "}
+                              climate for students
                             </li>
                             <li>
                               Medical school expenses are genuinely reasonable
@@ -237,24 +237,24 @@ const MbbsInUkraine = () => {
                               low when contrasted with nations like the USA&UK
                             </li>
                             <li>
-                              {" "}
+                              
                               Because of the variety in examination culture
-                              English is the primary language used for teaching{" "}
+                              English is the primary language used for teaching
                             </li>
                             <li>
-                              {" "}
-                              Students’ visas can be availed easily for Ukraine{" "}
+                              
+                              Students’ visas can be availed easily for Ukraine
                             </li>
                             <li>
-                              {" "}
+                              
                               Productive and easy living including month to
                               month living expenses and moderate expenses
                             </li>
                             <li>
-                              {" "}
+                              
                               Lesser crime percentage than other European and
                               western nation make the place all right for
-                              worldwide students{" "}
+                              worldwide students
                             </li>
                           </ul>
                         </p>
@@ -503,84 +503,84 @@ const MbbsInUkraine = () => {
                         Study MBBS in Ukraine.
                         <ul className="pt-2 pb-2">
                           <li>
-                            <a href="/black-sea-national-medical-university">
+                            <a as={Link} to="/black-sea-national-medical-university">
                               Black Sea National Medical University
                             </a>
                           </li>
                           <li>
-                            <a href="/bukovinian-state-medical-university">
+                            <a as={Link} to="/bukovinian-state-medical-university">
                               Bukovinian State Medical University
                             </a>
                           </li>
                           <li>
-                            <a href="/dnipropetrovsk-state-medical-university">
+                            <a as={Link} to="/dnipropetrovsk-state-medical-university">
                               Dnipropetrovsk State Medical University
                             </a>
                           </li>
                           <li>
-                            <a href="/ivano-frankvisk-national-medical-university">
+                            <a as={Link} to="/ivano-frankvisk-national-medical-university">
                               Ivano-Frankvisk National Medical University
                             </a>
                           </li>
                           <li>
-                            <a href="/kharkiv-national-medical-university">
+                            <a as={Link} to="/kharkiv-national-medical-university">
                               Kharkiv National Medical University
                             </a>
                           </li>
                           <li>
-                            <a href="/kyiv-medical-university">
+                            <a as={Link} to="/kyiv-medical-university">
                               Kyiv Medical University
                             </a>
                           </li>
                           <li>
-                            <a href="/lviv-national-medical-university">
+                            <a as={Link} to="/lviv-national-medical-university">
                               Lviv National Medical University
                             </a>
                           </li>
                           <li>
-                            <a href="/oo-bogomolets-national-medical-university">
+                            <a as={Link} to="/oo-bogomolets-national-medical-university">
                               OO Bogomolets National Medical University
                             </a>
                           </li>
                           <li>
-                            <a href="/poltava-state-medical-university">
+                            <a as={Link} to="/poltava-state-medical-university">
                               Poltava State Medical University
                             </a>
                           </li>
                           <li>
-                            <a href="/taras-shevchenko-national-medical-university">
+                            <a as={Link} to="/taras-shevchenko-national-medical-university">
                               Taras Schevchenko National Medical University
                             </a>
                           </li>
                           <li>
-                            <a href="/v-n-karazin-kharkiv-national-medical-university">
+                            <a as={Link} to="/v-n-karazin-kharkiv-national-medical-university">
                               V N Karazin Kharkivnational Medical University
                             </a>
                           </li>
                           <li>
-                            <a href="/vinnitsa-national-medical-university">
+                            <a as={Link} to="/vinnitsa-national-medical-university">
                               Vinnitsa National Medical University
                             </a>
                           </li>
                           <li>
-                            <a href="/zaporizhzhia-state-medical-university">
+                            <a as={Link} to="/zaporizhzhia-state-medical-university">
                               Zaporizhzhia State Medical University
                             </a>
                           </li>
                           <li>
-                            <a href="/zaporizhzhia-state-medical-university">
+                            <a as={Link} to="/zaporizhzhia-state-medical-university">
                             Ternopil State Medical University
                             </a>
                           </li>
                           <li>
-                            <a href="/zaporizhzhia-state-medical-university">
+                            <a as={Link} to="/zaporizhzhia-state-medical-university">
                             Odessa National Medical University
                             </a>
                           </li>
                         </ul>
                       </p>
                       
-                      {/* <table class="table-bordered mt-3 mb-3">
+                      {/* <table className="table-bordered mt-3 mb-3">
                         <thead>
                           <tr>
                             <th scope="col">University Name</th>
@@ -665,18 +665,18 @@ const MbbsInUkraine = () => {
                     target="_blank"
                   >
                     <i className="fab fa-facebook-f icons"></i>
-                  </a>{" "}
+                  </a>
                   &nbsp;
-                  <a href="https://twitter.com/GlowOverseas" target="_blank">
+                  <a as={Link} to="https://twitter.com/GlowOverseas" target="_blank">
                     <i className="fab fa-twitter icons"></i>
-                  </a>{" "}
+                  </a>
                   &nbsp;
                   <a
                     href="https://www.youtube.com/channel/UCjYolwMMKKnzceHVQnJnmSQ"
                     target="_blank"
                   >
                     <i className="fab fa-youtube icons"></i>
-                  </a>{" "}
+                  </a>
                   &nbsp;
                   <a
                     href="https://www.instagram.com/glowoverseaseducation/"

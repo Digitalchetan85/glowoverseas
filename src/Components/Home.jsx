@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { Container, Row, Col, Image, Button, Form } from "react-bootstrap";
-import Banner from "../Images/home-page/home-banner.png";
 import MainSlider from "./Includes/MainSlider";
 import USA from "../Images/mbbs-in-usa-flag.png";
 import Ukraine from "../Images/mbbs-in-ukraine-flag.png";
@@ -10,15 +11,32 @@ import Phillipines from "../Images/mbbs-in-philippines-flag.png";
 import Kazakhstan from "../Images/mbbs-in-kazakhstan-flag.png";
 import Russia from "../Images/mbbs-in-russia-flag.png";
 import Poland from "../Images/mbbs-in-poland-flag.png";
-import Admission from "../Images/admission-process.png";
 import Admi from "../Images/second.png";
 import Why from "../Images/why.png";
 import Mbia from "../Images/mbia.png";
 import Testimonials from "./Includes/Testimonials";
+import AdmissionProcess from "./Includes/AdmissionProcess";
+import FreeCouncelling from "./Includes/FreeCouncelling";
 
 const Home = () => {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>MBBS in Abroad | Glowoverseas Education | GOE</title>
+        <link rel="canonical" href="https://glowoverseas.com/" />
+        <meta
+          name="description"
+          content="Glowoveas Overseas Education is one of the best MBBS in Abroad Consultants in Bangalore. Call Us for Free Councelling"
+        />
+      </Helmet>
       <section id="slider">
         <MainSlider />
       </section>
@@ -46,7 +64,7 @@ const Home = () => {
                   with a transparent admission process and handholding you until
                   you get placed in college that is best for you.
                 </p>
-                <Button type="submit" className="btn btn-white">
+                <Button variant="primary" onClick={handleShow} className="my-3">
                   Apply Now
                 </Button>
               </div>
@@ -61,7 +79,7 @@ const Home = () => {
             <Col md={5} className="align-self-center">
               <div className="text-center">
                 <h1 className="text-info">
-                  Why you need to Study <br /> MBBS in Abroad?{" "}
+                  Why you need to Study <br /> MBBS in Abroad?
                 </h1>
               </div>
             </Col>
@@ -79,7 +97,10 @@ const Home = () => {
           <div className="">
             <Row className="justify-content-center g-3">
               <Col md={4} className="">
-                <div className="m-2 outer-box bg-light" style={{height: '200px'}}>
+                <div
+                  className="m-2 outer-box bg-light"
+                  style={{ height: "200px" }}
+                >
                   <Row className="justify-content-center">
                     <Col md={3} sm={2}>
                       <div className="cir p-3">
@@ -90,9 +111,12 @@ const Home = () => {
                       <div className="ps-md-1 pe-md-1">
                         <h5 className="py-md-1">Low Tution Fees</h5>
                         <p className="py-md-1 text-start">
-                          Studying <a href="">MBBS in Abroad</a> is way more
-                          reasonable than studying in MBBS India. The college
-                          fees will be paid in yearly instalments.
+                          Studying{" "}
+                          <a as={Link} to="">
+                            MBBS in Abroad
+                          </a>{" "}
+                          is way more reasonable than studying in MBBS India.
+                          The college fees will be paid in yearly instalments.
                         </p>
                       </div>
                     </Col>
@@ -100,7 +124,10 @@ const Home = () => {
                 </div>
               </Col>
               <Col md={4} className="">
-                <div className="m-2 outer-box bg-light" style={{height: '200px'}}>
+                <div
+                  className="m-2 outer-box bg-light"
+                  style={{ height: "200px" }}
+                >
                   <Row className="justify-content-center">
                     <Col md={3} sm={2}>
                       <div className="cir p-3">
@@ -121,7 +148,10 @@ const Home = () => {
                 </div>
               </Col>
               <Col md={4} className="">
-                <div className="m-2 outer-box bg-light" style={{height: '200px'}}>
+                <div
+                  className="m-2 outer-box bg-light"
+                  style={{ height: "200px" }}
+                >
                   <Row className="justify-content-center">
                     <Col md={3} sm={2}>
                       <div className="cir p-3">
@@ -143,7 +173,10 @@ const Home = () => {
                 </div>
               </Col>
               <Col md={4} className="">
-                <div className="m-2 outer-box bg-light" style={{height: '200px'}}>
+                <div
+                  className="m-2 outer-box bg-light"
+                  style={{ height: "200px" }}
+                >
                   <Row className="justify-content-center">
                     <Col md={3} sm={2}>
                       <div className="cir p-3">
@@ -163,7 +196,10 @@ const Home = () => {
                 </div>
               </Col>
               <Col md={4} className="">
-                <div className="m-2 outer-box bg-light" style={{height: '200px'}}>
+                <div
+                  className="m-2 outer-box bg-light"
+                  style={{ height: "200px" }}
+                >
                   <Row className="justify-content-center">
                     <Col md={3} sm={2}>
                       <div className="cir p-3">
@@ -183,7 +219,10 @@ const Home = () => {
                 </div>
               </Col>
               <Col md={4} className="">
-                <div className="m-2 outer-box bg-light" style={{height: '200px'}}>
+                <div
+                  className="m-2 outer-box bg-light"
+                  style={{ height: "200px" }}
+                >
                   <div className="row">
                     <Col md={3} sm={2}>
                       <div className="cir p-3">
@@ -204,7 +243,10 @@ const Home = () => {
                 </div>
               </Col>
               <Col md={4} className="">
-                <div className="m-2 outer-box bg-light" style={{height: '200px'}}>
+                <div
+                  className="m-2 outer-box bg-light"
+                  style={{ height: "200px" }}
+                >
                   <Row className="row">
                     <Col md={3} sm={2}>
                       <div className="cir p-3">
@@ -224,7 +266,10 @@ const Home = () => {
                 </div>
               </Col>
               <Col md={4} className="">
-                <div className="m-2 outer-box bg-light" style={{height: '200px'}}>
+                <div
+                  className="m-2 outer-box bg-light"
+                  style={{ height: "200px" }}
+                >
                   <Row className="row">
                     <Col md={3} sm={2}>
                       <div className="cir p-3">
@@ -244,7 +289,10 @@ const Home = () => {
                 </div>
               </Col>
               <Col md={4} className="">
-                <div className="m-2 outer-box bg-light" style={{height: '200px'}}>
+                <div
+                  className="m-2 outer-box bg-light"
+                  style={{ height: "200px" }}
+                >
                   <Row className="row">
                     <Col md={3} sm={2}>
                       <div className="cir p-3">
@@ -283,8 +331,8 @@ const Home = () => {
                 </div>
                 <div className="text-center pt-3 pb-3">
                   <a
-                    href="/mbbs-in-usa"
-                    className="btn custom-btn-1 btn-primary text-uppercase" 
+                    as={Link} to="/mbbs-in-usa"
+                    className="btn custom-btn-1 btn-primary text-uppercase"
                   >
                     MBBS in USA
                   </a>
@@ -301,8 +349,8 @@ const Home = () => {
                 </div>
                 <div className="text-center pt-3 pb-3">
                   <a
-                    href="/mbbs-in-ukraine"
-                    className="btn custom-btn-1 btn-primary text-uppercase" 
+                    as={Link} to="/mbbs-in-ukraine"
+                    className="btn custom-btn-1 btn-primary text-uppercase"
                   >
                     MBBS in Ukraine
                   </a>
@@ -319,8 +367,8 @@ const Home = () => {
                 </div>
                 <div className="text-center pt-3 pb-3">
                   <a
-                    href="/mbbs-in-georgia"
-                    className="btn custom-btn-1 btn-primary text-uppercase" 
+                    as={Link} to="/mbbs-in-georgia"
+                    className="btn custom-btn-1 btn-primary text-uppercase"
                   >
                     MBBS in Georgia
                   </a>
@@ -337,8 +385,8 @@ const Home = () => {
                 </div>
                 <div className="text-center pt-3 pb-3">
                   <a
-                    href="/mbbs-in-kyrgyzstan"
-                    className="btn custom-btn-1 btn-primary text-uppercase" 
+                    as={Link} to="/mbbs-in-kyrgyzstan"
+                    className="btn custom-btn-1 btn-primary text-uppercase"
                   >
                     MBBS in Kyrgyzstan
                   </a>
@@ -357,8 +405,8 @@ const Home = () => {
                 </div>
                 <div className="text-center pt-3 pb-3">
                   <a
-                    href="/mbbs-in-philippines"
-                    className="btn custom-btn-1 btn-primary text-uppercase" 
+                    as={Link} to="/mbbs-in-philippines"
+                    className="btn custom-btn-1 btn-primary text-uppercase"
                   >
                     MBBS in Philippines
                   </a>
@@ -375,8 +423,8 @@ const Home = () => {
                 </div>
                 <div className="text-center pt-3 pb-3">
                   <a
-                    href="/mbbs-in-kazakhstan"
-                    className="btn custom-btn-1 btn-primary text-uppercase" 
+                    as={Link} to="/mbbs-in-kazakhstan"
+                    className="btn custom-btn-1 btn-primary text-uppercase"
                   >
                     MBBS in Kazakhstan
                   </a>
@@ -393,8 +441,8 @@ const Home = () => {
                 </div>
                 <div className="text-center pt-3 pb-3">
                   <a
-                    href="/mbbs-in-russia"
-                    className="btn custom-btn-1 btn-primary text-uppercase" 
+                    as={Link} to="/mbbs-in-russia"
+                    className="btn custom-btn-1 btn-primary text-uppercase"
                   >
                     MBBS in Russia
                   </a>
@@ -411,8 +459,8 @@ const Home = () => {
                 </div>
                 <div className="text-center pt-3 pb-3">
                   <a
-                    href="/mbbs-in-poland"
-                    className="btn custom-btn-1 btn-primary text-uppercase" 
+                    as={Link} to="/mbbs-in-poland"
+                    className="btn custom-btn-1 btn-primary text-uppercase"
                   >
                     MBBS in Poland
                   </a>
@@ -426,20 +474,7 @@ const Home = () => {
         </Container>
       </section>
 
-      <section id="admission" className="py-md-5">
-        <Container>
-          <Row>
-            <Col className="col-md-12">
-              <div className="">
-                <h2 className="text-center text-info">Admission Process</h2>
-              </div>
-              <div className="text-center">
-                <Image src={Admission} alt="" className="img-fluid" />
-              </div>
-            </Col>
-          </Row>
-        </Container>
-      </section>
+      <AdmissionProcess />
 
       <section id="seven" className="py-md-5 bg-primary">
         <Container>
@@ -453,13 +488,12 @@ const Home = () => {
             </Col>
             <Col md={3}>
               <div className="text-center">
-                {/* <!-- <a href="" className="btn custom-btn-1 btn-lg btn-warning text-white">Call Us for Free Counselling.</a> --> */}
-                <a
-                  href="#"
+                <Button
+                  onClick={handleShow}
                   className="btn btn-info rounded-pill px-3 text-white"
                 >
                   Call Us for Free Counselling
-                </a>
+                </Button>
               </div>
             </Col>
           </Row>
@@ -474,6 +508,11 @@ const Home = () => {
           </div>
         </Container>
       </section>
+      <FreeCouncelling
+        show={show}
+        handleClose={handleClose}
+        title="Contact Us For Free Counselling"
+      />
     </>
   );
 };

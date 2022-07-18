@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useState, useEffect } from "react"; import {Link} from 'react-router-dom'; import { Helmet } from "react-helmet";
+import { Button } from "react-bootstrap";
+import GeorgiaTopMedicalUniversities from "../Gerogia/GeorgiaTopMedicalUniversity";
+import AdmissionProcess from "../Includes/AdmissionProcess";
 import FAQ from "../Includes/FAQ";
-import GerogiaUniversities from "../Includes/GerogiaUniversities";
+import FreeCouncelling from "../Includes/FreeCouncelling";
+import OtherCountries from "../Includes/OtherCountries";
 
 const MbbsInGeorgia = () => {
+  const [show, setShow] = useState(false); useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <>
       <div id="abt1">
@@ -14,7 +23,7 @@ const MbbsInGeorgia = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a href="/">Home</a>
+                      <a as={Link} to="/">Home</a>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       MBBS in Georgia
@@ -39,8 +48,7 @@ const MbbsInGeorgia = () => {
                         <h4 className="text-start text-info pt-2 pb-2">
                           MBBS in Georgia
                         </h4>
-                        {/* <img src="./images/mbbs-in-USA-flag.jpg.png" alt="" className="img-fluid rounded-circle ml-3"> */}
-                        <p className="pt-2 pb-2 text-justify">
+                        <p className="text-justify">
                           The Georgian public's foundations broaden somewhere
                           down ever; their social legacy is similarly old and
                           rich. An amazing Georgian realm existed during the
@@ -58,7 +66,7 @@ const MbbsInGeorgia = () => {
                           pronounced power on November 19, 1989, and autonomy on
                           April 9, 1991.
                         </p>
-                        <p className="pt-2 pb-2 text-justify">
+                        <p className="text-justify">
                           Georgia, a country at the intersection of Europe and
                           Asia, is a former Soviet republic that’s home to
                           Caucasus Mountain villages and Black Sea beaches.
@@ -78,12 +86,12 @@ const MbbsInGeorgia = () => {
                           MCI approved and WHO recognized universities in
                           Georgia.
                         </p>
-                        <p className="pt-2 pb-2 text-justify">
+                        <p className="text-justify">
                           The current population of Georgia is around 4 million.
                           Georgia ranks number 132 in the list of countries (and
                           dependencies) by population.
                         </p>
-                        <p className="pt-2 pb-2 text-justify">
+                        <p className="text-justify">
                           Georgia, a country at the intersection of Europe and
                           Asia, is a former Soviet republic that’s home to
                           Caucasus Mountain villages and Black Sea beaches. The
@@ -93,23 +101,21 @@ const MbbsInGeorgia = () => {
                           students to study MBBS abroad and offers numerous
                           advantages to Indian students.
                         </p>
-                        <h2 className="text-center pt-2 pb-2">
+                        <h2 className="text-info pt-2 pb-2">
                           Advantages of Studying in Georgia
                         </h2>
-                        <p className="pt-2 pb-2 text-justify">
+                        <p className="text-justify">
                           <ul>
                             <li>
                               A hot destination for Indian students to pursue
                               MBBS abroad
                             </li>
                             <li>
-                              {" "}
                               No entrance test for taking admission in MBBS in
                               Georgia.
                             </li>
                             <li> No Donation required </li>
                             <li>
-                              {" "}
                               Universities recognized by WHO, listed under WDOMS
                               and approved by Medical Council of India (MCI).
                             </li>
@@ -119,51 +125,42 @@ const MbbsInGeorgia = () => {
                             <li> Best quality education</li>
 
                             <li>
-                              {" "}
                               Georgia has the most reliable quality education,
                               and the expense of medical training in Georgia is
                               low.
                             </li>
                             <li>
-                              {" "}
                               Georgia has various government-funded medical
                               colleges, and bodies like MCI and WHO recognize
                               many medical universities.
                             </li>
                             <li>
-                              {" "}
                               Teaching language in the Georgia MBBS colleges is
                               in English, making it simple for Indian students
                               to study in Georgia medical University.
                             </li>
                             <li>
-                              {" "}
                               Georgia has an excellent framework, and the
                               general climate in Georgia is delightful.
                             </li>
                             <li>
-                              {" "}
                               Georgia MBBS course has more emphasis on the
                               rational parts of training.
                             </li>
                             <li>
-                              {" "}
                               The overall cost for essential items in Georgia is
                               additionally low.
                             </li>
                             <li>
-                              {" "}
                               Various colleges, almost every Georgia MBBS
                               college and school has an Indian mess.
                             </li>
                             <li>
-                              {" "}
                               Students have the option to pick hostels or any
                               apartments to live in with high-class faculty and
                               safe living.
                             </li>
                             <li>
-                              {" "}
                               Various students search for part-time jobs to bear
                               the expenses or for some different reasons. So,
                               there is no reason to go house to house for
@@ -172,64 +169,52 @@ const MbbsInGeorgia = () => {
                               that.
                             </li>
                             <li>
-                              {" "}
                               The World Health Organization and MCI endorse the
                               MBBS in Georgia.
                             </li>
                             <li>
-                              {" "}
                               A-list clinical schooling and clinic foundation
                             </li>
                             <li>
-                              {" "}
                               First-rate assistance offices are guaranteed so
                               that the students don't feel a long way from home.
                             </li>
                             <li>
-                              {" "}
                               Various transportations like trains, transports,
                               and vehicles are moderately more secure.
                             </li>
                             <li>
-                              {" "}
                               The training in the Medical Universities is of the
                               best quality with an unimaginably colossal
                               knowledge foundation.
                             </li>
                             <li>
-                              {" "}
                               The MBBS course in Georgia medical university is
                               less expensive than numerous other European
                               nations.
                             </li>
                             <li>
-                              {" "}
                               The language of guidance in the MBBS universities
                               in Georgia is English.
                             </li>
                             <li>
-                              {" "}
                               Students get the chance to partake in worldwide
                               gatherings and classes, which help them acquire
                               information and expertise.
                             </li>
                             <li>
-                              {" "}
                               A lot of local people communicate in English, so
                               it is advantageous for understudies from India.
                             </li>
                             <li>
-                              {" "}
                               No ragging is allowed in the MBBS Universities in
                               Georgia.
                             </li>
                             <li>
-                              {" "}
                               Indian food is accessible in MBBS schools and
                               hotels.
                             </li>
                             <li>
-                              {" "}
                               Separate young men and young women hostels. A few
                               hostels even have Indian superintendents
                             </li>
@@ -237,36 +222,31 @@ const MbbsInGeorgia = () => {
                           </ul>
                         </p>
 
-                        <p className="pt-3 pb-2 text-justify">
+                        <p className="pt-2 pb-2 text-justify">
                           <strong>Benefit of study MBBS in Georgia </strong>
                         </p>
                         <ul>
                           <li>
-                            {" "}
                             There is not entrance or admission test in Georgia
-                            medical government college{" "}
+                            medical government college
                           </li>
                           <li>
-                            {" "}
                             The admission to top medical college in of Georgia
                             is quite easy
                           </li>
                           <li>
-                            {" "}
                             Although MBBS in Georgia contains B grade
                             universities, the teaching language of MBBS in
-                            Georgia is English{" "}
+                            Georgia is English
                           </li>
                           <li>
-                            {" "}
                             Indian students applying for study in Georgia at
                             government medical universities are eligible to
-                            appear for licencing exam such as MCI screening test{" "}
+                            appear for licencing exam such as MCI screening test
                           </li>
                           <li>
-                            {" "}
                             Georgia offers moderately cold wheatear condition in
-                            comparison to Russia{" "}
+                            comparison to Russia
                           </li>
                         </ul>
                         <p className="pb-2 text-justify">
@@ -276,60 +256,67 @@ const MbbsInGeorgia = () => {
                           advantages and disadvantages of studying MBBS in
                           abroad. Every country has both sides. The students
                           need to know the both the angles while taking decision
-                          to study MBBS in abroad{" "}
+                          to study MBBS in abroad
                         </p>
                         <p className="pt-3 pb-2 text-justify text-info">
                           <strong>
                             Quick Information About MBBS In Georgia
                           </strong>
                         </p>
-                        <table className="table-bordered pt-3 pb-3">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <b>Recognition</b>
-                              </td>
-                              <td>- NMC and WHO approved</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <b>Eligibility</b>
-                              </td>
-                              <td>
-                                - 50% in Physics, Chemistry and Biology
-                                Aggregate
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <b>Course Duration</b>
-                              </td>
-                              <td>- 6 Years</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <b>NEET</b>
-                              </td>
-                              <td>- Yes, compulsory</td>
-                            </tr>
+                        <div className="table-responsive">
+                          <table className="table-bordered pt-3 pb-3 w-100 align-middle">
+                            <tbody>
+                              <tr>
+                                <td className="px-2">
+                                  <b>Recognition</b>
+                                </td>
+                                <td className="px-2">- NMC and WHO approved</td>
+                              </tr>
+                              <tr>
+                                <td className="px-2">
+                                  <b>Eligibility</b>
+                                </td>
+                                <td className="px-2">
+                                  - 50% in Physics, Chemistry and Biology
+                                  Aggregate
+                                </td>
+                              </tr>
+                              <tr>
+                                <td className="px-2">
+                                  <b>Course Duration</b>
+                                </td>
+                                <td className="px-2">- 6 Years</td>
+                              </tr>
+                              <tr>
+                                <td className="px-2">
+                                  <b>NEET</b>
+                                </td>
+                                <td className="px-2">- Yes, compulsory</td>
+                              </tr>
 
-                            <tr>
-                              <td>
-                                <b>IELTS/TOFEL</b>
-                              </td>
-                              <td>- Not Required</td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <b>Medium of Teaching</b>
-                              </td>
-                              <td>- English </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                        {/* <div className="text-center">
-                                            <?php include 'templates/free-councelling.php' ?>
-                                        </div> */}
+                              <tr>
+                                <td className="px-2">
+                                  <b>IELTS/TOFEL</b>
+                                </td>
+                                <td className="px-2">- Not Required</td>
+                              </tr>
+                              <tr>
+                                <td className="px-2">
+                                  <b>Medium of Teaching</b>
+                                </td>
+                                <td className="px-2">- English </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <div className="text-center">
+                          <Button
+                            onClick={handleShow}
+                            className="btn btn-info text-white"
+                          >
+                            Free Councelling
+                          </Button>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -419,100 +406,112 @@ const MbbsInGeorgia = () => {
                         pursuing His/her MBBS In Georgia, theoretical and
                         practical.
                       </p>
-                      <table className="table-bordered mt-3 mb-3">
-                        <thead>
-                          <tr>
-                            <th scope="col">Year</th>
-                            <th scope="col">Subjects</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">
-                              <b>First Year</b>
-                            </th>
-                            <td>
-                              Human Anatomy, General Psychology, Elective
-                              Courses, Bioorganic Chemistry, Internal Medicine,
-                              Cytology
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">
-                              <b>Second Year</b>
-                            </th>
-                            <td>
-                              Histology, Microbiology, Biochemistry, Anatomy,
-                              Physiology, Patient Care, and psychology
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">
-                              <b>Third Year</b>
-                            </th>
-                            <td>
-                              ENT, Embryology, Radiology, Forensic Medicine,
-                              Medical Chemistry{" "}
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">
-                              <b>Fourth Year</b>
-                            </th>
-                            <td>
-                              Pharmacology, Surgery, Allied Subjects, Community
-                              Medicine{" "}
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">
-                              <b>Fifth Year</b>
-                            </th>
-                            <td>
-                              Clinical Phase, Gynaecology, Infectious Disease,
-                              Obstetrics & Ophthalmology, etc.{" "}
-                            </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">
-                              <b>Sixth Year</b>
-                            </th>
-                            <td>
-                              This is an internship-based year under the
-                              guidance of a Senior Doctor in private or
-                              Government Hospitals.{" "}
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                      <div className="table-responsive">
+                        <table className="table-bordered mt-3 mb-3 w-100 align-middle">
+                          <thead>
+                            <tr>
+                              <th className="px-2" scope="col">
+                                Year
+                              </th>
+                              <th className="px-2" scope="col">
+                                Subjects
+                              </th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th className="px-2" scope="row">
+                                First Year
+                              </th>
+                              <td className="px-2">
+                                Human Anatomy, General Psychology, Elective
+                                Courses, Bioorganic Chemistry, Internal
+                                Medicine, Cytology
+                              </td>
+                            </tr>
+                            <tr>
+                              <th className="px-2" scope="row">
+                                Second Year
+                              </th>
+                              <td className="px-2">
+                                Histology, Microbiology, Biochemistry, Anatomy,
+                                Physiology, Patient Care, and psychology
+                              </td>
+                            </tr>
+                            <tr>
+                              <th className="px-2" scope="row">
+                                Third Year
+                              </th>
+                              <td className="px-2">
+                                ENT, Embryology, Radiology, Forensic Medicine,
+                                Medical Chemistry
+                              </td>
+                            </tr>
+                            <tr>
+                              <th className="px-2" scope="row">
+                                Fourth Year
+                              </th>
+                              <td className="px-2">
+                                Pharmacology, Surgery, Allied Subjects,
+                                Community Medicine
+                              </td>
+                            </tr>
+                            <tr>
+                              <th className="px-2" scope="row">
+                                Fifth Year
+                              </th>
+                              <td className="px-2">
+                                Clinical Phase, Gynaecology, Infectious Disease,
+                                Obstetrics & Ophthalmology, etc.
+                              </td>
+                            </tr>
+                            <tr>
+                              <th className="px-2" scope="row">
+                                Sixth Year
+                              </th>
+                              <td className="px-2">
+                                This is an internship-based year under the
+                                guidance of a Senior Doctor in private or
+                                Government Hospitals.
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                       <table className="table-bordered">
                         <thead>
-                          <tr className="bg-primary text-white text-center">
-                            <th scope="col">Basis</th>
-                            <th scope="col">MBBS in Georgia</th>
-                            <th scope="col">MBBS in India</th>
+                          <tr className="bg-info text-white text-center">
+                            <th className="px-2" scope="col">
+                              Basis
+                            </th>
+                            <th className="px-2" scope="col">
+                              MBBS in Georgia
+                            </th>
+                            <th className="px-2" scope="col">
+                              MBBS in India
+                            </th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr>
-                            <td className="text-center">Entrance Test</td>
-                            <td className="table-info">
+                            <td className="text-center px-2">Entrance Test</td>
+                            <td className="table-info px-2">
                               No specific screening, valid NEET Exam score
                               required by MCI mandated
                             </td>
-                            <td>
+                            <td className="px-2">
                               Need good score in 12th className and need to
                               qualify NEET with good percentage and cut-off
                             </td>
                           </tr>
                           <tr>
-                            <td className="text-center">Fees Structure</td>
-                            <td className="table-info">
+                            <td className="text-center px-2">Fees Structure</td>
+                            <td className="table-info px-2">
                               The fees in Georgia Universities are about ₹3 lakh
                               to ₹4 lakh per year and approximately ₹15 lakh to
                               ₹25 lakh for complete MBBS degree
                             </td>
-                            <td>
+                            <td className="px-2">
                               MBBS in India fee
                               <ul>
                                 <li>
@@ -527,14 +526,16 @@ const MbbsInGeorgia = () => {
                             </td>
                           </tr>
                           <tr>
-                            <td className="text-center">Course Duration</td>
-                            <td className="table-info">
+                            <td className="text-center px-2">
+                              Course Duration
+                            </td>
+                            <td className="table-info px-2">
                               Course Duration The course duration of MBBS In
                               Georgia is of 6 Years MBBS In India course
                               duration is of 5.5 years (4.5 years academics +
                               1-year Internship)
                             </td>
-                            <td>
+                            <td className="px-2">
                               Degree In Georgia, the MD equivalent degree for
                               MBBS in India is awarded to medical graduates
                               studying at Georgian universities In India, the
@@ -544,13 +545,13 @@ const MbbsInGeorgia = () => {
                           </tr>
 
                           <tr>
-                            <td className="text-center">Degree</td>
-                            <td className="table-info">
+                            <td className="text-center px-2">Degree</td>
+                            <td className="table-info px-2">
                               In Ukraine, the MD equivalent degree for MBBS in
                               India is awarded to medical graduates studying at
                               Ukraine Universities
                             </td>
-                            <td>
+                            <td className="px-2">
                               In India the MBBS degree is awaraded to medical
                               graduates who have successfully completed the MBBS
                               Course
@@ -558,12 +559,12 @@ const MbbsInGeorgia = () => {
                           </tr>
 
                           <tr>
-                            <td className="text-center">Exposure</td>
-                            <td className="table-info">
+                            <td className="text-center px-2">Exposure</td>
+                            <td className="table-info px-2">
                               Students get international exposure and you get
                               more growth opportunities
                             </td>
-                            <td>
+                            <td className="px-2">
                               Students have no international exposure and
                               limited opportunities for growth
                             </td>
@@ -580,121 +581,65 @@ const MbbsInGeorgia = () => {
                       </p>
                       <ul className="pt-2 pb-2">
                         <li>
-                          <a href="/ivane-javakhishvili">
+                          <a as={Link} to="/mbbs-in-georgia/ivane-javakhishvili">
                             Ivane Javakhishvili Tbilisi State University Faculty
                             of Medicine
                           </a>
                         </li>
                         <li>
-                          <a href="/batumi-shota-rustaveli-state-medical-university">
+                          <a as={Link} to="/mbbs-in-georgia/batumi-shota-rustaveli-state-medical-university">
                             Batumi Shota Rustaveli State Medical University
                           </a>
                         </li>
                         <li>
-                          <a href="/akaki-tsereteli-state">
+                          <a as={Link} to="/mbbs-in-georgia/akaki-tsereteli-state-medical-university">
                             Akaki Tsereteli State University Faculty of Medicine
                           </a>
                         </li>
                         <li>
-                          <a href="/caucasus-international-medical-university">
+                          <a as={Link} to="/mbbs-in-georgia/caucasus-international-medical-university">
                             Caucasus International University Faculty of
                             Medicine
                           </a>
                         </li>
                         <li>
-                          <a href="/tbilisi-state-medical-university">
+                          <a as={Link} to="/mbbs-in-georgia/tbilisi-state-medical-university">
                             Tbilisi State Medical University Faculty of Medicine
                           </a>
                         </li>
                         <li>
-                          <a href="/david-vildiani-medical-university">
+                          <a as={Link} to="/mbbs-in-georgia/david-vildiani-medical-university">
                             David Tvildiani Medical University AIETI Medical
                             School
                           </a>
                         </li>
                         <li>
-                          <a href="/petre-shotadze-tbilisi-medical-academy">
+                          <a as={Link} to="/mbbs-in-georgia/petre-shotadze-tbilisi-medical-academy">
                             Petre Shotadze Tbilisi Medical Academy Faculty of
                             Medicine
                           </a>
                         </li>
                         <li>
-                          <a href="/university-of-georgia-school">
+                          <a as={Link} to="/mbbs-in-georgia/university-of-georgia-school">
                             University of Georgia School of Health Sciences and
                             Public Health
                           </a>
                         </li>
                         <li>
-                          <a href="/european-university">
+                          <a as={Link} to="/mbbs-in-georgia/european-university">
                             European University Faculty of Medicine
                           </a>
                         </li>
                         <li>
-                          <a href="/georgian-american-university">
+                          <a as={Link} to="/mbbs-in-georgia/georgian-american-university">
                             Georgian American University
                           </a>
                         </li>
                       </ul>
-                      {/* <table class="table-bordered mt-3 mb-3">
-                        <thead>
-                          <tr>
-                            <th scope="col">University Name</th>
-                            <th scope="col">Year of Establishment</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row">
-                              <b>Batumi Shota Rustaveli State University </b>
-                            </th>
-                            <td>1895</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">
-                              <b>New Vision University</b>
-                            </th>
-                            <td>2013</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">
-                              <b>Akaki Tsereteli State University</b>
-                            </th>
-                            <td>1930</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">
-                              <b>European University</b>
-                            </th>
-                            <td>2012 </td>
-                          </tr>
-                          <tr>
-                            <th scope="row">
-                              <b>LLC Caucasus International University</b>
-                            </th>
-                            <td>2013</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">
-                              <b>Tbilisi State Medical University</b>
-                            </th>
-                            <td>1918</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">
-                              <b>East European University</b>
-                            </th>
-                            <td>2012</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">
-                              <b>David Tillian Medical University</b>
-                            </th>
-                            <td>1989</td>
-                          </tr>
-                        </tbody>
-                      </table> */}
-                      <h3 class="pt-2 pb-2">Average temperature of Georgia</h3>
-                      <p class="pt-2 pb-2 text-justify">
+                      <h3 className="pt-2 pb-2">
+                        Average temperature of Georgia
+                      </h3>
+                      <p className="pt-2 pb-2 text-justify">
                         The climate of Georgia is humid subtropical climate and
                         is extremely diverse. The moist periods generally occur
                         during spring and autumn, while winter and summer months
@@ -705,56 +650,21 @@ const MbbsInGeorgia = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="row pt-5">
-                    <GerogiaUniversities />
-                    <FAQ />
-                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-
-      <div id="social" className="pt-5 pb-5">
-        <div className="container">
-          <div className="row">
-            <div className="col-md-2"></div>
-            <div className="col-md-8">
-              <div className="">
-                <h2 className="text-center pt-2 pb-2">Social Connect</h2>
-                <div className="text-center pt-3 pb-3">
-                  <a
-                    href="https://www.facebook.com/glowoverseaseducation"
-                    target="_blank"
-                  >
-                    <i className="fab fa-facebook-f icons"></i>
-                  </a>{" "}
-                  &nbsp;
-                  <a href="https://twitter.com/GlowOverseas" target="_blank">
-                    <i className="fab fa-twitter icons"></i>
-                  </a>{" "}
-                  &nbsp;
-                  <a
-                    href="https://www.youtube.com/channel/UCjYolwMMKKnzceHVQnJnmSQ"
-                    target="_blank"
-                  >
-                    <i className="fab fa-youtube icons"></i>
-                  </a>{" "}
-                  &nbsp;
-                  <a
-                    href="https://www.instagram.com/glowoverseaseducation/"
-                    target="_blank"
-                  >
-                    <i className="fab fa-instagram icons"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-2"></div>
-          </div>
-        </div>
-      </div>
+      <AdmissionProcess />
+      <GeorgiaTopMedicalUniversities />
+      <OtherCountries />
+      <FAQ />
+      <FreeCouncelling
+        show={show}
+        handleClose={handleClose}
+        title="Contact Us for Free Councelling"
+      />
     </>
   );
 };
