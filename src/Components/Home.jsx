@@ -52,10 +52,10 @@ const Home = () => {
 
             <Col md={5} className="align-self-center">
               <div className="text-center py-md-3">
-                <h2 className="text-center">
+                <h2 className="text-center py-2">
                   Admission Open for MBBS in Abroad in 2022
                 </h2>
-                <p className="text-center">
+                <p className="text-center py-3">
                   The growing pandemic has taught us the importance ofdoctors
                   and their Nobel Profession. Everyone aspires to be a doctor
                   but doesn't get a seat in India? Does that mean its the end of
@@ -481,13 +481,13 @@ const Home = () => {
           <Row className="justify-content-center">
             <Col md={9}>
               <div className="">
-                <h3 className="text-center">
+                <h3 className="text-center py-3">
                   Are you looking to Study MBBS in Abroad Medical Universities?
                 </h3>
               </div>
             </Col>
             <Col md={3}>
-              <div className="text-center">
+              <div className="text-center py-2">
                 <Button
                   onClick={handleShow}
                   className="btn btn-info rounded-pill px-3 text-white"

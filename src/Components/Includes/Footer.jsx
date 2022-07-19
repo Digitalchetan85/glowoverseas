@@ -119,8 +119,8 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to="/top-medical-university" className="text-decoration-none text-white">
-                      Top Medical University
+                    <Link to="/gallery" className="text-decoration-none text-white">
+                      Gallery
                     </Link>
                   </li>
                 </ul>
@@ -136,7 +136,7 @@ const Footer = () => {
                 <Link to="https://shanthaswebz.com" target="_blank" className="text-decoration-none text-white">Shanthaswebz</Link>
               </p>
             </Col>
-Link         </Row>
+       </Row>
         </div>
       </Container>
     </div>

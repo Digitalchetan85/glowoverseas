@@ -50,7 +50,7 @@ const About = () => {
           <Row className="justify-content-center">
             <Col md={6} className="align-self-center">
               <div className="">
-                <p className="text-justify">
+                <p className="text-justify py-3">
                   Glow Overseas Education is one of the finest MBBS abroad
                   consultants in India, we are a team of experts who have years
                   of experience in counseling students from various Countries
@@ -79,7 +79,7 @@ const About = () => {
 
       <section id="abt-1" className="py-md-5 bg-light">
         <Container>
-          <div className="">
+          <div className="py-3">
             <h2 className="text-center text-info">Directors of GOE</h2>
           </div>
           <Row>
@@ -94,7 +94,7 @@ const About = () => {
                 <h4 className="py-2">
                   <i>Directors Message</i>
                 </h4>
-                <p className="py-2 ps-md-1 pe-md-1">
+                <p className="py-3 ps-md-1 pe-md-1">
                   <b>Dream</b> bigger. “If you can <b>dream</b> it, you can do
                   it.” each candidate is like an extended family member to us.
                   And like family, we understand and anticipate your needs,
@@ -115,7 +115,7 @@ const About = () => {
                 <h4 className="py-2">
                   <i>Directors Message</i>
                 </h4>
-                <p className="py-md-2 ps-md-1 pe-md-1">
+                <p className="py-2 ps-1 pe-1">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Fugit itaque provident fuga repellat, facere et maiores quia
                   nisi, accusamus quaerat aut eius ea alias blanditiis fugiat
@@ -176,7 +176,7 @@ const About = () => {
                   <div className="text-center">
                     <h3 className="pt-3 pb-3 text-info">Vision</h3>
                     <i className="fas fa-eye"></i>
-                    <p className="pt-2 pb-2 ps-md-3 pe-md-3">
+                    <p className="pt-2 pb-2 ps-3 pe-3">
                     To create outstanding medical practitioners who promote medical excellence, disease healing, and service to the communities as the doctors of the world. To be vital part of students' aspiring medicine study abroad and help them move towards their career goals.
                     </p>
                   </div>
