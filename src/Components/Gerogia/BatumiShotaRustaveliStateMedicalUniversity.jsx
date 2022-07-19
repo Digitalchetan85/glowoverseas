@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react"; import {Link} from 'react-router-dom'; import { Helmet } from "react-helmet";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { Button } from "react-bootstrap";
 import Batumi from "../../Images/mbbs-in-georgia/medical-universities/batumi-shota-rustaveli-state-university-faculty-of-natural-sciences-and-health-care.png";
 import AdmissionProcess from "../Includes/AdmissionProcess";
@@ -8,17 +10,21 @@ import OtherCountries from "../Includes/OtherCountries";
 import GeorgiaTopMedicalUniversities from "./GeorgiaTopMedicalUniversity";
 
 const BatumiShotaRustaveliStateMedicalUniversity = () => {
-  const [show, setShow] = useState(false); useEffect(() => {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
     window.scrollTo(0, 0);
   });
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
     <>
-    	<Helmet>
+      <Helmet>
         <meta charSet="utf-8" />
         <title> Batumi Shota Rustaveli | MBBS in Georgia| GOE</title>
-        <link rel="canonical" href="https://glowoverseas.com/mbbs-in-georgia/batumi-shota-rustaveli-state-medical-university"/>
+        <link
+          rel="canonical"
+          href="https://glowoverseas.com/mbbs-in-georgia/batumi-shota-rustaveli-state-medical-university"
+        />
         <meta
           name="description"
           content="MBBS in Batumi Shota Rustaveli State Medical University is the best place to Study MBBS in Georgia. Call Us for Free Counselling"
@@ -33,12 +39,12 @@ const BatumiShotaRustaveliStateMedicalUniversity = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <Link className="text-decoration-none" href="/">
+                      <Link className="text-decoration-none" to="/">
                         Home
                       </Link>
                     </li>
                     <li className="breadcrumb-item">
-                    <Link
+                      <Link
                         className="text-decoration-none"
                         to="/mbbs-in-georgia"
                       >
