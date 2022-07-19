@@ -29,34 +29,34 @@ const Footer = () => {
                 </h5>
                 <ul className="list-unstyled">
                   <li>
-                    <a href="/mbbs-in-kazakhstan" className="text-decoration-none text-white">
+                    <Link to="/mbbs-in-kazakhstan" className="text-decoration-none text-white">
                       MBBS in Kazkhstan
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/mbbs-in-usa" className="text-decoration-none text-white">
+                    <Link to="/mbbs-in-usa" className="text-decoration-none text-white">
                       MBBS in USA
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/mbbs-in-kyrgyzstan" className="text-decoration-none text-white">
+                    <Link to="/mbbs-in-kyrgyzstan" className="text-decoration-none text-white">
                       MBBS in Kyrgyzstan
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/mbbs-in-georgia" className="text-decoration-none text-white">
+                    <Link to="/mbbs-in-georgia" className="text-decoration-none text-white">
                       MBBS in Georgia
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/mbbs-in-poland" className="text-decoration-none text-white">
+                    <Link to="/mbbs-in-poland" className="text-decoration-none text-white">
                       MBBS in Poland
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a href="/mbbs-in-russia" className="text-decoration-none text-white">
+                    <Link to="/mbbs-in-russia" className="text-decoration-none text-white">
                       MBBS in Russia
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -68,44 +68,38 @@ const Footer = () => {
                 </h5>
                 <ul className="list-unstyled">
                   <li>
-                    <a
-                      href="#"
+                    <Link to="/mbbs-in-ukraine/kharkiv-national-medical-university"
                       className="text-decoration-none text-white"
                     >
                       Kharkiv National Medical University
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
-                      className="text-decoration-none text-white"
+                    <Link to="/mbbs-in-kyrgystan/osh-state-medical-university" className="text-decoration-none text-white"
                     >
                       Osh State Medical University
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link to="/mbbs-in-philippines/ama-university"
                       className="text-decoration-none text-white"
                     >
                       AMA University
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link to="/mbbs-in-usa/texila-american-university-college"
                       className="text-decoration-none text-white"
                     >
-                      Spartan University of Health and Science
-                    </a>
+                      Texila American University of Health and Science
+                    </Link>
                   </li>
                   <li>
-                    <a
-                      href="#"
+                    <Link to="/mbbs-in-georgia/batumi-shota-rustaveli-state-medical-university"
                       className="text-decoration-none text-white"
                     >
                       Batumi Shota Rustaveli State Medical University
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -115,19 +109,19 @@ const Footer = () => {
                 <h5 className="text-left text-white pt-3 pb-3">Quick Links</h5>
                 <ul className="list-unstyled">
                   <li>
-                    <a as={Link} to="" className="text-decoration-none text-white">
+                    <Link to="/about" className="text-decoration-none text-white">
                       About GOE
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a as={Link} to="/" className="text-decoration-none text-white">
+                    <Link to="/contact" className="text-decoration-none text-white">
                       Contact Us
-                    </a>
+                    </Link>
                   </li>
                   <li>
-                    <a as={Link} to="/" className="text-decoration-none text-white">
+                    <Link to="/top-medical-university" className="text-decoration-none text-white">
                       Top Medical University
-                    </a>
+                    </Link>
                   </li>
                 </ul>
               </div>
@@ -138,10 +132,11 @@ const Footer = () => {
           <Row className="justify-content-center">
             <Col md={10}>
               <p className="text-center text-white" style={{fontSize: '14px'}}>
-                © Copyrights Glow Overseas Education 2022. All Rights Reserved. Design & Developed by <a href="https://shanthaswebz.com" target="_blank" className="text-decoration-none text-white">Shanthaswebz</a>
+                © Copyrights Glow Overseas Education 2022. All Rights Reserved. Design & Developed by 
+                <Link to="https://shanthaswebz.com" target="_blank" className="text-decoration-none text-white">Shanthaswebz</Link>
               </p>
             </Col>
-          </Row>
+Link         </Row>
         </div>
       </Container>
     </div>

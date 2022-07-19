@@ -55,16 +55,14 @@ const About = () => {
                   consultants in India, we are a team of experts who have years
                   of experience in counseling students from various Countries
                   who acknowledge Time and Money. We help students in every
-                  aspect around the clock.
-                </p>
-                <p className="text-justify">
+                  aspect around the clock.             <br />
+                
                   We assist in the quicker and effective process, taking
                   responsibility for the students from end to end process. The
                   sole purpose of our consultancy is to offer you valuable
                   information as per the government rules & regulations, And
                   never too late before someone could say I told you so!
-                </p>
-                <p className="text-justify">
+                <br />
                   Glow Overseas Education is inclined to necessitate services
                   that help you choose the right university within your budget.
                 </p>
@@ -161,31 +159,25 @@ const About = () => {
           <div className="">
             <Row>
               <Col md={6}>
-                <div className="mission m-2 border-0 bg-white p-3">
+                <div className="mission m-2 border-0 bg-white p-3" style={{ height:475}}>
                   <div className="text-center">
                     <h3 className="pt-3 pb-3 text-info">Mission</h3>
                     <i className="fas fa-bullseye"></i>
-                    <p className="pt-2 pb-2">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Quos labore doloremque esse perspiciatis explicabo ex fuga
-                      quo illum, deserunt quaerat ducimus! Voluptate, earum
-                      adipisci incidunt dolor perferendis aperiam numquam?
-                      Aperiam.
+                    <p className="pt-1 pb-1">
+                    We Aim To Reach The Scope of International Education To All Aspiring Student Communities of India. We Vow To Motivate And Guide Candidates To Realize Their Dream.
                     </p>
+                    <p className="pt-1 pb-1">To create and foster high educational standards for our students by placing them in an institute with excellence in teaching, training, patient care, and medical research.</p> 
+                    <p className="pt-1 pb-1">To execute every process of the study life cycle efficiently and effectively to achieve optimal result.</p>
                   </div>
                 </div>
               </Col>
               <Col md={6}>
-                <div className="vision m-2 border-0 bg-white p-3">
+                <div className="vision m-2 border-0 bg-white p-3" style={{ height:475}}>
                   <div className="text-center">
                     <h3 className="pt-3 pb-3 text-info">Vision</h3>
                     <i className="fas fa-eye"></i>
-                    <p className="pt-2 pb-2">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                      Quos labore doloremque esse perspiciatis explicabo ex fuga
-                      quo illum, deserunt quaerat ducimus! Voluptate, earum
-                      adipisci incidunt dolor perferendis aperiam numquam?
-                      Aperiam.
+                    <p className="pt-2 pb-2 ps-md-3 pe-md-3">
+                    To create outstanding medical practitioners who promote medical excellence, disease healing, and service to the communities as the doctors of the world. To be vital part of students' aspiring medicine study abroad and help them move towards their career goals.
                     </p>
                   </div>
                 </div>
@@ -206,8 +198,9 @@ const About = () => {
             <Row className="justify-content-center">
               <Col md={3}>
                 <div className="text-center deco border-0">
-                  <h5 className="py-md-2 px-2 text-white bg-info">
-                    Counselling
+                
+                  <h5 className="py-md-2 px-1 text-white bg-info">
+                  <i className="fa-solid fa-users pe-3"></i>    Counselling
                   </h5>
                   <p className="py-md-2 px-2">
                     Free Counselling to the students guiding according to the
@@ -217,7 +210,7 @@ const About = () => {
               </Col>
               <Col md={3}>
                 <div className="text-center deco">
-                  <h5 className="py-md-2">University</h5>
+                  <h5 className="py-md-2"><i className="fa-solid fa-building-columns pe-3"></i>University</h5>
                   <p className="py-md-2">
                     You will choose the University & country.
                   </p>
@@ -225,7 +218,7 @@ const About = () => {
               </Col>
               <Col md={3}>
                 <div className="text-center deco">
-                  <h5 className="py-md-2">Admission Process</h5>
+                <h5 className="py-md-2"><i className="fa-solid fa-pen-to-square pe-3"></i>Admission Process</h5>
                   <p className="py-md-2">
                     University will issue Admission letter & invitation letter
                     favour of the student.
@@ -234,7 +227,7 @@ const About = () => {
               </Col>
               <Col md={3}>
                 <div className="text-center deco">
-                  <h5 className="py-md-2">Admission in University</h5>
+                  <h5 className="py-md-2"><i className="fa-solid fa-school pe-3"></i>Admission in University</h5>
                   <p className="py-md-2">
                     Guide & Arrange for your admission process in the Hostel as
                     well as the Institution.
@@ -247,16 +240,16 @@ const About = () => {
             <Row className="justify-content-center">
               <Col md={3}>
                 <div className="text-center deco">
-                  <h5 className="py-md-2">Apostil from MOA</h5>
+                  <h5 className="py-md-2"><i class="fas fa-certificate pe-3"></i>Apostile from MOA</h5>
                   <p className="py-md-2">
-                    Apostil of Qualifications Documents from the Ministry of
+                    Apostile of Qualifications Documents from the Ministry of
                     External Affairs, Govt. of India.
                   </p>
                 </div>
               </Col>
               <Col md={3}>
                 <div className="text-center deco">
-                  <h5 className="py-md-2">Sim Card</h5>
+                  <h5 className="py-md-2"><i className="fa-solid fa-sim-card pe-3"></i>Sim Card</h5>
                   <p className="py-md-2">
                     Sim Card will be made available immediately on arrival in
                     destination country only in few countries.
@@ -265,7 +258,7 @@ const About = () => {
               </Col>
               <Col md={3}>
                 <div className="text-center deco">
-                  <h5 className="py-md-2">Foreign Exchange</h5>
+                  <h5 className="py-md-2"><i className="fa-solid fa-coins pe-3"></i>Foreign Exchange</h5>
                   <p className="py-md-2">
                     Provide Assistance & Guidance for Purchase of Foreign
                     Exchange as per the current rates.
@@ -274,7 +267,7 @@ const About = () => {
               </Col>
               <Col md={3}>
                 <div className="text-center deco">
-                  <h5 className="py-md-2">Forex Card</h5>
+                  <h5 className="py-md-2"><i className="fa-solid fa-credit-card pe-3"></i>Forex Card</h5>
                   <p className="py-md-2">
                     Provide Assistance for Forex Card Services.
                   </p>
@@ -286,7 +279,7 @@ const About = () => {
             <Row className="justify-content-center">
               <Col md={3}>
                 <div className="text-center deco">
-                  <h5 className="py-md-2">Visa</h5>
+                  <h5 className="py-md-2"><i className="fa-brands fa-cc-visa pe-3"></i>Visa</h5>
                   <p className="py-md-2">
                     Provide assistance & Guidance for all documentation required
                     for Visa.
@@ -295,7 +288,7 @@ const About = () => {
               </Col>
               <Col md={3}>
                 <div className="text-center deco">
-                  <h5 className="py-md-2">Air Ticket</h5>
+                  <h5 className="py-md-2"><i className="fa-solid fa-ticket pe-3"></i>Air Ticket</h5>
                   <p className="py-md-2">
                     Provide assistance for purchase of Air Ticket at Lowest
                     Rates.
@@ -304,7 +297,7 @@ const About = () => {
               </Col>
               <Col md={3}>
                 <div className="text-center deco">
-                  <h5 className="py-md-2">AirPort Pickup and Escort</h5>
+                  <h5 className="py-md-2"><i class="fa-solid fa-user-shield pe-2"></i>AirPort Pickup and Escort</h5>
                   <p className="py-md-2">
                     Arrangement for AirPort pickup & transport to Hostel &
                     allotment of accommodation.
@@ -313,7 +306,7 @@ const About = () => {
               </Col>
               <Col md={3}>
                 <div className="text-center deco">
-                  <h5 className="py-md-2">Hostel Facilities</h5>
+                  <h5 className="py-md-2"><i className="fa-solid fa-hotel pe-3"></i>Hostel Facilities</h5>
                   <p className="py-md-2">
                     We guide & arrange for Hostel room allotment.
                   </p>
@@ -325,7 +318,7 @@ const About = () => {
             <Row className="justify-content-center">
               <Col md={3}>
                 <div className="text-center deco">
-                  <h5 className="py-md-2">Student Visa Conversion / Renewal</h5>
+                  <h5 className="py-md-2"><i class="fa-brands fa-cc-visa pe-3"></i>Student Visa Conversion / Renewal</h5>
                   <p className="py-md-2">
                     Assistance in applying for Student or extension or Renewal
                     of Visa in destination Country.
@@ -334,7 +327,7 @@ const About = () => {
               </Col>
               <Col md={3}>
                 <div className="text-center deco">
-                  <h5 className="py-md-2">Attestation from HRD Ministry</h5>
+                  <h5 className="py-md-2"><i className="fa-solid fa-landmark pe-3"></i>Attestation from HRD Ministry</h5>
                   <p className="py-md-2">
                     Attestation of Qualification Documents from the Ministry of
                     HRD. Govt. of India.
@@ -343,7 +336,7 @@ const About = () => {
               </Col>
               <Col md={3}>
                 <div className="text-center deco">
-                  <h5 className="py-md-2">Available in Destination Country</h5>
+                  <h5 className="py-md-2"><i className="fa-solid fa-globe pe-3"></i>Available in Destination Country</h5>
                   <p className="py-md-2">
                     We are available in each country for student support to
                     ebsure that our Student does not face any problem in
@@ -353,7 +346,7 @@ const About = () => {
               </Col>
               <Col md={3}>
                 <div className="text-center deco">
-                  <h5 className="py-md-2">
+                  <h5 className="py-md-2"><i className="fa-solid fa-file-medical pe-3"></i>
                     General Medical Health Certificate
                   </h5>
                   <p className="py-md-2">

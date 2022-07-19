@@ -115,13 +115,12 @@ const OtherCountries = () => {
             />
             <div className="mb-0">
               <div className="text-center">
-                <a
-                  as={Link}
+                <Link
                   to={university.location}
                   className="pt-2 pb-2 btn btn-warning"
                 >
                   MBBS in {university.name}
-                </a>
+                </Link>
               </div>
             </div>
           </div>

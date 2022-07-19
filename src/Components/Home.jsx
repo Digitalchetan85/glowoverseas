@@ -34,8 +34,7 @@ const Home = () => {
         <link rel="canonical" href="https://glowoverseas.com/" />
         <meta
           name="description"
-          content="Glowoveas Overseas Education is one of the best MBBS in Abroad Consultants in Bangalore. Call Us for Free Counselling
-                    "
+          content="Glowoveas Overseas Education is one of the best MBBS in Abroad Consultants in Bangalore. Call Us for Free Counselling"
         />
       </Helmet>
       <section id="slider">
@@ -331,7 +330,8 @@ const Home = () => {
                   <Image src={USA} alt="" className="img-fluid" />
                 </div>
                 <div className="text-center pt-3 pb-3">
-                  <Link to="/mbbs-in-usa"
+                  <Link
+                    to="/mbbs-in-usa"
                     className="btn custom-btn-1 btn-primary text-uppercase"
                   >
                     MBBS in USA
@@ -348,7 +348,8 @@ const Home = () => {
                   <Image src={Ukraine} alt="" className="img-fluid" />
                 </div>
                 <div className="text-center pt-3 pb-3">
-                  <Link to="/mbbs-in-ukraine"
+                  <Link
+                    to="/mbbs-in-ukraine"
                     className="btn custom-btn-1 btn-primary text-uppercase"
                   >
                     MBBS in Ukraine
@@ -365,7 +366,8 @@ const Home = () => {
                   <Image src={Georgia} alt="" className="img-fluid" />
                 </div>
                 <div className="text-center pt-3 pb-3">
-                  <Link to="/mbbs-in-georgia"
+                  <Link
+                    to="/mbbs-in-georgia"
                     className="btn custom-btn-1 btn-primary text-uppercase"
                   >
                     MBBS in Georgia
@@ -382,7 +384,8 @@ const Home = () => {
                   <Image src={Kyrgystan} alt="" className="img-fluid" />
                 </div>
                 <div className="text-center pt-3 pb-3">
-                  <Link to="/mbbs-in-kyrgyzstan"
+                  <Link
+                    to="/mbbs-in-kyrgyzstan"
                     className="btn custom-btn-1 btn-primary text-uppercase"
                   >
                     MBBS in Kyrgyzstan
@@ -401,7 +404,8 @@ const Home = () => {
                   <Image src={Phillipines} alt="" className="img-fluid" />
                 </div>
                 <div className="text-center pt-3 pb-3">
-                  <Link to="/mbbs-in-philippines"
+                  <Link
+                    to="/mbbs-in-philippines"
                     className="btn custom-btn-1 btn-primary text-uppercase"
                   >
                     MBBS in Philippines
@@ -418,7 +422,8 @@ const Home = () => {
                   <Image src={Kazakhstan} alt="" className="img-fluid" />
                 </div>
                 <div className="text-center pt-3 pb-3">
-                  <Link to="/mbbs-in-kazakhstan"
+                  <Link
+                    to="/mbbs-in-kazakhstan"
                     className="btn custom-btn-1 btn-primary text-uppercase"
                   >
                     MBBS in Kazakhstan
@@ -435,7 +440,8 @@ const Home = () => {
                   <Image src={Russia} alt="" className="img-fluid" />
                 </div>
                 <div className="text-center pt-3 pb-3">
-                  <Link to="/mbbs-in-russia"
+                  <Link
+                    to="/mbbs-in-russia"
                     className="btn custom-btn-1 btn-primary text-uppercase"
                   >
                     MBBS in Russia
@@ -452,7 +458,8 @@ const Home = () => {
                   <Image src={Poland} alt="" className="img-fluid " />
                 </div>
                 <div className="text-center pt-3 pb-3">
-                  <Link to="/mbbs-in-poland"
+                  <Link
+                    to="/mbbs-in-poland"
                     className="btn custom-btn-1 btn-primary text-uppercase"
                   >
                     MBBS in Poland
