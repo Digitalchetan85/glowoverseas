@@ -6,6 +6,7 @@ import Saranya from "../Images/saranya.png";
 import Abt2 from "../Images/about/about-us.jpg";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
+import YoutubeVideos from "./Includes/YoutubeVideos";
 
 const About = () => {
   useEffect(() => {
@@ -360,7 +361,7 @@ const About = () => {
         </Container>
       </section>
 
-      <section id="videos" className="py-md-5 bg-light">
+      {/* <section id="videos" className="py-md-5 bg-light">
         <Container>
           <div className="">
             <h2 className="text-center text-info py-md-3 py-3">Videos</h2>
@@ -453,6 +454,11 @@ const About = () => {
               </Col>
             </Row>
           </div>
+        </Container>
+      </section> */}
+      <section id="video1">
+        <Container>      
+        <YoutubeVideos />
         </Container>
       </section>
     </>

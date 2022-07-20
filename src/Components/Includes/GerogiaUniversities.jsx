@@ -12,6 +12,7 @@ import Petre from "../../Images/mbbs-in-georgia/medical-universities/caucasus-in
 import GeorgiaSchool from "../../Images/mbbs-in-georgia/medical-universities/david-tvildiani-medical-university-aieti-medical-school.png"
 import European from "../../Images/mbbs-in-georgia/medical-universities/new-vision-university-school-of-medicine.png"
 import Georgian from "../../Images/mbbs-in-georgia/medical-universities/tbilisi-state-medical-university-faculty-of-medicine.png"
+import { Link } from "react-router-dom"
 
 const GerogiaUniversities = () => {
     const universities = [

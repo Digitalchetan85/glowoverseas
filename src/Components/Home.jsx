@@ -32,6 +32,7 @@ const Home = () => {
         <meta charSet="utf-8" />
         <title>MBBS in Abroad | Glowoverseas Education | GOE</title>
         <link rel="canonical" href="https://glowoverseas.com/" />
+        
         <meta
           name="description"
           content="Glowoveas Overseas Education is one of the best MBBS in Abroad Consultants in Bangalore. Call Us for Free Counselling"
