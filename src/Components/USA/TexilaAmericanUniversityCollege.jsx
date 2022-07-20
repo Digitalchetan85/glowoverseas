@@ -79,12 +79,7 @@ const TexilaAmericanUniversityCollege = () => {
                       <div className="university">
                         <p className="text-justify">
                           Glow Overseas Education recommended Universities to
-                          Study MBBS in Kazakhstan. Bogomolets National Medical
-                          University, Ivano frankvisk National Medical
-                          University, Kharkiv National Medical University, Lviv
-                          National Medical University, Zaporizhzhia State
-                          Medical University. Free feel to contact for more
-                          details on Kazakhstan Top Medical University.
+                          Study MBBS in USA. Texila American University College of Medicine.
                         </p>
                         <ul>
                           <li>Established in 1980.</li>

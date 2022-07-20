@@ -17,8 +17,8 @@ const USAUniversities = () => {
       id: 1,
       title: "Texila American University",
       image: Crimea,
-      desc: "Crimea State Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.",
-      link: "/mbbs-in-russia/crimea-state-medical-university",
+      desc: "Texila American University is one of the top Medical University in USA. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.",
+      link: "/mbbs-in-usa/texila-american-university-college",
     },
   ];
 
@@ -46,7 +46,7 @@ const USAUniversities = () => {
     <>
       <Container>
         <h3 className="text-center py-3">
-          Top Medical Universities i/mbbs-in-russian Russia
+          Top Medical Universities
         </h3>
         <OwlCarousel options={options}>
           {universities.map((university) => (
