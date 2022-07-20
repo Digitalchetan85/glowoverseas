@@ -85,7 +85,7 @@ const About = () => {
           </div>
           <Row>
             <Col md={6}>
-              <div className="text-center bg-white p-3 m-2">
+              <div className="text-center bg-white p-3 m-2" style={{ height:500}}>
                 <Image
                   src={Prashanth}
                   alt=""
@@ -104,7 +104,7 @@ const About = () => {
               </div>
             </Col>
             <Col md={6}>
-              <div className="text-center bg-white p-3 m-2">
+              <div className="text-center bg-white p-3 m-2" style={{ height:500}}>
                 <Image
                   src={Saranya}
                   alt=""
