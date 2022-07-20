@@ -116,12 +116,10 @@ const About = () => {
                 <h4 className="py-2">
                   <i>Directors Message</i>
                 </h4>
-                <p className="py-2 ps-1 pe-1">
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                  Fugit itaque provident fuga repellat, facere et maiores quia
-                  nisi, accusamus quaerat aut eius ea alias blanditiis fugiat
-                  nihil unde eveniet hic!
+                <p className="py-1 ps-1 pe-1">
+                Let me begin by extending a warm welcome to everyone..I am confident that the Glow Overseas Education will create a benchmark in MBBS education in India as also overseas by ensuring a steady flow of trained professionals who meet the international standards in terms of quality of education and service provided.
                 </p>
+                <p className="py-1 ps-1 pe-1">I encourage you to work really hard and give it your best at all times</p>
               </div>
             </Col>
           </Row>
