@@ -328,7 +328,7 @@ const Home = () => {
             <Col md={3}>
               <div className="outer-box">
                 <div className="text-center pt-3 pb-3">
-                  <Image src={USA} alt="" className="img-fluid" />
+                  <Image src={USA} alt="" className="img-fluid" style={{ height: "150px", width: "150px" }} />
                 </div>
                 <div className="text-center pt-3 pb-3">
                   <Link
@@ -346,7 +346,7 @@ const Home = () => {
             <Col md={3}>
               <div className="outer-box">
                 <div className="text-center pt-3 pb-3">
-                  <Image src={Ukraine} alt="" className="img-fluid" />
+                  <Image src={Ukraine} alt="" className="img-fluid" style={{ height: "150px", width: "150px" }} />
                 </div>
                 <div className="text-center pt-3 pb-3">
                   <Link
@@ -364,7 +364,7 @@ const Home = () => {
             <Col md={3}>
               <div className="outer-box">
                 <div className="text-center pt-3 pb-3">
-                  <Image src={Georgia} alt="" className="img-fluid" />
+                  <Image src={Georgia} alt="" className="img-fluid" style={{ height: "150px", width: "150px" }} />
                 </div>
                 <div className="text-center pt-3 pb-3">
                   <Link
@@ -382,7 +382,7 @@ const Home = () => {
             <Col md={3}>
               <div className="outer-box">
                 <div className="text-center pt-3 pb-3">
-                  <Image src={Kyrgystan} alt="" className="img-fluid" />
+                  <Image src={Kyrgystan} alt="" className="img-fluid" style={{ height: "150px", width: "150px" }} />
                 </div>
                 <div className="text-center pt-3 pb-3">
                   <Link
@@ -402,7 +402,7 @@ const Home = () => {
             <div className="col-md-3">
               <div className="outer-box">
                 <div className="text-center pt-3 pb-3">
-                  <Image src={Phillipines} alt="" className="img-fluid" />
+                  <Image src={Phillipines} alt="" className="img-fluid" style={{ height: "150px", width: "150px" }} />
                 </div>
                 <div className="text-center pt-3 pb-3">
                   <Link
@@ -420,7 +420,7 @@ const Home = () => {
             <div className="col-md-3">
               <div className="outer-box">
                 <div className="text-center pt-3 pb-3">
-                  <Image src={Kazakhstan} alt="" className="img-fluid" />
+                  <Image src={Kazakhstan} alt="" className="img-fluid" style={{ height: "150px", width: "150px" }} />
                 </div>
                 <div className="text-center pt-3 pb-3">
                   <Link
@@ -438,7 +438,7 @@ const Home = () => {
             <div className="col-md-3">
               <div className="outer-box">
                 <div className="text-center pt-3 pb-3">
-                  <Image src={Russia} alt="" className="img-fluid" />
+                  <Image src={Russia} alt="" className="img-fluid" style={{ height: "150px", width: "150px" }} />
                 </div>
                 <div className="text-center pt-3 pb-3">
                   <Link
@@ -456,7 +456,7 @@ const Home = () => {
             <div className="col-md-3">
               <div className="outer-box">
                 <div className="text-center pt-3 pb-3">
-                  <Image src={Poland} alt="" className="img-fluid " />
+                  <Image src={Poland} alt="" className="img-fluid" style={{ height: "150px", width: "150px" }} />
                 </div>
                 <div className="text-center pt-3 pb-3">
                   <Link
