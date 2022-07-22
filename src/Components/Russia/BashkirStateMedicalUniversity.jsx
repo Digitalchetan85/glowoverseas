@@ -13,13 +13,23 @@ const BashkirStateMedicalUniversity = () => {
   });
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
   return (
     <>
+    <Helmet>
+        <meta charSet="utf-8" />
+        <title>  Bashkir State Medical University | MBBS in Russia | GOE</title>
+        <link rel="canonical" href="https://glowoverseas.com/mbbs-in-russia/bashkir-state-medical-university" />
+        <meta
+          name="description"
+          content="MBBS in Bashkir State Medical University is the best place to Study MBBS in Russia. Call Us for Free Counselling"
+        />
+      </Helmet>
       <div id="abt">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="pt-5 pb-5">
+              <div className="py-md-5">
                 <h2>MBBS in Russia</h2>
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">

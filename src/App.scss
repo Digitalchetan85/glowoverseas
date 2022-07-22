@@ -39,6 +39,14 @@ p {
   }
 }
 
+#third{
+  .custom-btn-1{
+    width: 85%;
+    font-size: 16px;
+    background-color: $info-color;
+  }
+}
+
 // .nav-item.dropdown:hover .dropdown-menu {
 //   display: block;
 // }
@@ -82,11 +90,16 @@ p {
   }
   .dropdown-item {
     color: $black-color;
+    overflow-x: auto;
     &:hover {
       color: $secondary-color;
       background-color: transparent;
     }
   }
+}
+
+#mob-off-canvas {
+  width: 300px;
 }
 
 #top-header {
@@ -154,6 +167,7 @@ p {
     color: $primary-color;
     font-weight: 500;
     height: 320px;
+    font-size: 16px;
   }
   .owl-carousel {
     .owl-item {
@@ -896,4 +910,21 @@ p {
   .bord {
     border: 2px solid $secondary-color;
   }
+}
+
+@include media-breakpoint-only(xs){
+#third{
+  .custom-btn-1{
+    font-size: 14px;
+    background-color: $info-color;
+  }
+}
+}
+@include media-breakpoint-only(md) {
+}
+@include media-breakpoint-only(lg) {
+}
+@include media-breakpoint-only(xl) {
+}
+@include media-breakpoint-only(xxl) {
 }

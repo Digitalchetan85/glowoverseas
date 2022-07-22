@@ -130,13 +130,13 @@ const Testimonials = () => {
       image: Test15,
       name: "Manu",
     },
-    // {
-    //   id: 16,
-    //   testimonial:
-    //     "I am very happy to express my sincere thanks to GOE for supporting me to achieve my dream to study MBBS in abroad. My journey, admission procedure, and all other academic formalities was a cakewalk & it is just because of the wholehearted service",
-    //   image: Test16,
-    //   name: "Ganga Deep",
-    // },
+    {
+      id: 16,
+      testimonial:
+        "I am very happy to express my sincere thanks to GOE for supporting me to achieve my dream to study MBBS in abroad. My journey, admission procedure, and all other academic formalities was a cakewalk & it is just because of the wholehearted service",
+      image: Test16,
+      name: "Ganga Deep",
+    },
     {
       id: 17,
       testimonial:
@@ -164,6 +164,7 @@ const Testimonials = () => {
     rewind: true,
     dots: false,
     autoplay: true,
+    autoplayTimeout: 1000,
     responsive: {
       0: {
         items: 1,
@@ -184,10 +185,10 @@ const Testimonials = () => {
   return (
     <OwlCarousel options={options}>
       {associations.map((item, index) => (
-        <div className="body-wrap text-center ps-md-1 pe-md-1 m-2" key={index}>
+        <div className="text-center ps-md-1 pe-md-1 m-2" key={index}>
           <Image src={item.image} alt="" className="img-fluid" />
           <blockquote className="blockquote mb-0">
-            <p className="pt-3 text-center text-dark" style={{height: '150px'}}>{item.testimonial}</p>
+            <p className="pt-3 text-center text-dark body-wrap" style={{height: '150px'}}>{item.testimonial}</p>
             <footer className="blockquote-footer">
               <cite title="Source Title">{item.name}</cite>
             </footer>

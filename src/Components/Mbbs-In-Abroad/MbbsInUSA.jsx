@@ -17,12 +17,12 @@ const MbbsInUSA = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="pt-5 pb-5">
+              <div className="py-md-5">
                 <h2>MBBS in USA</h2>
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a as={Link} to="/">Home</a>
+                    <Link to="/">Home</Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       MBBS in USA

@@ -15,11 +15,20 @@ const KabardinoBalkarianStateMedicalUniversity = () => {
   const handleShow = () => setShow(true);
   return (
     <>
+    <Helmet>
+        <meta charSet="utf-8" />
+        <title> Kabardino Balkarian State | MBBS in Russia | GOE</title>
+        <link rel="canonical" href="https://glowoverseas.com/mbbs-in-russia/kabardino-balkariand-state-medical-university" />
+        <meta
+          name="description"
+          content="MBBS in Kabardino Balkarian State Medical University is the best place to Study MBBS in Russia. Call Us for Free Counselling"
+        />
+</Helmet>
       <div id="abt">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="pt-5 pb-5">
+              <div className="py-md-5">
                 <h2>MBBS in Russia</h2>
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
@@ -29,7 +38,7 @@ const KabardinoBalkarianStateMedicalUniversity = () => {
                       </Link>
                     </li>
                     <li className="breadcrumb-item">
-                      <a className="text-decoration-none" as={Link} to="/">
+                      <a className="text-decoration-none" as={Link} to="/mbbs-in-russia">
                         MBBS in Russia
                       </a>
                     </li>

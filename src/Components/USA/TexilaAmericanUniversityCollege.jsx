@@ -22,10 +22,10 @@ const TexilaAmericanUniversityCollege = () => {
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title> Texila American University | MBBS in Georgia | GOE</title>
+        <title> Texila American University | MBBS in USA | GOE</title>
         <link
           rel="canonical"
-          href="https://glowoverseas.com/mbbs-in-georgia/texila-american-university-college"
+          href="https://glowoverseas.com/mbbs-in-usa/texila-american-university-college"
         />
         <meta
           name="description"

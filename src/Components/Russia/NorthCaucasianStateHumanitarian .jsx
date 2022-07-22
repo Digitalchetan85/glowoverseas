@@ -15,11 +15,20 @@ const NorthCaucasianStateHumanitarian = () => {
   const handleShow = () => setShow(true);
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title> North Caucasian State Humanitarian | MBBS in Russia | GOE</title>
+        <link rel="canonical" href="https://glowoverseas.com/mbbs-in-russia/north-caucasian-state-humanitarian" />
+        <meta
+          name="description"
+          content="MBBS in North Caucasian State Humanitarian is the best place to Study MBBS in Russia. Call Us for Free Counselling"
+        />
+</Helmet>
       <div id="abt">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="pt-5 pb-5">
+              <div className="py-md-5">
                 <h2>MBBS in Russia</h2>
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">

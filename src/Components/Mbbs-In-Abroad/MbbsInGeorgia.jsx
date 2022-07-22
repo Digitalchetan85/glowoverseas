@@ -29,7 +29,7 @@ const MbbsInGeorgia = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="pt-5 pb-5">
+              <div className="py-md-5">
                 <h2>MBBS in Georgia</h2>
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
@@ -558,9 +558,9 @@ const MbbsInGeorgia = () => {
                           <tr>
                             <td className="text-center px-2">Degree</td>
                             <td className="table-info px-2">
-                              In Ukraine, the MD equivalent degree for MBBS in
+                              In Georgia, the MD equivalent degree for MBBS in
                               India is awarded to medical graduates studying at
-                              Ukraine Universities
+                              Georgia Universities
                             </td>
                             <td className="px-2">
                               In India the MBBS degree is awaraded to medical

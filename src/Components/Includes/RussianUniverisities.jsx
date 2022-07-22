@@ -29,35 +29,35 @@ const RussianUniverisities = () => {
       id: 1,
       title: "Crimea Federal University",
       image: Crimea,
-      desc: "Crimea State Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.",
+      desc: "Crimea State Medical University is one of the top Medical University in Russia. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.",
       link: "/mbbs-in-russia/crimea-state-medical-university",
     },
     {
       id: 2,
       title: "Kazan Federal University",
       image: Kazan,
-      desc: "Kazan Federal University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.",
+      desc: "Kazan Federal University is one of the top Medical University in Russia. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.",
       link: "/mbbs-in-russia/kazan-federal-university",
     },
     {
       id: 3,
       title: "Lobachevsky State Medical University",
       image: Loba,
-      desc: "Kabardino Balkarian State Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.",
+      desc: "Lobachevsky State Medical University is one of the top Medical University in Russia. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.",
       link: "/mbbs-in-russia/lobachevsky-state-Medical-University",
     },
     {
       id: 4,
       title: "Kabardino Balkarian State Medical University",
       image: Kabardino,
-      desc: "Kabardino Balkarian State Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.",
+      desc: "Kabardino Balkarian State Medical University is one of the top Medical University in Russia. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.",
       link: "/mbbs-in-russia/kabardino-balkariand-state-medical-university",
     },
     {
       id: 5,
       title: "Kazan State Medical University",
       image: KazanState,
-      desc: "Caucasus International University on the faculty of medicine was founded Anatomical Theater and Clinical Skills Center.",
+      desc: "Kazan State Medical  University on the faculty of medicine was founded Anatomical Theater and Clinical Skills Center.",
       link: "/mbbs-in-russia/kazan-state-medical-university",
     },
 
@@ -65,7 +65,7 @@ const RussianUniverisities = () => {
       id: 6,
       title: "Kirov State Medical University",
       image: Kirov,
-      desc: "David Tvildiani Medical University is the best medical university in Georgia offering a 6-year MBBS course in English medium & low admission fees for Indian students.",
+      desc: "Kirov State Medical University is the best medical university in Russia offering a MBBS course in English medium & low admission fees for Indian students.",
       link: "/mbbs-in-russia/kirov-state-medical-university",
     },
 
@@ -73,7 +73,7 @@ const RussianUniverisities = () => {
       id: 7,
       title: "North-Ossetian State Medical University",
       image: NorthOsset,
-      desc: "Petre Shotadze Tbilisi Medical Academy is a teaching university, with highly qualified academic staff, and a self-governed higher education institution which conducts its activities in accordance with all applicable laws and regulations.",
+      desc: "North-Ossetian State Medical University is a teaching university, with highly qualified academic staff. ",
       link: "/mbbs-in-russia/north-ossetian-state-medical-university",
     },
 
@@ -81,7 +81,7 @@ const RussianUniverisities = () => {
       id: 8,
       title: "Ingush State Medical Academy",
       image: Ingush,
-      desc: "School of Health Sciences of the University of Georgia is a growing health school built on the requirements of modern higher education.",
+      desc: "Ingush State Medical Academy of Russia is a growing health school built on the requirements of modern higher education.",
       link: "/mbbs-in-russia/ingush-state-medical-academy",
     },
 
@@ -89,7 +89,7 @@ const RussianUniverisities = () => {
       id: 9,
       title: "North Caucasian State Humanitarian Technological Academy",
       image: Caucasian,
-      desc: "European University is an authorized higher education institution with the status of an educational university, which implements higher education programs in accordance with the rules established by law and issues a certificate of qualification recognized by the state.",
+      desc: "North Caucasian State Humanitarian Technological Academy is an authorized higher education institution with the status of an educational university, which implements higher education programs in accordance with the rules established by law and issues a certificate of qualification recognized by the state.",
       link: "/mbbs-in-russia/north-caucasian-state-humanitarian",
     },
 
@@ -97,21 +97,21 @@ const RussianUniverisities = () => {
       id: 10,
       title: "Bashkir State Medical University",
       image: Bashkir,
-      desc: "Bashkir State Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.",
+      desc: "Bashkir State Medical University is one of the top Medical University in Russia. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.",
       link: "/mbbs-in-russia/bashkir-state-medical-university",
     },
     {
       id: 11,
       title: "Volgograd State Medical University",
       image: Volgograd,
-      desc: "Georgian American University provides education based on advanced scientific-research and practical-teaching models, leading research and innovative activities",
+      desc: "Volgograd State Medical University provides education based on advanced scientific-research and practical-teaching models, leading research and innovative activities",
       link: "/mbbs-in-russia/volgogra-state-medical-university",
     },
     {
       id: 12,
       title: "Kemerovo State Medical University",
       image: Kemerovo,
-      desc: "Georgian American University provides education based on advanced scientific-research and practical-teaching models, leading research and innovative activities",
+      desc: "Kemerovo State Medical University provides education based on advanced scientific-research and practical-teaching models, leading research and innovative activities",
       link: "/mbbs-in-russia/kemerovo-state-medical-university",
     },
   ];
@@ -140,7 +140,7 @@ const RussianUniverisities = () => {
     <>
       <Container>
         <h3 className="text-center py-3">
-          Top Medical Universities i/mbbs-in-russian Russia
+          Top Medical Universities
         </h3>
         <OwlCarousel options={options}>
           {universities.map((university) => (
@@ -173,14 +173,13 @@ const RussianUniverisities = () => {
                   >
                     Read more
                   </Button>
-                  <Button onClick={handleShow} className="btn btn-info text-white float-end">Free Councelling</Button>
+                  <Button onClick={handleShow} className="btn btn-info text-white float-end">Free Counselling</Button>
                 </Card.Footer>
               </Card>
             </div>
           ))}
         </OwlCarousel>
-        <FreeCouncelling show={show} handleClose={handleClose} title="Contact Us for Free Counselling
-                    " />
+        <FreeCouncelling show={show} handleClose={handleClose} title="Contact Us for Free Counselling" />
       </Container>
     </>
   );

@@ -26,51 +26,9 @@ import JscNationalMedicalUniversity from "./Components/Kazaksthan/JscNationalMed
 import AlFarabiNationalMedicalUniversity from "./Components/Kazaksthan/AlFarabiNationalMedicalUniversity";
 import OshStateMedicalUniversity from "./Components/Kyrgyzstan/OshStateMedicalUniversity";
 import SalymbekovUniversity from "./Components/Kyrgyzstan/SalymbekovUniversity";
-// import DavaoMedicalCollege from "./Components/Philippines/DavaoMedicalCollege";
-// import EmilioAguinaldoCollege from "./Components/Philippines/EmilioAguinaldoCollege";
-// import OurLadyOfFatimaUniversity from "./Components/Philippines/OurLadyOfFatimaUniversity";
-// import UniversityOfPerpetualHelp from "./Components/Philippines/UniversityOfPerpetualHelp";
 import AmaUniversity from "./Components/Philippines/AmaUniversity";
 import Medicaluniversityofgdansk from "./Components/Poland/MedicalUniversityOfGdansk";
 import TexilaAmericanUniversityCollege from "./Components/USA/TexilaAmericanUniversityCollege";
-// import MbbsUzbekistan from "./Components/Mbbs-In-Abroad/MbbsUzbekistan";
-// import FerganaMedicalInstitute from "./Components/Uzbekistan/FerganaMedicalInstitute";
-// import AkakiTsereteliState from "./Components/Gerogia/AkakiTsereteliState";
-// import BatumiShotaRustaveliStateMedicalUniversity from "./Components/Gerogia/BatumiShotaRustaveliStateMedicalUniversity";
-// import CaucasusInternationalMedicalUniversity from "./Components/Gerogia/CaucasusInternationalMedicalUniversity";
-// import DavidTvildianiMedicalUniversity from "./Components/Gerogia/DavidTvildianiMedicalUniversity";
-// import EuropeanUniversity from "./Components/Gerogia/EuropeanUniversity";
-// import GeorgianAmericanUniversity from "./Components/Gerogia/GeorgianAmericanUniversity";
-// import IvaneJavakhishvili from "./Components/Gerogia/IvaneJavakhishvili";
-// import PetreShotadzeTbilisiMedicalAcademy from "./Components/Gerogia/PetreShotadzeTbilisiMedicalAcademy";
-// import TbilisiStateMedicalUniversity from "./Components/Gerogia/TbilisiStateMedicalUniversity";
-// import UniversityOfGeorgiaSchool from "./Components/Gerogia/UniversityOfGeorgiaSchool";
-// import BashkirStateMedicalUniversity from "./Components/Russia/BashkirStateMedicalUniversity";
-// import CrimeaStateMedicalUniversity from "./Components/Russia/CrimeaStateMedicalUniversity";
-// import IngushStateMedicalAcademy from "./Components/Russia/IngushStateMedicalAcademy";
-// import KabardinoBalkarianStateMedicalUniversity from "./Components/Russia/KabardinoBalkarianStateMedicalUniversity";
-// import KazanFederalUniversity from "./Components/Russia/KazanFederalUniversity";
-// import KirovStateMedicalUniversity from "./Components/Russia/KirovStateMedicalUniversity";
-// import KazanStateMedicalUniversity from "./Components/Russia/KazanStateMedicalUniversity";
-// import KruskStateMedicalUniversity from "./Components/Russia/KruskStateMedicalUniversity";
-// import LobachevskyStateMedicalUniversity from "./Components/Russia/LobachevskyStateMedicalUniversity";
-// import VolgograStateMedicalUniversity from "./Components/Russia/VolgograStateMedicalUniversity";
-// import BlackSeaNationalMedicalUniversity from "./Components/Ukraine/BlackSeaNationalMedicalUniversity";
-// import BukovinianStateMedicalUniversity from "./Components/Ukraine/BukovinianStateMedicalUniversity";
-// import DnipropetrovskStateMedicalUniversity from "./Components/Ukraine/dnipropetrovskStateMedicalUniversity";
-// import KharkivNationalMedicalUniversity from "./Components/Ukraine/KharkivNationalMedicalUniversity";
-// import KyivMedicalUniversity from "./Components/Ukraine/KyivMedicalUniversity";
-// import OoBogomoletsNationalMedicalUniversity from "./Components/Ukraine/OoBogomoletsNationalMedicalUniversity";
-// import PoltavaStateMedicalUniversity from "./Components/Ukraine/PoltavaStateMedicalUniversity";
-// import TarasShevchenkoNationalMedicalUniversity from "./Components/Ukraine/TarasShevchenkoNationalMedicalUniversity";
-// import VinnitsaNationalMedicalUniversity from "./Components/Ukraine/VinnitsaNationalMedicalUniversity";
-// import VNKarazinKharkivNationalMedicalUniversity from "./Components/Ukraine/VNKarazinKharkivNationalMedicalUniversity";
-// import ZaporizhzhiaStateMedicalUniversity from "./Components/Ukraine/ZaporizhzhiaStateMedicalUniversity";
-// import LvivNationalMedicalUniversity from "./Components/Ukraine/LvivNationalMedicalUniversity";
-// import KharkivInternationalMedicalUniversity from "./Components/Ukraine/KharkivInternationalMedicalUniversity";
-// import IvanoFrankviskNationalMedicalUniversity from "./Components/Ukraine/IvanoFrankviskNationalMedicalUniversity";
-// import NorthCaucasianStateHumanitarian from "./Components/Russia/NorthCaucasianStateHumanitarian ";
-// import NorthOssetianStateMedicalUniversity from "./Components/Russia/NorthOssetianStateMedicalUniversity";
 import MbbsInKyrgystan from "./Components/Mbbs-In-Abroad/MbbsInKyrgystan";
 import MbbsInPhillipines from "./Components/Mbbs-In-Abroad/MbbsInPhillipines";
 import MbbsInPoland from "./Components/Mbbs-In-Abroad/MbbsInPoland";
@@ -114,6 +72,7 @@ import FerganaMedicalInstitute from "./Components/Uzbekistan/FerganaMedicalInsti
 import MbbsUzbekistan from "./Components/Mbbs-In-Abroad/MbbsUzbekistan";
 import Contact from "./Components/Contact";
 import Gallery from "./Components/Gallery";
+import BlackSeaNationalMedicalUniversity from "./Components/Ukraine/BlackSeaNationalMedicalUniversity";
 
 function App() {
   return (
@@ -269,15 +228,15 @@ function App() {
 
           {/* Kyrgyzstan Routes */}
           <Route
-            path="/mbbs-in-kyrgystan"
+            path="/mbbs-in-kyrgyzstan"
             element={<MbbsInKyrgystan />}
           ></Route>
           <Route
-            path="/mbbs-in-kyrgystan/osh-state-medical-university"
+            path="/mbbs-in-kyrgyzstan/osh-state-medical-university"
             element={<OshStateMedicalUniversity />}
           />
           <Route
-            path="/mbbs-in-kyrgystan/salymbekov-university"
+            path="/mbbs-in-kyrgyzstan/salymbekov-university"
             element={<SalymbekovUniversity />}
           />
           {/* Kyrgyzstan Routes */}
@@ -377,9 +336,9 @@ function App() {
           />
           {/* Russia Routes */}
 
-          {/* <Route path="/mbbs-in-ukraine" element={<MbbsInUkraine />}> */}
-            {/* <Route path="/black-sea-national-medical-university" element={<BlackSeaNationalMedicalUniversity />} />
-         <Route path="/ternopil-state-medical-university" element={<TernopilStateMedicalUniversity />} />
+          <Route path="/mbbs-in-ukraine" element={<MbbsInUkraine />}></Route>
+            <Route path="/mbbs-in-ukraine/black-sea-national-medical-university" element={<BlackSeaNationalMedicalUniversity />} />
+         {/* <Route path="/ternopil-state-medical-university" element={<TernopilStateMedicalUniversity />} />
           <Route path="/odessa-national
 " element={<OdessaNational
  />} />
@@ -396,7 +355,7 @@ function App() {
                  <Route path="/vinnitsa-national-medical-university" element={<VinnitsaNationalMedicalUniversity />} />
                          <Route path="/v-n-karazin-kharkiv-national-medical-university" element={<VNKarazinKharkivNationalMedicalUniversity />} />
                          <Route path="/zaporizhzhia-state-medical-university" element={<ZaporizhzhiaStateMedicalUniversity />} /> */}
-          {/* </Route> */}
+          
 
           {/* Uzbekistan Routes */}
           <Route path="/mbbs-in-uzbekistan" element={<MbbsUzbekistan />} />

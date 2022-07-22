@@ -30,7 +30,7 @@ const MbbsInKyrgystan = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="pt-5 pb-5">
+              <div className="py-md-5">
                 <h2>MBBS in Kyrgyzstan</h2>
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
@@ -258,7 +258,7 @@ const MbbsInKyrgystan = () => {
                             </tbody>
                           </table>
                         </div>
-                        <div className="text-center">
+                        <div className="text-center pt-2">
                           <Button
                             onClick={handleShow}
                             className="btn btn-info text-white"

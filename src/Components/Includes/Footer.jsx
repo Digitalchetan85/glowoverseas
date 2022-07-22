@@ -30,7 +30,7 @@ const Footer = () => {
                 <ul className="list-unstyled">
                   <li>
                     <Link to="/mbbs-in-kazakhstan" className="text-decoration-none text-white">
-                      MBBS in Kazkhstan
+                      MBBS in Kazakhstan
                     </Link>
                   </li>
                   <li>

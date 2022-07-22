@@ -65,7 +65,7 @@ const Home = () => {
                   with a transparent admission process and handholding you until
                   you get placed in college that is best for you.
                 </p>
-                <Button variant="primary" onClick={handleShow} className="my-3">
+                <Button variant="info" onClick={handleShow} className="my-3 text-white">
                   Apply Now
                 </Button>
               </div>
@@ -99,7 +99,7 @@ const Home = () => {
             <Row className="justify-content-center g-3">
               <Col md={4} className="">
                 <div
-                  className="m-2 outer-box bg-light"
+                  className="m-2 outer-box text-center text-md-start bg-light"
                   style={{ height: "200px" }}
                 >
                   <Row className="justify-content-center">
@@ -126,7 +126,7 @@ const Home = () => {
               </Col>
               <Col md={4} className="">
                 <div
-                  className="m-2 outer-box bg-light"
+                  className="m-2 outer-box text-center text-md-start bg-light"
                   style={{ height: "200px" }}
                 >
                   <Row className="justify-content-center">
@@ -150,7 +150,7 @@ const Home = () => {
               </Col>
               <Col md={4} className="">
                 <div
-                  className="m-2 outer-box bg-light"
+                  className="m-2 outer-box text-center text-md-start bg-light"
                   style={{ height: "200px" }}
                 >
                   <Row className="justify-content-center">
@@ -175,7 +175,7 @@ const Home = () => {
               </Col>
               <Col md={4} className="">
                 <div
-                  className="m-2 outer-box bg-light"
+                  className="m-2 outer-box text-center text-md-start bg-light"
                   style={{ height: "200px" }}
                 >
                   <Row className="justify-content-center">
@@ -198,7 +198,7 @@ const Home = () => {
               </Col>
               <Col md={4} className="">
                 <div
-                  className="m-2 outer-box bg-light"
+                  className="m-2 outer-box text-center text-md-start bg-light"
                   style={{ height: "200px" }}
                 >
                   <Row className="justify-content-center">
@@ -221,7 +221,7 @@ const Home = () => {
               </Col>
               <Col md={4} className="">
                 <div
-                  className="m-2 outer-box bg-light"
+                  className="m-2 outer-box text-center text-md-start bg-light"
                   style={{ height: "200px" }}
                 >
                   <div className="row">
@@ -245,7 +245,7 @@ const Home = () => {
               </Col>
               <Col md={4} className="">
                 <div
-                  className="m-2 outer-box bg-light"
+                  className="m-2 outer-box text-center text-md-start bg-light"
                   style={{ height: "200px" }}
                 >
                   <Row className="row">
@@ -268,7 +268,7 @@ const Home = () => {
               </Col>
               <Col md={4} className="">
                 <div
-                  className="m-2 outer-box bg-light"
+                  className="m-2 outer-box text-center text-md-start bg-light"
                   style={{ height: "200px" }}
                 >
                   <Row className="row">
@@ -291,7 +291,7 @@ const Home = () => {
               </Col>
               <Col md={4} className="">
                 <div
-                  className="m-2 outer-box bg-light"
+                  className="m-2 outer-box text-center text-md-start bg-light"
                   style={{ height: "200px" }}
                 >
                   <Row className="row">
@@ -324,8 +324,8 @@ const Home = () => {
 
       <section id="third" className="py-md-5">
         <Container>
-          <Row className="justiy-content-center">
-            <Col md={3}>
+          <Row className="justiy-content-center g-3">
+            <Col md={3} xs={6} sm={6}>
               <div className="outer-box">
                 <div className="text-center pt-3 pb-3">
                   <Image src={USA} alt="" className="img-fluid" style={{ height: "150px", width: "150px" }} />
@@ -333,7 +333,7 @@ const Home = () => {
                 <div className="text-center pt-3 pb-3">
                   <Link
                     to="/mbbs-in-usa"
-                    className="btn custom-btn-1 btn-primary text-uppercase"
+                    className="btn custom-btn-1 btn-info text-white text-uppercase"
                   >
                     MBBS in USA
                   </Link>
@@ -343,7 +343,7 @@ const Home = () => {
                 </div>
               </div>
             </Col>
-            <Col md={3}>
+            <Col md={3} xs={6} sm={6}>
               <div className="outer-box">
                 <div className="text-center pt-3 pb-3">
                   <Image src={Ukraine} alt="" className="img-fluid" style={{ height: "150px", width: "150px" }} />
@@ -351,17 +351,17 @@ const Home = () => {
                 <div className="text-center pt-3 pb-3">
                   <Link
                     to="/mbbs-in-ukraine"
-                    className="btn custom-btn-1 btn-primary text-uppercase"
+                    className="btn custom-btn-1 text-white text-uppercase"
                   >
                     MBBS in Ukraine
                   </Link>
-                  {/* <Button type="submit" className="custom-btn-1 btn-primary">
+                  {/* <Button type="submit" className="custom-btn-1 text-white >
                     MBBS in Ukraine
                   </Button> */}
                 </div>
               </div>
             </Col>
-            <Col md={3}>
+            <Col md={3} xs={6} sm={6}>
               <div className="outer-box">
                 <div className="text-center pt-3 pb-3">
                   <Image src={Georgia} alt="" className="img-fluid" style={{ height: "150px", width: "150px" }} />
@@ -369,17 +369,17 @@ const Home = () => {
                 <div className="text-center pt-3 pb-3">
                   <Link
                     to="/mbbs-in-georgia"
-                    className="btn custom-btn-1 btn-primary text-uppercase"
+                    className="btn custom-btn-1 text-white text-uppercase"
                   >
                     MBBS in Georgia
                   </Link>
-                  {/* <Button type="submit" className="custom-btn-1 btn-primary">
+                  {/* <Button type="submit" className="custom-btn-1 text-white >
                     MBBS in Georgia
                   </Button> */}
                 </div>
               </div>
             </Col>
-            <Col md={3}>
+            <Col md={3} xs={6} sm={6}>
               <div className="outer-box">
                 <div className="text-center pt-3 pb-3">
                   <Image src={Kyrgystan} alt="" className="img-fluid" style={{ height: "150px", width: "150px" }} />
@@ -387,19 +387,17 @@ const Home = () => {
                 <div className="text-center pt-3 pb-3">
                   <Link
                     to="/mbbs-in-kyrgyzstan"
-                    className="btn custom-btn-1 btn-primary text-uppercase"
+                    className="btn custom-btn-1 text-white text-uppercase"
                   >
                     MBBS in Kyrgyzstan
                   </Link>
-                  {/* <Button type="submit" className="custom-btn-1 btn-primary">
+                  {/* <Button type="submit" className="custom-btn-1 text-white >
                     MBBS in Kyrgyzstan
                   </Button> */}
                 </div>
               </div>
             </Col>
-          </Row>
-          <Row className="row">
-            <div className="col-md-3">
+            <Col md={3} xs={6} sm={6}>
               <div className="outer-box">
                 <div className="text-center pt-3 pb-3">
                   <Image src={Phillipines} alt="" className="img-fluid" style={{ height: "150px", width: "150px" }} />
@@ -407,17 +405,17 @@ const Home = () => {
                 <div className="text-center pt-3 pb-3">
                   <Link
                     to="/mbbs-in-philippines"
-                    className="btn custom-btn-1 btn-primary text-uppercase"
+                    className="btn custom-btn-1 text-white text-uppercase"
                   >
                     MBBS in Philippines
                   </Link>
-                  {/* <Button type="submit" className="custom-btn-1 btn-primary">
+                  {/* <Button type="submit" className="custom-btn-1 text-white >
                     MBBS in Philippines
                   </Button> */}
                 </div>
               </div>
-            </div>
-            <div className="col-md-3">
+            </Col>
+            <Col md={3} xs={6} sm={6}>
               <div className="outer-box">
                 <div className="text-center pt-3 pb-3">
                   <Image src={Kazakhstan} alt="" className="img-fluid" style={{ height: "150px", width: "150px" }} />
@@ -425,17 +423,17 @@ const Home = () => {
                 <div className="text-center pt-3 pb-3">
                   <Link
                     to="/mbbs-in-kazakhstan"
-                    className="btn custom-btn-1 btn-primary text-uppercase"
+                    className="btn custom-btn-1 text-white text-uppercase"
                   >
                     MBBS in Kazakhstan
                   </Link>
-                  {/* <Button type="submit" className="custom-btn-1 btn-primary">
+                  {/* <Button type="submit" className="custom-btn-1 text-white >
                     MBBS in Kazakhstan
                   </Button> */}
                 </div>
               </div>
-            </div>
-            <div className="col-md-3">
+            </Col>
+            <Col md={3} xs={6} sm={6}>
               <div className="outer-box">
                 <div className="text-center pt-3 pb-3">
                   <Image src={Russia} alt="" className="img-fluid" style={{ height: "150px", width: "150px" }} />
@@ -443,17 +441,17 @@ const Home = () => {
                 <div className="text-center pt-3 pb-3">
                   <Link
                     to="/mbbs-in-russia"
-                    className="btn custom-btn-1 btn-primary text-uppercase"
+                    className="btn custom-btn-1 text-white text-uppercase"
                   >
                     MBBS in Russia
                   </Link>
-                  {/* <Button type="submit" className="custom-btn-1 btn-primary">
+                  {/* <Button type="submit" className="custom-btn-1 text-white >
                     MBBS in Russia
                   </Button> */}
                 </div>
               </div>
-            </div>
-            <div className="col-md-3">
+            </Col>
+            <Col md={3} xs={6} sm={6}>
               <div className="outer-box">
                 <div className="text-center pt-3 pb-3">
                   <Image src={Poland} alt="" className="img-fluid" style={{ height: "150px", width: "150px" }} />
@@ -461,17 +459,18 @@ const Home = () => {
                 <div className="text-center pt-3 pb-3">
                   <Link
                     to="/mbbs-in-poland"
-                    className="btn custom-btn-1 btn-primary text-uppercase"
+                    className="btn custom-btn-1 text-white text-uppercase"
                   >
                     MBBS in Poland
                   </Link>
-                  {/* <Button type="submit" className="custom-btn-1 btn-primary">
+                  {/* <Button type="submit" className="custom-btn-1 text-white >
                     MBBS in Poland
                   </Button> */}
                 </div>
               </div>
-            </div>
+            </Col>
           </Row>
+         
         </Container>
       </section>
 

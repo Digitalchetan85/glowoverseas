@@ -70,7 +70,7 @@ const Menubar = () => {
               <Col md={3} xs={6} sm={6} className="align-self-center">
                 <div className="py-md-2 text-center">
                   <a href="tel:07829290299">
-                    <i className="fab fa-whatsapp px-md-2"></i>
+                    <i className="fab fa-whatsapp px-md-2 me-1"></i>
                     <i className="fas fa-phone-volume px-md-2"></i> +91
                     78292 90299
                   </a>
@@ -79,7 +79,7 @@ const Menubar = () => {
               <Col md={3} xs={6} sm={6} className="align-self-center">
                 <div className="py-md-2 text-center">
                   <a href="tel:09513332386">
-                    <i className="fab fa-whatsapp px-md-2"></i>
+                    <i className="fab fa-whatsapp px-md-2 me-1"></i>
                     <i className="fas fa-phone-volume px-md-2"></i> +91
                     95133 32386
                   </a>
@@ -570,7 +570,7 @@ const Menubar = () => {
           <Navbar.Toggle aria-controls="offcanvasNavbar-expand-lg" />
 
           <Navbar.Offcanvas
-            id="offcanvasNavbar-expand-lg"
+            id="mob-off-canvas"
             aria-labelledby="offcanvasNavbarLabel-expand-lg"
             placement="start"
           >
@@ -668,24 +668,28 @@ const Menubar = () => {
                     id="collasible-nav-dropdown"
                     drop="end"
                     to="/mbbs-in-georgia"
+                    
                   >
                     <NavDropdown.Item
                       as={NavLink}
                       to="/mbbs-in-georgia/batumi-shota-rustaveli-state-medical-university"
+                      className="text-wrap"
                     >
                       Batumi Shota Rustaveli State Medical University
                     </NavDropdown.Item>
-
+                    <NavDropdown.Divider />
                     <NavDropdown.Item
                       as={NavLink}
                       to="/mbbs-in-georgia/akaki-tsereteli-state-medical-university"
+                      className="text-wrap"
                     >
                       Akaki Tsereteli State University Faculty of Medicine
                     </NavDropdown.Item>
-
+                    <NavDropdown.Divider />
                     <NavDropdown.Item
                       as={NavLink}
                       to="/mbbs-in-georgia/tbilisi-state-medical-university"
+                      className="text-wrap"
                     >
                       Tbilisi State Medical University
                     </NavDropdown.Item>
@@ -693,6 +697,7 @@ const Menubar = () => {
                     <NavDropdown.Item
                       as={NavLink}
                       to="/mbbs-in-georgia/caucasus-international-medical-university"
+                      className="text-wrap"
                     >
                       Caucasus International Medical University
                     </NavDropdown.Item>
@@ -700,6 +705,7 @@ const Menubar = () => {
                     <NavDropdown.Item
                       as={NavLink}
                       to="/mbbs-in-georgia/david-vildiani-medical-university"
+                      className="text-wrap"
                     >
                       David Tvildiani Medical University
                     </NavDropdown.Item>
@@ -707,6 +713,7 @@ const Menubar = () => {
                     <NavDropdown.Item
                       as={NavLink}
                       to="/mbbs-in-georgia/petre-shotadze-tbilisi-medical-academy"
+                      className="text-wrap"
                     >
                       Petre Shotadze Tbilisi Medical Academy Faculty of Medicine
                     </NavDropdown.Item>
@@ -714,6 +721,7 @@ const Menubar = () => {
                     <NavDropdown.Item
                       as={NavLink}
                       to="/mbbs-in-georgia/european-university"
+                      className="text-wrap"
                     >
                       European University Faculty of Medicine
                     </NavDropdown.Item>
@@ -721,6 +729,7 @@ const Menubar = () => {
                     <NavDropdown.Item
                       as={NavLink}
                       to="/mbbs-in-georgia/georgian-american-university"
+                      className="text-wrap"
                     >
                       Georgian American University
                     </NavDropdown.Item>
@@ -770,6 +779,7 @@ const Menubar = () => {
                     <NavDropdown.Item
                       as={NavLink}
                       to="/mbbs-in-philippines/emilio-aguinaldo-college"
+                      className="text-wrap"
                     >
                       Emilio Aguinaldo College of Medicine
                     </NavDropdown.Item>
@@ -784,6 +794,7 @@ const Menubar = () => {
                     <NavDropdown.Item
                       as={NavLink}
                       to="/mbbs-in-russia/crimea-state-medical-university"
+                      className="text-wrap"
                     >
                       Crimea State Medical University
                     </NavDropdown.Item>
@@ -798,6 +809,7 @@ const Menubar = () => {
                     <NavDropdown.Item
                       as={NavLink}
                       to="/mbbs-in-russia/lobachevsky-state-Medical-University"
+                      className="text-wrap"
                     >
                       Lobachevsky State Medical University
                     </NavDropdown.Item>
@@ -805,6 +817,7 @@ const Menubar = () => {
                     <NavDropdown.Item
                       as={NavLink}
                       to="/mbbs-in-russia/kabardino-balkariand-state-medical-university"
+                      className="text-wrap"
                     >
                       Kabardino Balkarian State Medical University
                     </NavDropdown.Item>
@@ -812,6 +825,7 @@ const Menubar = () => {
                     <NavDropdown.Item
                       as={NavLink}
                       to="/mbbs-in-russia/kirov-state-medical-university"
+                      className="text-wrap"
                     >
                       Kirov State Medical University
                     </NavDropdown.Item>
@@ -819,6 +833,7 @@ const Menubar = () => {
                     <NavDropdown.Item
                       as={NavLink}
                       to="/mbbs-in-russia/north-ossetian-state-medical-university"
+                      className="text-wrap"
                     >
                       North-Ossetian State Medical University
                     </NavDropdown.Item>
@@ -826,6 +841,7 @@ const Menubar = () => {
                     <NavDropdown.Item
                       as={NavLink}
                       to="/mbbs-in-russia/north-caucasian-state-humanitarian"
+                      className="text-wrap"
                     >
                       North Caucasian State Humanitarian Technological Academy
                     </NavDropdown.Item>
@@ -840,6 +856,7 @@ const Menubar = () => {
                     <NavDropdown.Item
                       as={NavLink}
                       to="mbbs-in-armenia/yerevan-haybusak-university-faculty-of-medicine"
+                      className="text-wrap"
                     >
                       Yerevan Haybusak University Faculty of Medicine
                     </NavDropdown.Item>
@@ -847,6 +864,7 @@ const Menubar = () => {
                     <NavDropdown.Item
                       as={NavLink}
                       to="mbbs-in-armenia/yerevan-state-medical-university"
+                      className="text-wrap"
                     >
                       Yerevan State Medical University
                     </NavDropdown.Item>
@@ -869,6 +887,7 @@ const Menubar = () => {
                     <NavDropdown.Item
                       as={NavLink}
                       to="/mbbs-in-usa/texila-american-university-college"
+                      className="text-wrap"
                     >
                       Texila American University College of Medicine
                     </NavDropdown.Item>
@@ -883,6 +902,7 @@ const Menubar = () => {
                     <NavDropdown.Item
                       as={NavLink}
                       to="/mbbs-in-poland/medical-university-of-gdansk"
+                      className="text-wrap"
                     >
                       Medical University of Gdansk
                     </NavDropdown.Item>
@@ -890,6 +910,7 @@ const Menubar = () => {
                     <NavDropdown.Item
                       as={NavLink}
                       to="/mbbs-in-poland/medical-university-of-warsaw"
+                      className="text-wrap"
                     >
                       Medical University of Warsaw
                     </NavDropdown.Item>
@@ -904,6 +925,7 @@ const Menubar = () => {
                     <NavDropdown.Item
                       as={NavLink}
                       to="/mbbs-in-kyrgystan/osh-state-medical-university"
+                      className="text-wrap"
                     >
                       Osh State Medical University
                     </NavDropdown.Item>
@@ -911,6 +933,7 @@ const Menubar = () => {
                     <NavDropdown.Item
                       as={NavLink}
                       to="/mbbs-in-kyrgystan/salymbekov-university"
+                      className="text-wrap"
                     >
                       Salymbekov University Faculty of Medicine
                     </NavDropdown.Item>

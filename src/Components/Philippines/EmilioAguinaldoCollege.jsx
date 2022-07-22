@@ -33,7 +33,7 @@ const EmilioAguinaldoCollege = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="pt-5 pb-5">
+              <div className="py-md-5">
                 <h2>MBBS in Philippines</h2>
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">

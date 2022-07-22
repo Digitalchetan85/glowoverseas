@@ -15,18 +15,27 @@ const NorthOssetianStateMedicalUniversity = () => {
   const handleShow = () => setShow(true);
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title> North-Ossetian State | MBBS in Russia | GOE</title>
+        <link rel="canonical" href="https://glowoverseas.com/mbbs-in-russia/north-ossetian-state-medical-university" />
+        <meta
+          name="description"
+          content="MBBS in North-Ossetian State is the best place to Study MBBS in Russia. Call Us for Free Counselling"
+        />
+</Helmet>
       <div id="abt">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="pt-5 pb-5">
+              <div className="py-md-5">
                 <h2>MBBS in Russia</h2>
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a className="text-decoraration-none" as={Link} to="/">
-                        Home
-                      </a>
+                      <Link className="text-decoration-none" to="/">
+                        Home</Link>
+                      
                     </li>
                     <li className="breadcrumb-item">
                       <a

@@ -31,7 +31,7 @@ const TbilisiStateMedicalUniversity = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="pt-5 pb-5">
+              <div className="py-md-5">
                 <h2>MBBS in Georgia</h2>
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
@@ -60,7 +60,7 @@ const TbilisiStateMedicalUniversity = () => {
         </div>
       </div>
 
-      <div id="country" className="pt-5 pb-5">
+      <div id="country" className="py-md-5">
         <div className="container-fluid">
           <div className="row">
             <div className="col-md-12">
@@ -68,7 +68,7 @@ const TbilisiStateMedicalUniversity = () => {
                 <div className="">
                   <div className="row">
                     <div className="col-md-12">
-                      <h3 className="text-info">
+                      <h3 className="text-info py-3">
                         Tbilisi State Medical University
                       </h3>
                     </div>

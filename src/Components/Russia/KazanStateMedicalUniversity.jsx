@@ -1,4 +1,6 @@
-import React, { useState, useEffect } from "react"; import {Link} from 'react-router-dom'; import { Helmet } from "react-helmet";
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { Button } from "react-bootstrap";
 import img1 from "../../Images/mbbs-in-russia/medical-universities/kazan.png";
 import AdmissionProcess from "../Includes/AdmissionProcess";
@@ -8,18 +10,28 @@ import OtherCountries from "../Includes/OtherCountries";
 import RussianUniverisities from "../Includes/RussianUniverisities";
 
 const KazanStateMedicalUniversity = () => {
-  const [show, setShow] = useState(false); useEffect(() => {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
     window.scrollTo(0, 0);
   });
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title> Kazan State Medical University | MBBS in Russia | GOE</title>
+        <link rel="canonical" href="https://glowoverseas.com/mbbs-in-russia/kazan-state-medical-university" />
+        <meta
+          name="description"
+          content="MBBS in  is the best place to Study MBBS in Russia. Call Us for Free Counselling"
+        />
+      </Helmet>
       <div id="abt">
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="pt-5 pb-5">
+              <div className="py-md-5">
                 <h2>MBBS in Russia</h2>
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
@@ -31,7 +43,8 @@ const KazanStateMedicalUniversity = () => {
                     <li className="breadcrumb-item">
                       <a
                         className="text-decoration-none"
-                        as={Link} to="/mbbs-in-russia"
+                        as={Link}
+                        to="/mbbs-in-russia"
                       >
                         MBBS in Russia
                       </a>

@@ -11,12 +11,12 @@ const MbbsInUkraine = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="pt-5 pb-5">
+              <div className="py-md-5 py-5">
                 <h1>MBBS in Ukraine</h1>
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb">
                     <li className="breadcrumb-item">
-                      <a as={Link} to="/">Home</a>
+                    <Link to="/">Home</Link>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       MBBS in Ukraine
@@ -64,10 +64,10 @@ const MbbsInUkraine = () => {
                           and to cover the expenses of whole 6 years.
                         </p>
                         <p className="pt-2 pb-2 text-justify">
-                          <strong>
+                          <b>
                             In order to select best and top MBBS in Ukraine
                             collages you can apply the following parameters.
-                          </strong>
+                          </b>
                         </p>
                         <ul>
                           <li>
@@ -89,7 +89,7 @@ const MbbsInUkraine = () => {
                           </li>
                         </ul>
                         <p className="pt-2 pb-2 text-justify">
-                          <strong>Why study MBBS in Ukraine?</strong>
+                          <b>Why study MBBS in Ukraine?</b>
                         </p>
                         <ul>
                           <li>
@@ -165,7 +165,7 @@ const MbbsInUkraine = () => {
                           after studying in Ukraine
                         </p>
                         <p className="pt-2 pb-2 text-justify">
-                          <strong>Is Ukraine MBBS valid in India?</strong>
+                          <b>Is Ukraine MBBS valid in India?</b>
                         </p>
                         <p className="pt-2 pb-2 text-justify">
                           The answer is big yes after MBBS in Ukraine, you may
@@ -261,7 +261,7 @@ const MbbsInUkraine = () => {
                           </ul>
                         </p>
                         <p className="pt-2 pb-2 text-justify">
-                          <strong> First Year</strong> Foreign Language, Latin
+                          <b> First Year</b> Foreign Language, Latin
                           Language, and Medical Terminology, History of
                           Medicine, Fundamentals of Psychology, Fundamentals of
                           Pedagogic, Medical Biology, Medical Chemistry,
@@ -271,7 +271,7 @@ const MbbsInUkraine = () => {
                           Courses.
                         </p>
                         <p className="pt-2 pb-2 text-justify">
-                          <strong> Second Year</strong>Philosophy, Human
+                          <b> Second Year</b>Philosophy, Human
                           Anatomy, Histology, Cytology, Embryology, Physiology,
                           Biological and Bio-organic Chemistry, Microbiology,
                           Virology and Immunology, General Surgery (with
@@ -282,7 +282,7 @@ const MbbsInUkraine = () => {
                           Physical Training
                         </p>
                         <p className="pt-2 pb-2 text-justify">
-                          <strong> Third Year</strong> Microbiology, Virology
+                          <b> Third Year</b> Microbiology, Virology
                           and Immunology, Path morphology, Path physiology,
                           Pharmacology, Hygiene and ecology, Propaedeutic of
                           internal medicine, Propaedeutics of paediatrics,
@@ -292,7 +292,7 @@ const MbbsInUkraine = () => {
                           Training / Foreign Language.
                         </p>
                         <p className="pt-2 pb-2 text-justify">
-                          <strong> Fourth Year</strong> Internal Medicine,
+                          <b> Fourth Year</b> Internal Medicine,
                           Tuberculosis, Paediatrics, Surgery, Obstetrics and
                           Gynaecology, Social medicine, health care system
                           organization, Biostatistics, Urology, Otolaryngology,
@@ -330,7 +330,7 @@ const MbbsInUkraine = () => {
                         </ul>
                         <table className="table-bordered">
                           <thead>
-                            <tr className="bg-primary text-white text-center">
+                            <tr className="bg-info text-white text-center">
                               <th scope="col">Basis</th>
                               <th scope="col">MBBS in Ukraine</th>
                               <th scope="col">MBBS in India</th>
