@@ -27,35 +27,35 @@ const UkraineUniversities = () => {
       title: "Black Sea National Medical University",
       image: Black,
       desc: "Black Sea National Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.",
-      link: "/black-sea-national-medical-university",
+      link: "/mbbs-in-ukraine/black-sea-national-medical-university",
     },
     {
       id: 2,
       title: "Bukovinian State Medical University",
       image: Bukovinian,
       desc: "Bukovinian State Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.",
-      link: "/bukovinian-state-medical-university",
+      link: "/mbbs-in-ukraine/bukovinian-state-medical-university",
     },
     {
       id: 3,
       title: "Dnipropetrovsk State Medical University",
       image: Dnipropetrovsk,
       desc: "Dnipropetrovsk State Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.",
-      link: "/dnipropetrovsk-state-medical-university",
+      link: "/mbbs-in-ukraine/dnipropetrovsk-state-medical-university",
     },
     {
       id: 4,
       title: "Ivano-Frankvisk National Medical University",
       image: Ivano,
       desc: "Ivano-Frankvisk National Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.",
-      link: "/ivano-frankvisk-national-medical-university",
+      link: "/mbbs-in-ukraine/ivano-frankvisk-national-medical-university",
     },
     {
       id: 5,
       title: "Kharkiv National Medical University",
       image: Kharkiv,
       desc: "Kharkiv international Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.",
-      link: "/kharkiv-international-medical-university",
+      link: "/mbbs-in-ukraine/kharkiv-international-medical-university",
     },
 
     {
@@ -63,7 +63,7 @@ const UkraineUniversities = () => {
       title: "Kyiv Medical University",
       image: Kyiv,
       desc: "kyiv Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.",
-      link: "/kyiv-medical-university",
+      link: "/mbbs-in-ukraine/kyiv-medical-university",
     },
 
     {
@@ -71,7 +71,7 @@ const UkraineUniversities = () => {
       title: "Lviv National Medical University",
       image: Lviv,
       desc: "Lviv National Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.",
-      link: "/lviv-national-medical-university",
+      link: "/mbbs-in-ukraine/lviv-national-medical-university",
     },
 
     {
@@ -79,7 +79,7 @@ const UkraineUniversities = () => {
       title: "OO Bogomolets National Medical University",
       image: Bogomolets,
       desc: "O O Bogomolets National Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.",
-      link: "/oo-bogomolets-national-medical-university",
+      link: "/mbbs-in-ukraine/oo-bogomolets-national-medical-university",
     },
 
     {
@@ -87,7 +87,7 @@ const UkraineUniversities = () => {
       title: "Poltava State Medical University",
       image: Poltava,
       desc: "Poltava State Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.",
-      link: "/poltava-state-medical-university",
+      link: "/mbbs-in-ukraine/poltava-state-medical-university",
     },
 
     {
@@ -95,14 +95,14 @@ const UkraineUniversities = () => {
       title: "Taras Schevchenko National Medical University",
       image: Taras,
       desc: "Taras Schevchenko National Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.",
-      link: "/taras-shevchenko-national-medical-university",
+      link: "/mbbs-in-ukraine/taras-shevchenko-national-medical-university",
     },
     {
       id: 11,
       title: "V N Karazin Kharkivnational Medical University",
       image: Karazin,
       desc: "V. N. Karazin National Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.",
-      link: "/v-n-karazin-kharkiv-national-medical-university",
+      link: "/mbbs-in-ukraine/v-n-karazin-kharkiv-national-medical-university",
     },
     {
       id: 12,
@@ -117,21 +117,21 @@ const UkraineUniversities = () => {
       title: "Zaporizhzhia State Medical University",
       image: Zaporizhzhia,
       desc: "Zaporizhzhia State Medical provides education based on advanced scientific-research and practical-teaching models, leading research and innovative activities",
-      link: "/zaporizhzhia-state-medical-university",
+      link: "/mbbs-in-ukraine/zaporizhzhia-state-medical-university",
     },
     {
       id: 14,
       title: "Ternopil State Medical University",
       image: Ternopil,
       desc: "Ternopil State Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.",
-      link: "/ternopil-state-medical-university",
+      link: "/mbbs-in-ukraine/ternopil-state-medical-university",
     },
     {
       id: 15,
       title: "Odessa National Medical University",
       image: Odessa,
       desc: "Odessa National Medical University is one of the top Medical University in Ukraine. Get more details on Fees Structure, Hostel, Indian Food Facility and other uncleared information.",
-      link: "/odessa-national",
+      link: "/mbbs-in-ukraine/odessa-national",
     },
   ];
 
@@ -139,6 +139,7 @@ const UkraineUniversities = () => {
     rewind: true,
     dots: true,
     autoplay: true,
+    autoplayTimeout: 1000,
     responsive: {
       0: {
         items: 1,
@@ -158,7 +159,7 @@ const UkraineUniversities = () => {
   return (
     <>
       <Container>
-        <h3 className="text-center">Top Medical Universities in Ukraine</h3>
+        <h3 className="text-center text-info">Top Medical Universities in Ukraine</h3>
         <OwlCarousel options={options}>
           {universities.map((university) => (
             <div key={university.id}>
@@ -183,10 +184,10 @@ const UkraineUniversities = () => {
                 </Card.Body>
                 <Card.Footer className="border-0 bg-white text-center">
                   <Button
-                    variant="primary"
+                    variant="info"
                     as={Link}
                     to={university.link}
-                    className="custom-btn"
+                    className="custom-btn text-white"
                   >
                     Readmore
                   </Button>

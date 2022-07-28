@@ -5,27 +5,31 @@ import FAQ from "../Includes/FAQ";
 import FreeCouncelling from "../Includes/FreeCouncelling";
 import OtherCountries from "../Includes/OtherCountries";
 import UkraineUniversities from "../Includes/UkraineUniversities";
-import img1 from "../../Images/mbbs-in-ukraine/medical-universities/black-sea-national-medical-university.png"
+import img1 from "../../Images/mbbs-in-ukraine/medical-universities/black-sea-national-medical-university.png";
 import { Button } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 
 const BlackSeaNationalMedicalUniversity = () => {
-    const [show, setShow] = useState(false); useEffect(() => {
-        window.scrollTo(0, 0);
-      });
-      const handleClose = () => setShow(false);
-      const handleShow = () => setShow(true);
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <div>
       <Helmet>
         <meta charSet="utf-8" />
-        <title> Bashkir State Medical University | MBBS in Ukraine | GOE</title>
-        <link rel="canonical" href="https://glowoverseas.com/mbbs-in-ukraine/" />
+        <title> Black Sea National Medical University | MBBS in Ukraine | GOE</title>
+        <link
+          rel="canonical"
+          href="https://glowoverseas.com/mbbs-in-ukraine/"
+        />
         <meta
           name="description"
           content="MBBS in  is the best place to Study MBBS in Ukraine. Call Us for Free Counselling"
         />
-</Helmet>
+      </Helmet>
       <div id="abt">
         <div className="container">
           <div className="row">
@@ -49,7 +53,7 @@ const BlackSeaNationalMedicalUniversity = () => {
                       </a>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
-                      Bashkir State Medical University
+                    Black Sea National Medical University
                     </li>
                   </ol>
                 </nav>

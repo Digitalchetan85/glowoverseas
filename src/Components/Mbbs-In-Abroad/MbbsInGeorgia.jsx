@@ -17,7 +17,7 @@ const MbbsInGeorgia = () => {
     
 <Helmet>
         <meta charSet="utf-8" />
-        <title>MBBS in GeorgiaTopMedicalUniversities | MBBS in Abroad | GOE</title>
+        <title>MBBS in Georgia | MBBS in Abroad | GOE</title>
         <link rel="canonical" href="https://glowoverseas.com/mbbs-in-georgia" />
         <meta
           name="description"

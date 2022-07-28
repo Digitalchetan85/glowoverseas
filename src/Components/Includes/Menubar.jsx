@@ -123,6 +123,9 @@ const Menubar = () => {
               <Nav.Link as={NavLink} to="/">
                 Home
               </Nav.Link>
+              {/* <Nav.Link as={NavLink} to="/">
+                services
+              </Nav.Link> */}
               <Nav.Link as={NavLink} to="/about">
                 About Us
               </Nav.Link>

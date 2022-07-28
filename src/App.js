@@ -73,6 +73,20 @@ import MbbsUzbekistan from "./Components/Mbbs-In-Abroad/MbbsUzbekistan";
 import Contact from "./Components/Contact";
 import Gallery from "./Components/Gallery";
 import BlackSeaNationalMedicalUniversity from "./Components/Ukraine/BlackSeaNationalMedicalUniversity";
+import DnipropetrovskStateMedicalUniversity from "./Components/Ukraine/DnipropetrovskStateMedicalUniversity";
+import BukovinianStateMedicalUniversity from "./Components/Ukraine/BukovinianStateMedicalUniversity";
+import IvanoFrankviskNationalMedicalUniversity from "./Components/Ukraine/IvanoFrankviskNationalMedicalUniversity";
+import KharkivInternationalMedicalUniversity from "./Components/Ukraine/KharkivInternationalMedicalUniversity";
+import KharkivNationalMedicalUniversity from "./Components/Ukraine/KharkivNationalMedicalUniversity";
+import KyivMedicalUniversity from "./Components/Ukraine/KyivMedicalUniversity";
+import LvivNationalMedicalUniversity from "./Components/Ukraine/LvivNationalMedicalUniversity";
+import OoBogomoletsNationalMedicalUniversity from "./Components/Ukraine/OoBogomoletsNationalMedicalUniversity";
+import PoltavaStateMedicalUniversity from "./Components/Ukraine/PoltavaStateMedicalUniversity";
+import TarasShevchenkoNationalMedicalUniversity from "./Components/Ukraine/TarasShevchenkoNationalMedicalUniversity";
+import TernopilStateMedicalUniversity from "./Components/Ukraine/TernopilStateMedicalUniversity";
+import VinnitsaNationalMedicalUniversity from "./Components/Ukraine/VinnitsaNationalMedicalUniversity";
+import VNKarazinKharkivNationalMedicalUniversity from "./Components/Ukraine/VNKarazinKharkivNationalMedicalUniversity";
+import ZaporizhzhiaStateMedicalUniversity from "./Components/Ukraine/ZaporizhzhiaStateMedicalUniversity";
 
 function App() {
   return (
@@ -341,20 +355,22 @@ function App() {
          {/* <Route path="/ternopil-state-medical-university" element={<TernopilStateMedicalUniversity />} />
           <Route path="/odessa-national
 " element={<OdessaNational
- />} />
-        <Route path="/bukovinian-state-medical-university" element={<BukovinianStateMedicalUniversity />} />
-        <Route path="/dnipropetrovsk-state-medical-university" element={<DnipropetrovskStateMedicalUniversity />} />
-         <Route path="/ivano-frankvisk-national-medical-university" element={<IvanoFrankviskNationalMedicalUniversity />} />
-         <Route path="/kharkiv-international-medical-university" element={<KharkivInternationalMedicalUniversity />} />
-         <Route path="/kharkiv-national-medical-university" element={<KharkivNationalMedicalUniversity />} />
-                 <Route path="/kyiv-medical-university" element={<KyivMedicalUniversity />} />
-                 <Route path="/lviv-national-medical-university" element={<LvivNationalMedicalUniversity />} />
-                 <Route path="/oo-bogomolets-national-medical-university" element={<OoBogomoletsNationalMedicalUniversity />} />
-                 <Route path="/poltava-state-medical-university" element={<PoltavaStateMedicalUniversity />} />  
-                 <Route path="/taras-shevchenko-national-medical-university" element={<TarasShevchenkoNationalMedicalUniversity />} />  
-                 <Route path="/vinnitsa-national-medical-university" element={<VinnitsaNationalMedicalUniversity />} />
-                         <Route path="/v-n-karazin-kharkiv-national-medical-university" element={<VNKarazinKharkivNationalMedicalUniversity />} />
-                         <Route path="/zaporizhzhia-state-medical-university" element={<ZaporizhzhiaStateMedicalUniversity />} /> */}
+ />} /> */}
+        <Route path="/mbbs-in-ukraine/bukovinian-state-medical-university" element={<BukovinianStateMedicalUniversity />} />
+        <Route path="/mbbs-in-ukraine/dnipropetrovsk-state-medical-university" element={<DnipropetrovskStateMedicalUniversity />} />
+         <Route path="/mbbs-in-ukraine/ivano-frankvisk-national-medical-university" element={<IvanoFrankviskNationalMedicalUniversity />} />
+         <Route path="/mbbs-in-ukraine/kharkiv-international-medical-university" element={<KharkivInternationalMedicalUniversity />} />
+         <Route path="/mbbs-in-ukraine/kharkiv-national-medical-university" element={<KharkivNationalMedicalUniversity />} />
+                 <Route path="/mbbs-in-ukraine/kyiv-medical-university" element={<KyivMedicalUniversity />} />
+                 <Route path="/mbbs-in-ukraine/lviv-national-medical-university" element={<LvivNationalMedicalUniversity />} />
+                 <Route path="/mbbs-in-ukraine/oo-bogomolets-national-medical-university" element={<OoBogomoletsNationalMedicalUniversity />} />
+                 <Route path="/mbbs-in-ukraine/poltava-state-medical-university" element={<PoltavaStateMedicalUniversity />} />  
+                 <Route path="/mbbs-in-ukraine/taras-shevchenko-national-medical-university" element={<TarasShevchenkoNationalMedicalUniversity />} />  
+                 <Route path="/mbbs-in-ukraine/ternopil-state-medical-university" element={<TernopilStateMedicalUniversity />} />  
+
+                 <Route path="/mbbs-in-ukraine/vinnitsa-national-medical-university" element={<VinnitsaNationalMedicalUniversity />} />
+                         <Route path="/mbbs-in-ukraine/v-n-karazin-kharkiv-national-medical-university" element={<VNKarazinKharkivNationalMedicalUniversity />} />
+                         <Route path="/mbbs-in-ukraine/zaporizhzhia-state-medical-university" element={<ZaporizhzhiaStateMedicalUniversity />} />
           
 
           {/* Uzbekistan Routes */}

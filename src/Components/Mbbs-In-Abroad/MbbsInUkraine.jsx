@@ -2,11 +2,24 @@ import React from "react";
 import FAQ from "../Includes/FAQ";
 import UkraineUniversities from "../Includes/UkraineUniversities";
 import {Link} from "react-router-dom";
+import { Helmet } from "react-helmet";
 
 
 const MbbsInUkraine = () => {
   return (
     <>
+    <Helmet>
+          <meta charSet="utf-8" />
+          <title>MBBS in Ukraine | MBBS in Abroad | GOE</title>
+          <link
+            rel="canonical"
+            href="https://glowoverseas.com/mbbs-in-ukraine"
+          />
+          <meta
+            name="description"
+            content="MBBS in Ukraine is the best place to Study MBBS in Ukraine. Call Us for Free Counselling"
+          />
+        </Helmet>
       <div id="abt1">
         <div className="container">
           <div className="row">
@@ -505,9 +518,9 @@ const MbbsInUkraine = () => {
                         Study MBBS in Ukraine.
                         <ul className="pt-2 pb-2">
                           <li>
-                            <a as={Link} to="/black-sea-national-medical-university">
+                            <Link  to="/mbbs-in-ukraine/black-sea-national-medical-university">
                               Black Sea National Medical University
-                            </a>
+                            </Link>
                           </li>
                           <li>
                             <a as={Link} to="/bukovinian-state-medical-university">
