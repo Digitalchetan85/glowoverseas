@@ -51,6 +51,8 @@ p {
 //   display: block;
 // }
 
+
+
 #navbar {
   .nav-link {
     color: $dark-color;
@@ -64,6 +66,10 @@ p {
   }
   .dropdown-menu {
     background-color: $primary-color;
+  }
+  .dropend .dropdown-menu[data-bs-popper] {
+    overflow: auto;
+    height: 200px;
   }
   .dropdown-item {
     color: $black-color;

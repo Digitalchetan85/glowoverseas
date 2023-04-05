@@ -3,14 +3,13 @@ import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import { Button } from "react-bootstrap";
 import img1 from "../../Images/mbbs-in-georgia/medical-universities/tbilisi-state-medical-university-faculty-of-medicine.png";
-import AdmissionProcess from "../Includes/AdmissionProcess";
 import FAQ from "../Includes/FAQ";
 import FreeCouncelling from "../Includes/FreeCouncelling";
 import OtherCountries from "../Includes/OtherCountries";
-import GeorgiaTopMedicalUniversities from "./GeorgiaTopMedicalUniversity";
+import GeorgiaTopMedicalUniversities from "../Gerogia/GeorgiaTopMedicalUniversity";
+import AdmissionProcess from "../Includes/AdmissionProcess";
 
-
-const GeorgianAmericanUniversity = () => {
+const AltaiStateMedicalUniversity = () => {
   const [show, setShow] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -319,4 +318,4 @@ const GeorgianAmericanUniversity = () => {
   );
 };
 
-export default GeorgianAmericanUniversity;
+export default AltaiStateMedicalUniversity;

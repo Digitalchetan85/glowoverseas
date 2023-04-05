@@ -1,4 +1,4 @@
-import "./App.scss";
+import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./Components/Home";
 import Footer from "./Components/Includes/Footer";
@@ -24,7 +24,6 @@ import CairoUniversity from "./Components/Egypt/CairoUniversity";
 import InternationalMedicalSchool from "./Components/Kazaksthan/InternationalMedicalSchool";
 import JscNationalMedicalUniversity from "./Components/Kazaksthan/JscNationalMedicalUniversity";
 import AlFarabiNationalMedicalUniversity from "./Components/Kazaksthan/AlFarabiNationalMedicalUniversity";
-import OshStateMedicalUniversity from "./Components/Kyrgyzstan/OshStateMedicalUniversity";
 import SalymbekovUniversity from "./Components/Kyrgyzstan/SalymbekovUniversity";
 import AmaUniversity from "./Components/Philippines/AmaUniversity";
 import Medicaluniversityofgdansk from "./Components/Poland/MedicalUniversityOfGdansk";
@@ -87,6 +86,23 @@ import TernopilStateMedicalUniversity from "./Components/Ukraine/TernopilStateMe
 import VinnitsaNationalMedicalUniversity from "./Components/Ukraine/VinnitsaNationalMedicalUniversity";
 import VNKarazinKharkivNationalMedicalUniversity from "./Components/Ukraine/VNKarazinKharkivNationalMedicalUniversity";
 import ZaporizhzhiaStateMedicalUniversity from "./Components/Ukraine/ZaporizhzhiaStateMedicalUniversity";
+import OshStateMedicalUniversity from "./Components/Kyrgyzstan/OshStateMedicalUniversity";
+import GeorgianNationalUniversitySEUFacultyofMedicine from "./Components/Gerogia/GeorgianNationalUniversitySEUFacultyofMe";
+import EastWestTeachingUniversitySchoolofMedicine from "./Components/Gerogia/EastWestTeachingUniversitySchoolofMedici";
+import EastEuropianUniversityFacultyofHealthcareSciences from "./Components/Gerogia/EastEuropianUniversityFacultyofHealthcar";
+import NewVisionUniversitySchoolofMedicine from "./Components/Gerogia/NewVisionUniversitySchoolofMedicine";
+import BAUInternationalUniversityFacultyofMedicine from "./Components/Gerogia/BAUInternationalUniversityFacultyofMedic";
+import KubanStateMedicalUniversity from "./Components/Russia/KubanStateMedicalUniversity";
+import FarEasternMedicalUniversity from "./Components/Russia/FarEasternMedicalUniversity";
+import DagestanMedicalUniversity from "./Components/Russia/DagestanMedicalUniversity";
+import AltaiStateMedicalUniversity from "./Components/Russia/AltaiStateMedicalUniversity";
+import MariStateMedicalUniversity from "./Components/Russia/MariStateMedicalUniversity";
+import OrenburgStateMedicalUniversity from "./Components/Russia/OrenburgStateMedicalUniversity";
+import SamaraStateMedicalUniversity from "./Components/Russia/SamaraStateMedicalUniversity";
+import TverStateMedicalUniversity from "./Components/Russia/TverStateMedicalUniversity";
+import SmolenskStateMedicalUniversity from "./Components/Russia/SmolenskStateMedicalUniversity";
+import NorthernStateMedicalUniversity from "./Components/Russia/NorthernStateMedicalUniversity";
+import PeoplesFrienshipMedicalUniversity from "./Components/Russia/PeoplesFrienshipMedicalUniversity";
 
 function App() {
   return (
@@ -219,6 +235,30 @@ function App() {
             path="/mbbs-in-georgia/university-of-georgia-school"
             element={<UniversityOfGeorgiaSchool />}
           />
+          <Route
+            path="/mbbs-in-georgia/georgian-national-university-seu-faculty-of-medicine"
+            element={<GeorgianNationalUniversitySEUFacultyofMedicine />}
+          />
+          <Route
+            path="/mbbs-in-georgia/east-west-teaching-university-school-of-medicine"
+            element={<EastWestTeachingUniversitySchoolofMedicine />}
+          />
+          <Route
+            path="/mbbs-in-georgia/east-europian-university-faculty-of-healthcare-sciences"
+            element={<EastEuropianUniversityFacultyofHealthcareSciences />}
+          />
+          <Route
+            path="/mbbs-in-georgia/new-vision-university-school-of-medicine"
+            element={<NewVisionUniversitySchoolofMedicine />}
+          />
+          <Route
+            path="/mbbs-in-georgia/bau-international-university-faculty-of-medicine"
+            element={<BAUInternationalUniversityFacultyofMedicine />}
+          />
+          <Route
+            path="/mbbs-in-georgia/georgian-american-university"
+            element={<GeorgianAmericanUniversity />}
+          />
           {/* Georgia Routes */}
 
           {/* Kazakhstan Routes*/}
@@ -348,45 +388,133 @@ function App() {
             path="/mbbs-in-russia/north-ossetian-state-medical-university"
             element={<NorthOssetianStateMedicalUniversity />}
           />
+          <Route
+            path="/mbbs-in-russia/kuban-state-medical-university"
+            element={<KubanStateMedicalUniversity />}
+          />
+          <Route
+            path="/mbbs-in-russia/far-eastern-medical-university"
+            element={<FarEasternMedicalUniversity />}
+          />
+          <Route
+            path="/mbbs-in-russia/dagestan-medical-university"
+            element={<DagestanMedicalUniversity />}
+          />
+          <Route
+            path="/mbbs-in-russia/altai-state-medical-university"
+            element={<AltaiStateMedicalUniversity />}
+          />
+          <Route
+            path="/mbbs-in-russia/mari-state-medical-university"
+            element={<MariStateMedicalUniversity />}
+          />
+          <Route
+            path="/mbbs-in-russia/ornburg-state-medical-university"
+            element={<OrenburgStateMedicalUniversity />}
+          />
+          <Route
+            path="/mbbs-in-russia/samara-state-medical-university"
+            element={<SamaraStateMedicalUniversity />}
+          />
+          <Route
+            path="/mbbs-in-russia/tver-state-medical-university"
+            element={<TverStateMedicalUniversity />}
+          />
+          <Route
+            path="/mbbs-in-russia/peoples-friendship-medical-university"
+            element={<PeoplesFrienshipMedicalUniversity />}
+          />
+          <Route
+            path="/mbbs-in-russia/smolensk-state-medical-university"
+            element={<SmolenskStateMedicalUniversity />}
+          />
+          <Route
+            path="/mbbs-in-russia/northern-state-medical-university"
+            element={<NorthernStateMedicalUniversity />}
+          />
           {/* Russia Routes */}
 
           <Route path="/mbbs-in-ukraine" element={<MbbsInUkraine />}></Route>
-            <Route path="/mbbs-in-ukraine/black-sea-national-medical-university" element={<BlackSeaNationalMedicalUniversity />} />
-         {/* <Route path="/ternopil-state-medical-university" element={<TernopilStateMedicalUniversity />} />
+          <Route
+            path="/mbbs-in-ukraine/black-sea-national-medical-university"
+            element={<BlackSeaNationalMedicalUniversity />}
+          />
+          {/* <Route path="/ternopil-state-medical-university" element={<TernopilStateMedicalUniversity />} />
           <Route path="/odessa-national
 " element={<OdessaNational
  />} /> */}
-        <Route path="/mbbs-in-ukraine/bukovinian-state-medical-university" element={<BukovinianStateMedicalUniversity />} />
-        <Route path="/mbbs-in-ukraine/dnipropetrovsk-state-medical-university" element={<DnipropetrovskStateMedicalUniversity />} />
-         <Route path="/mbbs-in-ukraine/ivano-frankvisk-national-medical-university" element={<IvanoFrankviskNationalMedicalUniversity />} />
-         <Route path="/mbbs-in-ukraine/kharkiv-international-medical-university" element={<KharkivInternationalMedicalUniversity />} />
-         <Route path="/mbbs-in-ukraine/kharkiv-national-medical-university" element={<KharkivNationalMedicalUniversity />} />
-                 <Route path="/mbbs-in-ukraine/kyiv-medical-university" element={<KyivMedicalUniversity />} />
-                 <Route path="/mbbs-in-ukraine/lviv-national-medical-university" element={<LvivNationalMedicalUniversity />} />
-                 <Route path="/mbbs-in-ukraine/oo-bogomolets-national-medical-university" element={<OoBogomoletsNationalMedicalUniversity />} />
-                 <Route path="/mbbs-in-ukraine/poltava-state-medical-university" element={<PoltavaStateMedicalUniversity />} />  
-                 <Route path="/mbbs-in-ukraine/taras-shevchenko-national-medical-university" element={<TarasShevchenkoNationalMedicalUniversity />} />  
-                 <Route path="/mbbs-in-ukraine/ternopil-state-medical-university" element={<TernopilStateMedicalUniversity />} />  
+          <Route
+            path="/mbbs-in-ukraine/bukovinian-state-medical-university"
+            element={<BukovinianStateMedicalUniversity />}
+          />
+          <Route
+            path="/mbbs-in-ukraine/dnipropetrovsk-state-medical-university"
+            element={<DnipropetrovskStateMedicalUniversity />}
+          />
+          <Route
+            path="/mbbs-in-ukraine/ivano-frankvisk-national-medical-university"
+            element={<IvanoFrankviskNationalMedicalUniversity />}
+          />
+          <Route
+            path="/mbbs-in-ukraine/kharkiv-international-medical-university"
+            element={<KharkivInternationalMedicalUniversity />}
+          />
+          <Route
+            path="/mbbs-in-ukraine/kharkiv-national-medical-university"
+            element={<KharkivNationalMedicalUniversity />}
+          />
+          <Route
+            path="/mbbs-in-ukraine/kyiv-medical-university"
+            element={<KyivMedicalUniversity />}
+          />
+          <Route
+            path="/mbbs-in-ukraine/lviv-national-medical-university"
+            element={<LvivNationalMedicalUniversity />}
+          />
+          <Route
+            path="/mbbs-in-ukraine/oo-bogomolets-national-medical-university"
+            element={<OoBogomoletsNationalMedicalUniversity />}
+          />
+          <Route
+            path="/mbbs-in-ukraine/poltava-state-medical-university"
+            element={<PoltavaStateMedicalUniversity />}
+          />
+          <Route
+            path="/mbbs-in-ukraine/taras-shevchenko-national-medical-university"
+            element={<TarasShevchenkoNationalMedicalUniversity />}
+          />
+          <Route
+            path="/mbbs-in-ukraine/ternopil-state-medical-university"
+            element={<TernopilStateMedicalUniversity />}
+          />
 
-                 <Route path="/mbbs-in-ukraine/vinnitsa-national-medical-university" element={<VinnitsaNationalMedicalUniversity />} />
-                         <Route path="/mbbs-in-ukraine/v-n-karazin-kharkiv-national-medical-university" element={<VNKarazinKharkivNationalMedicalUniversity />} />
-                         <Route path="/mbbs-in-ukraine/zaporizhzhia-state-medical-university" element={<ZaporizhzhiaStateMedicalUniversity />} />
-          
+          <Route
+            path="/mbbs-in-ukraine/vinnitsa-national-medical-university"
+            element={<VinnitsaNationalMedicalUniversity />}
+          />
+          <Route
+            path="/mbbs-in-ukraine/v-n-karazin-kharkiv-national-medical-university"
+            element={<VNKarazinKharkivNationalMedicalUniversity />}
+          />
+          <Route
+            path="/mbbs-in-ukraine/zaporizhzhia-state-medical-university"
+            element={<ZaporizhzhiaStateMedicalUniversity />}
+          />
 
           {/* Uzbekistan Routes */}
           <Route path="/mbbs-in-uzbekistan" element={<MbbsUzbekistan />} />
           <Route
-              path="/mbbs-in-ubzekistan/fergana-medical-institute"
-              element={<FerganaMedicalInstitute />}
-            />
+            path="/mbbs-in-ubzekistan/fergana-medical-institute"
+            element={<FerganaMedicalInstitute />}
+          />
           {/* Uzbekistan Routes */}
           <Route path="/mbbs-in-usa" element={<MbbsInUSA />} />
           <Route
-              path="/mbbs-in-usa/texila-american-university-college"
-              element={<TexilaAmericanUniversityCollege />}
-            />
+            path="/mbbs-in-usa/texila-american-university-college"
+            element={<TexilaAmericanUniversityCollege />}
+          />
 
-            <Route path="/gallery" element={<Gallery />}></Route>
+          <Route path="/gallery" element={<Gallery />}></Route>
         </Routes>
         <Footer />
       </Router>

@@ -7,10 +7,9 @@ import AdmissionProcess from "../Includes/AdmissionProcess";
 import FAQ from "../Includes/FAQ";
 import FreeCouncelling from "../Includes/FreeCouncelling";
 import OtherCountries from "../Includes/OtherCountries";
-import GeorgiaTopMedicalUniversities from "./GeorgiaTopMedicalUniversity";
+import GeorgiaTopMedicalUniversities from "../Gerogia/GeorgiaTopMedicalUniversity";
 
-
-const GeorgianAmericanUniversity = () => {
+const SamaraStateMedicalUniversity = () => {
   const [show, setShow] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -319,4 +318,4 @@ const GeorgianAmericanUniversity = () => {
   );
 };
 
-export default GeorgianAmericanUniversity;
+export default SamaraStateMedicalUniversity;

@@ -81,11 +81,11 @@ const About = () => {
       <section id="abt-1" className="py-md-5 bg-light">
         <Container>
           <div className="py-3">
-            <h2 className="text-center text-info">Directors of GOE</h2>
+            <h2 className="text-center text-info">Director of GOE</h2>
           </div>
           <Row>
             <Col md={6}>
-              <div className="text-center bg-white p-3 m-2" style={{ height:500}}>
+              <div className="text-center bg-white p-3 m-2" style={{ height:520}}>
                 <Image
                   src={Prashanth}
                   alt=""
@@ -93,7 +93,7 @@ const About = () => {
                 />
                 <h2 className="py-md-2 text-info">Prashanth G</h2>
                 <h4 className="py-2">
-                  <i>Directors Message</i>
+                  <i>Director Message</i>
                 </h4>
                 <p className="py-3 ps-md-1 pe-md-1">
                   <b>Dream</b> bigger. “If you can <b>dream</b> it, you can do
@@ -104,7 +104,7 @@ const About = () => {
               </div>
             </Col>
             <Col md={6}>
-              <div className="text-center bg-white p-3 m-2" style={{ height:500}}>
+              <div className="text-center bg-white p-3 m-2" style={{ height:520}}>
                 <Image
                   src={Saranya}
                   alt=""

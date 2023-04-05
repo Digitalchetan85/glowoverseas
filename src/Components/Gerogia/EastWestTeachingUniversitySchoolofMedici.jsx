@@ -9,8 +9,7 @@ import FreeCouncelling from "../Includes/FreeCouncelling";
 import OtherCountries from "../Includes/OtherCountries";
 import GeorgiaTopMedicalUniversities from "./GeorgiaTopMedicalUniversity";
 
-
-const GeorgianAmericanUniversity = () => {
+const EastWestTeachingUniversitySchoolofMedicine = () => {
   const [show, setShow] = useState(false);
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -319,4 +318,4 @@ const GeorgianAmericanUniversity = () => {
   );
 };
 
-export default GeorgianAmericanUniversity;
+export default EastWestTeachingUniversitySchoolofMedicine;
